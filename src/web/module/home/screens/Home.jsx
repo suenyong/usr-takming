@@ -10,7 +10,7 @@ export default function Home() {
         <Carousel />
         <NewsFeed />
         <Achieve />
-        <USRHubCarousel/>
+        {/* <USRHubCarousel/> */}
     </>
       );
 }
