@@ -1,6 +1,7 @@
 import { ClassNames } from "@emotion/react";
 import "../styles/Report.css";
 import React, { useRef } from "react";
+import Contact from "../../home/components/contactus/Contact";
 
 
 export default function Report() {
@@ -10,11 +11,9 @@ export default function Report() {
         <>
             <div class="title_title"> <p>大學生社會責任年度報告書</p> </div>
             <div className="boxR">
-                <a href={filePath} download={fileName}>
-                    {fileName}
-                </a>
+                尚無資料
             </div>
-
+            <Contact />
         </>
     );
 }

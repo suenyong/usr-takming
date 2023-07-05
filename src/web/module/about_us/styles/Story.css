@@ -9,6 +9,24 @@
 }
 
 .boxS {
-    width: 90%;
+    width: 350px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 50px;
+    margin-top: 150px;
+}
+
+.box4video {
+    width: 350px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgb(217, 217, 217);
+    margin-left: 37%;
+}
+
+.text {
+    margin-left: 465px;
+    font-weight: bold;
 
 }

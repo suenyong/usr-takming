@@ -5,6 +5,8 @@ import Slider from "react-slick";
 import US_image_1 from "../images/US_image_1.png";
 import US_image_2 from "../images/US_image_2.png";
 import US_image_3 from "../images/US_image_3.png";
+import "../styles/Story.css";
+import Contact from "../../home/components/contactus/Contact";
 
 
 export default function Story() {
@@ -36,6 +38,12 @@ export default function Story() {
                     </div>
                 </Slider>
             </div>
+            <div className="boxS">這裡將會有一些敘述</div>
+            <div className="text">相關影片</div>
+            <div className="box4video">
+                尚無資料
+            </div>
+            <Contact />
         </>
     )
 }
