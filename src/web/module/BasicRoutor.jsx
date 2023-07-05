@@ -17,7 +17,7 @@ import ContactMailIcon from "@mui/icons-material/ContactMail";
 import MenuIcon from "@mui/icons-material/Menu";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./home/screens/Home";
-import PushCore from "./aboutUSPushCore/screens/PushCore";
+import PushCore from "./about_us/screens/PushCore";
 import "./menu.css";
 import logoImage from "./logo.png";
 
