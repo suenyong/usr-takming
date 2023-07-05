@@ -1,6 +1,7 @@
 import "../styles/Promote.css";
 import React from "react";
 import no from "../images/no-pic.png";
+import Contact from "../../home/components/contactus/Contact";
 
 export default function Promote() {
   return (
@@ -159,6 +160,7 @@ export default function Promote() {
           </div>
         </div>
       </div>
+      <Contact />
     </>
   );
 }

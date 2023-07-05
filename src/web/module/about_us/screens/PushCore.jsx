@@ -1,57 +1,21 @@
 import "../styles/PushCore.css";
-import React, { useRef } from "react";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import US_image_1 from "../images/US_image_1.png";
-import US_image_2 from "../images/US_image_2.png";
-import US_image_3 from "../images/US_image_3.png";
 import SDGs4 from "../images/SDGs4.png";
 import SDGs11 from "../images/SDGs11.png";
+import Contact from "../../home/components/contactus/Contact";
+import Carousel from "../../../_basic/components/carousel/Carousel";
 
 
 
 export default function PushCore() {
 
-
-
-  // 
-  const sliderRef = useRef(null);
-
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 400,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        swipeToSlide: true,
-        autoplay: true,
-        autoplaySpeed: 4000,
-    };
-
   return (
     <>
-      
-
-{/*  */}
-
-
-          <div class="title_title"> <p>USR核心整合理念</p> </div>
-            <div >
-            <Slider ref={sliderRef} {...settings}>
-            <div>
-                <img src={US_image_1} alt="US1" style={{ maxWidth: "550px", maxHeight: "auto" }} />
-            </div>
-            <div>
-                <img src={US_image_2} alt="US2" style={{ maxWidth: "550px", maxHeight: "auto" }} />
-            </div>
-            <div>
-                <img src={US_image_3} alt="US3" style={{ maxWidth: "550px", maxHeight: "auto" }} />
-            </div>
-            </Slider>
-            </div> 
-<div className="PushCore">
+        
+         <div class="title_title"> <p>USR核心整合理念</p> </div>
+        <Carousel/>
+        <div className="PushCore">
             <div class="text-content">
                   <div class="title_Usr"> <p>USR HUB</p> </div>
                   <p>
@@ -108,9 +72,8 @@ export default function PushCore() {
                 </div>
             </div>
 
-
 </div>
-
+<Contact />
     </>
   );
 }

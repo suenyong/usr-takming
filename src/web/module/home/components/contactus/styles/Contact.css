@@ -5,11 +5,12 @@
   height: 260px; /* 設置容器的高度，這裡假設你想將整個內容置中 */
   background-color:  rgb(194, 235, 198);/* 背景顏色設為藍色 */
   margin-top: 30px;
+
 }
 
 .image-text-layout {
   display: flex;
-align-items: center;
+  align-items: center;
 }
 
 .image-container {
@@ -29,7 +30,11 @@ align-items: center;
   white-space: nowrap; /* 文字不換行 */
 }
 
-
+.contact-text {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
 
 
 
