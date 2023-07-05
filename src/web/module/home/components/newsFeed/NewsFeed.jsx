@@ -11,25 +11,19 @@ export default function NewsFeed() {
 
     const data = [
         {
-            "imagePath": '../../../../_basic/images/logo.jpg',
+            "imagePath": '../../../../_basic/images/NM_image1.jpg',
             "date": "2003/07/04",
             "activityName": "種植",
             "activityInfo": "愛護大自然"
         },
         {
-            "imagePath": '../../../../_basic/images/logo.jpg',
+            "imagePath": '../../../../_basic/images/NM_image2.JPG',
             "date": "2003/07/03",
             "activityName": "淨灘",
             "activityInfo": "愛護地球"
         },
         {
-            "imagePath": '../../../../_basic/images/logo.jpg',
-            "date": "2003/07/02",
-            "activityName": "碳足跡",
-            "activityInfo": "救救北極熊"
-        },
-        {
-            "imagePath": '../../../../_basic/images/logo.jpg',
+            "imagePath": '../../../../_basic/images/NM_image3.jpg',
             "date": "2003/07/02",
             "activityName": "碳足跡",
             "activityInfo": "救救北極熊"
@@ -64,7 +58,7 @@ export default function NewsFeed() {
                 {
                     data.map((item) => {
                         return (
-                            <DetailButton 
+                            <DetailButton
                                 imagePath={item.imagePath}
                                 date={item.date}
                                 activityName={item.activityName}

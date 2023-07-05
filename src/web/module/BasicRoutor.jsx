@@ -22,6 +22,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./home/screens/Home";
 import PushCore from "./aboutUSPushCore/screens/PushCore";
 import Report from "./aboutUSPushCore/screens/Report";
+import Story from "./aboutUSPushCore/screens/Story";
 
 export default function BasicRoutor() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -238,6 +239,7 @@ export default function BasicRoutor() {
                   精彩報導
                 </Typography>
               </Button>
+
               <Menu
                 id="article-menu"
                 anchorEl={articleAnchorEl}
@@ -245,7 +247,9 @@ export default function BasicRoutor() {
                 open={Boolean(articleAnchorEl)}
                 onClose={handleArticleClose}
               >
-                <MenuItem onClick={handleArticleClose}>精彩報導</MenuItem>
+                <Link to="/Story" target="_blank">
+                  <MenuItem onClick={handleArticleClose}>精彩報導</MenuItem>
+                </Link>
               </Menu>
               <Button
                 className="case-button"
@@ -444,6 +448,7 @@ export default function BasicRoutor() {
             <Route path="/PushCore" element={<PushCore />} />
             {/* <Route path="/idea" element={<Idea />} /> */}
             <Route path="/Report" element={<Report />} />
+            <Route path="/Story" element={<Story />} />
           </Routes>
         </div>
       </Router >
