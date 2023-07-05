@@ -1,0 +1,69 @@
+
+  
+  .logo {
+    width: 150px;
+    height: 100px;
+  }
+  
+  .hr-line {
+    width: 100%;
+    height: 2px;
+    background-color: darkblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .about-usr {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(194, 235, 198);
+  }
+  
+  
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } */
+  
+  .about-usr-button {
+    color: black;
+  }
+  
+  .App {
+    margin-top: 10px;  /* 向下移動 10 像素 */
+  }
+  .nav-container {
+    position: relative;
+    }
+  
+  
+  .article {
+    margin-left: 10px;
+  }
+  
+  .article-button {
+    margin-left: 10px;
+  }
+  
+  .share-button {
+    margin-left: 10px;
+  }
+
+  .full-width-line {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .line {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(139, 0, 0);
+  }
+  
+  
+  
