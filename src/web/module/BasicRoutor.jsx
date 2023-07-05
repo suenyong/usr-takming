@@ -18,6 +18,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./home/screens/Home";
 import PushCore from "./about_us/screens/PushCore";
+import Idea from "./about_us/screens/idea";
 import "./menu.css";
 import logoImage from "./logo.png";
 
@@ -429,7 +430,7 @@ export default function MenuComponent() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/PushCore" element={<PushCore />} />
-            {/* <Route path="/idea" element={<Idea />} /> */}
+            <Route path="/idea" element={<Idea />} />
           </Routes>
         </div>
       </Router>
