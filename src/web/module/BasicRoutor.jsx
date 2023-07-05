@@ -16,11 +16,8 @@ import LinkIcon from "@mui/icons-material/Link";
 import MenuIcon from "@mui/icons-material/Menu";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./home/screens/Home";
-import PushCore from "./about_us/screens/PushCore";
-import Idea from "./about_us/screens/idea";
-import "./menu.css";
-import logoImage from "./logo.png";
-import Promote from "./about_us/screens/Promote";
+import PushCore from "./aboutUSPushCore/screens/PushCore";
+import Report from "./aboutUSPushCore/screens/Report";
 
 export default function MenuComponent() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -130,8 +127,10 @@ export default function MenuComponent() {
           </div>
 
           <div className="nav-container">
-            <div className="line"></div>
-            <div className="about-usr">
+            <div className="full-width-line"></div>
+            <div
+              className="about-usr"
+            >
               <Button
                 className="about-usr-button"
                 color="primary"
@@ -168,12 +167,12 @@ export default function MenuComponent() {
                     德明推動USR核心整合理念
                   </MenuItem>
                 </Link>
-                <Link to="/Promote" target="_blank">
-                  <MenuItem onClick={handleClose}>推動單位介紹</MenuItem>
+                <MenuItem onClick={handleClose}>推動單位介紹</MenuItem>
+                <Link to="/Report" target="_blank">
+                  <MenuItem onClick={handleClose}>
+                    大學生社會責任年度報告書
+                  </MenuItem>
                 </Link>
-                <MenuItem onClick={handleClose}>
-                  大學生社會責任年度報告書
-                </MenuItem>
               </Menu>
               <Button
                 className="service-button"
@@ -397,11 +396,11 @@ export default function MenuComponent() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/PushCore" element={<PushCore />} />
-            <Route path="/idea" element={<Idea />} />
-            <Route path="/Promote" element={<Promote />} />
+            {/* <Route path="/idea" element={<Idea />} /> */}
+            <Route path="/Report" element={<Report />} />
           </Routes>
         </div>
-      </Router>
+      </Router >
     </>
   );
 }
