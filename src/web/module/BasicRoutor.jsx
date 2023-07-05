@@ -19,8 +19,9 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./home/screens/Home";
 import PushCore from "./about_us/screens/PushCore";
 import Idea from "./about_us/screens/idea";
-import Promote from "./about_us/screens/Promote";
+import "./menu.css";
 import logoImage from "./logo.png";
+import Promote from "./about_us/screens/Promote";
 
 export default function MenuComponent() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -175,9 +176,7 @@ export default function MenuComponent() {
                   </MenuItem>
                 </Link>
                 <Link to="/Promote" target="_blank">
-                  <MenuItem onClick={handleClose}>
-                    推動單位介紹
-                  </MenuItem>
+                  <MenuItem onClick={handleClose}>推動單位介紹</MenuItem>
                 </Link>
                 <MenuItem onClick={handleClose}>
                   大學生社會責任年度報告書
@@ -434,7 +433,8 @@ export default function MenuComponent() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/PushCore" element={<PushCore />} />
-            {/* <Route path="/idea" element={<Idea />} /> */}
+            <Route path="/idea" element={<Idea />} />
+            <Route path="/Promote" element={<Promote />} />
           </Routes>
         </div>
       </Router>

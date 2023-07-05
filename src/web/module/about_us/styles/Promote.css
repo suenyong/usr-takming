@@ -1,52 +1,53 @@
 .title_title {
-    text-align: center;
-    font-size: 40px;
-    font-family: "Helvetica Neue", "Helvetica", "Nimbus Sans L", "Arial", "Liberation Sans", "PingFang TC", "Hiragino Sans CNS", "Noto Sans CJK TC", "Source Han Sans TC", "Source Han Sans CN", "Microsoft JhengHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "Heiti TC", "SimHei", "QuanYi Zen Hei Sharp", sans-serif;
-  }
-  
-  .text-container {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .text-content {
-    display: inline-block;
-    text-align: justify;
-    font-family: "Helvetica Neue", "Helvetica", "Nimbus Sans L", "Arial", "Liberation Sans", "PingFang TC", "Hiragino Sans CNS", "Noto Sans CJK TC", "Source Han Sans TC", "Source Han Sans CN", "Microsoft JhengHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "Heiti TC", "SimHei", "QuanYi Zen Hei Sharp", sans-serif;
-    line-height: 1.5;
-    font-size: 20px;
-  }
-  /* 以下是介紹 */
-  .team-members {
-    display: flex; /* 使用彈性盒模型 */
-    justify-content: center; /* 將成員置中對齊 */
-  }
-  
-  .team-member {
-    width: 35%; /* 調整每個成員的寬度，使兩個成員並排 */
-    margin-top: 30px; /* 調整上方的間距 */
-    margin-bottom: 30px; /* 調整下方的間距 */
-  }
-  
-  .member-info {
-    text-align: center;
-  }
-  
-  .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .image-container img {
-    width: 100px; /* 調整圖片的寬度 */
-    height: auto;
-  }
-  .job-title {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  
-  
-  
+  text-align: center;
+  font-size: 40px;
+  font-family: "Helvetica Neue", "Helvetica", "Nimbus Sans L", "Arial", "Liberation Sans", "PingFang TC", "Hiragino Sans CNS", "Noto Sans CJK TC", "Source Han Sans TC", "Source Han Sans CN", "Microsoft JhengHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "Heiti TC", "SimHei", "QuanYi Zen Hei Sharp", sans-serif;
+}
+
+.text-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  word-wrap: break-word;
+}
+
+.text-content {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+}
+
+.team-member {
+  width: 35%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.member-info {
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100px;
+  height: auto;
+}
+
+.job-title {
+  font-size: 20px;
+  font-weight: bold;
+}
