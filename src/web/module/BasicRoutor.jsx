@@ -21,6 +21,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./home/screens/Home";
 import PushCore from "./aboutUSPushCore/screens/PushCore";
+import Report from "./aboutUSPushCore/screens/Report";
 
 export default function BasicRoutor() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -144,7 +145,7 @@ export default function BasicRoutor() {
           </div>
           <h1 className="logo">德明USR</h1>
           <div className="nav-container">
-          <div className="full-width-line"></div>
+            <div className="full-width-line"></div>
             <div
               className="about-usr"
             >
@@ -184,9 +185,11 @@ export default function BasicRoutor() {
                   </MenuItem>
                 </Link>
                 <MenuItem onClick={handleClose}>推動單位介紹</MenuItem>
-                <MenuItem onClick={handleClose}>
-                  大學生社會責任年度報告書
-                </MenuItem>
+                <Link to="/Report" target="_blank">
+                  <MenuItem onClick={handleClose}>
+                    大學生社會責任年度報告書
+                  </MenuItem>
+                </Link>
               </Menu>
               <Button
                 className="service-button"
@@ -440,9 +443,10 @@ export default function BasicRoutor() {
             <Route path="/" element={<Home />} />
             <Route path="/PushCore" element={<PushCore />} />
             {/* <Route path="/idea" element={<Idea />} /> */}
+            <Route path="/Report" element={<Report />} />
           </Routes>
         </div>
-      </Router>
+      </Router >
     </>
   );
 }
