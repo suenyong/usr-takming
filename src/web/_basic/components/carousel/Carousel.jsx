@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "../carousel/styles/Carousel.css";
 import ASEAN_1 from "../carousel/images/ASEAN_1.jpg";
 import ASEAN_2 from "../carousel/images/ASEAN_2.jpg";
@@ -9,7 +7,7 @@ import SIB_1 from "../carousel/images/SIB_1.jpg";
 import SIB_2 from "../carousel/images/SIB_2.jpg";
 import TLTS_1 from "../carousel/images/TLTS_1.jpg"
 import TLTS_2 from "../carousel/images/TLTS_2.JPG"
-
+import settings from "../settings/settings";
 
 
 
@@ -27,7 +25,33 @@ export default class Carousel extends Component {
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
-        cssEase: "linear"
+        cssEase: "linear",
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
     };
 
     // const photos = [
