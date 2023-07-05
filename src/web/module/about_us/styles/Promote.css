@@ -1,17 +1,14 @@
 .title_title {
   text-align: center;
   font-size: 40px;
-  font-family:"QuanYi Zen Hei Sharp", sans-serif;
+  font-family: "QuanYi Zen Hei Sharp", sans-serif;
 }
-
 
 .container {
   width: 80%;
   margin: 10px auto;
-  width: 50%;
   text-align: justify;
 }
-
 
 .team-members {
   display: flex;
@@ -32,10 +29,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%; /* 新增 */
 }
 
 .image-container img {
-  width: 100px;
+  width: auto; /* 修改 */
+  max-width: 100px; /* 新增 */
   height: auto;
 }
 
