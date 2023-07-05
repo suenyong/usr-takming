@@ -249,7 +249,7 @@ export default function MenuComponent() {
                     open={Boolean(articleAnchorEl)}
                     onClose={handleArticleClose}
                   >
-                    <Link to="/Report" target="_blank">
+                    <Link to="/Story" target="_blank">
                       <MenuItem onClick={handleArticleClose}>精彩報導</MenuItem>
                     </Link>
 
