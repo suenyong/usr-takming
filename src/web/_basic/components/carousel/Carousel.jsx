@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "../carousel/styles/Carousel.css";
 import ASEAN_1 from "../carousel/images/ASEAN_1.jpg";
 import ASEAN_2 from "../carousel/images/ASEAN_2.jpg";
@@ -8,13 +10,19 @@ import SIB_2 from "../carousel/images/SIB_2.jpg";
 import TLTS_1 from "../carousel/images/TLTS_1.jpg"
 import TLTS_2 from "../carousel/images/TLTS_2.JPG"
 
+
+
+
 export default class Carousel extends Component {
 
     render() {
       const settings = {
-        dots: true,
+        className: "center",
+        centerMode: true,
         infinite: true,
+        centerPadding: "60px",
         slidesToShow: 3,
+        dots: true,
         slidesToScroll: 1,
         autoplay: true,
         speed: 2000,

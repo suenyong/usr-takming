@@ -1,5 +1,7 @@
 .image-slide {
     width: calc(100% / 4);
+    justify-items: center;
+    align-items: center;
   }
   
   .image-slide img {
