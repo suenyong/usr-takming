@@ -23,19 +23,11 @@ export default function NewsFeed() {
             "activityInfo": "愛護地球"
         },
         {
-<<<<<<< HEAD
             "imagePath": '../../../../_basic/images/logo.jpg',
             "date": "2003/07/02",
             "activityName": "碳足跡",
             "activityInfo": "救救北極熊"
         },
-=======
-            "imagePath": '../../../../_basic/images/NM_image3.jpg',
-            "date": "2003/07/02",
-            "activityName": "碳足跡",
-            "activityInfo": "救救北極熊"
-        }
->>>>>>> Hsuan
     ]
 
     // const DetailButton = () => {
