@@ -16,9 +16,10 @@ import LinkIcon from "@mui/icons-material/Link";
 import MenuIcon from "@mui/icons-material/Menu";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./home/screens/Home";
-import PushCore from "./aboutUSPushCore/screens/PushCore";
-import Report from "./aboutUSPushCore/screens/Report";
-
+import PushCore from "./about_us/screens/PushCore";
+import Report from "./about_us/screens/Report";
+import logoImage from "./logo.png";
+import "./menu.css";
 export default function MenuComponent() {
   const [anchorEl, setAnchorEl] = useState(null);
   const [articleAnchorEl, setArticleAnchorEl] = useState(null);
