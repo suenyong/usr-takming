@@ -1,0 +1,10 @@
+.image-slide {
+    width: calc(100% / 4);
+  }
+  
+  .image-slide img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+  
