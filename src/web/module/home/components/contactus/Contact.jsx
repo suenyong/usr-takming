@@ -4,11 +4,13 @@ import takming1 from "./images/takming1.jpg";
 
 export default function Contact() {
   return (
-    <div className="contact-container">
-      <div className="image-text-layout">
-        <div className="image-container">
-        <img src={takming1} alt="德明財經科技大學研究發展處" style={{ width: '100%', height: 'auto' }} />
+    <div className="contact-container" >
+      <div className="image-text-layout" >
+        
+        <div>
+          <img src={takming1} alt="德明財經科技大學研究發展處" style={{ width: '100%', height: 'auto' }} />
         </div>
+
         <div className="text-container">
           <h3 className="contact-text">德明財經科技大學研究發展處</h3>
           <h3 className="contact-text">學校地址：11451台北市內湖區環山路一段56號</h3>

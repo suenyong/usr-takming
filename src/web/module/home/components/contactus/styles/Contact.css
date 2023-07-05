@@ -2,14 +2,27 @@
   display: flex;
   justify-content: center; /* 將元素水平置中 */
   align-items: center; /* 將元素垂直置中 */
-  height: 260px; /* 設置容器的高度，這裡假設你想將整個內容置中 */
+  min-height: 260px; /* 設置容器的高度，這裡假設你想將整個內容置中 */
   background-color:  rgb(194, 235, 198);/* 背景顏色設為藍色 */
   margin-top: 30px;
 
 }
 
+
+@media (max-width: 700px) {
+  .image-text-layout {
+    display: block;
+  }
+}
+
+@media (min-width: 701px) {
+  .image-text-layout {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .image-text-layout {
-  display: flex;
   align-items: center;
 }
 
