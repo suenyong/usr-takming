@@ -19,6 +19,7 @@ import Home from "./home/screens/Home";
 import PushCore from "./about_us/screens/PushCore";
 import Promote from "./about_us/screens/Promote";
 import Report from "./about_us/screens/Report";
+import Story from "./about_us/screens/Story";
 import logoImage from "./logo.png";
 import "./menu.css";
 import Idea from "./about_us/screens/idea";
@@ -142,8 +143,8 @@ export default function MenuComponent() {
             <div
               className="about-usr"
             >
-              
-              { windowWidth > 950 ?
+
+              {windowWidth > 950 ?
                 <>
                   <Button
                     className="about-usr-button"
@@ -248,7 +249,10 @@ export default function MenuComponent() {
                     open={Boolean(articleAnchorEl)}
                     onClose={handleArticleClose}
                   >
-                    <MenuItem onClick={handleArticleClose}>精彩報導</MenuItem>
+                    <Link to="/Report" target="_blank">
+                      <MenuItem onClick={handleArticleClose}>精彩報導</MenuItem>
+                    </Link>
+
                   </Menu>
                   <Button
                     className="case-button"
@@ -425,6 +429,7 @@ export default function MenuComponent() {
             <Route path="/Promote" element={<Promote />} />
             <Route path="/idea" element={<Idea />} />
             <Route path="/Report" element={<Report />} />
+            <Route path="/Story" element={<Story />} />
           </Routes>
         </div>
       </Router >
