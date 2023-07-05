@@ -1,0 +1,35 @@
+.contact-container {
+  display: flex;
+  justify-content: center; /* 將元素水平置中 */
+  align-items: center; /* 將元素垂直置中 */
+  height: 260px; /* 設置容器的高度，這裡假設你想將整個內容置中 */
+  background-color:  rgb(194, 235, 198);/* 背景顏色設為藍色 */
+  margin-top: 30px;
+}
+
+.image-text-layout {
+  display: flex;
+align-items: center;
+}
+
+.image-container {
+  flex: 1;
+  margin-right: 30px; /* 設置圖片右側間距 */
+}
+
+.image-container img {
+  width: 100%; /* 設定圖片的寬度為容器的 100% */
+  height: auto; /* 根據寬度自動調整高度 */
+  object-fit: cover; /* 保持圖片比例並填滿容器 */
+}
+
+.text-container {
+  flex: 1;
+  margin-left: 20px; /* 設置文字左側間距 */
+  white-space: nowrap; /* 文字不換行 */
+}
+
+
+
+
+

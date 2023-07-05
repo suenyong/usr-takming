@@ -1,0 +1,44 @@
+.title_title {
+  text-align: center;
+  font-size: 40px;
+  font-family: "QuanYi Zen Hei Sharp", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 10px auto;
+  text-align: justify;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+}
+
+.team-member {
+  width: 35%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.member-info {
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* 新增 */
+}
+
+.image-container img {
+  width: auto; /* 修改 */
+  max-width: 100px; /* 新增 */
+  height: auto;
+}
+
+.job-title {
+  font-size: 20px;
+  font-weight: bold;
+}

@@ -32,7 +32,7 @@ export default function USRHubCarousel() {
             <Grid item xs={6}>
               <Grid container direction="column" alignItems="flex-start" spacing={8}>
                 <Grid item>
-                  <Typography variant="h6">UST HUB</Typography>
+                  <Typography variant="h6">USR HUB</Typography>
                 </Grid>
                 <Grid item>
                   <Button variant="contained" color="primary">查看更多</Button>
