@@ -7,7 +7,7 @@ export default function Contact() {
     <div className="contact-container">
       <div className="image-text-layout">
         <div className="image-container">
-          <img src={takming1} alt="德明財經科技大學研究發展處" />
+        <img src={takming1} alt="德明財經科技大學研究發展處" style={{ width: '100%', height: 'auto' }} />
         </div>
         <div className="text-container">
           <h3 className="contact-text">德明財經科技大學研究發展處</h3>
