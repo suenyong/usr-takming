@@ -21,6 +21,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./home/screens/Home";
 import PushCore from "./aboutUSPushCore/screens/PushCore";
+import Promote from "./aboutUSPushCore/screens/Promote";
 
 export default function BasicRoutor() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -183,7 +184,11 @@ export default function BasicRoutor() {
                     德明推動USR核心整合理念
                   </MenuItem>
                 </Link>
-                <MenuItem onClick={handleClose}>推動單位介紹</MenuItem>
+                <Link to="/Promote" target="_blank">
+                  <MenuItem onClick={handleClose}>
+                    推動單位介紹
+                  </MenuItem>
+                </Link>
                 <MenuItem onClick={handleClose}>
                   大學生社會責任年度報告書
                 </MenuItem>
@@ -439,6 +444,7 @@ export default function BasicRoutor() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/PushCore" element={<PushCore />} />
+            <Route path="/Promote" element={<Promote />} />
             {/* <Route path="/idea" element={<Idea />} /> */}
           </Routes>
         </div>
