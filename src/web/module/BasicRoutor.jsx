@@ -131,6 +131,7 @@ export default function MenuComponent() {
 
           <div className="nav-container">
             <div className="full-width-line"></div>
+            <div className="line"></div>
             <div
               className="about-usr"
             >

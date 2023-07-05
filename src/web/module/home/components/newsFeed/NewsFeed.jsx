@@ -28,12 +28,6 @@ export default function NewsFeed() {
             "activityName": "碳足跡",
             "activityInfo": "救救北極熊"
         },
-        {
-            "imagePath": '../../../../_basic/images/logo.jpg',
-            "date": "2003/07/02",
-            "activityName": "碳足跡",
-            "activityInfo": "救救北極熊"
-        }
     ]
 
     // const DetailButton = () => {

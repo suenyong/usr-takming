@@ -1,4 +1,4 @@
-const settings = {
+export const settings = {
     className: "center",
     centerMode: true,
     infinite: true,
@@ -37,5 +37,3 @@ const settings = {
       }
     ]
 };
-
-export default settings ;
