@@ -17,16 +17,8 @@ import ContactMailIcon from "@mui/icons-material/ContactMail";
 import MenuIcon from "@mui/icons-material/Menu";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./home/screens/Home";
-<<<<<<< HEAD
 import PushCore from "./aboutUSPushCore/screens/PushCore";
 import Report from "./aboutUSPushCore/screens/Report";
-=======
-import PushCore from "./about_us/screens/PushCore";
-import Idea from "./about_us/screens/idea";
-import "./menu.css";
-import logoImage from "./logo.png";
-import Promote from "./about_us/screens/Promote";
->>>>>>> c75d7547b706956528dce74c0b944a9f6418baa7
 
 export default function MenuComponent() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -142,15 +134,10 @@ export default function MenuComponent() {
           </div>
 
           <div className="nav-container">
-<<<<<<< HEAD
             <div className="full-width-line"></div>
             <div
               className="about-usr"
             >
-=======
-            <div className="line"></div>
-            <div className="about-usr">
->>>>>>> c75d7547b706956528dce74c0b944a9f6418baa7
               <Button
                 className="about-usr-button"
                 color="primary"
@@ -187,21 +174,12 @@ export default function MenuComponent() {
                     德明推動USR核心整合理念
                   </MenuItem>
                 </Link>
-<<<<<<< HEAD
                 <MenuItem onClick={handleClose}>推動單位介紹</MenuItem>
                 <Link to="/Report" target="_blank">
                   <MenuItem onClick={handleClose}>
                     大學生社會責任年度報告書
                   </MenuItem>
                 </Link>
-=======
-                <Link to="/Promote" target="_blank">
-                  <MenuItem onClick={handleClose}>推動單位介紹</MenuItem>
-                </Link>
-                <MenuItem onClick={handleClose}>
-                  大學生社會責任年度報告書
-                </MenuItem>
->>>>>>> c75d7547b706956528dce74c0b944a9f6418baa7
               </Menu>
               <Button
                 className="service-button"
@@ -454,13 +432,8 @@ export default function MenuComponent() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/PushCore" element={<PushCore />} />
-<<<<<<< HEAD
             {/* <Route path="/idea" element={<Idea />} /> */}
             <Route path="/Report" element={<Report />} />
-=======
-            <Route path="/idea" element={<Idea />} />
-            <Route path="/Promote" element={<Promote />} />
->>>>>>> c75d7547b706956528dce74c0b944a9f6418baa7
           </Routes>
         </div>
       </Router >
