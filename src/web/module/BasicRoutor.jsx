@@ -20,6 +20,7 @@ import PushCore from "./about_us/screens/PushCore";
 import Report from "./about_us/screens/Report";
 import logoImage from "./logo.png";
 import "./menu.css";
+import Idea from "./about_us/screens/idea";
 export default function MenuComponent() {
   const [anchorEl, setAnchorEl] = useState(null);
   const [articleAnchorEl, setArticleAnchorEl] = useState(null);
@@ -397,7 +398,7 @@ export default function MenuComponent() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/PushCore" element={<PushCore />} />
-            {/* <Route path="/idea" element={<Idea />} /> */}
+            <Route path="/idea" element={<Idea />} />
             <Route path="/Report" element={<Report />} />
           </Routes>
         </div>
