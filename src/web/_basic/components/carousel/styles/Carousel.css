@@ -2,6 +2,7 @@
     width: calc(100% / 4);
     justify-items: center;
     align-items: center;
+    margin: 25px;
   }
   
   .image-slide img {

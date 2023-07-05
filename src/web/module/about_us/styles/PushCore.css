@@ -12,18 +12,16 @@
     text-align:justify;
     justify-content: center;
     margin-bottom: 20px;
-    margin: 200px;
   }
   
   .conversation11 {
     display: flex;
     flex-wrap: wrap;
-  
     flex-wrap: wrap;
     text-align:justify;
     justify-content: center;
     margin-bottom: 20px;
-    margin: 200px;
+
   }
   
   .image {
@@ -41,12 +39,7 @@
     display: block;
     width: 50%;
     text-align:justify;
-    font-family:"Helvetica Neue","Helvetica",
-    "Nimbus Sans L","Arial","Liberation Sans",
-    "PingFang TC","Hiragino Sans CNS","Noto Sans CJK TC",
-    "Source Han Sans TC","Source Han Sans CN","Microsoft JhengHei"
-    ,"Wenquanyi Micro Hei","WenQuanYi Zen Hei","Heiti TC","SimHei",
-    "QuanYi Zen Hei Sharp",sans-serif;
+    font-family:"QuanYi Zen Hei Sharp",sans-serif;
     line-height: 1.5;
     font-size: 20px;
   
@@ -57,12 +50,7 @@
     place-items: center;
     clear: both;
     width: 40%;
-    height: 200px;
-    font-family:"Helvetica Neue","Helvetica","Nimbus Sans L",
-    "Arial","Liberation Sans","PingFang TC","Hiragino Sans CNS",
-    "Noto Sans CJK TC","Source Han Sans TC","Source Han Sans CN",
-    "Microsoft JhengHei","Wenquanyi Micro Hei","WenQuanYi Zen Hei",
-    "Heiti TC","SimHei","QuanYi Zen Hei Sharp",sans-serif;
+    font-family:"QuanYi Zen Hei Sharp",sans-serif;
     font-size: 20px;
   }
   
@@ -75,11 +63,7 @@
   .title_title{
     text-align: center;
     font-size: 60px;
-    font-family:"Helvetica Neue","Helvetica","Nimbus Sans L",
-    "Arial","Liberation Sans","PingFang TC","Hiragino Sans CNS",
-    "Noto Sans CJK TC","Source Han Sans TC","Source Han Sans CN",
-    "Microsoft JhengHei","Wenquanyi Micro Hei","WenQuanYi Zen Hei",
-    "Heiti TC","SimHei","QuanYi Zen Hei Sharp",sans-serif;
+    font-family:"QuanYi Zen Hei Sharp",sans-serif;
   }
   
   .title_Usr{

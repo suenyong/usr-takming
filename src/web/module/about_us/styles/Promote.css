@@ -1,25 +1,17 @@
 .title_title {
   text-align: center;
   font-size: 40px;
-  font-family: "Helvetica Neue", "Helvetica", "Nimbus Sans L", "Arial", "Liberation Sans", "PingFang TC", "Hiragino Sans CNS", "Noto Sans CJK TC", "Source Han Sans TC", "Source Han Sans CN", "Microsoft JhengHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "Heiti TC", "SimHei", "QuanYi Zen Hei Sharp", sans-serif;
+  font-family:"QuanYi Zen Hei Sharp", sans-serif;
 }
 
-.text-container {
-  text-align: center;
-  margin-top: 20px;
-}
 
 .container {
   width: 80%;
-  margin: 20px auto;
-  word-wrap: break-word;
-}
-
-.text-content {
-  font-size: 20px;
-  line-height: 1.5;
+  margin: 10px auto;
+  width: 50%;
   text-align: justify;
 }
+
 
 .team-members {
   display: flex;
