@@ -15,12 +15,14 @@
     margin: 50px;
   }
 
-  .slick-prev:before, .slick-next:before {
-    font-family: 'slick';
-    font-size: 30px;
-    line-height: 1;
-    opacity: .75;
-    color: rgb(42, 145, 161);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+.slick-prev:before,
+.slick-next:before {
+  /* 新的样式 */
+  font-family: 'slick' !important;
+  font-size: 30px !important;
+  line-height: 1 !important;
+  opacity: .75 !important;
+  color: rgb(42, 145, 161) !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
 }
