@@ -1,13 +1,10 @@
-.title_title {
-  text-align: center;
-  font-size: 40px;
-  font-family: "QuanYi Zen Hei Sharp", sans-serif;
-}
 
-.container {
+
+.container_promote {
   width: 80%;
   margin: 10px auto;
   text-align: justify;
+  font-size: 20px;
 }
 
 .team-members {

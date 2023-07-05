@@ -9,11 +9,21 @@ export default function Report() {
     const filePath = "/path/to/your/pdf/file.pdf";
     return (
         <>
-            <div class="title_title"> <p>大學生社會責任年度報告書</p> </div>
+
+        <h1
+        style={{
+          textAlign: "center",
+          fontSize: "40px",
+          fontFamily: "Arial, sans-serif",
+        }}>
+        大學生社會責任年度報告書
+        </h1>
+        <div className="centered-container">
             <div className="boxR">
                 尚無資料
             </div>
-            <Contact />
+        </div>  
+        <Contact />
         </>
     );
 }

@@ -1,32 +1,19 @@
-.title_title {
-    text-align: center;
-    font-size: 60px;
-    font-family: "Helvetica Neue", "Helvetica", "Nimbus Sans L",
-        "Arial", "Liberation Sans", "PingFang TC", "Hiragino Sans CNS",
-        "Noto Sans CJK TC", "Source Han Sans TC", "Source Han Sans CN",
-        "Microsoft JhengHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei",
-        "Heiti TC", "SimHei", "QuanYi Zen Hei Sharp", sans-serif;
-}
 
 .boxS {
-    width: 350px;
-    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    height: 250px;
     border-radius: 10px;
-    background-color: white;
-    margin-left: 50px;
-    margin-top: 150px;
+    background-color: rgb(246, 243, 243);
+    top: 50%;
+    left: 50%;
 }
 
-.box4video {
-    width: 350px;
-    height: 150px;
-    border-radius: 10px;
-    background-color: rgb(217, 217, 217);
-    margin-left: 37%;
-}
-
-.text {
-    margin-left: 465px;
-    font-weight: bold;
-
-}
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* 調整高度來置中整個頁面 */
+  }
