@@ -32,7 +32,7 @@ export default function Story() {
             
             {/* <div className="boxS">這裡將會有一些敘述</div> */}
             <div className="centered-container">
-                <div className="box4video">
+                <div className="boxS">
                     尚無資料
                 </div>
             </div>
