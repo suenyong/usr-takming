@@ -49,7 +49,7 @@ export default class Carousel extends Component {
     // );
 
     return (
-      <div>
+      <div className="hr_mg">
         <Slider {...settings}>
           <div className="image-slide">
             <img src={ASEAN_1} alt="USR1" style={{ maxWidth: "550px", maxHeight: "auto" }} />
