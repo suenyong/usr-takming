@@ -1,14 +1,11 @@
-import "../../App.css";
 import React, { useState } from "react";
 import {
-  TextField,
   Button,
   Menu,
   MenuItem,
   Typography,
   ListItemIcon,
 } from "@mui/material";
-import Search from "@mui/icons-material/Search";
 import InfoIcon from "@mui/icons-material/Info";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ArticleIcon from "@mui/icons-material/Article";
@@ -20,10 +17,11 @@ import ContactMailIcon from "@mui/icons-material/ContactMail";
 import MenuIcon from "@mui/icons-material/Menu";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./home/screens/Home";
-import PushCore from "./aboutUSPushCore/screens/PushCore";
-import Promote from "./aboutUSPushCore/screens/Promote";
+import PushCore from "./about_us/screens/PushCore";
+import Promote from "./about_us/screens/Promote";
+import logoImage from "./logo.png";
 
-export default function BasicRoutor() {
+export default function MenuComponent() {
   const [anchorEl, setAnchorEl] = useState(null);
   const [articleAnchorEl, setArticleAnchorEl] = useState(null);
   const [caseAnchorEl, setCaseAnchorEl] = useState(null);
@@ -125,33 +123,24 @@ export default function BasicRoutor() {
             style={{
               marginBottom: "10px",
               textAlign: "center",
-              marginTop: "20px",
+            }}
+          ></div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
             }}
           >
-            <TextField
-              id="standard-basic"
-              label="搜尋"
-              variant="standard"
-              style={{ marginRight: "10px" }}
-              InputProps={{
-                startAdornment: <Search />,
-                endAdornment: (
-                  <Button variant="outlined" style={{ color: "black" }}>
-                    搜尋
-                  </Button>
-                ),
-              }}
-            />
+            <img src={logoImage} alt="德明USR" className="logo" />
           </div>
-          <h1 className="logo">德明USR</h1>
+
           <div className="nav-container">
-          <div className="full-width-line"></div>
-            <div
-              className="about-usr"
-            >
+            <div className="line"></div>
+            <div className="about-usr">
               <Button
                 className="about-usr-button"
                 color="primary"
+                disableElevation={true}
                 onClick={handleClick}
               >
                 <ListItemIcon>
@@ -439,7 +428,7 @@ export default function BasicRoutor() {
                 <MenuItem onClick={handleMenuClose}>聯絡我們</MenuItem>
               </Menu>
             </div>
-            <div className="full-width-line"></div>
+            <div className="line"></div>
           </div>
           <Routes>
             <Route path="/" element={<Home />} />
