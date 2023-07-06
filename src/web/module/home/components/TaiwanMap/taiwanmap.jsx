@@ -5,15 +5,41 @@ import taiwan from "./images/taiwan.png";
 import taipei from "./images/taipei.png";
 import "./styles/taiwanese.css";
 
+import testBackground from "./images/南投.png"
+import testBackground_1 from "./images/台中.png"
+
 const TaiwanMap = () => {
   const [showTaipei, setShowTaipei] = useState(false);
+  const [imgPath, setImgPath] = useState(testBackground)
 
   const handleButtonClick = () => {
     setShowTaipei(true);
   };
 
+
+  const printA = () => {
+    setImgPath(testBackground_1)
+  }
+
+  const printB = () => {
+    setImgPath(testBackground)
+  }
+
   return (
     <div className="taiwan-map">
+
+    <button 
+      onMouseOver={printA} 
+      onMouseOut={printB}
+      // onMouseOver={() => {setImgPath(testBackground_1)}} 
+      // onMouseOut={() => {setImgPath(testBackground)}}
+      style={{width: '100px', height: '100px'}}
+      >
+        123123 
+    </button>
+
+    <img src={imgPath} alt="123" />
+
       <div className="hr-line"></div>
       <h1 className="map-title">服務足跡</h1>
 
