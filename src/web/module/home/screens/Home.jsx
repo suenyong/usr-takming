@@ -4,7 +4,7 @@ import NewsFeed from "../components/newsFeed/NewsFeed";
 import USRHubCarousel from "../components/usrHubCarousel/USRHubCarousel";
 import Contact from "../components/contactus/Contact";
 import background_1 from "../../home/screens/image/background_1.png";
-
+import TaiwanMap from "../components/TaiwanMap/taiwanmap";
 export default function Home() {
   return (
     <>
@@ -13,6 +13,7 @@ export default function Home() {
         <NewsFeed />
         <Achieve />
         <USRHubCarousel />
+        <TaiwanMap />
         <Contact />
       </div>
     </>

@@ -1,0 +1,32 @@
+/* taiwanese.css */
+
+.taiwan-map {
+  text-align: right;
+}
+
+.hr-line {
+  border-top: 2px solid blue;
+}
+
+.map-title {
+  text-align: center;
+  color: navy;
+}
+
+.map-container {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+
+.map-image {
+  width: 100%;
+}
+
+.city-button {
+  position: absolute;
+  top: 9%; /* 調整按鈕在台灣地圖上的垂直位置 */
+  left: 80%; /* 調整按鈕在台灣地圖上的水平位置 */
+  transform: translate(-50%, -50%);
+  /* 其他樣式設定 */
+}
