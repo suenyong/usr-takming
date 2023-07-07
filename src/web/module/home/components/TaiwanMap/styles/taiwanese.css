@@ -2,6 +2,9 @@
 
 .taiwan-map {
   text-align: right;
+    position: relative;
+    /* 其他樣式設定 */
+  
 }
 
 .hr-line {
@@ -30,3 +33,125 @@
   transform: translate(-50%, -50%);
   /* 其他樣式設定 */
 }
+.Taichung-button {
+  position: absolute;
+  top: 33%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color:rgba(0, 97, 243, 0.732);;
+  /* 其他按鈕樣式設定 */
+}
+
+.Taichung-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732); /* 設定圓球的顏色 */
+}
+
+.Keelung-button {
+  position: absolute;
+  top: 6%;
+  left: 97.8%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(0, 97, 243, 0.732);
+  /* 其他按鈕樣式設定 */
+}
+
+.Keelung-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732); /* 設定圓球的顏色 */
+}
+
+.Philippines-image {
+  position: absolute;
+  bottom: 0%; /* 調整菲律賓在台灣地圖上的垂直位置 */
+  right: 0%; /* 調整菲律賓在台灣地圖上的水平位置 */
+  width: 200px;
+  height: 200px;
+}
+.Philippines-button {
+  position: absolute;
+  top: 70%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 10px;
+  background: transparent;
+  border: none;
+  font-size: 10px;
+  font-weight: bold;
+  color: rgba(0, 97, 243, 0.732);
+  /* 其他按鈕樣式設定 */
+}
+
+.Philippines-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732); /* 設定圓球的顏色 */
+}
+.Taitung-button {
+  position: absolute;
+  top: 74%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(0, 97, 243, 0.732);
+  /* 其他按鈕樣式設定 */
+}
+
+.Taitung-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732); /* 設定圓球的顏色 */
+}
+
+
+
+
+
+
+
+
+
