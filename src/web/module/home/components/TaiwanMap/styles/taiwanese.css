@@ -1,11 +1,12 @@
 /* taiwanese.css */
 
 .taiwan-map {
-  text-align: right;
-    position: relative;
-    /* 其他樣式設定 */
-  
+  text-align: left;
+  position: relative;
+  left: 0;
+  /* 其他樣式設定 */
 }
+
 
 .hr-line {
   border-top: 2px solid blue;
@@ -16,11 +17,11 @@
   color: navy;
 }
 
-.map-container {
+/* .map-container {
   position: relative;
   display: inline-block;
   text-align: left;
-}
+} */
 
 .map-image {
   width: 100%;
@@ -28,15 +29,19 @@
 
 .city-button {
   position: absolute;
-  top: 9%; /* 調整按鈕在台灣地圖上的垂直位置 */
-  left: 80%; /* 調整按鈕在台灣地圖上的水平位置 */
+  top: 9%;
+  /* 調整按鈕在台灣地圖上的垂直位置 */
+  left: 80%;
+  /* 調整按鈕在台灣地圖上的水平位置 */
   transform: translate(-50%, -50%);
   /* 其他樣式設定 */
 }
+
+
 .Taichung-button {
   position: absolute;
   top: 33%;
-  left: 85%;
+  left: 9%;
   transform: translate(-50%, -50%);
   width: 50px;
   height: 50px;
@@ -44,7 +49,8 @@
   border: none;
   font-size: 15px;
   font-weight: bold;
-  color:rgba(0, 97, 243, 0.732);;
+  color: rgba(0, 97, 243, 0.732);
+  ;
   /* 其他按鈕樣式設定 */
 }
 
@@ -57,13 +63,14 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: rgba(0, 97, 243, 0.732); /* 設定圓球的顏色 */
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
 }
 
 .Keelung-button {
   position: absolute;
-  top: 6%;
-  left: 97.8%;
+  top: 5.5%;
+  left: 18.99%;
   transform: translate(-50%, -50%);
   width: 50px;
   height: 50px;
@@ -84,20 +91,24 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: rgba(0, 97, 243, 0.732); /* 設定圓球的顏色 */
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
 }
 
 .Philippines-image {
   position: absolute;
-  bottom: 0%; /* 調整菲律賓在台灣地圖上的垂直位置 */
-  right: 0%; /* 調整菲律賓在台灣地圖上的水平位置 */
-  width: 200px;
-  height: 200px;
+  top: 44%;
+  left: -10%;
+  width: 50%;
+  height: 50%;
+  transform: translate(50%, 50%);
 }
+
+
 .Philippines-button {
   position: absolute;
-  top: 70%;
-  left: 95%;
+  top: 4%;
+  left: 13.5%;
   transform: translate(-50%, -50%);
   width: 50px;
   height: 10px;
@@ -118,12 +129,14 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: rgba(0, 97, 243, 0.732); /* 設定圓球的顏色 */
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
 }
+
 .Taitung-button {
   position: absolute;
-  top: 74%;
-  left: 88%;
+  top: 73%;
+  left: 11%;
   transform: translate(-50%, -50%);
   width: 50px;
   height: 50px;
@@ -144,14 +157,462 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: rgba(0, 97, 243, 0.732); /* 設定圓球的顏色 */
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
+}
+
+.Tainan-button {
+  position: absolute;
+  top: 64%;
+  left: 3.6%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(0, 97, 243, 0.732);
+  /* 其他按鈕樣式設定 */
+}
+
+.Tainan-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
+}
+
+.Yilan-button {
+  position: absolute;
+  top: 22%;
+  left: 16.5%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(0, 97, 243, 0.732);
+  ;
+  /* 其他按鈕樣式設定 */
+}
+
+.Yilan-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
+}
+
+.Hualien-button {
+  position: absolute;
+  top: 45%;
+  left: 14.3%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(0, 97, 243, 0.732);
+  ;
+  /* 其他按鈕樣式設定 */
+}
+
+.Hualien-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
+}
+
+.Nantou-button {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(0, 97, 243, 0.732);
+  ;
+  /* 其他按鈕樣式設定 */
+}
+
+.Nantou-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
+}
+
+.Pingtung-button {
+  position: absolute;
+  top: 80%;
+  left: 6%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(0, 97, 243, 0.732);
+  /* 其他按鈕樣式設定 */
+}
+
+.Pingtung-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
+}
+
+.Kaohsiung-button {
+  position: absolute;
+  top: 68%;
+  left: 6.5%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(0, 97, 243, 0.732);
+  /* 其他按鈕樣式設定 */
+}
+
+.Kaohsiung-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
+}
+
+.chiayi_city-button {
+  position: absolute;
+  top: 53.5%;
+  left: 5.5%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 10px;
+  font-weight: bold;
+  color: rgba(0, 97, 243, 0.732);
+  /* 其他按鈕樣式設定 */
+}
+
+.chiayi_city-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
+}
+
+.Chiayi_County-button {
+  position: absolute;
+  top: 56.5%;
+  left: 6.5%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 10px;
+  font-weight: bold;
+  color: rgba(0, 97, 243, 0.732);
+  /* 其他按鈕樣式設定 */
+}
+
+.Chiayi_County-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
+}
+
+.Changhua-button {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 10px;
+  font-weight: bold;
+  color: rgba(0, 97, 243, 0.732);
+  /* 其他按鈕樣式設定 */
+}
+
+.Changhua-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
+}
+
+.Yunlin-button {
+  position: absolute;
+  top: 47%;
+  left: 4%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 10px;
+  font-weight: bold;
+  color: rgba(0, 97, 243, 0.732);
+  /* 其他按鈕樣式設定 */
+}
+
+.Yunlin-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
+}
+
+.Miaoli-button {
+  position: absolute;
+  top: 25%;
+  left: 9%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(0, 97, 243, 0.732);
+  ;
+  /* 其他按鈕樣式設定 */
+}
+
+.Miaoli-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
+}
+
+.Hsinchu_City-button {
+  position: absolute;
+  top: 16%;
+  left: 11%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 10px;
+  font-weight: bold;
+  color: rgba(0, 97, 243, 0.732);
+  ;
+  /* 其他按鈕樣式設定 */
+}
+
+.Hsinchu_City-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
+}
+
+.Hsinchu_County-button {
+  position: absolute;
+  top: 20%;
+  left: 11.7%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 10px;
+  font-weight: bold;
+  color: rgba(0, 97, 243, 0.732);
+  ;
+  /* 其他按鈕樣式設定 */
+}
+
+.Hsinchu_County-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
+}
+
+.Taoyuan-button {
+  position: absolute;
+  top: 10%;
+  left: 11.9%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(0, 97, 243, 0.732);
+  ;
+  /* 其他按鈕樣式設定 */
+}
+
+.Taoyuan-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
+}
+
+.New_Taipei-button {
+  position: absolute;
+  top: 13.1%;
+  left: 15.5%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(0, 97, 243, 0.732);
+  ;
+  /* 其他按鈕樣式設定 */
+}
+.New_Taipei-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
 }
 
 
-
-
-
-
-
-
-
+.taipei-button {
+  position: absolute;
+  top: 8%;
+  left: 16.5%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(0, 97, 243, 0.732);
+  ;
+  /* 其他按鈕樣式設定 */
+}
+.taipei-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 97, 243, 0.732);
+  /* 設定圓球的顏色 */
+}
