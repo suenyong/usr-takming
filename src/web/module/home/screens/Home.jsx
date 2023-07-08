@@ -6,7 +6,7 @@ import background_2 from "../../home/screens/image/background_2.png";
 import FronPageCarousel from "../../../_basic/components/carousel/FrontPageCarousel";
 
 
-
+import TaiwanMap from "../components/TaiwanMap/taiwanmap";
 export default function Home() {
 
 
@@ -19,6 +19,7 @@ export default function Home() {
         <NewsFeed />
         <Achieve />
         <USRHubCarousel />
+        <TaiwanMap />
         <Contact />
       </div>
     </>
