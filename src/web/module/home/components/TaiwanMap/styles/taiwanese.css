@@ -69,8 +69,8 @@
 
 .Keelung-button {
   position: absolute;
-  top: 5.5%;
-  left: 18.99%;
+  top: 6.5%;
+  left: 18.7%;
   transform: translate(-50%, -50%);
   width: 50px;
   height: 50px;
@@ -108,10 +108,10 @@
 .Philippines-button {
   position: absolute;
   top: 4%;
-  left: 13.5%;
+  left: 13%;
   transform: translate(-50%, -50%);
-  width: 50px;
-  height: 10px;
+  width: 200px;
+  height: 400px;
   background: transparent;
   border: none;
   font-size: 10px;
@@ -124,7 +124,7 @@
   content: "";
   position: absolute;
   top: 50%;
-  left: 0%;
+  left: 38%;
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
