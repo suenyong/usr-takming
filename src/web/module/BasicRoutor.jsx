@@ -24,6 +24,8 @@ import logoImage from "./logo.png";
 import "./menu.css";
 import Idea from "./about_us/screens/idea";
 import CaseStudies from "./CaseStudies/screens/CaseStudies";
+import Service from "./about_us/screens/Service";
+
 export default function MenuComponent() {
   const [anchorEl, setAnchorEl] = useState(null);
   const [articleAnchorEl, setArticleAnchorEl] = useState(null);
@@ -222,7 +224,11 @@ export default function MenuComponent() {
                     open={Boolean(locationAnchorEl)}
                     onClose={handleLocationClose}
                   >
-                    <MenuItem onClick={handleLocationClose}>服務足跡</MenuItem>
+                    <Link to="/Service" target="_blank">
+                      <MenuItem onClick={handleClose}>
+                        服務足跡
+                      </MenuItem>
+                    </Link>
                   </Menu>
                   <Button
                     className="article-button"
@@ -434,6 +440,7 @@ export default function MenuComponent() {
             <Route path="/Report" element={<Report />} />
             <Route path="/Story" element={<Story />} />
             <Route path="/CaseStudies" element={<CaseStudies />} />
+            <Route path="/Service" element={<Service />} />
           </Routes>
         </div>
       </Router >
