@@ -13,16 +13,16 @@ import Nantou from "./images/Nantou.png"; //南投
 import Pingtung from "./images/Pingtung.png"; //屏東
 import Kaohsiung from "./images/Kaohsiung.png"; //高雄
 import chiayi_city from "./images/chiayi city.png"; //嘉義市
-import Chiayi_County from "./images/Chiayi_County.png";//嘉義縣
-import Changhua from "./images/Changhua.png";// 彰化
-import Yunlin from "./images/Yunlin.png";//雲林
-import Miaoli from "./images/Miaoli.png";//苗栗
-import Hsinchu_City from "./images/Hsinchu_City.png";//新竹市
-import Hsinchu_County from "./images/Hsinchu_County.png";//新竹縣
-import Taoyuan from "./images/Taoyuan.png";//桃園
-import New_Taipei from "./images/New_Taipei.png";//新北
+import Chiayi_County from "./images/Chiayi_County.png"; //嘉義縣
+import Changhua from "./images/Changhua.png"; // 彰化
+import Yunlin from "./images/Yunlin.png"; //雲林
+import Miaoli from "./images/Miaoli.png"; //苗栗
+import Hsinchu_City from "./images/Hsinchu_City.png"; //新竹市
+import Hsinchu_County from "./images/Hsinchu_County.png"; //新竹縣
+import Taoyuan from "./images/Taoyuan.png"; //桃園
+import New_Taipei from "./images/New_Taipei.png"; //新北
 import taipei from "./images/taipei.png"; //台北
-import service_activities from "./images/活動背景.png";//服務活動背景
+import service_activities from "./images/活動背景.png"; //服務活動背景
 const TaiwanMap = () => {
   const [imgPath, setImgPath] = useState(taiwan);
   const [isPhilippines, setIsPhilippines] = useState(false);
@@ -55,7 +55,7 @@ const TaiwanMap = () => {
       <div className="taiwan-map">
         <img src={imgPath} alt="123" style={{ width: "20%" }} />
         <button
-          onMouseOver={() => handleMouseOver(Taichung, "我是文字!!!!!!")}
+          onMouseOver={() => handleMouseOver(Taichung, "地點：台中")}
           onMouseOut={handleMouseOut}
           className="Taichung-button"
         >
@@ -63,7 +63,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Keelung)}
+          onMouseOver={() => handleMouseOver(Keelung, "地點：基隆")}
           onMouseOut={handleMouseOut}
           className="Keelung-button"
         >
@@ -71,7 +71,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Taitung)}
+          onMouseOver={() => handleMouseOver(Taitung, "地點：台東")}
           onMouseOut={handleMouseOut}
           className="Taitung-button"
         >
@@ -79,7 +79,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Tainan)}
+          onMouseOver={() => handleMouseOver(Tainan, "地點：台南")}
           onMouseOut={handleMouseOut}
           className="Tainan-button"
         >
@@ -87,7 +87,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Yilan)}
+          onMouseOver={() => handleMouseOver(Yilan, "地點：宜蘭")}
           onMouseOut={handleMouseOut}
           className="Yilan-button"
         >
@@ -95,7 +95,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Hualien)}
+          onMouseOver={() => handleMouseOver(Hualien, "地點：花蓮")}
           onMouseOut={handleMouseOut}
           className="Hualien-button"
         >
@@ -103,7 +103,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Nantou)}
+          onMouseOver={() => handleMouseOver(Nantou, "地點：南投")}
           onMouseOut={handleMouseOut}
           className="Nantou-button"
         >
@@ -111,7 +111,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Pingtung)}
+          onMouseOver={() => handleMouseOver(Pingtung, "地點：屏東")}
           onMouseOut={handleMouseOut}
           className="Pingtung-button"
         >
@@ -119,7 +119,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Kaohsiung)}
+          onMouseOver={() => handleMouseOver(Kaohsiung, "地點：高雄")}
           onMouseOut={handleMouseOut}
           className="Kaohsiung-button"
         >
@@ -127,7 +127,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(chiayi_city)}
+          onMouseOver={() => handleMouseOver(chiayi_city, "地點：嘉義市")}
           onMouseOut={handleMouseOut}
           className="chiayi_city-button"
         >
@@ -135,7 +135,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Chiayi_County)}
+          onMouseOver={() => handleMouseOver(Chiayi_County, "地點：嘉義縣")}
           onMouseOut={handleMouseOut}
           className="Chiayi_County-button"
         >
@@ -143,7 +143,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Changhua)}
+          onMouseOver={() => handleMouseOver(Changhua, "地點：彰化")}
           onMouseOut={handleMouseOut}
           className="Changhua-button"
         >
@@ -151,7 +151,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Yunlin)}
+          onMouseOver={() => handleMouseOver(Yunlin, "地點：雲林")}
           onMouseOut={handleMouseOut}
           className="Yunlin-button"
         >
@@ -159,7 +159,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Miaoli)}
+          onMouseOver={() => handleMouseOver(Miaoli, "地點：苗栗")}
           onMouseOut={handleMouseOut}
           className="Miaoli-button"
         >
@@ -167,7 +167,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Hsinchu_City)}
+          onMouseOver={() => handleMouseOver(Hsinchu_City, "地點：新竹市")}
           onMouseOut={handleMouseOut}
           className="Hsinchu_City-button"
         >
@@ -175,7 +175,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Hsinchu_County)}
+          onMouseOver={() => handleMouseOver(Hsinchu_County, "地點：新竹縣")}
           onMouseOut={handleMouseOut}
           className="Hsinchu_County-button"
         >
@@ -183,7 +183,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Taoyuan)}
+          onMouseOver={() => handleMouseOver(Taoyuan, "地點：桃園")}
           onMouseOut={handleMouseOut}
           className="Taoyuan-button"
         >
@@ -191,7 +191,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(New_Taipei)}
+          onMouseOver={() => handleMouseOver(New_Taipei, "地點：新北")}
           onMouseOut={handleMouseOut}
           className="New_Taipei-button"
         >
@@ -199,7 +199,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(taipei)}
+          onMouseOver={() => handleMouseOver(taipei, "地點：台北")}
           onMouseOut={handleMouseOut}
           className="taipei-button"
         >
@@ -225,10 +225,20 @@ const TaiwanMap = () => {
           </button>
         </div>
         {showTooltip && (
-        <div className="tooltip"style={{ backgroundImage: `url(${service_activities})` }}>
-          {tooltipText}
-        </div>
-      )}
+          <div
+            className="tooltip"
+            style={{
+              backgroundImage: `url(${service_activities})`,
+              width: "30%",
+              height: "58%",
+              top: "54%",
+              right: "45%",
+              position: "absolute", 
+            }}
+          >
+            {tooltipText}
+          </div>
+        )}
       </div>
     </>
   );
