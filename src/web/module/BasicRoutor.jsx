@@ -23,6 +23,7 @@ import Story from "./about_us/screens/Story";
 import logoImage from "./logo.png";
 import "./menu.css";
 import Idea from "./about_us/screens/idea";
+import CaseStudies from "./CaseStudies/screens/CaseStudies";
 export default function MenuComponent() {
   const [anchorEl, setAnchorEl] = useState(null);
   const [articleAnchorEl, setArticleAnchorEl] = useState(null);
@@ -280,7 +281,9 @@ export default function MenuComponent() {
                     open={Boolean(caseAnchorEl)}
                     onClose={handleCaseClose}
                   >
+                    <Link to="/CaseStudies" target="_blank">
                     <MenuItem onClick={handleCaseClose}>案例分享</MenuItem>
+                    </Link>
                   </Menu>
                   <Button
                     className="hub-button"
@@ -430,6 +433,7 @@ export default function MenuComponent() {
             <Route path="/idea" element={<Idea />} />
             <Route path="/Report" element={<Report />} />
             <Route path="/Story" element={<Story />} />
+            <Route path="/CaseStudies" element={<CaseStudies />} />
           </Routes>
         </div>
       </Router >
