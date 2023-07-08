@@ -17,11 +17,6 @@
   color: navy;
 }
 
-/* .map-container {
-  position: relative;
-  display: inline-block;
-  text-align: left;
-} */
 
 .map-image {
   width: 100%;
@@ -617,14 +612,18 @@
   /* 設定圓球的顏色 */
 }
 .tooltip {
+  width: 700px;
+  height: 500px;
   position: absolute;
-  top: 0;
-  right: 50%;
+  top: 45%;
+  right: 35%;
   transform: translate(50%, -50%);
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  padding-top:10%; /* 调整 padding-top 的值以向下移动文本 */
+  padding-left:10%;
+  color: darkblue;
   font-size: 14px;
   border-radius: 4px;
   z-index: 999;
+  background-size: cover;
 }
+

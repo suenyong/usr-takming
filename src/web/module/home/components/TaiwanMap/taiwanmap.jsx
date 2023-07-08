@@ -22,6 +22,7 @@ import Hsinchu_County from "./images/Hsinchu_County.png";//新竹縣
 import Taoyuan from "./images/Taoyuan.png";//桃園
 import New_Taipei from "./images/New_Taipei.png";//新北
 import taipei from "./images/taipei.png"; //台北
+import service_activities from "./images/活動背景.png";//服務活動背景
 const TaiwanMap = () => {
   const [imgPath, setImgPath] = useState(taiwan);
   const [isPhilippines, setIsPhilippines] = useState(false);
@@ -224,7 +225,7 @@ const TaiwanMap = () => {
           </button>
         </div>
         {showTooltip && (
-        <div className="tooltip">
+        <div className="tooltip"style={{ backgroundImage: `url(${service_activities})` }}>
           {tooltipText}
         </div>
       )}
