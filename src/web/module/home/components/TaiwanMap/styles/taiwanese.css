@@ -616,3 +616,15 @@
   background-color: rgba(0, 97, 243, 0.732);
   /* 設定圓球的顏色 */
 }
+.tooltip {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  z-index: 999;
+}

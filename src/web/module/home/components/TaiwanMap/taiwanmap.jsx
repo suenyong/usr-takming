@@ -25,13 +25,18 @@ import taipei from "./images/taipei.png"; //台北
 const TaiwanMap = () => {
   const [imgPath, setImgPath] = useState(taiwan);
   const [isPhilippines, setIsPhilippines] = useState(false);
-
-  const handleMouseOver = (newImgPath) => {
+  const [showTooltip, setShowTooltip] = useState(false);
+  const [tooltipText, setTooltipText] = useState("");
+  const handleMouseOver = (newImgPath, tooltipText) => {
     setImgPath(newImgPath);
+    setShowTooltip(true);
+    setTooltipText(tooltipText);
   };
 
   const handleMouseOut = () => {
     setImgPath(taiwan);
+    setShowTooltip(false);
+    setTooltipText("");
   };
 
   const handlePhilippinesOver = () => {
@@ -49,7 +54,7 @@ const TaiwanMap = () => {
       <div className="taiwan-map">
         <img src={imgPath} alt="123" style={{ width: "20%" }} />
         <button
-          onMouseOver={() => handleMouseOver(Taichung)}
+          onMouseOver={() => handleMouseOver(Taichung, "我是文字!!!!!!")}
           onMouseOut={handleMouseOut}
           className="Taichung-button"
         >
@@ -218,6 +223,11 @@ const TaiwanMap = () => {
             菲律賓
           </button>
         </div>
+        {showTooltip && (
+        <div className="tooltip">
+          {tooltipText}
+        </div>
+      )}
       </div>
     </>
   );
