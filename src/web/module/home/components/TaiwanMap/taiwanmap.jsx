@@ -30,6 +30,7 @@ const TaiwanMap = () => {
   const defaultContent = "請點選旁邊縣市選擇地點！";
   const defaultImage = sever1;
 
+  const [isDefault, setIsDefault] = useState(true);
   const [imgPath, setImgPath] = useState(taiwan);
   const [isPhilippines, setIsPhilippines] = useState(false);
   const [selectedContent, setSelectedContent] = useState(defaultContent);
@@ -38,6 +39,7 @@ const TaiwanMap = () => {
   const handleClick = (newContent, newImg) => {
     setSelectedContent(newContent);
     setSelectedImg(newImg);
+    setIsDefault(false);
   };
 
   const handleMouseOver = (newImgPath) => {
@@ -234,49 +236,70 @@ const TaiwanMap = () => {
           </button>
         </div>
         <div
-  className="content-box"
-  style={{
-    backgroundImage: `url(${sever})`,
-    backgroundSize: "cover", 
-    backgroundPosition: "center", 
-    width: "54%",
-    height: "79.8%",
-    paddingTop: "80px",
-    display: 'flex',  // 變為flex box
-    flexDirection: 'column', // 排列方向為由上到下
-    justifyContent: 'flex-start',  // 子元素從開始的地方排列
-    alignItems: 'flex-start',  // 子元素由左邊開始排列
-     position: 'absolute',
-  }}
->
-<div style={{ 
-    color: 'black',
-    fontSize:"28px", 
-    zIndex: 1, 
-    width: '100%', 
-    textAlign: 'left',
-    marginLeft: '250px',
-    position: 'absolute'
-  }}>
-    {selectedContent} 
-  </div>
-  {selectedImg && (
-    <img
-      src={selectedImg}
-      alt="Selected"
-      style={{ 
-        width: "60%", 
-        height: "auto", 
-        marginTop: "70px", 
-        position: 'absolute', //讓圖片能在content box裡自由定位
-        top: "10%", //讓圖片在最頂部
-        right:"10%",
-      }}
-    />
-  )}
-</div>
-
-
+          className="content-box"
+          style={{
+            backgroundImage: `url(${sever})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            width: "54%",
+            height: "79.8%",
+            paddingTop: "80px",
+            display: "flex", // 變為flex box
+            flexDirection: "column", // 排列方向為由上到下
+            justifyContent: "flex-start", // 子元素從開始的地方排列
+            alignItems: "flex-start", // 子元素由左邊開始排列
+            position: "absolute",
+          }}
+        >
+          <div
+            style={{
+              color: "black",
+              fontSize: "28px",
+              zIndex: 1,
+              width: "100%",
+              textAlign: "left",
+              marginLeft: "250px",
+              position: "absolute",
+            }}
+          >
+            {selectedContent}
+          </div>
+          {selectedImg && (
+            <img
+              src={selectedImg}
+              alt="Selected"
+              style={{
+                width: "60%",
+                height: "auto",
+                marginTop: "70px",
+                position: "absolute", //讓圖片能在content box裡自由定位
+                top: "10%", //讓圖片在最頂部
+                right: "10%",
+              }}
+            />
+          )}
+        </div>
+        {!isDefault && (
+          <button
+            style={{
+              position: "absolute",
+              bottom: "10%",
+              right: "22%",
+              padding: "10px 20px",
+              fontSize: "18px",
+              borderRadius: "5px",
+              border: "none",
+              color: "white",
+              backgroundColor: "black",
+              cursor: "pointer",
+            }}
+            onClick={() => {
+              alert("閱讀更多！");
+            }}
+          >
+            閱讀更多
+          </button>
+        )}
       </div>
     </>
   );
