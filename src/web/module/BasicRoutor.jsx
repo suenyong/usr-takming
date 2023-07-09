@@ -176,23 +176,23 @@ export default function MenuComponent() {
                     open={Boolean(anchorEl)}
                     onClose={handleClose}
                   >
-                    <Link to="/idea" target="_blank">
+                    <Link to="/idea" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                       <MenuItem onClick={handleClose}>德明USR理念</MenuItem>
                     </Link>
 
-                    <Link to="/PushCore" target="_blank">
+                    <Link to="/PushCore" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                       <MenuItem onClick={handleClose}>
                         德明推動USR核心整合理念
                       </MenuItem>
                     </Link>
 
-                    <Link to="/Promote" target="_blank">
+                    <Link to="/Promote" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                       <MenuItem onClick={handleClose}>
                         推動單位介紹
                       </MenuItem>
                     </Link>
 
-                    <Link to="/Report" target="_blank">
+                    <Link to="/Report" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                       <MenuItem onClick={handleClose}>
                         大學生社會責任年度報告書
                       </MenuItem>
@@ -224,7 +224,7 @@ export default function MenuComponent() {
                     open={Boolean(locationAnchorEl)}
                     onClose={handleLocationClose}
                   >
-                    <Link to="/Service" target="_blank">
+                    <Link to="/Service" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                       <MenuItem onClick={handleClose}>
                         服務足跡
                       </MenuItem>
@@ -256,7 +256,7 @@ export default function MenuComponent() {
                     open={Boolean(articleAnchorEl)}
                     onClose={handleArticleClose}
                   >
-                    <Link to="/Story" target="_blank">
+                    <Link to="/Story" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                       <MenuItem onClick={handleArticleClose}>精彩報導</MenuItem>
                     </Link>
 
@@ -287,7 +287,7 @@ export default function MenuComponent() {
                     open={Boolean(caseAnchorEl)}
                     onClose={handleCaseClose}
                   >
-                    <Link to="/CaseStudies" target="_blank">
+                    <Link to="/CaseStudies" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <MenuItem onClick={handleCaseClose}>案例分享</MenuItem>
                     </Link>
                   </Menu>
