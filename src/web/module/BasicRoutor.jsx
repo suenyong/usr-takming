@@ -25,6 +25,10 @@ import "./menu.css";
 import Idea from "./about_us/screens/idea";
 import CaseStudies from "./CaseStudies/screens/CaseStudies";
 import Service from "./about_us/screens/Service";
+import UH109 from "../module/USRHUB/screens/UH109";
+import UH110 from "../module/USRHUB/screens/UH110";
+import UH111 from "../module/USRHUB/screens/UH111";
+
 
 export default function MenuComponent() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -176,23 +180,23 @@ export default function MenuComponent() {
                     open={Boolean(anchorEl)}
                     onClose={handleClose}
                   >
-                    <Link to="/idea" target="_blank">
+                    <Link to="/idea" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                       <MenuItem onClick={handleClose}>德明USR理念</MenuItem>
                     </Link>
 
-                    <Link to="/PushCore" target="_blank">
+                    <Link to="/PushCore" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                       <MenuItem onClick={handleClose}>
                         德明推動USR核心整合理念
                       </MenuItem>
                     </Link>
 
-                    <Link to="/Promote" target="_blank">
+                    <Link to="/Promote" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                       <MenuItem onClick={handleClose}>
                         推動單位介紹
                       </MenuItem>
                     </Link>
 
-                    <Link to="/Report" target="_blank">
+                    <Link to="/Report" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                       <MenuItem onClick={handleClose}>
                         大學生社會責任年度報告書
                       </MenuItem>
@@ -224,7 +228,7 @@ export default function MenuComponent() {
                     open={Boolean(locationAnchorEl)}
                     onClose={handleLocationClose}
                   >
-                    <Link to="/Service" target="_blank">
+                    <Link to="/Service" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                       <MenuItem onClick={handleClose}>
                         服務足跡
                       </MenuItem>
@@ -256,7 +260,7 @@ export default function MenuComponent() {
                     open={Boolean(articleAnchorEl)}
                     onClose={handleArticleClose}
                   >
-                    <Link to="/Story" target="_blank">
+                    <Link to="/Story" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                       <MenuItem onClick={handleArticleClose}>精彩報導</MenuItem>
                     </Link>
 
@@ -287,7 +291,7 @@ export default function MenuComponent() {
                     open={Boolean(caseAnchorEl)}
                     onClose={handleCaseClose}
                   >
-                    <Link to="/CaseStudies" target="_blank">
+                    <Link to="/CaseStudies" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <MenuItem onClick={handleCaseClose}>案例分享</MenuItem>
                     </Link>
                   </Menu>
@@ -317,9 +321,16 @@ export default function MenuComponent() {
                     open={Boolean(hubAnchorEl)}
                     onClose={handleHubClose}
                   >
+                    <Link to="/UH110" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <MenuItem onClick={handleSubmenuClick}>109</MenuItem>
+                    </Link>   
+                    <Link to="/UH110" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <MenuItem onClick={handleSubmenuClick}>110</MenuItem>
+                    </Link>
+                    <Link to="/UH110" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <MenuItem onClick={handleSubmenuClick}>111</MenuItem>
+                    </Link>
+
                   </Menu>
                   <Button
                     className="usr-button"
@@ -441,6 +452,9 @@ export default function MenuComponent() {
             <Route path="/Story" element={<Story />} />
             <Route path="/CaseStudies" element={<CaseStudies />} />
             <Route path="/Service" element={<Service />} />
+            <Route path="/UH109" element={<UH109 />} />
+            <Route path="/UH110" element={<UH110 />} />
+            <Route path="/UH110" element={<UH111 />} />
           </Routes>
         </div>
       </Router >

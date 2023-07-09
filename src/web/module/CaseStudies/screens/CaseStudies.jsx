@@ -6,6 +6,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import US_image_1 from "../../CaseStudies/images/US_image_1.png";
 import ASEAN_5 from "../../CaseStudies/images/ASEAN_5.JPG";
 import { SettingCaseStudies } from "../../CaseStudies/screens/SettingCaseStudies";
+import Contact from '../../home/components/contactus/Contact';
 
 
 
@@ -241,6 +242,7 @@ export default function CaseStudies() {
       </div>
 
 
+      <Contact />
 
     </>
   );
