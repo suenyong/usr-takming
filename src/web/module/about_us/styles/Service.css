@@ -59,6 +59,12 @@
 .button-container {
   display: flex;
   justify-content: flex-start;
-  gap: 10px;
+  /* gap: 10px; */
+  flex-wrap: wrap;
+  
 }
 
+.button-row {
+  display: flex;
+  margin-bottom: 20px; /* 调整按钮行之间的间距 */
+}
