@@ -25,6 +25,10 @@ import "./menu.css";
 import Idea from "./about_us/screens/idea";
 import CaseStudies from "./CaseStudies/screens/CaseStudies";
 import Service from "./about_us/screens/Service";
+import UH109 from "../module/USRHUB/screens/UH109";
+import UH110 from "../module/USRHUB/screens/UH110";
+import UH111 from "../module/USRHUB/screens/UH111";
+
 
 export default function MenuComponent() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -317,9 +321,16 @@ export default function MenuComponent() {
                     open={Boolean(hubAnchorEl)}
                     onClose={handleHubClose}
                   >
+                    <Link to="/UH110" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <MenuItem onClick={handleSubmenuClick}>109</MenuItem>
+                    </Link>   
+                    <Link to="/UH110" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <MenuItem onClick={handleSubmenuClick}>110</MenuItem>
+                    </Link>
+                    <Link to="/UH110" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <MenuItem onClick={handleSubmenuClick}>111</MenuItem>
+                    </Link>
+
                   </Menu>
                   <Button
                     className="usr-button"
@@ -441,6 +452,9 @@ export default function MenuComponent() {
             <Route path="/Story" element={<Story />} />
             <Route path="/CaseStudies" element={<CaseStudies />} />
             <Route path="/Service" element={<Service />} />
+            <Route path="/UH109" element={<UH109 />} />
+            <Route path="/UH110" element={<UH110 />} />
+            <Route path="/UH110" element={<UH111 />} />
           </Routes>
         </div>
       </Router >
