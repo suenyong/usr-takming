@@ -22,22 +22,30 @@ import Hsinchu_County from "./images/Hsinchu_County.png"; //新竹縣
 import Taoyuan from "./images/Taoyuan.png"; //桃園
 import New_Taipei from "./images/New_Taipei.png"; //新北
 import taipei from "./images/taipei.png"; //台北
-import service_activities from "./images/活動背景.png"; //服務活動背景
+import sever from "./images/活動背景1.png";
+import Taichung1 from "./images/台中.JPG";
+import sever1 from "./images/圖片1 (1).png";
+
 const TaiwanMap = () => {
+  const defaultContent = "請點選旁邊縣市選擇地點！";
+  const defaultImage = sever1;
+
   const [imgPath, setImgPath] = useState(taiwan);
   const [isPhilippines, setIsPhilippines] = useState(false);
-  const [showTooltip, setShowTooltip] = useState(false);
-  const [tooltipText, setTooltipText] = useState("");
-  const handleMouseOver = (newImgPath, tooltipText) => {
+  const [selectedContent, setSelectedContent] = useState(defaultContent);
+  const [selectedImg, setSelectedImg] = useState(defaultImage);
+
+  const handleClick = (newContent, newImg) => {
+    setSelectedContent(newContent);
+    setSelectedImg(newImg);
+  };
+
+  const handleMouseOver = (newImgPath) => {
     setImgPath(newImgPath);
-    setShowTooltip(true);
-    setTooltipText(tooltipText);
   };
 
   const handleMouseOut = () => {
     setImgPath(taiwan);
-    setShowTooltip(false);
-    setTooltipText("");
   };
 
   const handlePhilippinesOver = () => {
@@ -55,15 +63,16 @@ const TaiwanMap = () => {
       <div className="taiwan-map">
         <img src={imgPath} alt="123" style={{ width: "20%" }} />
         <button
-          onMouseOver={() => handleMouseOver(Taichung, "地點：台中")}
+          onMouseOver={() => handleMouseOver(Taichung)}
           onMouseOut={handleMouseOut}
+          onClick={() => handleClick("地點：台中", Taichung1)}
           className="Taichung-button"
         >
           台中
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Keelung, "地點：基隆")}
+          onMouseOver={() => handleMouseOver(Keelung)}
           onMouseOut={handleMouseOut}
           className="Keelung-button"
         >
@@ -71,7 +80,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Taitung, "地點：台東")}
+          onMouseOver={() => handleMouseOver(Taitung)}
           onMouseOut={handleMouseOut}
           className="Taitung-button"
         >
@@ -79,7 +88,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Tainan, "地點：台南")}
+          onMouseOver={() => handleMouseOver(Tainan)}
           onMouseOut={handleMouseOut}
           className="Tainan-button"
         >
@@ -87,7 +96,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Yilan, "地點：宜蘭")}
+          onMouseOver={() => handleMouseOver(Yilan)}
           onMouseOut={handleMouseOut}
           className="Yilan-button"
         >
@@ -95,7 +104,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Hualien, "地點：花蓮")}
+          onMouseOver={() => handleMouseOver(Hualien)}
           onMouseOut={handleMouseOut}
           className="Hualien-button"
         >
@@ -103,7 +112,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Nantou, "地點：南投")}
+          onMouseOver={() => handleMouseOver(Nantou)}
           onMouseOut={handleMouseOut}
           className="Nantou-button"
         >
@@ -111,7 +120,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Pingtung, "地點：屏東")}
+          onMouseOver={() => handleMouseOver(Pingtung)}
           onMouseOut={handleMouseOut}
           className="Pingtung-button"
         >
@@ -119,7 +128,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Kaohsiung, "地點：高雄")}
+          onMouseOver={() => handleMouseOver(Kaohsiung)}
           onMouseOut={handleMouseOut}
           className="Kaohsiung-button"
         >
@@ -127,7 +136,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(chiayi_city, "地點：嘉義市")}
+          onMouseOver={() => handleMouseOver(chiayi_city)}
           onMouseOut={handleMouseOut}
           className="chiayi_city-button"
         >
@@ -135,7 +144,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Chiayi_County, "地點：嘉義縣")}
+          onMouseOver={() => handleMouseOver(Chiayi_County)}
           onMouseOut={handleMouseOut}
           className="Chiayi_County-button"
         >
@@ -143,7 +152,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Changhua, "地點：彰化")}
+          onMouseOver={() => handleMouseOver(Changhua)}
           onMouseOut={handleMouseOut}
           className="Changhua-button"
         >
@@ -151,7 +160,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Yunlin, "地點：雲林")}
+          onMouseOver={() => handleMouseOver(Yunlin)}
           onMouseOut={handleMouseOut}
           className="Yunlin-button"
         >
@@ -159,7 +168,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Miaoli, "地點：苗栗")}
+          onMouseOver={() => handleMouseOver(Miaoli)}
           onMouseOut={handleMouseOut}
           className="Miaoli-button"
         >
@@ -167,7 +176,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Hsinchu_City, "地點：新竹市")}
+          onMouseOver={() => handleMouseOver(Hsinchu_City)}
           onMouseOut={handleMouseOut}
           className="Hsinchu_City-button"
         >
@@ -175,7 +184,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Hsinchu_County, "地點：新竹縣")}
+          onMouseOver={() => handleMouseOver(Hsinchu_County)}
           onMouseOut={handleMouseOut}
           className="Hsinchu_County-button"
         >
@@ -183,7 +192,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(Taoyuan, "地點：桃園")}
+          onMouseOver={() => handleMouseOver(Taoyuan)}
           onMouseOut={handleMouseOut}
           className="Taoyuan-button"
         >
@@ -191,7 +200,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(New_Taipei, "地點：新北")}
+          onMouseOver={() => handleMouseOver(New_Taipei)}
           onMouseOut={handleMouseOut}
           className="New_Taipei-button"
         >
@@ -199,7 +208,7 @@ const TaiwanMap = () => {
         </button>
 
         <button
-          onMouseOver={() => handleMouseOver(taipei, "地點：台北")}
+          onMouseOver={() => handleMouseOver(taipei)}
           onMouseOut={handleMouseOut}
           className="taipei-button"
         >
@@ -224,21 +233,50 @@ const TaiwanMap = () => {
             菲律賓
           </button>
         </div>
-        {showTooltip && (
-          <div
-            className="tooltip"
-            style={{
-              backgroundImage: `url(${service_activities})`,
-              width: "30%",
-              height: "58%",
-              top: "54%",
-              right: "45%",
-              position: "absolute", 
-            }}
-          >
-            {tooltipText}
-          </div>
-        )}
+        <div
+  className="content-box"
+  style={{
+    backgroundImage: `url(${sever})`,
+    backgroundSize: "cover", 
+    backgroundPosition: "center", 
+    width: "54%",
+    height: "79.8%",
+    paddingTop: "80px",
+    display: 'flex',  // 變為flex box
+    flexDirection: 'column', // 排列方向為由上到下
+    justifyContent: 'flex-start',  // 子元素從開始的地方排列
+    alignItems: 'flex-start',  // 子元素由左邊開始排列
+     position: 'absolute',
+  }}
+>
+<div style={{ 
+    color: 'black',
+    fontSize:"28px", 
+    zIndex: 1, 
+    width: '100%', 
+    textAlign: 'left',
+    marginLeft: '250px',
+    position: 'absolute'
+  }}>
+    {selectedContent} 
+  </div>
+  {selectedImg && (
+    <img
+      src={selectedImg}
+      alt="Selected"
+      style={{ 
+        width: "60%", 
+        height: "auto", 
+        marginTop: "70px", 
+        position: 'absolute', //讓圖片能在content box裡自由定位
+        top: "10%", //讓圖片在最頂部
+        right:"10%",
+      }}
+    />
+  )}
+</div>
+
+
       </div>
     </>
   );
