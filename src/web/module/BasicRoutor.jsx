@@ -321,13 +321,13 @@ export default function MenuComponent() {
                     open={Boolean(hubAnchorEl)}
                     onClose={handleHubClose}
                   >
-                    <Link to="/UH110" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <Link to="/UH109" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <MenuItem onClick={handleSubmenuClick}>109</MenuItem>
                     </Link>   
                     <Link to="/UH110" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <MenuItem onClick={handleSubmenuClick}>110</MenuItem>
                     </Link>
-                    <Link to="/UH110" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <Link to="/UH111" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <MenuItem onClick={handleSubmenuClick}>111</MenuItem>
                     </Link>
 
@@ -454,7 +454,7 @@ export default function MenuComponent() {
             <Route path="/Service" element={<Service />} />
             <Route path="/UH109" element={<UH109 />} />
             <Route path="/UH110" element={<UH110 />} />
-            <Route path="/UH110" element={<UH111 />} />
+            <Route path="/UH111" element={<UH111 />} />
           </Routes>
         </div>
       </Router >
