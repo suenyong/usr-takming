@@ -8,6 +8,7 @@
 }
 
 
+
 .hr-line {
   border-top: 2px solid blue;
 }
@@ -611,16 +612,10 @@
   background-color: rgba(0, 97, 243, 0.732);
   /* 設定圓球的顏色 */
 }
-.tooltip {
+.content-box {
   position: absolute;
-  transform: translate(50%, -50%);
-  padding-top:10%; /* 调整 padding-top 的值以向下移动文本 */
-  padding-left:5%;
-  color: darkblue;
-  font-size: 20px;
-  border-radius: 4px;
-  z-index: 999;
-  background-size: cover;
-  
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
-
