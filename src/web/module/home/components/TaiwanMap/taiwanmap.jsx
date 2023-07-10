@@ -23,8 +23,14 @@ import Taoyuan from "./images/Taoyuan.png"; //桃園
 import New_Taipei from "./images/New_Taipei.png"; //新北
 import taipei from "./images/taipei.png"; //台北
 import sever from "./images/活動背景1.png";
-import Taichung1 from "./images/台中.JPG";
+import Philippinessever from "./images/菲律賓活動.png";
 import sever1 from "./images/圖片1 (1).png";
+
+
+
+
+
+
 
 const TaiwanMap = () => {
   const defaultContent = "請點選旁邊縣市選擇地點！";
@@ -67,7 +73,7 @@ const TaiwanMap = () => {
         <button
           onMouseOver={() => handleMouseOver(Taichung)}
           onMouseOut={handleMouseOut}
-          onClick={() => handleClick("地點：台中", Taichung1)}
+          onClick={() => handleClick("地點：台中\n目前尚無服務資訊", sever1)}
           className="Taichung-button"
         >
           台中
@@ -230,6 +236,7 @@ const TaiwanMap = () => {
           <button
             onMouseOver={handlePhilippinesOver}
             onMouseOut={handlePhilippinesOut}
+            onClick={() => handleClick("德明科大於 100 年~110 年已連續 11 年對菲律賓進行以「愛無國界．菲你莫屬」為號召的國際志工服務活動；透過多年來的志工義務服務，看到當地資源及資訊的缺乏，該校志工們希望集合有心願者的力量，透過「聖誕鞋盒禮物行動」活動，讓愛心、喜樂與盼望來豐富小朋友精采的生命。該校學生會志工同學表示，透過物資轉動的愛與關懷，讓菲律賓弱勢小朋友感受到無國界的溫暖與支持，也將志工服務的真正內涵具體呈現。", Philippinessever)}
             className="Philippines-button"
           >
             菲律賓
@@ -241,8 +248,8 @@ const TaiwanMap = () => {
             backgroundImage: `url(${sever})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            width: "54%",
-            height: "79.8%",
+            width: "60%",
+            height: "81%",
             paddingTop: "80px",
             display: "flex", // 變為flex box
             flexDirection: "column", // 排列方向為由上到下
@@ -254,12 +261,14 @@ const TaiwanMap = () => {
           <div
             style={{
               color: "black",
-              fontSize: "28px",
+              fontSize: "20px",
               zIndex: 1,
-              width: "100%",
-              textAlign: "left",
+              width: "65%",
+              textAlign: "justify",
+              marginTop: "200px",
               marginLeft: "250px",
               position: "absolute",
+              whiteSpace: "pre-wrap",
             }}
           >
             {selectedContent}
@@ -270,11 +279,11 @@ const TaiwanMap = () => {
               alt="Selected"
               style={{
                 width: "60%",
-                height: "auto",
+                height: "40%",
                 marginTop: "70px",
                 position: "absolute", //讓圖片能在content box裡自由定位
-                top: "10%", //讓圖片在最頂部
-                right: "10%",
+                top: "-5%", //讓圖片在最頂部
+                right: "12%",
               }}
             />
           )}
@@ -284,7 +293,7 @@ const TaiwanMap = () => {
             style={{
               position: "absolute",
               bottom: "10%",
-              right: "22%",
+              right: "20%",
               padding: "10px 20px",
               fontSize: "18px",
               borderRadius: "5px",
@@ -302,7 +311,9 @@ const TaiwanMap = () => {
         )}
       </div>
     </>
+    
   );
 };
+
 
 export default TaiwanMap;
