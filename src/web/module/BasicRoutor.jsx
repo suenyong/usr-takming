@@ -40,10 +40,11 @@ export default function MenuComponent() {
   const [linkAnchorEl, setLinkAnchorEl] = useState(null);
   // const [contactAnchorEl, setContactAnchorEl] = useState(null);
   const [menuAnchorEl, setMenuAnchorEl] = useState(null);
-  const [setHubSubmenuEl] = useState(null);
+  const [hubSubmenuEl, setHubSubmenuEl] = useState(null);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const [locationAnchorEl, setLocationAnchorEl] = useState(null);
+  const [submenuAnchorEl, setSubmenuAnchorEl] = useState(null);
 
   const handleLocationClick = (event) => {
     setLocationAnchorEl(event.currentTarget);
@@ -84,9 +85,9 @@ export default function MenuComponent() {
     setHubSubmenuEl(event.currentTarget);
     setHubAnchorEl(null); // Close the hub menu after selecting a submenu item
   };
-  // const handleSubmenuClose = () => {
-  //   setHubSubmenuEl(null);
-  // };
+  const handleSubmenuClose = () => {
+    setHubSubmenuEl(null);
+  };
 
   const handleUsrClick = (event) => {
     setUsrAnchorEl(event.currentTarget);
@@ -96,11 +97,15 @@ export default function MenuComponent() {
   };
 
   const handleUsrSubmenuClick = (event) => {
-    setUsrSubmenuEl(event.currentTarget);
-    setUsrAnchorEl(null); // Close the usr menu after selecting a submenu item
+    if (event.currentTarget.textContent === "場域經營") {
+      setSubmenuAnchorEl(event.currentTarget);
+    } else {
+      setUsrAnchorEl(null);  
+    }
   };
   const handleUsrSubmenuClose = () => {
-    setUsrSubmenuEl(null);
+    setSubmenuAnchorEl(null);
+    setUsrAnchorEl(null);  
   };
 
   const handleLinkClick = (event) => {
@@ -388,32 +393,37 @@ export default function MenuComponent() {
                     open={Boolean(usrAnchorEl)}
                     onClose={handleUsrClose}
                   >
-                    <Link to="/GMM" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <MenuItem onClick={handleUsrSubmenuClick}>內湖金面山在地風華 - 永續實踐計畫</MenuItem>
+                    <Link
+                      to="/GMM"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleUsrSubmenuClick}>
+                        內湖金面山在地風華 - 永續實踐計畫
+                      </MenuItem>
                     </Link>
-                    
-
-                    <MenuItem onClick={handleUsrSubmenuClick}>德明甘丹內科園區永續時尚實踐計畫 </MenuItem>
-                      
-                   
-                  </Menu>
-                  <Menu
-                    id="usr-submenu"
-                    anchorEl={usrSubmenuEl}
-                    keepMounted
-                    open={Boolean(usrSubmenuEl)}
-                    onClose={handleUsrSubmenuClose}
-                  >
-
-                    <MenuItem onClick={handleUsrSubmenuClose}>
+                    <MenuItem onClick={handleUsrSubmenuClick}>
+                      德明甘丹內科園區永續時尚實踐計畫
+                    </MenuItem>
+                    <MenuItem onClick={handleUsrSubmenuClick}>
                       場域經營
                     </MenuItem>
-
-                    <MenuItem onClick={handleUsrSubmenuClose}>
-                      活動花絮
-                    </MenuItem>
-
                   </Menu>
+
+                  <Menu
+                    id="submenu-popper"
+                    open={Boolean(submenuAnchorEl)}
+                    anchorEl={submenuAnchorEl}
+                    onClose={handleUsrSubmenuClose}
+                  >
+                    <MenuItem onClick={handleUsrSubmenuClose}>
+                      內湖金面山
+                    </MenuItem>
+                    <MenuItem onClick={handleUsrSubmenuClose}>
+                      德明甘丹
+                    </MenuItem>
+                  </Menu>
+
                   <Button
                     className="link-button"
                     color="primary"
