@@ -13,10 +13,10 @@ export default function Home() {
   return (
 
     <>
-      <div style={{backgroundImage:"url('" + background_2 + "')"}}>
+      <div style={{ backgroundImage: "url('" + background_2 + "')" }}>
 
         <FronPageCarousel />
-        <NewsFeed />
+        {/* <NewsFeed /> */}
         <Achieve />
         <USRHubCarousel />
         <TaiwanMap />
