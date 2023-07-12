@@ -38,9 +38,9 @@ export default function MenuComponent() {
   const [usrAnchorEl, setUsrAnchorEl] = useState(null);
   const [usrSubmenuEl, setUsrSubmenuEl] = useState(null);
   const [linkAnchorEl, setLinkAnchorEl] = useState(null);
-  const [contactAnchorEl, setContactAnchorEl] = useState(null);
+  // const [contactAnchorEl, setContactAnchorEl] = useState(null);
   const [menuAnchorEl, setMenuAnchorEl] = useState(null);
-  const [hubSubmenuEl, setHubSubmenuEl] = useState(null);
+  const [setHubSubmenuEl] = useState(null);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const [locationAnchorEl, setLocationAnchorEl] = useState(null);
@@ -84,9 +84,9 @@ export default function MenuComponent() {
     setHubSubmenuEl(event.currentTarget);
     setHubAnchorEl(null); // Close the hub menu after selecting a submenu item
   };
-  const handleSubmenuClose = () => {
-    setHubSubmenuEl(null);
-  };
+  // const handleSubmenuClose = () => {
+  //   setHubSubmenuEl(null);
+  // };
 
   const handleUsrClick = (event) => {
     setUsrAnchorEl(event.currentTarget);
@@ -404,21 +404,15 @@ export default function MenuComponent() {
                     open={Boolean(usrSubmenuEl)}
                     onClose={handleUsrSubmenuClose}
                   >
-                    <MenuItem onClick={handleUsrSubmenuClose}>
-                      計畫內容
-                    </MenuItem>
-                    <MenuItem onClick={handleUsrSubmenuClose}>
-                      課程發展與實施
-                    </MenuItem>
+
                     <MenuItem onClick={handleUsrSubmenuClose}>
                       場域經營
                     </MenuItem>
-                    <MenuItem onClick={handleUsrSubmenuClose}>
-                      合作夥伴
-                    </MenuItem>
+
                     <MenuItem onClick={handleUsrSubmenuClose}>
                       活動花絮
                     </MenuItem>
+
                   </Menu>
                   <Button
                     className="link-button"
