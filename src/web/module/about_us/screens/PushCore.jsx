@@ -2,7 +2,7 @@ import "../styles/PushCore.css";
 import SDGs4 from "../images/SDGs4.png";
 import SDGs11 from "../images/SDGs11.png";
 import Contact from "../../home/components/contactus/Contact";
-import Carousel from "../../../_basic/components/carousel/Carousel";
+import Carousel from "../../../_basic/components/carousel/screens/Carousel";
 
 
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "../../../_basic/components/carousel/Carousel";
+import Carousel from "../../../_basic/components/carousel/screens/Carousel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Contact from "../../home/components/contactus/Contact";

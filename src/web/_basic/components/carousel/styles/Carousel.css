@@ -6,9 +6,11 @@
   }
   
   .image-slide img {
-    width: 100%;
+    width: 70%;
     aspect-ratio: 16/9;
     object-fit: cover;
+    margin: auto;
+    display: block;
   }
   
   .hr_mg{
@@ -26,3 +28,4 @@
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
 }
+
