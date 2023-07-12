@@ -68,3 +68,49 @@
   display: flex;
   margin-bottom: 20px; /* 调整按钮行之间的间距 */
 }
+
+.hr-line {
+    width: 100%;
+    height: 2px;
+    background-color: darkblue;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.boxA {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardA {
+    width: 100%;
+    max-width: 300px;
+    flex: 1 0 300px;
+    margin: 10px;
+}
+
+.hr-line {
+  width: 100%;
+  height: 2px;
+  background-color: darkblue;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.boxA {
+  width: 1200px;
+  margin-left: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardA {
+  width: 100%;
+  max-width: 300px;
+  flex: 1 0 300px;
+  margin: 10px;
+}
