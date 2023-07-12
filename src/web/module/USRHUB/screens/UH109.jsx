@@ -1,37 +1,63 @@
 import React, { useState } from 'react';
 import "../../USRHUB/styles/UH110.css"
+import ImageFiles from "../component/ImageFiles.jsx";
+import Contact from '../../home/components/contactus/Contact';
 
 
-export default function UH109(){
-    
+export default function UH109() {
+
     const [selectedContent, setSelectedContent] = useState('content1');
 
     const handleButtonClick = (contentId) => {
         setSelectedContent(contentId);
+
     };
 
-    
-    
-    return(
+    const Love109_Images=[
+        { id: 1, src: require("../images/109IMG_4559.JPG") },
+        { id: 2, src: require("../images/109IMG_4637.JPG") },
+        { id: 3, src: require("../images/109IMG_4699.JPG") },
+        { id: 4, src: require("../images/109IMG_4712.JPG") },
+        { id: 5, src: require("../images/109IMG_4755.JPG") },
+        { id: 6, src: require("../images/109IMG_4936.JPG") },
+        { id: 7, src: require("../images/109IMG_4962.JPG") },
+        { id: 8, src: require("../images/109IMG_5041.JPG") },
+        { id: 9, src: require("../images/109IMG_5695.JPG") },
+        { id: 10, src: require("../images/109IMG_6311.JPG") },
+    ]
+
+
+    return (
         <>
-        <h1 style={{ textAlign: "center", fontSize: "40px", fontFamily: "Arial, sans-serif", }}>
+            <h1 style={{ textAlign: "center", fontSize: "40px", fontFamily: "Arial, sans-serif", }}>
                 109企劃
             </h1>
 
             <h1 style={{ fontSize: "40px", fontFamily: "Arial, sans-serif", marginLeft: "10%" }}>
                 企劃類型
             </h1>
-            
+
             <div className="button_HUB">
-            <button onClick={() => handleButtonClick('content1')}>服務創新育成</button>
-            <button onClick={() => handleButtonClick('content2')}>東協跨境電商</button>
-            <button onClick={() => handleButtonClick('content3')}>部落愛轉動</button>
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content1')}>
+                    <div className="color_circle"></div>
+                    <div className="button_text">服務創新育成</div>
+                </button>
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content2')}>
+                    <div className="color_circle"></div>
+                    <div className="button_text">東協跨境電商</div>
+                </button>
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content3')}>
+                    <div className="color_circle"></div>
+                    <div className="button_text">部落愛轉動</div>
+                </button>
             </div>
 
-            {selectedContent === 'content1' && (
-                <div className="p_USRHUB" style={{  fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
 
-                   <p style={{ fontSize: "30px"}}>服務創新育成</p> 
+
+            {selectedContent === 'content1' && (
+                <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
+
+                    <p style={{ fontSize: "30px" }}>服務創新育成</p>
 
                     「由研發處邀請國內外具有新服務商品、新商業模式、新技術應用之新創企業經理人，雙週舉辦「商業創新論壇」，邀請國內在推動商業創新的專業經理人蒞校演講，邀請內湖科技園區廠商、本校師生參加，落實創新創意教育的理念。」
                     <p></p>
@@ -56,15 +82,15 @@ export default function UH109(){
                     <p></p>
                     合作夥伴
                     XXXXXXXXXXXXXXX
-
+                    <ImageFiles />
                 </div>
             )}
 
             {selectedContent === 'content2' && (
 
-                <div className="p_USRHUB" style={{  fontSize: "20px", fontFamily: "Arial, sans-serif" }}>
+                <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif" }}>
 
-                    <p style={{ fontSize: "30px"}}>東協跨境電商</p>
+                    <p style={{ fontSize: "30px" }}>東協跨境電商</p>
 
                     「本校有超過400位的外籍學生，為了善盡大學之社會責任， 擬建置「外籍生生活地圖」，整合鄰近商家、導入客源，並協助外籍生在 台生活便利。透過「美好電商」、「樂利跨境電商」將鄰近商家以店家類 型分類，將店家資訊、商品透明化，提供外籍生使用，亦可為店家帶來人 潮與商機。另外，現今網購消費力不容小覷，鄰近商家可能無法滿足外籍 生需求，因此計畫與本土「美好電商」、「樂利跨境電商」合作，網站有 越南文及印尼文，提供外籍生更多選擇，協助東協國家之外籍學生，在越 南或印尼電商平台開設店中店創業。」
                     <p></p>
@@ -96,16 +122,16 @@ export default function UH109(){
                     <p></p>
                     合作夥伴
                     XXXXXXXXXXXXXXX
-
+                    <ImageFiles />
                 </div>
             )}
 
             {selectedContent === 'content3' && (
-                <div className="p_USRHUB" style={{  fontSize: "20px", fontFamily: "Arial, sans-serif" }}>
+                <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif" }}>
 
-                    <p style={{ fontSize: "30px"}}>部落愛轉動</p>
+                    <p style={{ fontSize: "30px" }}>部落愛轉動</p>
 
-                    「由學務處透過部落文化及生態體驗活動，讓參與服務的師生更認識新北市 烏來區忠治部落原住民文化、尋回對原住民文化的認同感；透過體育及衛生教 育教學課程，讓部落居民及孩童，養成良好運動及衛生保健習慣；透過闖關及 方案活動，培育孩童從小建立正確理財觀念，成為有品格的好學生；延續109 年共輔導43位部落青少年及小朋友舉辦品格教育和理財教育課程，讓本校學生 透過計畫執行使學生有機會實際體驗城鄉交流服務經驗，培育未來參與社會的 關懷奉獻能力，109年製成「綠色生活地圖」協助部落發展地方特色，啟發社 區營造思維，協助部落找回地區文化的認同感。110年持續深耕該部落，並將 偏鄉課程導入數位教材，建立永續關懷偏鄉的生命教育。」 
+                    「由學務處透過部落文化及生態體驗活動，讓參與服務的師生更認識新北市 烏來區忠治部落原住民文化、尋回對原住民文化的認同感；透過體育及衛生教 育教學課程，讓部落居民及孩童，養成良好運動及衛生保健習慣；透過闖關及 方案活動，培育孩童從小建立正確理財觀念，成為有品格的好學生；延續109 年共輔導43位部落青少年及小朋友舉辦品格教育和理財教育課程，讓本校學生 透過計畫執行使學生有機會實際體驗城鄉交流服務經驗，培育未來參與社會的 關懷奉獻能力，109年製成「綠色生活地圖」協助部落發展地方特色，啟發社 區營造思維，協助部落找回地區文化的認同感。110年持續深耕該部落，並將 偏鄉課程導入數位教材，建立永續關懷偏鄉的生命教育。」
                     <p></p>
                     透過本校學務處課外活動指導組及原住民資源中心，結合 志工及社團團隊共同輔佐烏來「忠治部落」，落實推廣部落居民及孩童， 亦可藉此讓參與服務的師生更能瞭解原住民文化。透過部落文化及生態體 驗活動，讓參與服務師生更認識原住民文化、找回對原住民文化歸屬與認 同感；透過體育及衛生教育教學課程，讓部落居民及孩童，養成良好運動 12 及衛生保健習慣；透過闖關及方案活動進行，培育孩童從小建立正確理財 觀念、成為一位有品格的好學生。
                     <p></p>
@@ -126,11 +152,13 @@ export default function UH109(){
                     合作夥伴
                     XXXXXXXXXXXXXXX
 
-
+                
+                    <ImageFiles images={Love109_Images}/>
 
                 </div>
             )}
 
+            <Contact />
         </>
 
     );

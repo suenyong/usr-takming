@@ -8,6 +8,7 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import USRHubCarouselCSS from './USRHubCarouselCSS.css'
+import { Route, Routes, Link } from "react-router-dom";
 
 export default function USRHubCarousel() {
   const sliderRef = useRef(null);
@@ -23,45 +24,51 @@ export default function USRHubCarousel() {
 
   return (
     <div>
-      <div className="hr-line"></div>
-      <div className="slider-container" style={{margin: '50px'}}>
-        <Slider ref={sliderRef} {...settings}>
-          <div >
-            <Grid container spacing={2}>
-              <Grid item xs={6}>
-                <img src={UH109} alt="US1"/>
-              </Grid>
-              <Grid item xs={6}>
-                <Grid container direction="column" alignItems="flex-start" spacing={8}>
-                  <Grid item>
-                    <Typography variant="h6">USR HUB</Typography>
-                  </Grid>
-                  <Grid item>
-                    <Button variant="contained" color="primary">查看更多</Button>
+        <div className="hr-line"></div>
+        <div className="slider-container" style={{ margin: '50px' }}>
+          <Slider ref={sliderRef} {...settings}>
+            <div >
+              <Grid container spacing={2}>
+                <Grid item xs={6}>
+                  <img src={UH109} alt="US1" />
+                </Grid>
+                <Grid item xs={6}>
+                  <Grid container direction="column" alignItems="flex-start" spacing={8}>
+                    <Grid item>
+                      <Typography variant="h6">USR HUB</Typography>
+                    </Grid>
+                    <Grid item>
+                      <Link to="/UH109" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <Button variant="contained" color="primary">查看更多</Button>
+                      </Link>
+                    </Grid>
                   </Grid>
                 </Grid>
               </Grid>
-            </Grid>
-          </div>
-          <div>
-            <Grid container spacing={2}>
-              <Grid item xs={6}>
-                <img src={UH110} alt="US2" />
-              </Grid>
-              <Grid item xs={6}>
-                <Grid container direction="column" alignItems="flex-start" spacing={8}>
-                  <Grid item>
-                    <Typography variant="h6">USR</Typography>
-                  </Grid>
-                  <Grid item>
-                    <Button variant="contained" color="primary">查看更多</Button>
+            </div>
+            <div>
+              <Grid container spacing={2}>
+                <Grid item xs={6}>
+                  <img src={UH110} alt="US2" />
+                </Grid>
+                <Grid item xs={6}>
+                  <Grid container direction="column" alignItems="flex-start" spacing={8}>
+                    <Grid item>
+                      <Typography variant="h6">USR</Typography>
+                    </Grid>
+                    <Grid item>
+                      <Button variant="contained" color="primary">查看更多</Button>
+                    </Grid>
                   </Grid>
                 </Grid>
               </Grid>
-            </Grid>
-          </div>
-        </Slider>
-      </div>
+            </div>
+          </Slider>
+        </div>
+        <Routes>
+          <Route path="/UH109" element={<UH109 />} />
+        </Routes>
     </div>
+
   );
 }

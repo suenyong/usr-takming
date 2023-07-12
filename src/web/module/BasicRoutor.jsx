@@ -28,6 +28,7 @@ import Service from "./about_us/screens/Service";
 import UH109 from "../module/USRHUB/screens/UH109";
 import UH110 from "../module/USRHUB/screens/UH110";
 import UH111 from "../module/USRHUB/screens/UH111";
+import GMM from "./USR/screens/GMM";
 
 
 export default function MenuComponent() {
@@ -358,12 +359,14 @@ export default function MenuComponent() {
                     open={Boolean(usrAnchorEl)}
                     onClose={handleUsrClose}
                   >
-                    <MenuItem onClick={handleUsrSubmenuClick}>
-                      內湖金面山在地風華 - 永續實踐計畫
-                    </MenuItem>
-                    <MenuItem onClick={handleUsrSubmenuClick}>
-                      德明甘丹內科園區永續時尚實踐計畫
-                    </MenuItem>
+                    <Link to="/GMM" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <MenuItem onClick={handleUsrSubmenuClick}>內湖金面山在地風華 - 永續實踐計畫</MenuItem>
+                    </Link>
+                    
+
+                    <MenuItem onClick={handleUsrSubmenuClick}>德明甘丹內科園區永續時尚實踐計畫 </MenuItem>
+                      
+                   
                   </Menu>
                   <Menu
                     id="usr-submenu"
@@ -455,6 +458,7 @@ export default function MenuComponent() {
             <Route path="/UH109" element={<UH109 />} />
             <Route path="/UH110" element={<UH110 />} />
             <Route path="/UH111" element={<UH111 />} />
+            <Route path="/GMM" element={<GMM />} />
           </Routes>
         </div>
       </Router >

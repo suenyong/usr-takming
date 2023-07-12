@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import "../../USRHUB/styles/UH110.css"
+import ImageFiles from '../component/ImageFiles';
+import Contact from '../../home/components/contactus/Contact';
 
 
 export default function UH111(){
@@ -23,10 +25,20 @@ export default function UH111(){
             </h1>
             
             <div className="button_HUB">
-            <button onClick={() => handleButtonClick('content1')}>服務創新育成</button>
-            <button onClick={() => handleButtonClick('content2')}>東協跨境電商</button>
-            <button onClick={() => handleButtonClick('content3')}>部落愛轉動</button>
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content1')}>
+                    <div className="color_circle"></div>
+                    <div className="button_text">服務創新育成</div>
+                </button>
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content2')}>
+                    <div className="color_circle"></div>
+                    <div className="button_text">東協跨境電商</div>
+                </button>
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content3')}>
+                    <div className="color_circle"></div>
+                    <div className="button_text">部落愛轉動</div>
+                </button>
             </div>
+
 
             {selectedContent === 'content1' && (
                 <div className="p_USRHUB" style={{  fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
@@ -49,7 +61,7 @@ export default function UH111(){
                     <p></p>
                     合作夥伴XXXXXXXXXXXXXXX
 
-
+                    <ImageFiles />
                 </div>
             )}
 
@@ -65,7 +77,7 @@ export default function UH111(){
                     辦理活動: 成果發表會
                     <p></p>
                     111年11月12日舉辦「東協跨境行銷競賽暨成果發表會」由東南亞外 籍生製作跨境電商行銷競賽，提供外籍生學術和實務交流的平台， 也呼應本USR Hub計畫主軸—數位科技支援多元族群（外籍生）的 大學社會責任。計畫衍生效益則是媒合2位外籍生到計畫合作機構企 業實習，培育跨境電商人才。
-
+                    <ImageFiles />
                 </div>
             )}
 
@@ -85,11 +97,12 @@ export default function UH111(){
                     <p></p>
                     111年忠治部落，透過辦理暑期主題營隊，執行「在地關 懷」、「永續環境」等政策目標外，並透過原民工作坊專 題講座、樂水部落參訪交流與體驗，讓忠治部落居民及青 年能有重新認識自己部落、整合自然資源、發展地方特 色，以促進「地方創生」之契機，該階段服務計有部落居 民、青少年、小朋友及兩校師生377人次參與。
 
-
+                    <ImageFiles />
 
                 </div>
             )}
 
+        <Contact />
         </>
 
     );

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import "../../USRHUB/styles/UH110.css"
+import ImageFiles from '../component/ImageFiles';
+import Contact from '../../home/components/contactus/Contact';
 
 
 export default function UH110() {
@@ -23,9 +25,21 @@ export default function UH110() {
                 企劃類型
             </h1>
             
-            <button onClick={() => handleButtonClick('content1')}>服務創新育成</button>
-            <button onClick={() => handleButtonClick('content2')}>東協跨境電商</button>
-            <button onClick={() => handleButtonClick('content3')}>部落愛轉動</button>
+            <div className="button_HUB">
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content1')}>
+                    <div className="color_circle"></div>
+                    <div className="button_text">服務創新育成</div>
+                </button>
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content2')}>
+                    <div className="color_circle"></div>
+                    <div className="button_text">東協跨境電商</div>
+                </button>
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content3')}>
+                    <div className="color_circle"></div>
+                    <div className="button_text">部落愛轉動</div>
+                </button>
+            </div>
+
 
 
             {selectedContent === 'content1' && (
@@ -56,7 +70,7 @@ export default function UH110() {
                     <br></br>
                     (2)整合跨院教師團隊承接產學案5案共計249萬元，指導4組大學部專題製作， 強化學生實作和問題解決能力。
 
-
+                    <ImageFiles />
                 </div>
             )}
 
@@ -82,7 +96,7 @@ export default function UH110() {
                     </p>
                     計畫衍生亮點成果案例(計畫成果中可供各界參考的執行亮點或特色內容)。 計畫於110年11月06日舉辦「跨境電商行銷競賽暨成果發表會」由東南亞外 籍生製作跨境電商行銷競賽，提供外籍生學術和實務交流的平台，也呼應本 USR Hub計畫主軸—數位科技支援多元族群（外籍生）的大學社會責任。計 畫衍生效益則是媒合兩位外籍生到計畫合作機構企業實習，培育跨境電商人 才。
 
-
+                    <ImageFiles />
                 </div>
             )}
 
@@ -103,11 +117,12 @@ export default function UH110() {
                     <br></br>
                     (3)讓德明的學生有機會實際體驗城鄉交流服務經驗，培育未來參與社會的 關懷奉獻能力，盡一份公民責任，理解本土化與社區的互動關係，進而 參與公共議題，締造德明科大的優質學習文化。透過製作「綠色生活地 圖」協助部落發展地方特色，啟發社區營造思維，協助部落找回地區文 化的認同感。
 
+                    <ImageFiles />
                 </div>
             )}
 
 
-
+        <Contact />
         </>
 
     );
