@@ -30,7 +30,6 @@ import UH110 from "../module/USRHUB/screens/UH110";
 import UH111 from "../module/USRHUB/screens/UH111";
 import GMM from "./USR/screens/GMM";
 
-
 export default function MenuComponent() {
   const [anchorEl, setAnchorEl] = useState(null);
   const [articleAnchorEl, setArticleAnchorEl] = useState(null);
@@ -111,7 +110,6 @@ export default function MenuComponent() {
     setLinkAnchorEl(null);
   };
 
-
   const handleMenuClick = (event) => {
     setMenuAnchorEl(event.currentTarget);
   };
@@ -120,10 +118,10 @@ export default function MenuComponent() {
   };
 
   useEffect(() => {
-    window.addEventListener('resize', () => {
+    window.addEventListener("resize", () => {
       setWindowWidth(window.innerWidth);
-    })
-  }, [])
+    });
+  }, []);
 
   return (
     <>
@@ -148,11 +146,8 @@ export default function MenuComponent() {
           <div className="nav-container">
             <div className="full-width-line"></div>
             <div className="line"></div>
-            <div
-              className="about-usr"
-            >
-
-              {windowWidth > 950 ?
+            <div className="about-usr">
+              {windowWidth > 950 ? (
                 <>
                   <Button
                     className="about-usr-button"
@@ -181,23 +176,37 @@ export default function MenuComponent() {
                     open={Boolean(anchorEl)}
                     onClose={handleClose}
                   >
-                    <Link to="/idea" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <Link
+                      to="/idea"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
                       <MenuItem onClick={handleClose}>德明USR理念</MenuItem>
                     </Link>
 
-                    <Link to="/PushCore" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <Link
+                      to="/PushCore"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
                       <MenuItem onClick={handleClose}>
                         德明推動USR核心整合理念
                       </MenuItem>
                     </Link>
 
-                    <Link to="/Promote" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
-                      <MenuItem onClick={handleClose}>
-                        推動單位介紹
-                      </MenuItem>
+                    <Link
+                      to="/Promote"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleClose}>推動單位介紹</MenuItem>
                     </Link>
 
-                    <Link to="/Report" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <Link
+                      to="/Report"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
                       <MenuItem onClick={handleClose}>
                         大學生社會責任年度報告書
                       </MenuItem>
@@ -229,10 +238,12 @@ export default function MenuComponent() {
                     open={Boolean(locationAnchorEl)}
                     onClose={handleLocationClose}
                   >
-                    <Link to="/Service" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
-                      <MenuItem onClick={handleClose}>
-                        服務足跡
-                      </MenuItem>
+                    <Link
+                      to="/Service"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleClose}>服務足跡</MenuItem>
                     </Link>
                   </Menu>
                   <Button
@@ -261,10 +272,13 @@ export default function MenuComponent() {
                     open={Boolean(articleAnchorEl)}
                     onClose={handleArticleClose}
                   >
-                    <Link to="/Story" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <Link
+                      to="/Story"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
                       <MenuItem onClick={handleArticleClose}>精彩報導</MenuItem>
                     </Link>
-
                   </Menu>
                   <Button
                     className="case-button"
@@ -292,8 +306,12 @@ export default function MenuComponent() {
                     open={Boolean(caseAnchorEl)}
                     onClose={handleCaseClose}
                   >
-                    <Link to="/CaseStudies" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <MenuItem onClick={handleCaseClose}>案例分享</MenuItem>
+                    <Link
+                      to="/CaseStudies"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleCaseClose}>案例分享</MenuItem>
                     </Link>
                   </Menu>
                   <Button
@@ -322,16 +340,27 @@ export default function MenuComponent() {
                     open={Boolean(hubAnchorEl)}
                     onClose={handleHubClose}
                   >
-                    <Link to="/UH109" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <MenuItem onClick={handleSubmenuClick}>109</MenuItem>
-                    </Link>   
-                    <Link to="/UH110" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <MenuItem onClick={handleSubmenuClick}>110</MenuItem>
+                    <Link
+                      to="/UH109"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleSubmenuClick}>109</MenuItem>
                     </Link>
-                    <Link to="/UH111" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <MenuItem onClick={handleSubmenuClick}>111</MenuItem>
+                    <Link
+                      to="/UH110"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleSubmenuClick}>110</MenuItem>
                     </Link>
-
+                    <Link
+                      to="/UH111"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleSubmenuClick}>111</MenuItem>
+                    </Link>
                   </Menu>
                   <Button
                     className="usr-button"
@@ -375,13 +404,21 @@ export default function MenuComponent() {
                     open={Boolean(usrSubmenuEl)}
                     onClose={handleUsrSubmenuClose}
                   >
-                    <MenuItem onClick={handleUsrSubmenuClose}>計畫內容</MenuItem>
+                    <MenuItem onClick={handleUsrSubmenuClose}>
+                      計畫內容
+                    </MenuItem>
                     <MenuItem onClick={handleUsrSubmenuClose}>
                       課程發展與實施
                     </MenuItem>
-                    <MenuItem onClick={handleUsrSubmenuClose}>場域經營</MenuItem>
-                    <MenuItem onClick={handleUsrSubmenuClose}>合作夥伴</MenuItem>
-                    <MenuItem onClick={handleUsrSubmenuClose}>活動花絮</MenuItem>
+                    <MenuItem onClick={handleUsrSubmenuClose}>
+                      場域經營
+                    </MenuItem>
+                    <MenuItem onClick={handleUsrSubmenuClose}>
+                      合作夥伴
+                    </MenuItem>
+                    <MenuItem onClick={handleUsrSubmenuClose}>
+                      活動花絮
+                    </MenuItem>
                   </Menu>
                   <Button
                     className="link-button"
@@ -412,7 +449,7 @@ export default function MenuComponent() {
                     <MenuItem onClick={handleLinkClose}>重要連結</MenuItem>
                   </Menu>
                 </>
-                :
+              ) : (
                 <>
                   <Button
                     className="menu-button"
@@ -441,8 +478,7 @@ export default function MenuComponent() {
                     <MenuItem onClick={handleMenuClose}>重要連結</MenuItem>
                   </Menu>
                 </>
-              }
-
+              )}
             </div>
             <div className="line"></div>
           </div>
@@ -461,7 +497,7 @@ export default function MenuComponent() {
             <Route path="/GMM" element={<GMM />} />
           </Routes>
         </div>
-      </Router >
+      </Router>
     </>
   );
 }

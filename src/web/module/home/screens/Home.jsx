@@ -13,13 +13,15 @@ export default function Home() {
   return (
 
     <>
-      <div style={{backgroundImage:"url('" + background_2 + "')", 
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center center',
-          backgroundAttachment: 'fixed'}}>
+      <div style={{
+        backgroundImage: "url('" + background_2 + "')",
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center',
+        backgroundAttachment: 'fixed'
+      }}>
 
         <FronPageCarousel />
-        <NewsFeed />
+        {/* <NewsFeed /> */}
         <Achieve />
         <USRHubCarousel />
         <TaiwanMap />
