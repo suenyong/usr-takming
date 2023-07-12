@@ -8,7 +8,7 @@ export const settings = {
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 40000,
     cssEase: "linear",
     responsive: [
       {
@@ -35,5 +35,6 @@ export const settings = {
           slidesToScroll: 1
         }
       }
-    ]
+    ],
+
 };
