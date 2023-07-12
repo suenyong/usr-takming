@@ -248,7 +248,7 @@ export default function MenuComponent() {
                       target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
-                      <MenuItem onClick={handleClose}>服務足跡</MenuItem>
+                      <MenuItem onClick={handleLocationClose}>服務足跡</MenuItem>
                     </Link>
                   </Menu>
                   <Button
