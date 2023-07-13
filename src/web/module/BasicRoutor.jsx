@@ -31,8 +31,8 @@ import UH111 from "../module/USRHUB/screens/UH111";
 import GMM from "./USR/screens/GMM";
 
 export default function MenuComponent() {
-  const [anchorEl, setAnchorEl] = useState(null);
-  const [articleAnchorEl, setArticleAnchorEl] = useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);//關於我們的選單
+  const [articleAnchorEl, setArticleAnchorEl] = useState(null);//精彩報導選單
   const [caseAnchorEl, setCaseAnchorEl] = useState(null);
   const [hubAnchorEl, setHubAnchorEl] = useState(null);
   const [usrAnchorEl, setUsrAnchorEl] = useState(null);
@@ -48,12 +48,14 @@ export default function MenuComponent() {
 
   const handleLocationClick = (event) => {
     setLocationAnchorEl(event.currentTarget);
+    
   };
   const handleLocationClose = () => {
     setLocationAnchorEl(null);
   };
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
+    handleMenuClose();
   };
   const handleClose = () => {
     setAnchorEl(null);
@@ -473,13 +475,57 @@ export default function MenuComponent() {
                     open={Boolean(menuAnchorEl)}
                     onClose={handleMenuClose}
                   >
-                    <MenuItem onClick={handleMenuClose}>關於我們</MenuItem>
+                    <MenuItem onClick={handleClick}>關於我們</MenuItem>
                     <MenuItem onClick={handleMenuClose}>服務據點</MenuItem>
                     <MenuItem onClick={handleMenuClose}>精彩報導</MenuItem>
                     <MenuItem onClick={handleMenuClose}>案例分享</MenuItem>
                     <MenuItem onClick={handleMenuClose}>USR HUB</MenuItem>
                     <MenuItem onClick={handleMenuClose}>USR</MenuItem>
                     <MenuItem onClick={handleMenuClose}>重要連結</MenuItem>
+                  </Menu>
+
+                  <Menu
+                    id="simple-menu"
+                    anchorEl={anchorEl}
+                    keepMounted
+                    open={Boolean(anchorEl)}
+                    onClose={handleClose}
+                  >
+                    <Link
+                      to="/idea"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleClose}>德明USR理念</MenuItem>
+                    </Link>
+
+                    <Link
+                      to="/PushCore"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleClose}>
+                        德明推動USR核心整合理念
+                      </MenuItem>
+                    </Link>
+
+                    <Link
+                      to="/Promote"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleClose}>推動單位介紹</MenuItem>
+                    </Link>
+
+                    <Link
+                      to="/Report"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleClose}>
+                        大學生社會責任年度報告書
+                      </MenuItem>
+                    </Link>
                   </Menu>
                 </>
               )}
