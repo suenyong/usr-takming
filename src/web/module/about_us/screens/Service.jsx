@@ -57,7 +57,7 @@ const [selectedContent, setSelectedContent] = useState('content1');
   return (
     <>
     <div className="service-container">
-      <h1 className="service-title">服務據點</h1>
+      <h1 className="service-title">服務足跡</h1>
       <div className="service-content">
       <div className="service-text">
           <h1 className="service-heading">國內</h1>
@@ -256,14 +256,6 @@ const [selectedContent, setSelectedContent] = useState('content1');
         </div>
       <img src={tw} alt="台灣拚完圖片" className="service-image" />
       </div>
-      {selectedContent === 'content1' && (
-        <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
-        <button className="btu_stlyes" onClick={() => handleButtonClick('content6')}>
-            <div className="color_circle1"></div>
-            <div className="button_text" >內湖</div>
-        </button>
-        </div>
-      )}
 
       <div className="hr-line"></div>
             <div className="boxA">
