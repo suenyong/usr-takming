@@ -31,8 +31,8 @@ import UH111 from "../module/USRHUB/screens/UH111";
 import GMM from "./USR/screens/GMM";
 
 export default function MenuComponent() {
-  const [anchorEl, setAnchorEl] = useState(null);
-  const [articleAnchorEl, setArticleAnchorEl] = useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);//關於我們的選單
+  const [articleAnchorEl, setArticleAnchorEl] = useState(null);//精彩報導選單
   const [caseAnchorEl, setCaseAnchorEl] = useState(null);
   const [hubAnchorEl, setHubAnchorEl] = useState(null);
   const [usrAnchorEl, setUsrAnchorEl] = useState(null);
@@ -40,33 +40,41 @@ export default function MenuComponent() {
   const [linkAnchorEl, setLinkAnchorEl] = useState(null);
   // const [contactAnchorEl, setContactAnchorEl] = useState(null);
   const [menuAnchorEl, setMenuAnchorEl] = useState(null);
-  const [setHubSubmenuEl] = useState(null);
+  const [hubSubmenuEl, setHubSubmenuEl] = useState(null);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const [locationAnchorEl, setLocationAnchorEl] = useState(null);
+  const [submenuAnchorEl, setSubmenuAnchorEl] = useState(null);
 
+  //服務足跡
   const handleLocationClick = (event) => {
     setLocationAnchorEl(event.currentTarget);
+    handleMenuClose();
+    
   };
-  const handleLocationClose = () => {
+  const handleLocationClose = () => { 
     setLocationAnchorEl(null);
   };
+  //關於我們
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
+    handleMenuClose();
   };
   const handleClose = () => {
     setAnchorEl(null);
   };
-
+  //精彩報導
   const handleArticleClick = (event) => {
     setArticleAnchorEl(event.currentTarget);
+    handleMenuClose();
   };
   const handleArticleClose = () => {
     setArticleAnchorEl(null);
   };
-
+  //案例分享
   const handleCaseClick = (event) => {
     setCaseAnchorEl(event.currentTarget);
+    handleMenuClose();
   };
   const handleCaseClose = () => {
     setCaseAnchorEl(null);
@@ -74,6 +82,7 @@ export default function MenuComponent() {
 
   const handleHubClick = (event) => {
     setHubAnchorEl(event.currentTarget);
+    handleMenuClose();
   };
   const handleHubClose = () => {
     setHubAnchorEl(null);
@@ -84,23 +93,28 @@ export default function MenuComponent() {
     setHubSubmenuEl(event.currentTarget);
     setHubAnchorEl(null); // Close the hub menu after selecting a submenu item
   };
-  // const handleSubmenuClose = () => {
-  //   setHubSubmenuEl(null);
-  // };
-
+  const handleSubmenuClose = () => {
+    setHubSubmenuEl(null);
+  };
+  //USR
   const handleUsrClick = (event) => {
     setUsrAnchorEl(event.currentTarget);
+    handleMenuClose();
   };
   const handleUsrClose = () => {
     setUsrAnchorEl(null);
   };
 
   const handleUsrSubmenuClick = (event) => {
-    setUsrSubmenuEl(event.currentTarget);
-    setUsrAnchorEl(null); // Close the usr menu after selecting a submenu item
+    if (event.currentTarget.textContent === "場域經營") {
+      setSubmenuAnchorEl(event.currentTarget);
+    } else {
+      setUsrAnchorEl(null);  
+    }
   };
   const handleUsrSubmenuClose = () => {
-    setUsrSubmenuEl(null);
+    setSubmenuAnchorEl(null);
+    setUsrAnchorEl(null);  
   };
 
   const handleLinkClick = (event) => {
@@ -243,7 +257,7 @@ export default function MenuComponent() {
                       target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
-                      <MenuItem onClick={handleClose}>服務足跡</MenuItem>
+                      <MenuItem onClick={handleLocationClose}>服務足跡</MenuItem>
                     </Link>
                   </Menu>
                   <Button
@@ -388,32 +402,37 @@ export default function MenuComponent() {
                     open={Boolean(usrAnchorEl)}
                     onClose={handleUsrClose}
                   >
-                    <Link to="/GMM" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <MenuItem onClick={handleUsrSubmenuClick}>內湖金面山在地風華 - 永續實踐計畫</MenuItem>
+                    <Link
+                      to="/GMM"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleUsrSubmenuClick}>
+                        內湖金面山在地風華 - 永續實踐計畫
+                      </MenuItem>
                     </Link>
-                    
-
-                    <MenuItem onClick={handleUsrSubmenuClick}>德明甘丹內科園區永續時尚實踐計畫 </MenuItem>
-                      
-                   
-                  </Menu>
-                  <Menu
-                    id="usr-submenu"
-                    anchorEl={usrSubmenuEl}
-                    keepMounted
-                    open={Boolean(usrSubmenuEl)}
-                    onClose={handleUsrSubmenuClose}
-                  >
-
-                    <MenuItem onClick={handleUsrSubmenuClose}>
+                    <MenuItem onClick={handleUsrSubmenuClick}>
+                      德明甘丹內科園區永續時尚實踐計畫
+                    </MenuItem>
+                    <MenuItem onClick={handleUsrSubmenuClick}>
                       場域經營
                     </MenuItem>
-
-                    <MenuItem onClick={handleUsrSubmenuClose}>
-                      活動花絮
-                    </MenuItem>
-
                   </Menu>
+
+                  <Menu
+                    id="submenu-popper"
+                    open={Boolean(submenuAnchorEl)}
+                    anchorEl={submenuAnchorEl}
+                    onClose={handleUsrSubmenuClose}
+                  >
+                    <MenuItem onClick={handleUsrSubmenuClose}>
+                      內湖金面山
+                    </MenuItem>
+                    <MenuItem onClick={handleUsrSubmenuClose}>
+                      德明甘丹
+                    </MenuItem>
+                  </Menu>
+
                   <Button
                     className="link-button"
                     color="primary"
@@ -463,14 +482,174 @@ export default function MenuComponent() {
                     open={Boolean(menuAnchorEl)}
                     onClose={handleMenuClose}
                   >
-                    <MenuItem onClick={handleMenuClose}>關於我們</MenuItem>
-                    <MenuItem onClick={handleMenuClose}>服務據點</MenuItem>
-                    <MenuItem onClick={handleMenuClose}>精彩報導</MenuItem>
-                    <MenuItem onClick={handleMenuClose}>案例分享</MenuItem>
-                    <MenuItem onClick={handleMenuClose}>USR HUB</MenuItem>
-                    <MenuItem onClick={handleMenuClose}>USR</MenuItem>
+                    <MenuItem onClick={handleClick}>關於我們</MenuItem>
+                    <MenuItem onClick={handleLocationClick}>服務據點</MenuItem>
+                    <MenuItem onClick={handleArticleClick}>精彩報導</MenuItem>
+                    <MenuItem onClick={handleCaseClick}>案例分享</MenuItem>
+                    <MenuItem onClick={handleHubClick}>USR HUB</MenuItem>
+                    <MenuItem onClick={handleUsrClick}>USR</MenuItem>
                     <MenuItem onClick={handleMenuClose}>重要連結</MenuItem>
                   </Menu>
+                  {/* 關於我們選單 */}
+                  <Menu
+                    id="simple-menu"
+                    anchorEl={anchorEl}
+                    keepMounted
+                    open={Boolean(anchorEl)}
+                    onClose={handleClose}
+                  >
+                    <Link
+                      to="/idea"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleClose}>德明USR理念</MenuItem>
+                    </Link>
+
+                    <Link
+                      to="/PushCore"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleClose}>
+                        德明推動USR核心整合理念
+                      </MenuItem>
+                    </Link>
+
+                    <Link
+                      to="/Promote"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleClose}>推動單位介紹</MenuItem>
+                    </Link>
+
+                    <Link
+                      to="/Report"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleClose}>
+                        大學生社會責任年度報告書
+                      </MenuItem>
+                    </Link>
+                  </Menu>
+                  {/* 服務據點選單 */}
+                  <Menu
+                    id="location-menu"
+                    anchorEl={locationAnchorEl}
+                    keepMounted
+                    open={Boolean(locationAnchorEl)}
+                    onClose={handleLocationClose}
+                  >
+                    <Link
+                      to="/Service"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleLocationClose}>服務足跡</MenuItem>
+                    </Link>
+                  </Menu>
+                  {/* 精彩報導 */}
+                  <Menu
+                    id="article-menu"
+                    anchorEl={articleAnchorEl}
+                    keepMounted
+                    open={Boolean(articleAnchorEl)}
+                    onClose={handleArticleClose}
+                  >
+                    <Link
+                      to="/Story"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleArticleClose}>精彩報導</MenuItem>
+                    </Link>
+                  </Menu>
+                  {/* 案例分享 */}
+                  <Menu
+                    id="case-menu"
+                    anchorEl={caseAnchorEl}
+                    keepMounted
+                    open={Boolean(caseAnchorEl)}
+                    onClose={handleCaseClose}
+                  >
+                    <Link
+                      to="/CaseStudies"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleCaseClose}>案例分享</MenuItem>
+                    </Link>
+                  </Menu>
+                  {/* USR HUB */}
+                  <Menu
+                    id="hub-menu"
+                    anchorEl={hubAnchorEl}
+                    keepMounted
+                    open={Boolean(hubAnchorEl)}
+                    onClose={handleHubClose}
+                  >
+                    <Link
+                      to="/UH109"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleSubmenuClick}>109</MenuItem>
+                    </Link>
+                    <Link
+                      to="/UH110"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleSubmenuClick}>110</MenuItem>
+                    </Link>
+                    <Link
+                      to="/UH111"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleSubmenuClick}>111</MenuItem>
+                    </Link>
+                  </Menu>
+                  {/* USR */}
+                  <Menu
+                    id="usr-menu"
+                    anchorEl={usrAnchorEl}
+                    keepMounted
+                    open={Boolean(usrAnchorEl)}
+                    onClose={handleUsrClose}
+                  >
+                    <Link
+                      to="/GMM"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleUsrSubmenuClick}>
+                        內湖金面山在地風華 - 永續實踐計畫
+                      </MenuItem>
+                    </Link>
+                    <MenuItem onClick={handleUsrSubmenuClick}>
+                      德明甘丹內科園區永續時尚實踐計畫
+                    </MenuItem>
+                    <MenuItem onClick={handleUsrSubmenuClick}>
+                      場域經營
+                    </MenuItem>
+                  </Menu>
+                  <Menu
+                    id="submenu-popper"
+                    open={Boolean(submenuAnchorEl)}
+                    anchorEl={submenuAnchorEl}
+                    onClose={handleUsrSubmenuClose}
+                  >
+                    <MenuItem onClick={handleUsrSubmenuClose}>
+                      內湖金面山
+                    </MenuItem>
+                    <MenuItem onClick={handleUsrSubmenuClose}>
+                      德明甘丹
+                    </MenuItem>
+                  </Menu>
+
                 </>
               )}
             </div>

@@ -16,6 +16,8 @@
   width: 35%;
   margin-top: 30px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .member-info {
@@ -26,7 +28,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* 新增 */
+  width: 50%; /* 新增 */
 }
 
 .image-container img {
@@ -38,4 +40,5 @@
 .job-title {
   font-size: 20px;
   font-weight: bold;
+  
 }

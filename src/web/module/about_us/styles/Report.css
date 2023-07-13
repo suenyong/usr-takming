@@ -8,7 +8,8 @@
     background-color: rgb(246, 243, 243);
     top: 50%;
     left: 50%;
-
+    margin:5%;
+    margin-top: 0%;
 }
 
 .centered-container {
