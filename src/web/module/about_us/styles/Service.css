@@ -119,3 +119,46 @@
   color: #0e11e9; /* 已訪問連結的顏色 */
   text-decoration: none; /* 移除下劃線 */
 }
+
+/* 以下是塞選按鈕 */
+.p_USRHUB{
+  margin: 10%;
+  text-align: left;
+}
+
+.button_HUB{
+  display: flex;
+  margin-left: 10%;
+  margin-top: 0;
+}
+
+.btu_stlyes {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.color_circle1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000000;
+  margin-right: 10px;
+}
+
+.button_text {
+  color: #040404;
+  font-size: 19px;
+}
+
+.btu_stlyes.selected .color_circle {
+  background-color: #ff0000; /* 选中状态的颜色 */
+}
+
+.button_container {
+  display: flex;
+}
+

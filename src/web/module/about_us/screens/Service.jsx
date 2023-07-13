@@ -47,64 +47,13 @@ export default function Service() {
         description: '一些描述內容.................',
     },
 ];
+const [selectedContent, setSelectedContent] = useState('content1');
 
-const [anchorEl, setAnchorEl] = useState(null);
-const [menuItems, setMenuItems] = useState([]);
+    const handleButtonClick = (contentId) => {
+        setSelectedContent(contentId);
 
-const handleButtonClick = (event) => {
-  const { name } = event.currentTarget;
-  setMenuItems(getMenuItemsByLocation(name));
-  setAnchorEl(event.currentTarget);
-};
+    };
 
-const handleClose = () => {
-  setAnchorEl(null);
-};
-
-const getMenuItemsByLocation = (location) => {
-  // 根據不同的據點選項返回相對應的選單內容
-  switch (location) {
-    case '菲律賓':
-      return [
-        { label: '德明科大連續 12 年「菲律賓-聖誕鞋盒活動」 永續播愛不間斷', url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/548951769.pdf' },
-      ];
-    case '台北':
-      return [
-        { label: '德明科大辦理「弱勢關懷課輔」十四年不間斷', url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/698511545.pdf' },
-        { label: '德明科大辦理「2020 歡樂聖誕~街友服務」活動', url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/428844962.pdf' },
-        { label: '德明科大辦理「2020 聖誕宅急便」活動', url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/636127978.pdf' },
-        { label: '德明科大舉辦「動物保護志工培訓」活動', url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/411489015.pdf' },
-        { label: '德明科大辦理「109 年度第三季博愛慶生會」服務活動', url: 'http://manner.takming.edu.tw/var/file/8/1008/img/14/986341926.pdf' },
-        { label: '德明科大辦理「來去德明彬彬ㄅ一ㄤˋㄅ一ㄤˋ」生態 暨社團教學活動', url: 'http://manner.takming.edu.tw/var/file/8/1008/img/14/186449923.pdf' },
-        { label: '德明科大辦理「109 年白石湖生態營」活動', url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/144581186.pdf' },
-        { label: '德明科大辦理 109 年度「文湖國小生態教學」活動', url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/384592079.pdf' },
-      ];
-    case '新北':
-      return [
-        { label: '德明科大 學務處舉辦 109 年度大學社會責任實踐基地-忠治「部落.愛轉動」 成果發表會', url: 'http://manner.takming.edu.tw/var/file/8/1008/img/14/625052883.pdf' },
-        { label: '德明科大舉辦 109 年度大學社會責任實踐基地-忠治「部落.愛轉動」 暑期夏令營 ', url: 'http://manner.takming.edu.tw/var/file/8/1008/img/14/709433889.pdf' },
-        { label: '德明科大學務處舉辦 109 年橫山國小 「暑期-環教、理財、品格、創意夏令營」', url: 'http://manner.takming.edu.tw/var/file/8/1008/img/14/125978186.pdf' },
-      ];
-    case '全部':
-      return [
-        { label: '德明科大連續 12 年「菲律賓-聖誕鞋盒活動」 永續播愛不間斷', url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/548951769.pdf' },
-        { label: '德明科大辦理「弱勢關懷課輔」十四年不間斷', url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/698511545.pdf' },
-        { label: '德明科大辦理「2020 歡樂聖誕~街友服務」活動', url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/428844962.pdf' },
-        { label: '德明科大辦理「2020 聖誕宅急便」活動', url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/636127978.pdf' },
-        { label: '德明科大舉辦「動物保護志工培訓」活動', url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/411489015.pdf' },
-        { label: '德明科大辦理「109 年度第三季博愛慶生會」服務活動', url: 'http://manner.takming.edu.tw/var/file/8/1008/img/14/986341926.pdf' },
-        { label: '德明科大辦理「來去德明彬彬ㄅ一ㄤˋㄅ一ㄤˋ」生態 暨社團教學活動', url: 'http://manner.takming.edu.tw/var/file/8/1008/img/14/186449923.pdf' },
-        { label: '德明科大辦理「109 年白石湖生態營」活動', url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/144581186.pdf' },
-        { label: '德明科大辦理 109 年度「文湖國小生態教學」活動', url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/384592079.pdf' },
-        { label: '德明科大 學務處舉辦 109 年度大學社會責任實踐基地-忠治「部落.愛轉動」 成果發表會', url: 'http://manner.takming.edu.tw/var/file/8/1008/img/14/625052883.pdf' },
-        { label: '德明科大舉辦 109 年度大學社會責任實踐基地-忠治「部落.愛轉動」 暑期夏令營 ', url: 'http://manner.takming.edu.tw/var/file/8/1008/img/14/709433889.pdf' },
-        { label: '德明科大學務處舉辦 109 年橫山國小 「暑期-環教、理財、品格、創意夏令營」', url: 'http://manner.takming.edu.tw/var/file/8/1008/img/14/125978186.pdf' },
-      ];
-    // ...其他據點選項的處理
-    default:
-      return [];
-  }
-};
   return (
     <>
     <div className="service-container">
@@ -112,50 +61,183 @@ const getMenuItemsByLocation = (location) => {
       <div className="service-content">
       <div className="service-text">
           <h1 className="service-heading">國內</h1>
-          <div className="button-container">
-          <button
-              className="service-button"
-              name="台北"
-              onClick={handleButtonClick}
-              aria-controls="location-menu"
-              aria-haspopup="true"
-            >
-              台北
-            </button>
-            <button
-              className="service-button"
-              name="新北"
-              onClick={handleButtonClick}
-              aria-controls="location-menu"
-              aria-haspopup="true"
-            >
-              新北
-            </button>
-            <button className="service-button">基隆</button>
-            <button className="service-button">桃園</button>
-            <button
-              className="service-button"
-              name="全部"
-              onClick={handleButtonClick}
-              aria-controls="location-menu"
-              aria-haspopup="true"
-            >
-              全部
-            </button>
+          <div className="button_HUB">
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content1')}>
+                    <div className="color_circle1"></div>
+                    <div className="button_text" >台北</div>
+                </button>
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content2')}>
+                    <div className="color_circle1"></div>
+                    <div className="button_text">新北</div>
+                </button>
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content3')}>
+                    <div className="color_circle1"></div>
+                    <div className="button_text">桃園</div>
+                </button>
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content4')}>
+                    <div className="color_circle1"></div>
+                    <div className="button_text">基隆</div>
+                </button>
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content5')}>
+                    <div className="color_circle1"></div>
+                    <div className="button_text">全部</div>
+                </button>
           </div>
+            {selectedContent === 'content1' && (
+              <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
+                <p style={{ fontSize: "40px" }}>台北地區</p>
+                <div className="button_container">
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content6')}>
+                  <div className="color_circle1"></div>
+                  <div className="button_text">內湖</div>
+                </button>
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content7')}>
+                  <div className="color_circle1"></div>
+                  <div className="button_text">中山</div>
+                </button>
+              </div>
+              </div>
+            )}
+            {selectedContent === 'content2' && (
+              <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
+                <p style={{ fontSize: "40px" }}>新北地區</p>
+                <div className="button_container">
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content8')}>
+                  <div className="color_circle1"></div>
+                  <div className="button_text">烏來</div>
+                </button>
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content9')}>
+                  <div className="color_circle1"></div>
+                  <div className="button_text">三芝</div>
+                </button>
+              </div>
+              </div>
+            )}
+            {selectedContent === 'content5' && (
+              <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
+                <p style={{ fontSize: "40px" }}>全部地區</p>
+                <div className="button_container">
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content6')}>
+                  <div className="color_circle1"></div>
+                  <div className="button_text">內湖</div>
+                </button>
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content7')}>
+                  <div className="color_circle1"></div>
+                  <div className="button_text">中山</div>
+                </button>
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content8')}>
+                  <div className="color_circle1"></div>
+                  <div className="button_text">烏來</div>
+                </button>
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content9')}>
+                  <div className="color_circle1"></div>
+                  <div className="button_text">三芝</div>
+                </button>
+              </div>
+              </div>
+            )}
+            {selectedContent === 'content6' && (
+             <div>
+             <p style={{ fontSize: "40px", textAlign: "left", marginLeft: "50px" }}>服務足跡</p>
+             <div style={{ textAlign: "left", marginLeft: "50px" }}>
+                <a href="https://manner.takming.edu.tw/var/file/8/1008/img/14/698511545.pdf" target="_blank" rel="noopener noreferrer">
+                  德明科大辦理「弱勢關懷課輔」十四年不間斷
+                </a>
+              </div>
+              <div style={{ textAlign: "left", marginLeft: "50px" }}>
+                <a href="https://manner.takming.edu.tw/var/file/8/1008/img/14/428844962.pdf" target="_blank" rel="noopener noreferrer">
+                  德明科大辦理「2020 歡樂聖誕~街友服務」活動
+                </a>
+              </div>
+            <div style={{ textAlign: "left", marginLeft: "50px" }}>
+             <a href="https://manner.takming.edu.tw/var/file/8/1008/img/14/636127978.pdf" target="_blank" rel="noopener noreferrer">
+             德明科大辦理「2020 聖誕宅急便」活動
+             </a>
+             </div>
+             <div style={{ textAlign: "left", marginLeft: "50px" }}>
+             <a href="https://manner.takming.edu.tw/var/file/8/1008/img/14/411489015.pdf" target="_blank" rel="noopener noreferrer">
+             德明科大舉辦「動物保護志工培訓」活動
+             </a>
+             </div>
+             <div style={{ textAlign: "left", marginLeft: "50px" }}>
+             <a href="http://manner.takming.edu.tw/var/file/8/1008/img/14/186449923.pdf" target="_blank" rel="noopener noreferrer">
+             德明科大辦理「來去德明彬彬ㄅ一ㄤˋㄅ一ㄤˋ」生態 暨社團教學活動
+             </a>
+             </div>
+             <div style={{ textAlign: "left", marginLeft: "50px" }}>
+             <a href="https://manner.takming.edu.tw/var/file/8/1008/img/14/144581186.pdf" target="_blank" rel="noopener noreferrer">
+             德明科大辦理「109 年白石湖生態營」活動
+             </a>
+             </div>
+             <div style={{ textAlign: "left", marginLeft: "50px" }}>
+             <a href="https://manner.takming.edu.tw/var/file/8/1008/img/14/384592079.pdf" target="_blank" rel="noopener noreferrer">
+             德明科大辦理 109 年度「文湖國小生態教學」活動
+             </a>
+             </div>
+           </div>
+           
+           
+            )}
+            {selectedContent === 'content7' && (
+             <div>
+             <p style={{ fontSize: "40px", textAlign: "left", marginLeft: "50px" }}>服務足跡</p>
+             <div style={{ textAlign: "left", marginLeft: "50px" }}>
+                <a href="http://manner.takming.edu.tw/var/file/8/1008/img/14/986341926.pdf" target="_blank" rel="noopener noreferrer">
+                德明科大辦理「109 年度第三季博愛慶生會」服務活動
+                </a>
+              </div>
+           </div>
+            )}
+            
+            {selectedContent === 'content8' && (
+             <div>
+             <p style={{ fontSize: "40px", textAlign: "left", marginLeft: "50px" }}>服務足跡</p>
+             <div style={{ textAlign: "left", marginLeft: "50px" }}>
+                <a href="http://manner.takming.edu.tw/var/file/8/1008/img/14/625052883.pdf" target="_blank" rel="noopener noreferrer">
+                德明科大 學務處舉辦 109 年度大學社會責任實踐基地-忠治「部落.愛轉動」 成果發表會 
+                </a>
+              </div>
+              <div style={{ textAlign: "left", marginLeft: "50px" }}>
+                <a href="http://manner.takming.edu.tw/var/file/8/1008/img/14/709433889.pdf" target="_blank" rel="noopener noreferrer">
+                德明科大舉辦 109 年度大學社會責任實踐基地-忠治「部落.愛轉動」 暑期夏令營
+                </a>
+              </div>
+           </div>
+            )}
+
+            {selectedContent === 'content9' && (
+             <div>
+             <p style={{ fontSize: "40px", textAlign: "left", marginLeft: "50px" }}>服務足跡</p>
+             <div style={{ textAlign: "left", marginLeft: "50px" }}>
+                <a href="http://manner.takming.edu.tw/var/file/8/1008/img/14/125978186.pdf" target="_blank" rel="noopener noreferrer">
+                德明科大學務處舉辦 109 年橫山國小 「暑期-環教、理財、品格、創意夏令營」
+                </a>
+              </div>
+           </div>
+            )}
+
           <h1 className="service-heading">國外</h1>
-          <div className="button-container">
-            <button className="service-button">越南</button>
-            <button
-              className="service-button"
-              name="菲律賓"
-              onClick={handleButtonClick}
-              aria-controls="location-menu"
-              aria-haspopup="true"
-            >
-              菲律賓
-            </button>
+          <div className="button_HUB">
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content10')}>
+                    <div className="color_circle1"></div>
+                    <div className="button_text" >越南</div>
+                </button>
+                <button className="btu_stlyes" onClick={() => handleButtonClick('content11')}>
+                    <div className="color_circle1"></div>
+                    <div className="button_text">菲律賓</div>
+                </button>
           </div>
+
+          {selectedContent === 'content11' && (
+             <div>
+             <p style={{ fontSize: "40px", textAlign: "left", marginLeft: "50px" }}>服務足跡</p>
+             <div style={{ textAlign: "left", marginLeft: "50px" }}>
+                <a href="https://manner.takming.edu.tw/var/file/8/1008/img/14/548951769.pdf" target="_blank" rel="noopener noreferrer">
+                德明科大連續 12 年「菲律賓-聖誕鞋盒活動」 永續播愛不間斷
+                </a>
+              </div>
+           </div>
+            )}
           <h1 className="service-heading">服務類型</h1>
             <div className="button-row">
               <button className="service-button">國際關懷</button>
@@ -174,6 +256,14 @@ const getMenuItemsByLocation = (location) => {
         </div>
       <img src={tw} alt="台灣拚完圖片" className="service-image" />
       </div>
+      {selectedContent === 'content1' && (
+        <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
+        <button className="btu_stlyes" onClick={() => handleButtonClick('content6')}>
+            <div className="color_circle1"></div>
+            <div className="button_text" >內湖</div>
+        </button>
+        </div>
+      )}
 
       <div className="hr-line"></div>
             <div className="boxA">
@@ -194,7 +284,7 @@ const getMenuItemsByLocation = (location) => {
                   <Button size="large">閱讀更多</Button>
               </Card>
           ))}</div>
-      <Menu
+      {/* <Menu
         id="location-menu"
         anchorEl={anchorEl}
         keepMounted
@@ -208,7 +298,7 @@ const getMenuItemsByLocation = (location) => {
             </Link>
           </MenuItem>
         ))}
-      </Menu>
+      </Menu> */}
     </div>
 
      <Contact />
