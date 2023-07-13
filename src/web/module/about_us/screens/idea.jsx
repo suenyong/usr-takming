@@ -20,7 +20,8 @@ export default function Idea() {
 
       <div
         style={{
-          margin: "100px auto",
+          margin: "20%",
+          marginTop:"10%",
           maxWidth: "1000px",
           textAlign: "justify",
           fontFamily: "Arial, sans-serif",
