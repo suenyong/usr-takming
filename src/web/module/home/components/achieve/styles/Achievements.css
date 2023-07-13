@@ -25,19 +25,23 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
+
+    width: 100%;
+    max-width: 965px;
+    /* 设置一个最大宽度，以免在大屏幕上拉得太宽 */
+    margin: 0 auto;
+    /* 居中对齐 */
 }
 
 .cardA {
     width: calc(33.33% - 20px);
-    margin-right: 20px;
-    margin-bottom: 20px;
     box-sizing: border-box;
+    margin: 10px;
 }
 
 @media (max-width: 1024px) {
     .cardA {
-        width: calc(50% - 20px);
+        width: calc(50% - 30px);
     }
 }
 
@@ -45,8 +49,4 @@
     .cardA {
         width: 100%;
     }
-}
-
-.cardA img {
-    align-items: center;
 }
