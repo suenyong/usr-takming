@@ -20,7 +20,7 @@
     margin: 10px;
 } */
 
-.boxA {
+.boxAchieve {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -33,7 +33,7 @@
     /* 居中对齐 */
 }
 
-.cardA {
+.cardAchieve {
     width: calc(33.33% - 20px);
     box-sizing: border-box;
     margin: 10px;
