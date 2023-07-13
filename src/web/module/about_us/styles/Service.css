@@ -43,12 +43,12 @@
 }
 
 .service-button:hover {
-  background-color: red;
+  background-color: rgb(17, 173, 38);
   color: white;
 }
 
 .service-button:active {
-  background-color: darkred;
+  background-color: rgb(8, 109, 13);
 }
 
 .service-image {
@@ -113,4 +113,9 @@
   max-width: 300px;
   flex: 1 0 300px;
   margin: 10px;
+}
+
+.menu-link:visited {
+  color: #0e11e9; /* 已訪問連結的顏色 */
+  text-decoration: none; /* 移除下劃線 */
 }
