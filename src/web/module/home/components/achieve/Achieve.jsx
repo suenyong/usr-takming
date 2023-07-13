@@ -49,9 +49,9 @@ export default function Achieve() {
         <>
             <div className="hr-line"></div>
             <h1 style={{ textAlign: 'center', color: 'navy' }}>成果展現</h1>
-            <div className="boxA">
+            <div className="boxAchieve">
                 {cardData.map((card, index) => (
-                    <Card key={index} className="cardA">
+                    <Card key={index} className="cardAchieve">
                         <img src={card.imgSrc} alt={`Image_${index + 1}`} style={{ width: 300, height: 140 }} />
                         <CardContent>
                             <Typography gutterBottom variant="h7" component="div">
