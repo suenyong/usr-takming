@@ -85,7 +85,7 @@ const [selectedContent, setSelectedContent] = useState('content1');
           </div>
             {selectedContent === 'content1' && (
               <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
-                <p style={{ fontSize: "40px" }}>台北地區</p>
+                <p style={{ fontSize: "30px" }}>台北地區</p>
                 <div className="button_container">
                 <button className="btu_stlyes" onClick={() => handleButtonClick('content6')}>
                   <div className="color_circle1"></div>
@@ -100,7 +100,7 @@ const [selectedContent, setSelectedContent] = useState('content1');
             )}
             {selectedContent === 'content2' && (
               <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
-                <p style={{ fontSize: "40px" }}>新北地區</p>
+                <p style={{ fontSize: "30px" }}>新北地區</p>
                 <div className="button_container">
                 <button className="btu_stlyes" onClick={() => handleButtonClick('content8')}>
                   <div className="color_circle1"></div>
@@ -115,7 +115,7 @@ const [selectedContent, setSelectedContent] = useState('content1');
             )}
             {selectedContent === 'content5' && (
               <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
-                <p style={{ fontSize: "40px" }}>全部地區</p>
+                <p style={{ fontSize: "30px" }}>全部地區</p>
                 <div className="button_container">
                 <button className="btu_stlyes" onClick={() => handleButtonClick('content6')}>
                   <div className="color_circle1"></div>
@@ -138,7 +138,7 @@ const [selectedContent, setSelectedContent] = useState('content1');
             )}
             {selectedContent === 'content6' && (
              <div>
-             <p style={{ fontSize: "40px", textAlign: "left", marginLeft: "50px" }}>服務足跡</p>
+             <p style={{ fontSize: "30px", textAlign: "left", marginLeft: "50px" }}>服務足跡</p>
              <div style={{ textAlign: "left", marginLeft: "50px" }}>
                 <a href="https://manner.takming.edu.tw/var/file/8/1008/img/14/698511545.pdf" target="_blank" rel="noopener noreferrer">
                   德明科大辦理「弱勢關懷課輔」十四年不間斷
@@ -180,7 +180,7 @@ const [selectedContent, setSelectedContent] = useState('content1');
             )}
             {selectedContent === 'content7' && (
              <div>
-             <p style={{ fontSize: "40px", textAlign: "left", marginLeft: "50px" }}>服務足跡</p>
+             <p style={{ fontSize: "30px", textAlign: "left", marginLeft: "50px" }}>服務足跡</p>
              <div style={{ textAlign: "left", marginLeft: "50px" }}>
                 <a href="http://manner.takming.edu.tw/var/file/8/1008/img/14/986341926.pdf" target="_blank" rel="noopener noreferrer">
                 德明科大辦理「109 年度第三季博愛慶生會」服務活動
@@ -191,7 +191,7 @@ const [selectedContent, setSelectedContent] = useState('content1');
             
             {selectedContent === 'content8' && (
              <div>
-             <p style={{ fontSize: "40px", textAlign: "left", marginLeft: "50px" }}>服務足跡</p>
+             <p style={{ fontSize: "30px", textAlign: "left", marginLeft: "50px" }}>服務足跡</p>
              <div style={{ textAlign: "left", marginLeft: "50px" }}>
                 <a href="http://manner.takming.edu.tw/var/file/8/1008/img/14/625052883.pdf" target="_blank" rel="noopener noreferrer">
                 德明科大 學務處舉辦 109 年度大學社會責任實踐基地-忠治「部落.愛轉動」 成果發表會 
@@ -207,7 +207,7 @@ const [selectedContent, setSelectedContent] = useState('content1');
 
             {selectedContent === 'content9' && (
              <div>
-             <p style={{ fontSize: "40px", textAlign: "left", marginLeft: "50px" }}>服務足跡</p>
+             <p style={{ fontSize: "30px", textAlign: "left", marginLeft: "50px" }}>服務足跡</p>
              <div style={{ textAlign: "left", marginLeft: "50px" }}>
                 <a href="http://manner.takming.edu.tw/var/file/8/1008/img/14/125978186.pdf" target="_blank" rel="noopener noreferrer">
                 德明科大學務處舉辦 109 年橫山國小 「暑期-環教、理財、品格、創意夏令營」
@@ -230,7 +230,7 @@ const [selectedContent, setSelectedContent] = useState('content1');
 
           {selectedContent === 'content11' && (
              <div>
-             <p style={{ fontSize: "40px", textAlign: "left", marginLeft: "50px" }}>服務足跡</p>
+             <p style={{ fontSize: "30px", textAlign: "left", marginLeft: "50px" }}>服務足跡</p>
              <div style={{ textAlign: "left", marginLeft: "50px" }}>
                 <a href="https://manner.takming.edu.tw/var/file/8/1008/img/14/548951769.pdf" target="_blank" rel="noopener noreferrer">
                 德明科大連續 12 年「菲律賓-聖誕鞋盒活動」 永續播愛不間斷

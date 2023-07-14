@@ -25,8 +25,7 @@ export default function Promote() {
       <div className="team-members">
         <div className="team-member">
           <div className="member-info">
-            <div className="job-title">職稱：</div>
-            <div className="job-title">研發長</div>
+            <div className="job-title">職稱：研發長</div>
             <div className="image-container">
               <img src={no} alt="德明財經科技大學研究發展處" />
             </div>
@@ -37,8 +36,7 @@ export default function Promote() {
 
         <div className="team-member">
           <div className="member-info">
-            <div className="job-title">職稱：</div>
-            <div className="job-title">研發長專案助理</div>
+            <div className="job-title">職稱：研發長專案助理</div>
             <div className="image-container" >
               <img src={no} alt="德明財經科技大學研究發展處" />
             </div>
@@ -52,8 +50,7 @@ export default function Promote() {
       <div className="team-members">
         <div className="team-member">
           <div className="member-info">
-            <div className="job-title">職稱：</div>
-            <div className="job-title">學術推廣組組長</div>
+            <div className="job-title">職稱：學術推廣組組長</div>
             <div className="image-container">
               <img src={no} alt="德明財經科技大學研究發展處" />
             </div>
@@ -64,8 +61,7 @@ export default function Promote() {
 
         <div className="team-member">
           <div className="member-info">
-            <div className="job-title">職稱：</div>
-            <div className="job-title">學術推廣組雇員</div>
+            <div className="job-title">職稱：學術推廣組雇員</div>
             <div className="image-container">
               <img src={no} alt="德明財經科技大學研究發展處" />
             </div>
@@ -78,8 +74,7 @@ export default function Promote() {
       <div className="team-members">
         <div className="team-member">
           <div className="member-info">
-            <div className="job-title">職稱：</div>
-            <div className="job-title">產學合作組組長</div>
+            <div className="job-title">職稱：產學合作組組長</div>
             <div className="image-container">
               <img src={no} alt="德明財經科技大學研究發展處" />
             </div>
@@ -90,8 +85,7 @@ export default function Promote() {
 
         <div className="team-member">
           <div className="member-info">
-            <div className="job-title">職稱：</div>
-            <div className="job-title">產學合作組雇員</div>
+            <div className="job-title">職稱：產學合作組雇員</div>
             <div className="image-container">
               <img src={no} alt="德明財經科技大學研究發展處" />
             </div>
@@ -104,8 +98,7 @@ export default function Promote() {
       <div className="team-members">
         <div className="team-member">
           <div className="member-info">
-            <div className="job-title">職稱：</div>
-            <div className="job-title">職涯發展中心主任</div>
+            <div className="job-title">職稱：職涯發展中心主任</div>
             <div className="image-container" >
               <img src={no} alt="德明財經科技大學研究發展處" />
             </div>
@@ -116,8 +109,7 @@ export default function Promote() {
 
         <div className="team-member">
           <div className="member-info">
-            <div className="job-title">職稱：</div>
-            <div className="job-title">職涯發展中心雇員</div>
+            <div className="job-title">職稱：職涯發展中心雇員</div>
             <div className="image-container">
               <img src={no} alt="德明財經科技大學研究發展處" />
             </div>
@@ -130,8 +122,7 @@ export default function Promote() {
       <div className="team-members">
         <div className="team-member">
           <div className="member-info">
-            <div className="job-title">職稱：</div>
-            <div className="job-title">職涯發展中心雇員</div>
+            <div className="job-title">職稱：職涯發展中心雇員</div>
             <div className="image-container">
               <img src={no} alt="德明財經科技大學研究發展處" />
             </div>
@@ -142,8 +133,7 @@ export default function Promote() {
 
         <div className="team-member">
           <div className="member-info">
-            <div className="job-title">職稱：</div>
-            <div className="job-title">國際交流中心主任</div>
+            <div className="job-title">職稱：國際交流中心主任</div>
             <div className="image-container" >
               <img src={no} alt="德明財經科技大學研究發展處" />
             </div>
@@ -156,8 +146,7 @@ export default function Promote() {
       <div className="team-members">
         <div className="team-member">
           <div className="member-info">
-            <div className="job-title">職稱：</div>
-            <div className="job-title">國際交流中心雇員</div>
+            <div className="job-title">職稱：國際交流中心雇員</div>
             <div className="image-container">
               <img src={no} alt="德明財經科技大學研究發展處" />
             </div>
@@ -168,8 +157,8 @@ export default function Promote() {
 
         <div className="team-member">
           <div className="member-info">
-            <div className="job-title">職稱：</div>
-            <div className="job-title">國際交流中心助理</div>
+            <div className="job-title">職稱：國際交流中心助理</div>
+            <div className="job-title"></div>
             <div className="image-container">
               <img src={no} alt="德明財經科技大學研究發展處" />
             </div>
