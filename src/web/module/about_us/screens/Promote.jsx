@@ -11,6 +11,7 @@ export default function Promote() {
           textAlign: "center",
           fontSize: "40px",
           fontFamily: "Arial, sans-serif",
+          color:"#336666"
         }}>
         推動單位-研究發展處
         </h1>

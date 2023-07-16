@@ -15,6 +15,7 @@ export default function Report() {
           textAlign: "center",
           fontSize: "40px",
           fontFamily: "Arial, sans-serif",
+          color:"#336666"
         }}>
         大學生社會責任年度報告書
         </h1>
