@@ -29,7 +29,7 @@ export default function UH109() {
 
     return (
         <>
-            <h1 style={{ textAlign: "center", fontSize: "40px", fontFamily: "Arial, sans-serif", }}>
+            <h1 style={{ textAlign: "center", fontSize: "40px", fontFamily: "Arial, sans-serif",color:"#336666" }}>
                 109企劃
             </h1>
 

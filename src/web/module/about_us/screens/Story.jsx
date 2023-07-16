@@ -26,6 +26,7 @@ export default function Story() {
           textAlign: "center",
           fontSize: "40px",
           fontFamily: "Arial, sans-serif",
+          color:"#336666"
         }}>
         精彩報導
         </h1>

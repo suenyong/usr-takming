@@ -16,7 +16,7 @@ export default function UH111(){
     
     return(
         <>
-        <h1 style={{ textAlign: "center", fontSize: "40px", fontFamily: "Arial, sans-serif", }}>
+        <h1 style={{ textAlign: "center", fontSize: "40px", fontFamily: "Arial, sans-serif",color:"#336666" }}>
                 111企劃
             </h1>
 

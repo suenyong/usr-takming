@@ -12,6 +12,7 @@ export default function Idea() {
           textAlign: "center",
           fontSize: "40px",
           fontFamily: "Arial, sans-serif",
+          color:"#336666"
         }}
       >
         USR的理念

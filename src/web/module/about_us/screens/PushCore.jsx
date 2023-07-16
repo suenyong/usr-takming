@@ -15,6 +15,7 @@ export default function PushCore() {
           textAlign: "center",
           fontSize: "40px",
           fontFamily: "Arial, sans-serif",
+          color:"#336666"
         }}>
         USR核心整合理念
         </h1>
@@ -22,7 +23,7 @@ export default function PushCore() {
         <Carousel/>
         <div className="PushCore">
             <div class="text-content">
-                  <div class="title_Usr"> - USR HUB - </div>
+                  <div class="title_Usr"> USR HUB </div>
                   <p>
                   本校於 109-111 年執行 USR Hub 計畫：數位科技支援多元族群計畫， 緊扣中程發展計畫與教育部高教深耕計畫
                   的推動，有助於校務發展目標之規劃與核心理念的落實。實施場域對象涵蓋多元族群，包括內湖科技園區企業、部
@@ -36,7 +37,7 @@ export default function PushCore() {
                   二（健全品格教育、善盡社 會責任）和主軸三（鏈結產學合作、深耕研究務實），實現「進步優質學府、業界最愛
                   科大」的學校願景， 透過數位科技協助多元族群發展，善盡大學社會責任。
                   </p>
-                  <div class="title_Usr">- USR -</div>
+                  <div class="title_Usr">USR</div>
                   <p>
                     內湖金面山在地風華–永續實踐計畫，依循 USR 推動目標以「人才培育」和「在地鏈結」為核心，透過設
                     計思考以人為本的設計精神，從在地需求出發， 將實踐場域鎖定在學校在地之內湖金面山、西湖商圈以及
