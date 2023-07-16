@@ -25,25 +25,32 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 965px;
+    max-width: 1150px;
     /* 设置一个最大宽度，以免在大屏幕上拉得太宽 */
     margin: 0 auto;
     /* 居中对齐 */
+    /* background-color: blue; */
 }
 
 .cardAchieve {
+    max-width: 100%;
     flex: 0 0 calc(33.33% - 20px);
     box-sizing: border-box;
     margin: 10px;
+    width: calc(33.33% - 20px);
+    /* width: 1000px; */
+    /* height: 330px; */
+
 }
 
 .cardAchieve img {
     width: 100%;
-    height: auto;
+    /* height: 500px; */
     display: block;
     margin: 0 auto;
     /* 图像水平居中 */
     object-fit: cover;
+
 }
 
 @media (max-width: 1024px) {

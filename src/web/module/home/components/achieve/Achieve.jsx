@@ -52,7 +52,7 @@ export default function Achieve() {
             <div className="boxAchieve">
                 {cardData.map((card, index) => (
                     <Card key={index} className="cardAchieve">
-                        <img src={card.imgSrc} alt={`Image_${index + 1}`} style={{ width: 300, height: 140 }} />
+                        <img src={card.imgSrc} alt={`Image_${index + 1}`} style={{ width: 360, height: 240 }} />
                         <CardContent>
                             <Typography gutterBottom variant="h7" component="div">
                                 <p style={{ lineHeight: 0 }}>{card.date}</p>
