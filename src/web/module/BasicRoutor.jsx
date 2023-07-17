@@ -120,6 +120,7 @@ export default function MenuComponent() {
 
   const handleLinkClick = (event) => {
     setLinkAnchorEl(event.currentTarget);
+    handleMenuClose();
   };
   const handleLinkClose = () => {
     setLinkAnchorEl(null);
@@ -495,7 +496,7 @@ export default function MenuComponent() {
                     <MenuItem onClick={handleCaseClick}>案例分享</MenuItem>
                     <MenuItem onClick={handleHubClick}>USR HUB</MenuItem>
                     <MenuItem onClick={handleUsrClick}>USR</MenuItem>
-                    <MenuItem onClick={handleMenuClose}>重要連結</MenuItem>
+                    <MenuItem onClick={handleLinkClick}>重要連結</MenuItem>
                   </Menu>
                   {/* 關於我們選單 */}
                   <Menu
@@ -655,6 +656,22 @@ export default function MenuComponent() {
                     <MenuItem onClick={handleUsrSubmenuClose}>
                       德明甘丹
                     </MenuItem>
+                  </Menu>
+                  {/* 重要連結 */}
+                                    <Menu
+                    id="link-menu"
+                    anchorEl={linkAnchorEl}
+                    keepMounted
+                    open={Boolean(linkAnchorEl)}
+                    onClose={handleLinkClose}
+                  >
+                    <Link
+                      to="/ImportantLink"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                    <MenuItem onClick={handleLinkClose}>重要連結</MenuItem>
+                    </Link>
                   </Menu>
 
                 </>
