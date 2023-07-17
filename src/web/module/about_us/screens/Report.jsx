@@ -1,4 +1,4 @@
-import { ClassNames } from "@emotion/react";
+
 import "../styles/Report.css";
 import React, { useRef } from "react";
 import Contact from "../../home/components/contactus/Contact";
@@ -23,7 +23,7 @@ export default function Report() {
             <div className="boxR">
                 尚無資料
             </div>
-        </div>  
+        </div>
         <Contact />
         </>
     );

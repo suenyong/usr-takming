@@ -85,7 +85,7 @@ const [selectedContent, setSelectedContent] = useState('content1');
           </div>
             {selectedContent === 'content1' && (
               <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
-                <p style={{ fontSize: "30px" }}>台北地區</p>
+                <p style={{ fontSize: "25px" }}>台北地區</p>
                 <div className="button_container">
                 <button className="btu_stlyes" onClick={() => handleButtonClick('content6')}>
                   <div className="color_circle1"></div>
@@ -100,7 +100,7 @@ const [selectedContent, setSelectedContent] = useState('content1');
             )}
             {selectedContent === 'content2' && (
               <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
-                <p style={{ fontSize: "30px" }}>新北地區</p>
+                <p style={{ fontSize: "25px" }}>新北地區</p>
                 <div className="button_container">
                 <button className="btu_stlyes" onClick={() => handleButtonClick('content8')}>
                   <div className="color_circle1"></div>
@@ -115,7 +115,7 @@ const [selectedContent, setSelectedContent] = useState('content1');
             )}
             {selectedContent === 'content5' && (
               <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
-                <p style={{ fontSize: "30px" }}>全部地區</p>
+                <p style={{ fontSize: "25px" }}>全部地區</p>
                 <div className="button_container">
                 <button className="btu_stlyes" onClick={() => handleButtonClick('content6')}>
                   <div className="color_circle1"></div>

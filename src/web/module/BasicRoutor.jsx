@@ -29,6 +29,8 @@ import UH109 from "../module/USRHUB/screens/UH109";
 import UH110 from "../module/USRHUB/screens/UH110";
 import UH111 from "../module/USRHUB/screens/UH111";
 import GMM from "./USR/screens/GMM";
+import ImportantLink from "../module/ImportantLink/screens/ImportantLink";
+
 
 export default function MenuComponent() {
   const [anchorEl, setAnchorEl] = useState(null);//關於我們的選單
@@ -50,9 +52,8 @@ export default function MenuComponent() {
   const handleLocationClick = (event) => {
     setLocationAnchorEl(event.currentTarget);
     handleMenuClose();
-    
   };
-  const handleLocationClose = () => { 
+  const handleLocationClose = () => {
     setLocationAnchorEl(null);
   };
   //關於我們
@@ -109,12 +110,12 @@ export default function MenuComponent() {
     if (event.currentTarget.textContent === "場域經營") {
       setSubmenuAnchorEl(event.currentTarget);
     } else {
-      setUsrAnchorEl(null);  
+      setUsrAnchorEl(null);
     }
   };
   const handleUsrSubmenuClose = () => {
     setSubmenuAnchorEl(null);
-    setUsrAnchorEl(null);  
+    setUsrAnchorEl(null);
   };
 
   const handleLinkClick = (event) => {
@@ -459,7 +460,13 @@ export default function MenuComponent() {
                     open={Boolean(linkAnchorEl)}
                     onClose={handleLinkClose}
                   >
+                    <Link
+                      to="/ImportantLink"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
                     <MenuItem onClick={handleLinkClose}>重要連結</MenuItem>
+                    </Link>
                   </Menu>
                 </>
               ) : (
@@ -668,6 +675,7 @@ export default function MenuComponent() {
             <Route path="/UH110" element={<UH110 />} />
             <Route path="/UH111" element={<UH111 />} />
             <Route path="/GMM" element={<GMM />} />
+            <Route path="/ImportantLink" element={<ImportantLink />} />
           </Routes>
         </div>
       </Router>
