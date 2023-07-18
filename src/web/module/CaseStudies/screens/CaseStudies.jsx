@@ -141,24 +141,25 @@ export default function CaseStudies() {
     ];
 
 
+
   return (
     <>
 
       <div className="title">案例分享-服務創新育成</div>
 
-      <div className="for-title">-『Decantar AI商業應用實作坊』系列講座 -</div>
+      <div className="for-title">『Decantar AI商業應用實作坊』系列講座 </div>
 
-      <div className="conversation">
+      <div className="conversation_all">
         <div className="image-state">
-          <img src={ASEAN_5} alt="US1" style={{ maxWidth: "550px", maxHeight: "auto" }} />
+          <img src={ASEAN_5} alt="US1" style={{ maxWidth: "400px", maxHeight: "auto" }} />
         </div>
+      </div>
         <div className="text_CS">
           『Decantar AI商業應用實作坊』系列講座(12/02、12/16、12/23、12/30)。從生活日常到娛樂，從商業決策到科研，ML/AI在我們日常生活的重要性與日俱增。從行動裝置語音助理、旅人最愛的GOOGLE翻譯、電子商務的推薦系統、結合生物辨識技術的門禁系統、讓停車場管理更流暢便利的車牌辨識，讓我們的工作與生活更便利、更輕鬆的機器學習技術。從ML機器學習到AI人工智慧，如何將科技應用到生活與商業上，德明科技大學與行動貝果合作開辦AI商業應用實作坊，參加者將利用12月裡4個周三下午，從零編碼、無AI基礎到最後能了解AI原理，並能利用行動貝果的DecantarAI做出應用模型。
         </div>
 
-      </div>
 
-      <div className="for-title">- 德明服務創新座談 -</div>
+      <div className="for-title">德明服務創新座談 </div>
       <Carousel {...SettingCaseStudies} >
         {carouselItems1.map((item, index) => (
 
@@ -176,7 +177,7 @@ export default function CaseStudies() {
         ))}
       </Carousel>
 
-      <div className="for-title">- 『創業要Know How』系列講座 -</div>
+      <div className="for-title"> 『創業要Know How』系列講座 </div>
       <Carousel  {...SettingCaseStudies} >
         {carouselItems2.map((item, index) => (
 
@@ -197,7 +198,7 @@ export default function CaseStudies() {
 
       <div className="title">案例分享-東協跨境電商</div>
 
-      <div className="for-title">- 東協跨境電商講座 -</div>
+      <div className="for-title"> 東協跨境電商講座 </div>
       <Carousel {...SettingCaseStudies}  >
         {carouselItems3.map((item, index) => (
 
@@ -220,10 +221,11 @@ export default function CaseStudies() {
 
       <div className="title">案例分享-部落愛轉動</div>
 
-      <div className="conversation">
+      <div className="conversation_all">
         <div className="image-state">
-          <img src={ASEAN_5} alt="US1" style={{ maxWidth: "550px", maxHeight: "auto" }} />
+          <img src={ASEAN_5} alt="US1" style={{ maxWidth: "400px", maxHeight: "auto" }} />
         </div>
+      </div>
         <div className="text_TLTS">
         《烏來-忠治部落》透過部落文化及生態體驗活動，讓參與服務的師生更認識原住民文化、找回對原住民文化歸屬與認同感；透過體育及衛生教育教學課程，讓部落居民及孩童，養成良好運動及衛生保健習慣；透過闖關及方案活動進行，培育孩童從小建立正確理財觀念等。
         
@@ -231,7 +233,7 @@ export default function CaseStudies() {
         <p>【校園新聞連結，帶領大家一同參與部落世界】</p>
         
         <p>◆德明科大舉辦109年度大學社會責任實踐基地-忠治「部落．愛轉動」暑期夏令營</p>
-        <a href="http://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18575" style={{fontSize:"15px"}}>http://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18575</a>
+        <a href="http://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18575" style={{fontSize:"15px", width:"100%"}}>http://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18575</a>
 
         <p>◆109年度大學社會責任實踐基地－忠治「部落．愛轉動」基隆海科館戶外教學活動</p>
         <a href="http://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18589" style={{fontSize:"15px"}}>http://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18589</a>
@@ -239,7 +241,6 @@ export default function CaseStudies() {
         
         </div>
 
-      </div>
 
 
       <Contact />

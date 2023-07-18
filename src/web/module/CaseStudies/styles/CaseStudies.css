@@ -12,22 +12,25 @@
   }
 
   .text_CS{
-    display: block;
-    max-width: 35%;
+    display: inline-block;
     text-align:justify;
     font-family:"Helvetica Neue",sans-serif;
     line-height: 1.5;
+    margin:5%;
+    height: 50%;
+    width:90%;
     /* font-size: 20px; */
     /* background-color:rgba(224, 149, 149, 0.69); */
   }
 
-  .conversation {
+  .conversation_all {
     display: flex;
     flex-wrap: wrap;
     text-align:justify;
     justify-content: center;
-    margin: 40px;
+    margin: 2.5%;
     align-items: center;
+    width: 100%;
   }
 
   .image-state{
@@ -66,11 +69,18 @@
 
   .text_TLTS{
     display: block;
-    max-width: 43%;
     text-align:justify;
     font-family:"Helvetica Neue",sans-serif;
     line-height: 1.5;
+    margin: 5%;
     /* font-size: 20px; */
     /* background-color:rgba(224, 149, 149, 0.69); */
   }
   
+  .css-xmp9fi-MuiTypography-root{
+    margin:0!important; 
+    font-weight: 400 !important;
+    font-size: 1rem!important;
+    line-height: 1.5!important;
+    letter-spacing: 0.00938em!important;
+}
