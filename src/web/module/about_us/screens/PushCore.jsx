@@ -10,8 +10,9 @@ export default function PushCore() {
       <h1
         style={{
           textAlign: "center",
-          fontSize: "40px",
+          fontSize: window.innerWidth > 800 ? "40px" : "20px", 
           fontFamily: "Arial, sans-serif",
+
           color: "#336666",
         }}
       >
@@ -20,7 +21,7 @@ export default function PushCore() {
 
       <Carousel />
       <div className="PushCore">
-        <div class="text-content">
+        <div class="text-content"style={{ fontSize: window.innerWidth > 800 ? "40px" : "20px", textAlign: "justify",}}>
           <div class="title_Usr"> USR HUB </div>
           <p>
             本校於 109-111 年執行 USR Hub 計畫：數位科技支援多元族群計畫，
@@ -41,7 +42,7 @@ export default function PushCore() {
             會責任）和主軸三（鏈結產學合作、深耕研究務實），實現「進步優質學府、業界最愛
             科大」的學校願景， 透過數位科技協助多元族群發展，善盡大學社會責任。
           </p>
-          <div class="title_Usr">USR</div>
+          <div class="title_Usr" >USR</div>
           <p>
             內湖金面山在地風華–永續實踐計畫，依循 USR
             推動目標以「人才培育」和「在地鏈結」為核心，透過設
