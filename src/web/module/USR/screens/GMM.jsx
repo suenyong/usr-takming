@@ -18,6 +18,18 @@ export default function GMM() {
                 面對這些問題與挑戰，本計畫希望利用金面山的人文、自然生態與小百岳的優勢，串聯西湖商圈與白石湖的觀光，透過「樂活與創生跨領域學分學程」課程規劃，師生增能的共學形式，實踐在地關懷的大學社會責任，落實具有在地文化色彩的永續旅遊發展，計畫目標對焦 SDGs4 優質教育與 SDGs11 永續城市及社區，以培育學生具備跨領域及解決問題的能力及永續樂活人才，達成在地活化與永續社區發展之目標。
             </div>
 
+            <div className="img1">
+                <img src={require('../../../_basic/images/Line.png')} alt="Line.png" style={{ height: 1310 }} ></img>
+            </div>
+
+            <div className="img2">
+                <img src={require('../../../_basic/images/mount.png')} alt="mount.png" style={{ width: 450, height: 480 }}></img>
+            </div>
+
+            <div className="img3">
+                <img src={require('../../../_basic/images/climb.png')} alt="climb.png" style={{ width: 400, height: 425 }}></img>
+            </div>
+
             <div className="boxHistory">
                 <p style={{ textAlign: "left", fontSize: "20px", fontFamily: "Arial, sans-serif", color: 'rgb(99,182,130)', lineHeight: 0.3 }}>歷史</p>
 
