@@ -156,7 +156,9 @@ export default function MenuComponent() {
               justifyContent: "center",
             }}
           >
+            <a href="/" style={{ textDecoration: "none", color: "inherit" }}>
             <img src={logoImage} alt="德明USR" className="logo" />
+            </a>
           </div>
 
           <div className="nav-container">
