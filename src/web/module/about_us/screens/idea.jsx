@@ -7,6 +7,9 @@ import Contact from "../../home/components/contactus/Contact";
 export default function Idea() {
   return (
     <>
+    <div className="back-to-home">
+     <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/關於我們/USR的理念</a>
+    </div>
       <h1
         style={{
           textAlign: "center",

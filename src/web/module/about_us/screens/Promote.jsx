@@ -6,6 +6,9 @@ import Contact from "../../home/components/contactus/Contact";
 export default function Promote() {
   return (
     <>
+    <div className="back-to-home">
+     <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/關於我們/推動單位介紹</a>
+    </div>
       <h1
         style={{
           textAlign: "center",

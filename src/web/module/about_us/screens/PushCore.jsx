@@ -7,6 +7,9 @@ import Carousel from "../../../_basic/components/carousel/screens/Carousel";
 export default function PushCore() {
   return (
     <>
+    <div className="back-to-home">
+     <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/關於我們/USR核心整合理念</a>
+    </div>
       <h1
         style={{
           textAlign: "center",

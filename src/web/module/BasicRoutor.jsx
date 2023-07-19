@@ -196,7 +196,6 @@ export default function MenuComponent() {
                   >
                     <Link
                       to="/idea"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleClose}>德明USR理念</MenuItem>
@@ -204,7 +203,6 @@ export default function MenuComponent() {
 
                     <Link
                       to="/PushCore"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleClose}>
@@ -214,7 +212,6 @@ export default function MenuComponent() {
 
                     <Link
                       to="/Promote"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleClose}>推動單位介紹</MenuItem>
@@ -222,7 +219,6 @@ export default function MenuComponent() {
 
                     <Link
                       to="/Report"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleClose}>
@@ -258,7 +254,6 @@ export default function MenuComponent() {
                   >
                     <Link
                       to="/Service"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleLocationClose}>服務足跡</MenuItem>
@@ -292,7 +287,6 @@ export default function MenuComponent() {
                   >
                     <Link
                       to="/Story"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleArticleClose}>精彩報導</MenuItem>
@@ -326,7 +320,6 @@ export default function MenuComponent() {
                   >
                     <Link
                       to="/CaseStudies"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleCaseClose}>案例分享</MenuItem>
@@ -360,21 +353,18 @@ export default function MenuComponent() {
                   >
                     <Link
                       to="/UH109"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleSubmenuClick}>109</MenuItem>
                     </Link>
                     <Link
                       to="/UH110"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleSubmenuClick}>110</MenuItem>
                     </Link>
                     <Link
                       to="/UH111"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleSubmenuClick}>111</MenuItem>
@@ -408,7 +398,6 @@ export default function MenuComponent() {
                   >
                     <Link
                       to="/GMM"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleUsrSubmenuClick}>
@@ -465,7 +454,6 @@ export default function MenuComponent() {
                   >
                     <Link
                       to="/ImportantLink"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                     <MenuItem onClick={handleLinkClose}>重要連結</MenuItem>
@@ -510,7 +498,6 @@ export default function MenuComponent() {
                   >
                     <Link
                       to="/idea"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleClose}>德明USR理念</MenuItem>
@@ -518,7 +505,6 @@ export default function MenuComponent() {
 
                     <Link
                       to="/PushCore"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleClose}>
@@ -528,7 +514,6 @@ export default function MenuComponent() {
 
                     <Link
                       to="/Promote"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleClose}>推動單位介紹</MenuItem>
@@ -536,7 +521,6 @@ export default function MenuComponent() {
 
                     <Link
                       to="/Report"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleClose}>
@@ -554,7 +538,6 @@ export default function MenuComponent() {
                   >
                     <Link
                       to="/Service"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleLocationClose}>服務足跡</MenuItem>
@@ -570,7 +553,6 @@ export default function MenuComponent() {
                   >
                     <Link
                       to="/Story"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleArticleClose}>精彩報導</MenuItem>
@@ -586,7 +568,6 @@ export default function MenuComponent() {
                   >
                     <Link
                       to="/CaseStudies"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleCaseClose}>案例分享</MenuItem>
@@ -602,21 +583,18 @@ export default function MenuComponent() {
                   >
                     <Link
                       to="/UH109"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleSubmenuClick}>109</MenuItem>
                     </Link>
                     <Link
                       to="/UH110"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleSubmenuClick}>110</MenuItem>
                     </Link>
                     <Link
                       to="/UH111"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleSubmenuClick}>111</MenuItem>
@@ -632,7 +610,6 @@ export default function MenuComponent() {
                   >
                     <Link
                       to="/GMM"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleUsrSubmenuClick}>
@@ -669,7 +646,6 @@ export default function MenuComponent() {
                   >
                     <Link
                       to="/ImportantLink"
-                      target="_blank"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                     <MenuItem onClick={handleLinkClose}>重要連結</MenuItem>

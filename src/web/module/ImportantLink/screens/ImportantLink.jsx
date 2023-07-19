@@ -9,7 +9,9 @@ export default function Report() {
     const filePath = "/path/to/your/pdf/file.pdf";
     return (
         <>
-
+<div className="back-to-home">
+     <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/重要連結</a>
+    </div>
         <h1
         style={{
           textAlign: "center",

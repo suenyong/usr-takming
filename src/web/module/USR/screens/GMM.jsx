@@ -9,6 +9,9 @@ export default function GMM() {
 
     return (
         <>
+        <div className="back-to-home">
+        <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/USR/內湖金面山在地風華 - 永續實踐計畫</a>
+        </div>
             <h1 style={{ textAlign: "center", fontSize: "40px", fontFamily: "Arial, sans-serif", color: 'rgb(99,182,130)' }}>
                 推動金面山USR理念目標
             </h1>

@@ -144,7 +144,9 @@ export default function CaseStudies() {
 
   return (
     <>
-
+<div className="back-to-home">
+     <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/案例分享</a>
+    </div>
       <div className="title">案例分享-服務創新育成</div>
 
       <div className="for-title">『Decantar AI商業應用實作坊』系列講座 </div>

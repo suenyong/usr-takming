@@ -21,6 +21,9 @@ export default function Story() {
     };
     return (
         <>
+        <div className="back-to-home">
+     <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/精彩報導</a>
+    </div>
         <h1
         style={{
           textAlign: "center",
