@@ -22,22 +22,22 @@ export default function Story() {
     return (
         <>
         <div className="back-to-home">
-     <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/精彩報導</a>
+    <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/精彩報導</a>
     </div>
         <h1
         style={{
-          textAlign: "center",
-          fontSize: "40px",
-          fontFamily: "Arial, sans-serif",
-          color:"#336666"
+        textAlign: "center",
+        fontSize: "40px",
+        fontFamily: "Arial, sans-serif",
+        color:"#336666"
         }}>
         精彩報導
         </h1>
             
-            {/* <div className="boxS">這裡將會有一些敘述</div> */}
             <div className="centered-container">
                 <div className="boxS">
-                    尚無資料
+                樂活碳點影片介紹:<br/>
+                <a href="https://www.youtube.com/watch?v=W_JwvYAAdcA&t=1s" target="_blank" >https://www.youtube.com/watch?v=W_JwvYAAdcA&t=1s</a>
                 </div>
             </div>
             <Contact />
