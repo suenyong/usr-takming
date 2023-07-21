@@ -12,7 +12,7 @@ import "../styles/ImageFiles.css";
     //     { id: 2, src: require("../images/109IMG_5041.JPG") },
     //     { id: 3, src: require("../images/109IMG_5695.JPG") },
     //     { id: 3, src: require("../images/109IMG_6311.JPG") },
-    //   ];
+    //   ]; 
 
 export default function ImageFiles(props) {
     const { images } = props;
@@ -35,12 +35,13 @@ export default function ImageFiles(props) {
 
         return (
             <>
+            <div className="if">相關圖片</div>
                 <div className="image-gallery">
-                    <p style={{ margin: "0%" }}>相關圖片</p>
+                    {/* <p style={{ margin: "0%" }} className='fi'>相關圖片<br></br></p> */}
                     {images.map((image, index) => (
                         <div
                             key={image.id}
-                            className={`image-container ${selectedImage === image ? "selected" : ""}`}
+                            className={`image-container-if ${selectedImage === image ? "selected" : ""}`}
                             onClick={() => handleImageClick(image)}
                         >
                             <img key={index} src={image.src} alt={`image_${image.id}`} />

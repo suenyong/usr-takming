@@ -1,26 +1,52 @@
 .image-gallery {
-    margin-top: 10%;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(217, 226, 225);
-    border-radius: 10px;
-  }
-  
-  .image-container {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(217, 226, 225);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.image-container-if {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* 新增這行來設定 flex 方向為 column */
+  width: 200px;
+  height: 200px;
+  margin: 3px;
+}
+
+.image-container-if img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 3%;
+  margin-left: 8%;
+}
+
+.image-container-if.selected {
+  transform: scale(6);
+  transition: transform 0.5s ease;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background-color: rgb(10, 94, 84);
+  cursor: pointer;
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px; /* 設定放大後的寬度 */
+  height: 400px; /* 設定放大後的高度 */
+}
+
+
+@media (max-width: 600px) {
+  .image-gallery {
     justify-content: center;
-    align-items: center;
-    width: 200px; 
-    height: 200px;
-    margin: 10px; 
   }
-  
-  .image-container img {
-    max-width: 100%;
-    max-height: 100%;
-    margin: 3px;
-  }
-  
-  .image-container.selected {
-    transform: scale(6);
-  }
+}
+.if{
+  display: block;
+  margin-top: 10%;
+}

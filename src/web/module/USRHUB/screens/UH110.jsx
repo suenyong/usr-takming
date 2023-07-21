@@ -13,12 +13,40 @@ export default function UH110() {
         setSelectedContent(contentId);
     };
 
+    const T110=[
+        { id: 1, src: require("../images/T110_1.jpg") },
+        { id: 2, src: require("../images/T110_2.jpg") },
+    ]
+
+    const A110=[
+        { id: 1, src: require("../images/A110_1.jpg") },
+        { id: 2, src: require("../images/A110_2.jpg") },
+        { id: 3, src: require("../images/A110_3.jpg") },
+    ]
+
+    const Love110_Images=[
+        { id: 1, src: require("../images/L110_1.jpg") },
+        { id: 2, src: require("../images/L110_3.jpg") },
+        { id: 3, src: require("../images/L110_2.JPG") },
+        { id: 4, src: require("../images/L110_4.jpg") },
+        { id: 5, src: require("../images/L110_5.jpg") },
+        { id: 6, src: require("../images/L110_6.JPG") },
+        { id: 7, src: require("../images/L110_7.JPG") },
+        { id: 8, src: require("../images/L110_8.JPG") },
+        { id: 9, src: require("../images/L110_9.JPG") },
+        { id: 10, src: require("../images/L110_10.JPG") },
+        { id: 11, src: require("../images/L110_11.JPG") },
+        { id: 11, src: require("../images/L110_13.JPG") },
+        { id: 11, src: require("../images/L110_14.JPG") },
+    ]
+
+
 
     return (
 
         <>
         <div className="back-to-home">
-     <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/USR HUB/110</a>
+    <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/USR HUB/110</a>
     </div>
             <h1 style={{ textAlign: "center", fontSize: "40px", fontFamily: "Arial, sans-serif",color:"#336666" }}>
                 110企劃
@@ -48,7 +76,7 @@ export default function UH110() {
             {selectedContent === 'content1' && (
                 <div className="p_USRHUB" style={{  fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
 
-                   <p style={{ fontSize: "30px"}}>服務創新育成</p> 
+                <p style={{ fontSize: "30px"}}>服務創新育成</p> 
 
                     「由研發處邀請國內外具有新服務商品、新商業模式、新技術應用之新創企業經理人，雙週舉辦「商業創新論壇」，邀請國內在推動商業創新的專業經理人蒞校演講，邀請內湖科技園 區廠商、本校師生參加，落實創新創意教育的理念。」
                     <p></p>
@@ -73,7 +101,7 @@ export default function UH110() {
                     <br></br>
                     (2)整合跨院教師團隊承接產學案5案共計249萬元，指導4組大學部專題製作， 強化學生實作和問題解決能力。
 
-                    <ImageFiles />
+                    <ImageFiles images={T110} />
                 </div>
             )}
 
@@ -99,7 +127,7 @@ export default function UH110() {
                     </p>
                     計畫衍生亮點成果案例(計畫成果中可供各界參考的執行亮點或特色內容)。 計畫於110年11月06日舉辦「跨境電商行銷競賽暨成果發表會」由東南亞外 籍生製作跨境電商行銷競賽，提供外籍生學術和實務交流的平台，也呼應本 USR Hub計畫主軸—數位科技支援多元族群（外籍生）的大學社會責任。計 畫衍生效益則是媒合兩位外籍生到計畫合作機構企業實習，培育跨境電商人 才。
 
-                    <ImageFiles />
+                    <ImageFiles images={A110} />
                 </div>
             )}
 
@@ -120,7 +148,7 @@ export default function UH110() {
                     <br></br>
                     (3)讓德明的學生有機會實際體驗城鄉交流服務經驗，培育未來參與社會的 關懷奉獻能力，盡一份公民責任，理解本土化與社區的互動關係，進而 參與公共議題，締造德明科大的優質學習文化。透過製作「綠色生活地 圖」協助部落發展地方特色，啟發社區營造思維，協助部落找回地區文 化的認同感。
 
-                    <ImageFiles />
+                    <ImageFiles images={Love110_Images} />
                 </div>
             )}
 
