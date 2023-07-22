@@ -1,22 +1,36 @@
 .service-container {
-  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  /* background-color: aqua; */
 }
 
 .service-title {
+  display:flex;
   font-size: 40px;
   font-family: Arial, sans-serif;
   color:#336666;
+  text-align: center;
+  margin-top: 20px;
+  /* height: 200px;
+  width: 20px; */
+  justify-content: center;
 }
 
 .service-content {
-  display: flex;
-  align-items: flex-start;
-  margin-left: 200px;
+  display:flex;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  justify-content: center;
+  /* background-color: beige; */
 }
 
 .service-text {
   margin-top: 100px;
   margin-left: 0px;
+  height: 100%;
   
 }
 
@@ -28,23 +42,33 @@
 
 
 .service-heading {
+  display: flex;
   font-size: 40px;
-  text-align: left;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 100%;
+  background-color: rgba(55, 98, 84, 0.3);
+  justify-content: center;
 }
 
 .service-button {
-  border: 2px solid black;
-  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 2px solid black; */
   background-color: transparent;
   color: black;
   padding: 10px 20px;
   font-size: 16px;
-  transition: background-color 0.3s;
+  /* transition: background-color 0.3s; */
   margin-left: 40px;
 }
 
 .service-button:hover {
-  background-color: rgb(17, 173, 38);
+  background-color: rgb(48, 66, 50);
   color: white;
 }
 
@@ -52,22 +76,25 @@
   background-color: rgb(8, 109, 13);
 }
 
-.service-image {
-  margin-left: 100px;
+.service-image-TW {
   margin-top: 150px;
+  margin-left: 100px;
+  width: 50%;
 }
 
 .button-container {
   display: flex;
   justify-content: flex-start;
-  /* gap: 10px; */
+  gap: 10px;
   flex-wrap: wrap;
   
 }
 
 .button-row {
   display: flex;
-  margin-bottom: 20px; /* 调整按钮行之间的间距 */
+  flex-wrap: wrap;
+  width: 100%;
+  /* margin-bottom: 20px; */
 }
 
 .hr-line {
@@ -79,34 +106,12 @@
 }
 
 .boxA {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.cardA {
-    width: 100%;
-    max-width: 300px;
-    flex: 1 0 300px;
-    margin: 10px;
-}
-
-.hr-line {
   width: 100%;
-  height: 2px;
-  background-color: darkblue;
-  margin-top: 50px;
-  margin-bottom: 10px;
-}
-
-.boxA {
-  width: 1200px;
-  margin-left: 150px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-left: 0 !important;
 }
 
 .cardA {
@@ -140,19 +145,21 @@
   border: none;
   padding: 10px;
   cursor: pointer;
+  width: 90%;
 }
 
 .color_circle1 {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #000000;
+  background-color: #257773;
   margin-right: 10px;
 }
 
 .button_text {
   color: #040404;
   font-size: 19px;
+  width: 100%;
 }
 
 .btu_stlyes.selected .color_circle {
@@ -162,4 +169,5 @@
 .button_container {
   display: flex;
 }
+
 
