@@ -3,30 +3,75 @@ import SDGs4 from "../images/SDGs4.png";
 import SDGs11 from "../images/SDGs11.png";
 import Contact from "../../home/components/contactus/Contact";
 import Carousel from "../../../_basic/components/carousel/screens/Carousel";
+import React from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 export default function PushCore() {
   return (
     <>
+{/* USR理念 */}
     <div className="back-to-home">
-     <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/關於我們/USR核心整合理念</a>
+    <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/關於我們/德明推動USR核心整合理念</a>
     </div>
+    <div  style={{ 
+      backgroundColor: "rgba(150, 250, 180,0.5)", 
+      width:"70%",
+      marginTop:"10%",
+      marginLeft:"15%",
+      marginRight:"15%",
+      padding:"10px",
+      borderRadius:"10px",
+      boxShadow:"0px 0px 10px 0px rgba(0, 0, 0, 0.75)"
+    }}>
+        <h1
+          style={{
+            textAlign: "center",
+            fontSize: window.innerWidth > 800 ? "40px" : "25px", 
+            fontFamily: "Arial, sans-serif",
+            color:"#336666",
+            marginTop:"5%",
+            padding:"5px",
+          }}
+        >
+          USR的理念
+        </h1>
+
+        <div
+          style={{
+            marginLeft:"10%",
+            marginRight:"10%",
+            maxWidth: "80%",
+            textAlign: "justify",
+            fontFamily: "Arial, sans-serif",
+            padding: "10px"
+          }}
+        >
+          <h3 style={{ fontSize: window.innerWidth > 800 ? "20px" : "10px", lineHeight: "1.5"}}>
+            USR是「University Social
+            Responsibility（大學社會責任）」的簡稱。因為大學扮演著培育人才、研究學術、提升文化等重要角色，同時也肩負著服務社會、促進國家發展的使命。如何發揮大學的社會責任，讓知識與價值能夠更直接地回饋在地，大學在社會中扮演著重要角色，而大學社會責任也就成了大學面對社會期待的重要責任之一，積極參與社會發展，透過大學的知識、技術與資源幫助在地社會解決問題，培養出更具有社會責任感的人才，USR的目標讓大學更加關注在地議題，提供專業的知識與技術，對於區域發展能有更多貢獻。透過USR，大學將與當地社會、產業合作，共同發掘問題、設計解決方案，研究成果能夠直接回饋社會，進而促進區域發展。
+          </h3>
+        </div>
+    </div>
+
+{/* TM理念 */}
+
+<div className="PushCore">
       <h1
         style={{
           textAlign: "center",
-          fontSize: window.innerWidth > 800 ? "40px" : "20px", 
+          fontSize: window.innerWidth > 800 ? "40px" : "25px", 
           fontFamily: "Arial, sans-serif",
-
+          marginTop:"10%",
           color: "#336666",
         }}
       >
-        USR核心整合理念
+        德明USR核心整合理念
       </h1>
-
-      <Carousel />
-      <div className="PushCore">
         <div class="text-content"style={{ fontSize: window.innerWidth > 800 ? "40px" : "20px", textAlign: "justify",}}>
-          <div class="title_Usr"> USR HUB </div>
-          <p>
+          <div class="title_Usr"> USR HUB </div> 
+          <h3 style={{ fontSize: window.innerWidth > 800 ? "20px" : "10px", lineHeight: "1.5" }}>
             本校於 109-111 年執行 USR Hub 計畫：數位科技支援多元族群計畫，
             緊扣中程發展計畫與教育部高教深耕計畫
             的推動，有助於校務發展目標之規劃與核心理念的落實。實施場域對象涵蓋多元族群，包括內湖科技園區企業、部
@@ -44,9 +89,9 @@ export default function PushCore() {
             二（健全品格教育、善盡社
             會責任）和主軸三（鏈結產學合作、深耕研究務實），實現「進步優質學府、業界最愛
             科大」的學校願景， 透過數位科技協助多元族群發展，善盡大學社會責任。
-          </p>
+          </h3>
           <div class="title_Usr" >USR</div>
-          <p>
+          <h3 style={{ fontSize: window.innerWidth > 800 ? "20px" : "10px", lineHeight: "1.5" }}>
             內湖金面山在地風華–永續實踐計畫，依循 USR
             推動目標以「人才培育」和「在地鏈結」為核心，透過設
             計思考以人為本的設計精神，從在地需求出發，
@@ -63,9 +108,10 @@ export default function PushCore() {
             踐在地關懷的大學社會責任，落實具有在地文化色彩的永續旅遊發展，計畫目標對焦
             SDGs4 優質教育與 SDGs11
             永續城市及社區，以培育學生具備跨領域及解決問題的能力及永續樂活人才，達成在地活化與永續社區發展之目標。
-          </p>
+          </h3>
         </div>
-
+      </div>
+<div className="PusCoreSDGs">
         <div class="container">
           <div class="conversation4">
             <div class="image">
@@ -98,6 +144,19 @@ export default function PushCore() {
           </div>
         </div>
       </div>
+      <div style={{
+          textAlign: "center",
+          fontSize: window.innerWidth > 800 ? "40px" : "20px", 
+          fontFamily: "Arial, sans-serif",
+          marginTop: "15%",
+          color: "#336666",
+          backgroundColor:"rgba(250, 217, 150, 0.5)",
+          boxShadow:"0px 0px 10px 0px rgba(0, 0, 0, 0.75)"
+        }}>
+        活動照片
+        <Carousel />
+      </div>
+      
       <Contact />
     </>
   );

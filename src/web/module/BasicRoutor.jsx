@@ -22,7 +22,7 @@ import Report from "./about_us/screens/Report";
 import Story from "./about_us/screens/Story";
 import logoImage from "./logo.png";
 import "./menu.css";
-import Idea from "./about_us/screens/idea";
+// import Idea from "./about_us/screens/idea";
 import CaseStudies from "./CaseStudies/screens/CaseStudies";
 import Service from "./about_us/screens/Service";
 import UH109 from "../module/USRHUB/screens/UH109";
@@ -194,12 +194,12 @@ export default function MenuComponent() {
                     open={Boolean(anchorEl)}
                     onClose={handleClose}
                   >
-                    <Link
+                    {/* <Link
                       to="/idea"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleClose}>德明USR理念</MenuItem>
-                    </Link>
+                    </Link> */}
 
                     <Link
                       to="/PushCore"
@@ -661,7 +661,7 @@ export default function MenuComponent() {
             <Route path="/" element={<Home />} />
             <Route path="/PushCore" element={<PushCore />} />
             <Route path="/Promote" element={<Promote />} />
-            <Route path="/idea" element={<Idea />} />
+            {/* <Route path="/idea" element={<Idea />} /> */}
             <Route path="/Report" element={<Report />} />
             <Route path="/Story" element={<Story />} />
             <Route path="/CaseStudies" element={<CaseStudies />} />

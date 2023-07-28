@@ -16,10 +16,10 @@ export default function Carousel(props){
       { id: 6, src: require("../images/TLTS_2.JPG") },
     ]
   )
-   
+  
   useEffect(() => {
     if (props.photos) {
-     setPhopos(props.photos)
+    setPhopos(props.photos)
     }
   }, [])
 
