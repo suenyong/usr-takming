@@ -10,9 +10,8 @@ export default function FronPageCarousel(){
         { id: 1, src: require("../images/FrongPage_2.png") },
         { id: 2, src: require("../images/FrongPage_5.png") },
         { id: 3, src: require("../images/FrongPage_4.png") },
-        { id: 4, src: require("../images/GMM_1.png") },
-
-
+        { id: 4, src: require("../images/GMM.jpg") },
+        { id: 5, src: require("../images/GD.jpg") },
       ];
 
     return (
