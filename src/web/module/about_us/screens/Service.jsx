@@ -11,47 +11,78 @@ import { Link } from "react-router-dom";
 export default function Service() {
   const cardData = [
     {
-      imgSrc: require("../images/台灣拚完.png"),
-      date: "日期:XXX",
-      title: "活動名稱",
-      description: "一些描述內容.................",
+      imgSrc: require("../images/LOVE_HOPE.jpg"),
+      title: "愛與希望 - 菲你不可",
+      link:"https://manner.takming.edu.tw/var/file/8/1008/img/14/548951769.pdf",
     },
     {
-      imgSrc: require("../images/台灣拚完.png"),
-      date: "日期:XXX",
-      title: "活動名稱",
-      description: "一些描述內容.................",
+      imgSrc: require("../images/Homeless.jpg"),
+      title: "「2020 歡樂聖誕~街友服務",
+      link:"https://manner.takming.edu.tw/var/file/8/1008/img/14/428844962.pdf",
     },
     {
-      imgSrc: require("../images/台灣拚完.png"),
-      date: "日期:XXX",
-      title: "活動名稱",
-      description: "一些描述內容.................",
+      imgSrc: require("../images/BinBin.jpg"),
+      title: "「來去德明彬彬ㄅ一ㄤˋㄅ一ㄤˋ」生態 暨社團教學活動",
+      link:"http://manner.takming.edu.tw/var/file/8/1008/img/14/186449923.pdf",
     },
     {
-      imgSrc: require("../images/台灣拚完.png"),
-      date: "日期:XXX",
-      title: "活動名稱",
-      description: "一些描述內容.................",
+      imgSrc: require("../images/StoneLake109.jpg"),
+      title: "109 年白石湖生態營」活動",
+      link:"https://manner.takming.edu.tw/var/file/8/1008/img/14/144581186.pdf",
     },
     {
-      imgSrc: require("../images/台灣拚完.png"),
-      date: "日期:XXX",
-      title: "活動名稱",
-      description: "一些描述內容.................",
+      imgSrc: require("../images/WenhuSchool.jpg"),
+      title: "109 年度「文湖國小生態教學」活動",
+      link:"https://manner.takming.edu.tw/var/file/8/1008/img/14/384592079.pdf",
     },
     {
-      imgSrc: require("../images/台灣拚完.png"),
-      date: "日期:XXX",
-      title: "活動名稱",
-      description: "一些描述內容.................",
+      imgSrc: require("../images/achievement109.jpg"),
+      title: "109-年度大學社會責任實踐基地-忠治「部落.愛轉動」-成果發表會",
+      link:"http://manner.takming.edu.tw/var/file/8/1008/img/14/625052883.pd",
     },
-  ];
-  const [selectedContent, setSelectedContent] = useState("content1");
+    {
+      imgSrc: require("../images/Summer109.jpg"),
+      title: "109-年度大學社會責任實踐基地-忠治「部落.愛轉動」-暑期夏令營",
+      link:"http://manner.takming.edu.tw/var/file/8/1008/img/14/709433889.pdf",
+    },
+    {
+      imgSrc: require("../images/fraternity109.jpg"),
+      title: "109-年度第三季博愛慶生會",
+      link:"http://manner.takming.edu.tw/var/file/8/1008/img/14/986341926.pdf",
+    },
+    {
+      imgSrc: require("../images/HengshanSchool109.jpg"),
+      title: "109-年橫山國小-「暑期-環教、理財、品格、創意夏令營」",
+      link:"http://manner.takming.edu.tw/var/file/8/1008/img/14/125978186.pdf",
+    },
+    {
+      imgSrc: require("../images/TA-Q-BIN-2020.jpg"),
+      title: "2020-聖誕宅急便",
+      link:"https://manner.takming.edu.tw/var/file/8/1008/img/14/636127978.pdf",
+    },
+    {
+      imgSrc: require("../images/Vulnerable14.jpg"),
+      title: "弱勢關懷課輔",
+      link:"https://manner.takming.edu.tw/var/file/8/1008/img/14/698511545.pdf",
+    },
+    {
+      imgSrc: require("../images/animal.jpg"),
+      title: "動物保護志工培訓",
+      link:"https://manner.takming.edu.tw/var/file/8/1008/img/14/411489015.pdf",
+    },
 
-  const handleButtonClick = (contentId) => {
-    setSelectedContent(contentId);
+  ];
+
+  const [selectedContent, setSelectedContent] = useState('content1');
+
+  const handleButtonClick = (contentId, link) => {
+    if (link) {
+      window.open(link, '_blank'); // 在新標籤頁中打開連結
+    } else {
+      setSelectedContent(contentId); // 執行原本的功能，例如切換顯示的內容
+    }
   };
+
 
   return (
     <>
@@ -404,27 +435,18 @@ export default function Service() {
           </div>
           {/* <img src={tw} alt="台灣拚完圖片" className="service-image-TW" /> */}
         </div>
+        </div>
 
-        <div className="hr-line"></div>
+        {/* <div className="hr-line"></div> */}
         <div className="boxA">
           {cardData.map((card, index) => (
-            <Card key={index} className="cardA">
-              <img src={card.imgSrc} style={{ height: 150 }} />
-              <CardContent>
-                <Typography gutterBottom variant="h7" component="div">
-                  <p style={{ lineHeight: 0 }}>{card.date}</p>
-                </Typography>
-                <Typography gutterBottom variant="h6" component="div">
-                  <p style={{ lineHeight: 1, textAlign: "center" }}>
-                    {card.title}
-                  </p>
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {card.description}
-                </Typography>
-              </CardContent>
-              <Button size="large">閱讀更多</Button>
-            </Card>
+            <div key={index} class="cardA">
+              <div className="card-body">
+                <div className="card-title">{card.title}</div>
+                <button className="btn-Link" onClick={() => handleButtonClick(card.contentId, card.link)} >Open PDF</button>
+              </div>
+              <img src={card.imgSrc} />
+            </div>
           ))}
         </div>
         {/* <Menu
@@ -442,7 +464,6 @@ export default function Service() {
           </MenuItem>
         ))}
       </Menu> */}
-      </div>
 
       <Contact />
     </>
