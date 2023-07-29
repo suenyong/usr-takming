@@ -9,25 +9,26 @@ export default function UsrUsrHub(){
 
 useEffect(() => {
     AOS.init({
-    duration: 600,
+    duration: 700,
     });
 }, []);
 
 return (
     <>
-    <h1 style={{ 
+    <h1 data-aos="zoom-out-down" style={{ 
         textAlign: 'center', 
         color: '#fff',
         backgroundColor:"#90cbc0",
         width:"40%",
         marginRight:"30%",
         marginLeft:"30%",
+        marginTop:"13%",
         }}>
         計畫項目
         </h1>
 
     <div className="container-push">
-        <Link to="/UH109" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Link to="/UH109" target="_blank" style={{ textDecoration: 'none', color: 'inherit',width:"10%" }}>
             <button className="textUSRHUB-button" 
             data-aos="fade-right"
             data-aos-offset="300"

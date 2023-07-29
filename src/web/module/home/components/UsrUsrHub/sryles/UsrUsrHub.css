@@ -1,25 +1,29 @@
 .container-push{
     display: block;
-    width: 60%;
-    height: none;
-    margin: 10% auto;
-    margin-left: 15%;
-    
-    
+    width:80%;
+    height: 300px;
+    margin: 18% 0 18% 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-image:linear-gradient(to right,#89f5cc7e,#89f5e37d,#89f5ee6f,#89eef56f,#89f5f379,#89f0f578,#89c8f57b,#89baf57e,#89b1f573,#89a0f580);
+    padding: 70px 0 70px 0;
 }
 
 .textUSRHUB-button{
     display: block;
+    color: #4e6062;
     font-size: 100px !important;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin:30px 80px 30px 80px;
     border-radius: 4px;
     border: none;
     background-color: transparent;
+    white-space: nowrap;
 }
 
 .textUSR-button{
     display: block;
+    color: #4e6062;
     font-size: 100px !important;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin:30px 80px 30px 80px;
@@ -32,20 +36,23 @@
 
 .textUSRHUB-button:hover,
 .textUSR-button:hover {
-    background-color: #568d83;
-    color: #fff;
+    color: #3b6ccdc4;
     border: none;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    background-color: transparent;
 
 }
 
 /* 小於 800px 寬度的螢幕 */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .container-push {
-      width: 100%; /* 將寬度調整為 90% */
-      margin: 5% auto; /* 調整上下間距 */
+        width:80%;
+        height: 50%;
+        margin: 25% 0 25% 0;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .textUSRHUB-button,
