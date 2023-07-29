@@ -52,7 +52,7 @@ export default function NewsFeed() {
 
     return (
         <>
-            <div className="hr-line"></div>
+            {/* <div className="hr-line"></div> */}
             <h1 style={{ textAlign: 'center', color: 'navy' }}>最新消息</h1>
             <div className="box">
                 {

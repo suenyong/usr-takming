@@ -1,12 +1,14 @@
 import Achieve from "../components/achieve/Achieve";
-import NewsFeed from "../components/newsFeed/NewsFeed";
-import USRHubCarousel from "../components/usrHubCarousel/USRHubCarousel";
+// import NewsFeed from "../components/newsFeed/NewsFeed";
+// import USRHubCarousel from "../components/usrHubCarousel/USRHubCarousel";
 import Contact from "../components/contactus/Contact";
 import background_2 from "../../home/screens/image/background_2.png";
 import FronPageCarousel from "../../../_basic/components/carousel/screens/FrontPageCarousel";
+import "../styles/Home.css";
 
 
 import TaiwanMap from "../components/TaiwanMap/taiwanmap";
+import UsrUsrHub from "../components/UsrUsrHub/UsrUsrHub";
 export default function Home() {
 
 
@@ -22,9 +24,13 @@ export default function Home() {
 
         <FronPageCarousel />
         {/* <NewsFeed /> */}
+        <div className="block-distance"></div>
         <Achieve />
-        <USRHubCarousel />
+        <div className="block-distance"></div>
+        <UsrUsrHub />
+        <div className="block-distance"></div>
         <TaiwanMap />
+        <div className="block-distance"></div>
         <Contact />
       </div>
     </>

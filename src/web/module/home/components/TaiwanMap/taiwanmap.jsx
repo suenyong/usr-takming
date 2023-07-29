@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./styles/taiwanese.css";
+import AOS from 'aos';
 import taiwan from "./images/台灣拚完.png"; //台灣圖
 import Philippinessold from "./images/菲律賓線.png"; //菲律賓圖
 import Philippines from "./images/Philippines.png"; //菲律賓
@@ -31,6 +32,12 @@ import Service from "./Service"; //點閱讀更多跳至
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 const TaiwanMap = () => {
+  useEffect(() => {
+    AOS.init({
+    duration: 1000,
+    });
+}, []);
+
   const defaultContent = "\n\n\n\n請點選旁邊縣市選擇地點！";
   const defaultImage = sever1;
 
@@ -71,10 +78,20 @@ const TaiwanMap = () => {
 
   return (
     <>
-      <div className="hr-line"></div>
-      <h1 className="map-title">服務足跡</h1>
+      {/* <div className="hr-line"></div> */}
+      <h1 style={{ 
+        textAlign: 'center', 
+        color: '#fff',
+        backgroundColor:"#90cbc0",
+        width:"40%",
+        marginRight:"30%",
+        marginLeft:"30%",
+        }}>
+        服務足跡
+        </h1>
+        
       {windowWidth > 960 ? (
-        <div className="taiwan-map">
+        <div className="taiwan-map" data-aos="fade-left">
           <img src={imgPath} alt="123" style={{ width: "20%" }} />
           <button
             onMouseOver={() => handleMouseOver(Taichung)}
@@ -371,21 +388,7 @@ const TaiwanMap = () => {
                 target="_blank"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                <button
-                  style={{
-                    width: "10%",
-                    height: "6%",
-                    position: "absolute",
-                    top: "93.5%", // 設定按鈕在內部容器中的上偏移量
-                    right: "1.5%", // 設定按鈕在內部容器中的右偏移量
-                    padding: "5px 5px",
-                    fontSize: "18px",
-                    borderRadius: "5px",
-                    border: "none",
-                    color: "white",
-                    backgroundColor: "black",
-                    cursor: "pointer",
-                  }}
+                <button className="twMin-more-button"
                   onClick={() => {
                     <Routes>
                       <Route path="/Service" element={<Service />} />
@@ -432,17 +435,8 @@ const TaiwanMap = () => {
                 marginLeft: "850%",
               }}
             >
-              <button
-                style={{
-                  width: "280%",
-                  height: "100%",
-                  fontSize: "18px",
-                  borderRadius: "5px",
-                  border: "none",
-                  color: "white",
-                  backgroundColor: "black",
-                  cursor: "pointer",
-                }}
+              <button className="twMax-more-button"
+                
                 onClick={() => {
                   <Routes>
                     <Route path="/Service" element={<Service />} />

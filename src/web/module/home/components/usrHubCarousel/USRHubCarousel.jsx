@@ -24,7 +24,7 @@ export default function USRHubCarousel() {
 
   return (
     <div>
-        <div className="hr-line"></div>
+        {/* <div className="hr-line"></div> */}
         <div className="slider-container" style={{ margin: '50px' }}>
           <Slider ref={sliderRef} {...settings}>
             <div >

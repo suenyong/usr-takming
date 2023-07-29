@@ -21,14 +21,13 @@ export default function PushCore() {
       marginTop:"10%",
       marginLeft:"15%",
       marginRight:"15%",
-      padding:"10px",
       borderRadius:"10px",
       boxShadow:"0px 0px 10px 0px rgba(0, 0, 0, 0.75)"
     }}>
         <h1
           style={{
             textAlign: "center",
-            fontSize: window.innerWidth > 800 ? "40px" : "25px", 
+            fontSize: window.innerWidth > 800 ? "40px" : "20px", 
             fontFamily: "Arial, sans-serif",
             color:"#336666",
             marginTop:"5%",
@@ -61,7 +60,7 @@ export default function PushCore() {
       <h1
         style={{
           textAlign: "center",
-          fontSize: window.innerWidth > 800 ? "40px" : "25px", 
+          fontSize: window.innerWidth > 800 ? "40px" : "20px", 
           fontFamily: "Arial, sans-serif",
           marginTop:"10%",
           color: "#336666",
@@ -150,8 +149,6 @@ export default function PushCore() {
           fontFamily: "Arial, sans-serif",
           marginTop: "15%",
           color: "#336666",
-          backgroundColor:"rgba(250, 217, 150, 0.5)",
-          boxShadow:"0px 0px 10px 0px rgba(0, 0, 0, 0.75)"
         }}>
         活動照片
         <Carousel />

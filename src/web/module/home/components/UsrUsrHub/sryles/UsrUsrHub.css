@@ -1,0 +1,52 @@
+.container-push{
+    display: block;
+    width: 100%;
+    height: none;
+    margin: 10% auto;
+    /* background-color: rgb(125, 177, 153); */
+    
+}
+
+.textUSRHUB-button{
+    display: block;
+    font-size: 100px !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:30px 80px 30px 80px;
+    border-radius: 4px;
+    border: none;
+}
+
+.textUSR-button{
+    display: block;
+    font-size: 100px !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:30px 80px 30px 80px;
+    border-radius: 4px;
+    border: none;
+}
+
+
+.textUSRHUB-button:hover,
+.textUSR-button:hover {
+    background-color: #568d83;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+/* 小於 800px 寬度的螢幕 */
+@media screen and (max-width: 800px) {
+    .container-push {
+      width: 100%; /* 將寬度調整為 90% */
+      margin: 5% auto; /* 調整上下間距 */
+    }
+
+    .textUSRHUB-button,
+    .textUSR-button {
+      font-size: 36px !important; /* 調整字體大小 */
+      margin: 10px 20px; /* 調整按鈕的間距 */
+    }
+}

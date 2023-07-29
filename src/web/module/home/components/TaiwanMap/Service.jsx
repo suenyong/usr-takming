@@ -90,7 +90,7 @@ export default function Service() {
                       <img src={card.imgSrc}  style={{ width: 100, height: 150 }} />
                     <CardContent>
                       <Typography gutterBottom variant="h7" component="div">
-                         <p style={{ lineHeight: 0 }}>{card.date}</p>
+                        <p style={{ lineHeight: 0 }}>{card.date}</p>
                       </Typography>
                     <Typography gutterBottom variant="h6" component="div">
                         <p style={{ lineHeight: 1, textAlign: 'center' }}>{card.title}</p>
