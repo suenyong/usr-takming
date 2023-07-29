@@ -90,7 +90,7 @@ const TaiwanMap = () => {
         服務足跡
       </h1>
 
-      {windowWidth > 1000 ? (
+      {windowWidth > 960 ? (
         <div className="taiwan-map" data-aos="fade-left">
           <img src={imgPath} alt="123" style={{ width: "20%" }} />
           <button
