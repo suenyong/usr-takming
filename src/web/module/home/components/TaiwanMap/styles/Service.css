@@ -1,21 +1,36 @@
 .service-container {
-  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  /* background-color: aqua; */
 }
 
 .service-title {
+  display:flex;
   font-size: 40px;
   font-family: Arial, sans-serif;
+  color:#336666;
+  text-align: center;
+  margin-top: 20px;
+  /* height: 200px;
+  width: 20px; */
+  justify-content: center;
 }
 
 .service-content {
-  display: flex;
-  align-items: flex-start;
-  margin-left: 200px;
+  display:flex;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  justify-content: center;
+  /* background-color: beige; */
 }
 
 .service-text {
   margin-top: 100px;
   margin-left: 0px;
+  height: 100%;
   
 }
 
@@ -27,46 +42,59 @@
 
 
 .service-heading {
-  font-size: 30px;
-  text-align: left;
+  display: flex;
+  font-size: 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 100%;
+  background-color: rgba(55, 98, 84, 0.3);
+  justify-content: center;
 }
 
 .service-button {
-  border: 2px solid black;
-  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 2px solid black; */
   background-color: transparent;
   color: black;
   padding: 10px 20px;
   font-size: 16px;
-  transition: background-color 0.3s;
+  /* transition: background-color 0.3s; */
   margin-left: 40px;
 }
 
 .service-button:hover {
-  background-color: red;
+  background-color: rgb(48, 66, 50);
   color: white;
 }
 
 .service-button:active {
-  background-color: darkred;
+  background-color: rgb(8, 109, 13);
 }
 
-.service-image {
-  margin-left: 100px;
+.service-image-TW {
   margin-top: 150px;
+  margin-left: 100px;
+  width: 50%;
 }
 
 .button-container {
   display: flex;
   justify-content: flex-start;
-  /* gap: 10px; */
+  gap: 10px;
   flex-wrap: wrap;
   
 }
 
 .button-row {
   display: flex;
-  margin-bottom: 20px; /* 调整按钮行之间的间距 */
+  flex-wrap: wrap;
+  width: 100%;
+  /* margin-bottom: 20px; */
 }
 
 .hr-line {
@@ -78,39 +106,119 @@
 }
 
 .boxA {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.cardA {
-    width: 100%;
-    max-width: 300px;
-    flex: 1 0 300px;
-    margin: 10px;
-}
-
-.hr-line {
+  margin-top: 20%;
+  margin-bottom: 20%;
+  margin-left: 0 !important;
   width: 100%;
-  height: 2px;
-  background-color: darkblue;
-  margin-top: 50px;
-  margin-bottom: 10px;
-}
-
-.boxA {
-  width: 1200px;
-  margin-left: 150px;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  /* background: #1f3d4738; */
+}
+
+.card-body{
+  background: #356c5697;
+  width: 240px;
+  height: 140px;
+  position: absolute;
+  border-radius: 15px;
+  backdrop-filter: blur(5px) !important;
+  padding:30px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cardA {
-  width: 100%;
-  max-width: 300px;
-  flex: 1 0 300px;
-  margin: 10px;
+  background-color: #3f7051;
+  width: 320px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 4px solid #3a7877;
 }
+
+.card-title{
+  text-transform: uppercase;
+  margin: 10% 0 10% 0;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 900;
+  line-height: 40px;
+}
+
+.btn-Link{
+  color: #dcdcdc;
+  background: #468457;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none !important;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-Link:hover{
+  background: #1b412d;
+  transition: 0.9s;
+}
+
+.cardA img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  border-radius: 15px;
+}
+
+.menu-link:visited {
+  color: #0e11e9; /* 已訪問連結的顏色 */
+  text-decoration: none; /* 移除下劃線 */
+}
+
+/* 以下是塞選按鈕 */
+.p_USRHUB{
+  margin: 10%;
+  text-align: left;
+}
+
+.button_HUB{
+  display: flex;
+  margin-left: 15%;
+  margin-top: 0;
+}
+
+.btu_stlyes {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 90%;
+}
+
+.color_circle1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #257773;
+  margin-right: 10px;
+}
+
+.button_text {
+  color: #040404;
+  font-size: 19px;
+  width: 80%;
+}
+
+.btu_stlyes.selected .color_circle {
+  background-color: #ff0000; /* 选中状态的颜色 */
+}
+
+.button_container {
+  display: flex;
+}
+
+

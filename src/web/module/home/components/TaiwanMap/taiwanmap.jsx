@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./styles/taiwanese.css";
-import AOS from 'aos';
-import taiwan from "./images/台灣拚完.png"; //台灣圖
-import Philippinessold from "./images/菲律賓線.png"; //菲律賓圖
+import AOS from "aos";
+import taiwan from "./images/taiwan.png"; //台灣圖
+import Philippinessold from "./images/PhilippineLine.png"; //菲律賓圖
 import Philippines from "./images/Philippines.png"; //菲律賓
 import Taichung from "./images/Taichung.png"; // 台中
 import Keelung from "./images/Keelung.png"; // 基隆
@@ -23,20 +23,19 @@ import Hsinchu_County from "./images/Hsinchu_County.png"; //新竹縣
 import Taoyuan from "./images/Taoyuan.png"; //桃園
 import New_Taipei from "./images/New_Taipei.png"; //新北
 import taipei from "./images/taipei.png"; //台北
-import sever from "./images/活動背景1.png";
-import Philippinessever from "./images/菲律賓活動.png"; //菲律賓活動照片
-import sever1 from "./images/圖片1 (1).png"; //無照片
-import sever2 from "./images/金面山.png"; //台北活動照片
-import sever3 from "./images/忠治.png"; //新北活動照片
+import Philippinessever from "./images/philippinesevent.png"; //菲律賓活動照片
+import sever1 from "./images/nophoto.png"; //無照片
+import sever2 from "./images/TaipeiEventPhotos.png"; //台北活動照片
+import sever3 from "./images/New TaipeiEventPhotos.png"; //新北活動照片
 import Service from "./Service"; //點閱讀更多跳至
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 const TaiwanMap = () => {
   useEffect(() => {
     AOS.init({
-    duration: 1000,
+      duration: 1000,
     });
-}, []);
+  }, []);
 
   const defaultContent = "\n\n\n\n請點選旁邊縣市選擇地點！";
   const defaultImage = sever1;
@@ -75,21 +74,22 @@ const TaiwanMap = () => {
       setWindowWidth(window.innerWidth);
     });
   }, []);
-
   return (
     <>
       {/* <div className="hr-line"></div> */}
-      <h1 style={{ 
-        textAlign: 'center', 
-        color: '#fff',
-        backgroundColor:"#90cbc0",
-        width:"40%",
-        marginRight:"30%",
-        marginLeft:"30%",
-        }}>
+      <h1
+        style={{
+          textAlign: "center",
+          color: "#fff",
+          backgroundColor: "#90cbc0",
+          width: "40%",
+          marginRight: "30%",
+          marginLeft: "30%",
+        }}
+      >
         服務足跡
-        </h1>
-        
+      </h1>
+
       {windowWidth > 960 ? (
         <div className="taiwan-map" data-aos="fade-left">
           <img src={imgPath} alt="123" style={{ width: "20%" }} />
@@ -327,7 +327,7 @@ const TaiwanMap = () => {
               onMouseOut={handlePhilippinesOut}
               onClick={() =>
                 handleClick(
-                  "地點：菲律賓\n德明科大於 100 年~110 年已連續 11 年對菲律賓進行以「愛無國界．菲你莫屬」為號召的國際志工服務活動；透過多年來的志工義務服務，看到當地資源及資訊的缺乏，該校志工們希望集合有心願者的力量，透過「聖誕鞋盒禮物行動」活動，讓愛心、喜樂與盼望來豐富小朋友精采的生命。該校學生會志工同學表示，透過物資轉動的愛與關懷，讓菲律賓弱勢小朋友感受到無國界的溫暖與支持，也將志工服務的真正內涵具體呈現。",
+                  "地點：菲律賓\n\n\n\n德明科大於 100 年~110 年已連續 11 年對菲律賓進行以「愛無國界．菲你莫屬」為號召的國際志工服務活動；透過多年來的志工義務服務，看到當地資源及資訊的缺乏，該校志工們希望集合有心願者的力量，透過「聖誕鞋盒禮物行動」活動，讓愛心、喜樂與盼望來豐富小朋友精采的生命。該校學生會志工同學表示，透過物資轉動的愛與關懷，讓菲律賓弱勢小朋友感受到無國界的溫暖與支持，也將志工服務的真正內涵具體呈現。",
                   Philippinessever
                 )
               }
@@ -337,70 +337,77 @@ const TaiwanMap = () => {
             </button>
           </div>
           <div
-            className="content-box"
-            style={{
-              backgroundImage: `url(${sever})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              width: "60%", // 使用相對單位，讓元素寬度根據視窗寬度自動調整
-              height: "81%", // 使用相對單位，讓元素高度根據視窗高度自動調整
-              paddingTop: "80px",
-              display: "flex", // 使用 flexbox 進行布局
-              flexDirection: "column", // 決定元素排列方向
-              justifyContent: "center", // 讓元素在容器中垂直置中
-              alignItems: "center", // 讓元素在容器中水平置中
-              position: "absolute",
-              overflow: "auto",
-            }}
-          >
-            {selectedImg && (
-              <img
-                src={selectedImg}
-                alt="Selected"
-                style={{
-                  width: "50%", // 使用相對單位，讓圖片寬度根據父容器寬度自動調整
-                  maxHeight: "40%", // 使用相對單位，讓圖片高度根據父容器高度自動調整
-                  objectFit: "contain", // 保持圖片比例，避免圖片變形
-                  marginBottom: "14px", // 上移圖片。你可以根據需要調整這個值。
-                  marginRight: "-45px", // 上移圖片。你可以根據需要調整這個值。
-                  marginTop: "-5%",
-                }}
-              />
-            )}
-            <div
-              style={{
-                color: "black",
-                fontSize: "5x",
-                zIndex: 1,
-                width: "65%", // 使用相對單位，讓元素寬度根據父容器寬度自動調整
-                textAlign: "justify",
-                whiteSpace: "pre-wrap",
-                marginTop: "-2px", // 增加上邊距，將元素向下移動
-                marginLeft: "100px",
-              }}
-            >
-              {selectedContent}
-            </div>
+  className="content-box"
+  style={{
+    backgroundColor:"rgb(6, 202, 173)",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    width: "50%",
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-start",
+    alignItems: "center",
+    position: "absolute",
+    overflow: "auto",
+  }}
+>
+  <div
+    style={{
+      color: "black",
+      fontSize: "0.5vw",
+      zIndex: 0.5,
+      width: "30vw",
+      textAlign: "justify",
+      whiteSpace: "pre-wrap",
+      marginLeft: "-5vw",
+      marginTop: "10vh",
+    }}
+  >
+    {selectedContent}
+  </div>
+  
+  {selectedImg && (
+    <img
+      src={selectedImg}
+      alt="Selected"
+      style={{
+        width: "39vw",
+        maxHeight: "30vh",
+        objectFit: "contain",
+        marginBottom: "2vh",
+        marginLeft:"-1vw",
+        marginTop: "5vh",
+      }}
+    />
+  )}
 
-            {!isDefault && (
-              <Link
-                to="/Service"
-                target="_blank"
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                <button className="twMin-more-button"
-                  onClick={() => {
-                    <Routes>
-                      <Route path="/Service" element={<Service />} />
-                    </Routes>;
-                  }}
-                >
-                  閱讀更多
-                </button>
-              </Link>
-            )}
-          </div>
-        </div>
+  {!isDefault && (
+    <Link
+      to="/Service"
+      target="_blank"
+      style={{ textDecoration: "none", color: "inherit" }}
+    >
+      <button
+        className="twMin-more-button"
+        style={{
+          fontSize: "1vw",  // 字體大小隨著視窗寬度變化
+          padding: "1vh 0.5vw",  // 內部填充隨著視窗大小變化
+          margin: "1vh 0",  // 邊距隨著視窗高度變化
+        }}
+        onClick={() => {
+          <Routes>
+            <Route path="/Service" element={<Service />} />
+          </Routes>;
+        }}
+      >
+        點選可閱讀更多
+      </button>
+    </Link>
+  )}
+</div>
+</div>
+
       ) : (
         <>
           <div
@@ -432,11 +439,11 @@ const TaiwanMap = () => {
               style={{
                 textDecoration: "none",
                 color: "inherit",
-                marginLeft: "850%",
+                marginLeft: "500%",
               }}
             >
-              <button className="twMax-more-button"
-                
+              <button
+                className="twMax-more-button1"
                 onClick={() => {
                   <Routes>
                     <Route path="/Service" element={<Service />} />
