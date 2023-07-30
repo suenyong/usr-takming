@@ -7,6 +7,7 @@
     margin-right: 10%;
     background-image:linear-gradient(to right,#89f5cc7e,#89f5e37d,#89f5ee6f,#89eef56f,#89f5f379,#89f0f578,#89c8f57b,#89baf57e,#89b1f573,#89a0f580);
     padding: 70px 0 70px 0;
+    clip-path: polygon(0 0, 70% 0, 100% 90%, 0 100%);
 }
 
 .textUSRHUB-button{

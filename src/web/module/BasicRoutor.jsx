@@ -30,6 +30,7 @@ import UH110 from "../module/USRHUB/screens/UH110";
 import UH111 from "../module/USRHUB/screens/UH111";
 import GMM from "./USR/screens/GMM";
 import ImportantLink from "../module/ImportantLink/screens/ImportantLink";
+import GD from "./USR/screens/GD";
 
 
 export default function MenuComponent() {
@@ -404,9 +405,14 @@ export default function MenuComponent() {
                         內湖金面山在地風華 - 永續實踐計畫
                       </MenuItem>
                     </Link>
+                    <Link
+                      to="/GD"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
                     <MenuItem onClick={handleUsrSubmenuClick}>
                       德明甘丹內科園區永續時尚實踐計畫
                     </MenuItem>
+                    </Link>
                     <MenuItem onClick={handleUsrSubmenuClick}>
                       場域經營
                     </MenuItem>
@@ -616,9 +622,14 @@ export default function MenuComponent() {
                         內湖金面山在地風華 - 永續實踐計畫
                       </MenuItem>
                     </Link>
+                    <Link
+                      to="/GMM"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
                     <MenuItem onClick={handleUsrSubmenuClick}>
                       德明甘丹內科園區永續時尚實踐計畫
                     </MenuItem>
+                    </Link>
                     <MenuItem onClick={handleUsrSubmenuClick}>
                       場域經營
                     </MenuItem>
@@ -670,6 +681,7 @@ export default function MenuComponent() {
             <Route path="/UH110" element={<UH110 />} />
             <Route path="/UH111" element={<UH111 />} />
             <Route path="/GMM" element={<GMM />} />
+            <Route path="/GD" element={<GD />} />
             <Route path="/ImportantLink" element={<ImportantLink />} />
           </Routes>
         </div>

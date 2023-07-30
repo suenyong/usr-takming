@@ -1,0 +1,138 @@
+.boxIdea-GD {
+    max-width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.care-GD{
+    width: 80%;
+    margin: 10% 10% 10% 10%;
+    background: rgba(16, 30, 227, 0.194);
+    padding: 10px;
+    border-radius: 35% 20px 20px 20px;
+}
+
+.boxHistory-GD {
+    display: flex;
+    flex-wrap: wrap;
+    width: 23.3%;
+    height: auto !important;
+    background-color: rgb(246, 243, 243);
+    position: relative;
+    padding: 10px;
+    margin-top: 50px;
+    text-align: justify;
+    border-radius: 10px;
+    order: 2;
+}
+
+.boxPlan-GD {
+    display: flex;
+    flex-wrap: wrap;
+    width: 23.3%;
+    height: auto !important;
+    background-color: rgb(246, 243, 243);
+    position: relative;
+    padding: 10px;
+    margin-top: 50px;
+    text-align: justify;
+    border-radius: 10px;
+    order: 3;
+}
+
+
+
+.boxNeed-GD {
+    max-width: 1024px;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 12%;
+    margin-right: 10%;
+    line-height:40px;
+}
+
+/* 大標 */
+.bigtitle {
+text-align: center;
+font-size: 40px;
+font-family: Arial, sans-serif;
+color: rgba(29, 39, 179, 0.7);
+margin: 10% 10% 10% 10%;
+}
+
+
+.ulli{
+    text-align: left;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: rgba(29, 39, 179, 0.7);
+    line-height: 0.3;
+    margin-top: 8%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.mintitle {
+    text-align: left;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: rgb(21, 111, 150);
+    line-height: 0.3;
+    margin: 4% 10% 4% 10%;
+}
+
+@media screen and (max-width: 800px) {
+    .bigtitle {
+        text-align: center;
+        font-size: 25px;
+        font-family: Arial, sans-serif;
+        color: rgba(29, 39, 179, 0.7);
+        margin: 10% 0 10% 0;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    .boxIdea-GD {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: justify;
+        font-size: 15px;
+    }
+    
+    .care-GD{
+        width: 100%;
+        margin: 10% 0 10% 0;
+    }
+    
+    .boxPlan-GD,
+    .boxHistory-GD {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        background-color: rgb(246, 243, 243);
+        position: relative;
+        margin-top: 50px;
+        text-align: justify;
+        border-radius: 10px;
+    }
+    
+    .boxNeed-GD {
+        max-width: 1024px;
+        font-size: 15px;
+        text-align: justify;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
