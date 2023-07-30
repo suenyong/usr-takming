@@ -166,7 +166,7 @@ export default function MenuComponent() {
             <div className="full-width-line"></div>
             <div className="line"></div>
             <div className="about-usr">
-              {windowWidth > 950 ? (
+              {windowWidth > 920 ? (
                 <>
                   <Button
                     className="about-usr-button"
@@ -623,7 +623,7 @@ export default function MenuComponent() {
                       </MenuItem>
                     </Link>
                     <Link
-                      to="/GMM"
+                      to="/GD"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                     <MenuItem onClick={handleUsrSubmenuClick}>

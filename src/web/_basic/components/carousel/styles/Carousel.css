@@ -7,7 +7,7 @@
   
   .image-slide img {
     width: 70%;
-    aspect-ratio: 16/9;
+    /* aspect-ratio: 16/9; */
     object-fit: cover;
     margin: auto;
     display: block;

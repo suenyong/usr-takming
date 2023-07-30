@@ -114,7 +114,7 @@
   color: white;
   background-color: rgb(0, 118, 100);
   cursor: pointer;
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", "PingFang, STHeiti", sans-serif, serif;
 }
 
 .twMin-more-button:hover{
@@ -163,7 +163,7 @@
   /* color: rgba(0, 97, 243, 0.732); */
   ;
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 
 .Taichung-button::before {
@@ -192,7 +192,7 @@
   font-weight: bold;
   /* color: rgba(0, 97, 243, 0.732); */
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 
 .Keelung-button::before {
@@ -231,7 +231,7 @@
   font-weight: bold;
   /* color: rgba(0, 97, 243, 0.732); */
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 
 .Philippines-button::before {
@@ -260,7 +260,7 @@
   font-weight: bold;
   /* color: rgba(0, 97, 243, 0.732); */
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 
 .Taitung-button::before {
@@ -289,7 +289,7 @@
   font-weight: bold;
   /* color: rgba(0, 97, 243, 0.732); */
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 
 .Tainan-button::before {
@@ -319,7 +319,7 @@
   /* color: rgba(0, 97, 243, 0.732); */
   ;
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 
 .Yilan-button::before {
@@ -349,7 +349,7 @@
   /* color: rgba(0, 97, 243, 0.732); */
   ;
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 
 .Hualien-button::before {
@@ -379,7 +379,7 @@
   /* color: rgba(0, 97, 243, 0.732); */
   ;
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 
 .Nantou-button::before {
@@ -408,7 +408,7 @@
   font-weight: bold;
   /* color: rgba(0, 97, 243, 0.732); */
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 
 .Pingtung-button::before {
@@ -437,7 +437,7 @@
   font-weight: bold;
   /* color: rgba(0, 97, 243, 0.732); */
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 
 .Kaohsiung-button::before {
@@ -466,7 +466,7 @@
   font-weight: bold;
   /* color: rgba(0, 97, 243, 0.732); */
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 
 .chiayi_city-button::before {
@@ -495,7 +495,7 @@
   font-weight: bold;
   /* color: rgba(0, 97, 243, 0.732); */
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 
 .Chiayi_County-button::before {
@@ -524,7 +524,7 @@
   font-weight: bold;
   /* color: rgba(0, 97, 243, 0.732); */
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 
 .Changhua-button::before {
@@ -553,7 +553,7 @@
   font-weight: bold;
   /* color: rgba(0, 97, 243, 0.732); */
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 
 .Yunlin-button::before {
@@ -583,7 +583,7 @@
   /* color: rgba(0, 97, 243, 0.732); */
   ;
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 
 .Miaoli-button::before {
@@ -613,7 +613,7 @@
   /* color: rgba(0, 97, 243, 0.732); */
   ;
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 
 .Hsinchu_City-button::before {
@@ -643,7 +643,7 @@
   /* color: rgba(0, 97, 243, 0.732); */
   ;
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 
 .Hsinchu_County-button::before {
@@ -673,7 +673,7 @@
   /* color: rgba(0, 97, 243, 0.732); */
   ;
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 
 .Taoyuan-button::before {
@@ -703,7 +703,7 @@
   /* color: rgba(0, 97, 243, 0.732); */
   ;
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 .New_Taipei-button::before {
   content: "";
@@ -733,7 +733,7 @@
   /* color: rgba(0, 97, 243, 0.732); */
   ;
   /* 其他按鈕樣式設定 */
-  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", ""PingFang, STHeiti"", sans-serif, serif;
 }
 .taipei-button::before {
   content: "";

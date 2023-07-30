@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/GD.css";
 import Contact from "../../home/components/contactus/Contact";
+import GD_1 from "../images/GD_1.png";
 
 export default function GD() {
 return (
@@ -34,6 +35,7 @@ return (
     透過解決園區內紡織企業庫存布料的痛點，建置永續時尚設計循環與庫存布料實體平台與台灣綠色紡織品聯盟，提供高中職、新銳設計師免費布料與園區廠商免費制服並重複使用的永續經營模式，預期架構一個可複製於全台灣地區的USR模式，並計畫於113年進行國際服飾品牌庫存布合作計畫，達成共同落實SDGs的目標。
     </div>
 
+<div className="grid-GD">
     <div className="boxHistory-GD">
     <p
         style={{
@@ -60,8 +62,10 @@ return (
     </p>
     發展社區型
     USR永續時尚計畫，透過建立台灣綠色紡織品聯盟，提高企業CSR形象。透過5門專業課程培養永續時尚經營管理人才。解決內科紡織企業庫存布料痛點，降低經營成本。透過內科永續時尚週活動，帶動一般民眾環保意識。符合聯合國永續發展項目4、8、11、12。
-    </div>
+    </div> 
 
+        <div class="show-on-large-screen"></div>
+    
     <div className="boxPlan-GD">
     <p
         style={{
@@ -89,114 +93,106 @@ return (
     發展國際合作之社區型
     USR永續時尚計畫。發展可複製型永續時尚發展模式。透過5門專業課程培養永續時尚經營管理人才。解決內科紡織企業庫存布料痛點，降低經營成本。透過內科永續時尚週活動，帶動一般民眾環保意識。符合聯合國永續發展項目4、8、11、12。
     </div>
+</div>
+
+    <div className="GD_1_image"
+    // style={{  backgroundImage: "url('" + GD_1 + "')",
+    //     backgroundRepeat: 'no-repeat',
+    //     backgroundPosition: 'center center',
+    //     backgroundAttachment: 'fixed',
+    //     width: "100%",
+    //     height: "auto",
+    //     backgroundSize: "cover",
+        // }}
+    >
+        {/* <img src={GD_1} alt="GD_1" /> */}
+    </div>
 
     <div className="bigtitle">萌芽型計畫推動目標</div>
 
     <div className="boxIdea-GD">
-    本計畫目前已有大約30家內科/非內科廠商願意持續提供庫存布料，為能營造雙贏環境，本計畫將提供【甘丹Q胖】的回饋點數。每捐一碼布將會獲得【甘丹Q胖】一點，價值新台幣一元。112年約計發出20,000點，
-    113年預計發出10,000點。高中職學生免費提供布料，不用購買點數，新
-    銳設計師若有選中平台上的庫存布料，可以自由捐贈【甘丹Q胖】點
-    數。本計畫所獲得之點數，將會全數回饋於內科捐贈庫存布料的廠家，
-    或是園區內的弱勢團體，方式例如便利商店寄杯等。
+        本計畫目前已有大約30家內科/非內科廠商願意持續提供庫存布料，為能營造雙贏環境，本計畫將提供【甘丹Q胖】的回饋點數。每捐一碼布將會獲得【甘丹Q胖】一點，價值新台幣一元。112年約計發出20,000點，
+        113年預計發出10,000點。高中職學生免費提供布料，不用購買點數，新
+        銳設計師若有選中平台上的庫存布料，可以自由捐贈【甘丹Q胖】點
+        數。本計畫所獲得之點數，將會全數回饋於內科捐贈庫存布料的廠家，
+        或是園區內的弱勢團體，方式例如便利商店寄杯等。
     </div>
 
     <div className="care-GD">
-    <div className="ulli">
-        1.在地問題解決構想
-    </div>
+        <div className="ulli">1.在地問題解決構想</div>
 
-    <div className="boxNeed-GD">
+        <div className="boxNeed-GD">
         <ul style={{ listStyleType: "disc" }}>
-        <li>召開座談會了解內科紡企業的問題 </li>
-        <li>
+            <li>召開座談會了解內科紡企業的問題 </li>
+            <li>
             提出庫存布料解決方式: 回收再利用、捐贈、設
             立共有品牌、協助台灣設計師等
-        </li>
+            </li>
         </ul>
-    </div>
+        </div>
 
-    <div className="ulli">
-    
-        2.跨領域課程
-    </div>
+        <div className="ulli">2.跨領域課程</div>
 
-    <div className="boxNeed-GD">
+        <div className="boxNeed-GD">
         <ul style={{ listStyleType: "disc" }}>
-        <li>
+            <li>
             除配合5門專業課程外，搭配網路行銷、色彩學、流通管理、商品行銷等課程，讓同學可以了解全貌。
-        </li>
+            </li>
         </ul>
-    </div>
+        </div>
 
-    <div className="ulli">
-    
-        3.深化實踐場域
-    </div>
+        <div className="ulli">3.深化實踐場域</div>
 
-    <div className="boxNeed-GD">
+        <div className="boxNeed-GD">
         <ul style={{ listStyleType: "disc" }}>
-        <li>
-        112年開始執行本計畫，並在綠色概念機制下，教育場域內一般民眾對永續環境的認識與深化
-        </li>
-        <li>透過國際宣傳，113年開始與國際品牌或社區進 行國際合作計畫</li>
+            <li>
+            112年開始執行本計畫，並在綠色概念機制下，教育場域內一般民眾對永續環境的認識與深化
+            </li>
+            <li>透過國際宣傳，113年開始與國際品牌或社區進 行國際合作計畫</li>
         </ul>
-    </div>
+        </div>
     </div>
 
     <div className="bigtitle">
-    學生參與社會實踐行動與未來生涯發展及就業之連結
+        學生參與社會實踐行動與未來生涯發展及就業之連結
     </div>
 
     <div className="boxIdea-GD">
-    本計畫112年預計投入三校共計100人次以上，分配於三個分項計畫，預期與園區內與非園區內紡織時尚相關企業50家以上進行合作。課程部分，實務專題製作為三年級課程，並依規定於大四進行全年實習，將規劃大四班級45位同學與捐贈庫存布之50家企業進行實習媒合。廠商其中
-    不乏紡織時尚上市公司或大型企業，例如新光紡織、綿春工業、德式瑪
-    公司、儒鴻企業、聚陽公司、佳和實業、潤泰集團等。
+        本計畫112年預計投入三校共計100人次以上，分配於三個分項計畫，預期與園區內與非園區內紡織時尚相關企業50家以上進行合作。課程部分，實務專題製作為三年級課程，並依規定於大四進行全年實習，將規劃大四班級45位同學與捐贈庫存布之50家企業進行實習媒合。廠商其中
+        不乏紡織時尚上市公司或大型企業，例如新光紡織、綿春工業、德式瑪
+        公司、儒鴻企業、聚陽公司、佳和實業、潤泰集團等。
     </div>
 
     <div className="bigtitle">
-    校外資源引入、跨域合作、區域資源整合或國際資源連結規劃
+        校外資源引入、跨域合作、區域資源整合或國際資源連結規劃
     </div>
 
     <div className="care-GD">
-<div className="mintitle">
-    校外資源引入
+        <div className="mintitle">校外資源引入</div>
+
+        <div className="boxNeed-GD">
+        中華民國紡織業拓展會CO-Fashion 平台合作 、台灣紡織綜合研究所(TTRI)
+        、中華時尚協會 (CFA) 、台南企業文化基金會、 紡織上市企業(e.g.
+        昶和纖維、新光紡織..等)
+        </div>
+
+        <div className="mintitle">跨域合作</div>
+
+        <div className="boxNeed-GD">熱浪新媒體UP直播</div>
+
+        <div className="mintitle">國際資源連結規劃</div>
+
+        <div className="boxNeed-GD">
+        Burberry、J Crew、Footlocker 等5個品牌庫 存布料國際平台合作The UN
+        Alliance for Sustainable Fashion (聯合 國永續時尚聯盟)
+        </div>
     </div>
 
-    <div className="boxNeed-GD">
-    中華民國紡織業拓展會CO-Fashion 平台合作 、台灣紡織綜合研究所(TTRI)
-    、中華時尚協會 (CFA) 、台南企業文化基金會、 紡織上市企業(e.g.
-    昶和纖維、新光紡織..等)
-    </div>
+    <div className="bigtitle">計畫執行團隊與外部合作夥伴</div>
+    .
+        <div className="box1_GD">
 
-<div className="mintitle">
-    跨域合作
-    </div>
-
-    <div className="boxNeed-GD">熱浪新媒體UP直播</div>
-
-<div className="mintitle">
-    國際資源連結規劃
-    </div>
-
-    <div className="boxNeed-GD">
-    Burberry、J Crew、Footlocker 等5個品牌庫 存布料國際平台合作The UN
-    Alliance for Sustainable Fashion (聯合 國永續時尚聯盟)
-    </div>
-</div>
-
-    <div className="bigtitle">
-    計畫執行團隊與外部合作夥伴
-    </div>
-
-    <div className="boxNeed-GD">
-    執行團隊
-    <p>陳百盛、劉完淳、李琇玲、謝碧鳳、吳劍蘭、陳偉瑀、張谷光、徐翠琇</p>
-    <br></br>
-    外部合作夥伴
-    <p>
-        陳金讚、謝淑勤、李孟娜、李國隆、劉宜敏、黃俊隆、郭昭君、邱佳慧、王明旭、李銘、尉培元、史晴
-    </p>
-    </div>
+        </div>
 
     <Contact />
 </>
