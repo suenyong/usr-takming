@@ -1,26 +1,117 @@
-.contain {
-    max-width: 1024px;
+
+.Big_title{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Arial, sans-serif";
+    color: rgb(99,182,130);;
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    font-weight: bold;
+    margin-top: 150px;
+    margin-bottom:50px;
+}
+
+.M_title{
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    text-align: left;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: rgb(99,182,130);
+    line-height: 0.3;
+    font-weight: bold;
+    margin-top: 150px;
+    margin-bottom:50px;
+}
+
+.boxIdea {
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: justify;
+    font-size: 20px;
+    font-family: "Arial, sans-serif";
+    font-weight: 500;
+}
+
+.boxSDG {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
     position: relative;
+    margin: 0 auto;
+    width: 700px;
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 70px;
 }
+
+.boxNeed {
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: justify;
+    font-size: 20px;
+    font-family: "Arial, sans-serif";
+    font-weight: 500;
+}
+
+.boxNeed_min{
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.boxNeed_GMM{
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 
 .contain2nd {
-    margin: 5%;
-}
-
-.img {
-    max-width: 1024px;
+    width: 1000px;
     position: relative;
-    top: -30%;
-    left: 40%;
-    transform: translateX(-50%);
+    margin: 0 auto;
+    width: 1000px;
 }
 
-@media (max-width: 768px) {
+
+.SDGs4_GMM{
+    position: relative;
+    margin: 0 auto;
+    max-width:100px;
+    max-height: auto;
+    float: left;
+    margin-left: 100px;
+    margin-top: 120px;
+}
+
+.SDGs11_GMM{
+    position: relative;
+    margin: 0 auto;
+    max-width: 100px;
+    max-height: auto;
+    float: left;
+    margin-left: 100px;
+    margin-top: 340px;
+}
+
+@media (max-width: 800px) {
     .img {
         width: 90%;
         /* 圖片最大寬度為 100% */
@@ -33,37 +124,197 @@
     }
 }
 
-.boxIdea {
-    max-width: 1024px;
-    display: flex;
-    flex-wrap: wrap;
+@media screen and (max-width:800px){
+    .Big_title{
+        text-align: center;
+        font-size: 25px;
+        font-family: "Arial, sans-serif";
+        color: rgb(99,182,130);;
+        width: 200px;
+        font-weight: bold;
+    }
+
+    .M_title{
+        position: relative;
+        margin: 0 auto;
+        width: 300px;
+        text-align: left;
+        font-size: 20px;
+        font-family: Arial, sans-serif;
+        color: rgb(99,182,130);
+        line-height: 0.3;
+        font-weight: bold;
+        margin-top: 150px;
+        margin-bottom:50px;
+    }
+    
+    .boxIdea {
+        position: relative;
+        margin: 0 auto;
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: justify;
+        font-size: 18px;
+        font-family: "Arial, sans-serif";
+        font-weight: 500;
+    }
+    
+    .boxSDG {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 0 auto;
+        width: 300px;
+        text-align: justify;
+        font-size: 20px;
+        margin-top: 70px;
+    }
+    
+    .boxNeed {
+        position: relative;
+        margin: 0 auto;
+        width: 300px;
+        display:inline-grid;
+        justify-content: center;
+        text-align: justify;
+        font-size: 20px;
+        font-family: "Arial, sans-serif";
+        font-weight: 500;
+    }
+    
+    .boxNeed_min{
+        position: relative;
+        margin: 0 auto;
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        text-align: left;
+        margin-top: 15px;
+    }
+    
+    .boxNeed_GMM{
+        position: relative;
+        margin: 0 auto;
+        width: 300px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .SDGs4_GMM{
+        max-width:100px;
+        max-height: auto;
+        float: left;
+        margin-left: 150;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .SDGs11_GMM{
+        max-width: 100px;
+        max-height: auto;
+        float: left;
+        margin-left: 150;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .contain2nd {
+        width: 300px;
+    }
+}
+
+/* ============ */
+
+
+.contain-GMM{
+    display: grid;
+    grid-template-columns: 85% 10% 85%;
     justify-content: center;
     align-items: center;
-    margin: 5% auto;
-    text-align: justify;
-    font-size: 20px;
-    margin-bottom: 5%;
+    margin: 0 auto;
     position: relative;
-    /* Add more styling for the text box as needed */
+    width: 450px;
+    margin-top: 100px;
 }
 
-.boxSDG {
-    max-width: 1020px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.GMM_image1,.GMM_image2{
+    width: calc(100% / 1.2);
+    justify-items: center;
     align-items: center;
-    margin-left: 25%;
-    margin-right: 10%;
-    text-align: justify;
-    font-size: 20px;
-    margin-top: 25px;
 }
 
-.boxNeed {
-    max-width: 1024px;
+
+.GMM_text1,.GMM_text2{
+    width: 300px;
+    height: 100%;
+    background-color: rgba(194, 200, 198, 0.328);
+    border-radius: 10px;
+    padding: 20px;
+    margin-right:10px ;
+}
+
+.GMM_text2{
+    margin-top: 80px !important;
+}
+
+.imges_title{
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+    text-align: left;
     font-size: 20px;
-    text-align: justify;
-    margin-left: 10%;
+    font-family: Arial, sans-serif;
+    color: rgb(99,182,130);
+    font-weight: bold;
+    margin-bottom:30px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .contain-GMM{
+        display: inline-block;
+        grid-template-columns: 85% 10% 85%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        position: relative;
+        width: 350px;
+        margin-top: 100px;
+    }
+    
+
+    .show-GMM{
+        display: none;
+    }
+
+    .GMM_text1,.GMM_text2{
+        display: inline-block;
+        width: 300px;
+        height: 100%;
+        background-color: rgba(194, 200, 198, 0.328);
+        border-radius: 10px;
+        padding: 20px;
+        margin-right:none ;
+        margin-left: 30px;
+    }
+    
+    .GMM_text2{
+        margin-top: 80px !important;
+    }
+
+    .GMM_image1{
+        width: calc(100% / 1.5);
+        margin-left: 70px;
+        margin-top: 50px;
+    }
+
+    .GMM_image2{
+        display: none;
+    }
 
 }

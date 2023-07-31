@@ -1,20 +1,22 @@
 .boxIdea-GD {
-    max-width: 70%;
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: justify;
     font-size: 20px;
-    margin-left: 15%;
-    margin-right: 15%;
     font-family: "Arial, sans-serif";
     font-weight: 500;
 
 }
 
 .care-GD{
-    width: 70%;
-    margin: 10% 15% 10% 15%;
+    width: 900px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 120px;
     background: rgba(16, 30, 227, 0.194);
     padding: 10px;
     border-radius: 20px 20px 20px 20px;
@@ -83,11 +85,6 @@
     margin-left: 24px;
     margin-right:64px;
 }
-.SDGs_img img{
-    object-fit: cover;
-    margin: auto;
-    display: block;
-}
 
 .SDGs_GD{
     display: grid;
@@ -123,9 +120,12 @@ font-weight: bold;
 
 
 .ulli{
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
     text-align: left;
     font-size: 20px;
-    font-family: "Arial, sans-serif";
+    font-family: Arial, sans-serif;
     color: rgba(29, 39, 179, 0.7);
     line-height: 0.3;
     margin-top: 2%;
@@ -135,17 +135,25 @@ font-weight: bold;
 }
 
 .mintitle {
+    position: relative;
+    margin: 40px auto;
+    width: 500px;
     text-align: left;
     font-size: 20px;
     font-family: Arial, sans-serif;
     color:  rgba(29, 39, 179, 0.7);
-    margin: 2% 10% 2% 10%;
     font-weight: bold;
+    margin-top: 30px;
+    margin-bottom:10px;
+    margin-left: 90px;
 }
 
 
 /* ============最下面內容============= */
 .box_all_GD{
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr ;
     /* background-color: rgba(74, 179, 29, 0.7); */
@@ -197,9 +205,7 @@ font-weight: bold;
         font-size: 25px;
         font-family: Arial, sans-serif;
         color: rgba(29, 39, 179, 0.7);
-        margin: 10% 0 5% 0;
-        margin-left: 6%;
-        margin-right: 6%;
+        width: 330px;
     }
 
     .boxIdea-GD {
@@ -207,7 +213,7 @@ font-weight: bold;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        width: 800px;
+        width: 300px;
         margin-left: 14%;
         margin-right: 10%;
         text-align: justify;
@@ -283,16 +289,18 @@ font-weight: bold;
     /* =========================== */
 
     .box_all_GD{
-        margin: 10% 0 10% 0;
+        display: inline-block;
+        justify-content: left;
     }
 
     .box1_GD,
     .box2_GD
     {
-        width: 200px;
+        justify-content: left;
+        width: 300px;
         border-radius: 10%;
         padding: 10px;
-        margin-left: 15%;
+        margin-left: 35px;
     }
     .min_box{
         display:inline-block;
@@ -307,7 +315,7 @@ font-weight: bold;
     }
     .personnel_content_GD {
         font-size: 14px;
-        width: 60%;
+        /* width: 60%; */
     }
 }
 
@@ -345,6 +353,35 @@ font-weight: bold;
 .grid-GD{
     display: block !important;
 }
+
+.ulli{
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    text-align: left;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: rgba(29, 39, 179, 0.7);
+    line-height: 0.3;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: bold;
+}
+.mintitle {
+    position: relative;
+    margin: 40px auto;
+    width: 200px;
+    text-align: left;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color:  rgba(29, 39, 179, 0.7);
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom:10px;
+    margin-left: 90px;
+}
+
 }
 
 
