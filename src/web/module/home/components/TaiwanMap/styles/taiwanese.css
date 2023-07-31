@@ -749,22 +749,22 @@
 }
 
 /* 網頁捲軸【寬度】 */
-::-webkit-scrollbar {
+.content-box::-webkit-scrollbar {
   width: 10px;
 }
 
 /* 網頁捲軸【背景】顏色 */
-::-webkit-scrollbar-track {
+.content-box::-webkit-scrollbar-track {
   background: #a8d7b26a;
 }
 
 /* 網頁捲軸【把手】顏色 */
-::-webkit-scrollbar-thumb {
+.content-box::-webkit-scrollbar-thumb {
   background: #3f9b82bb;
   border-radius: 10px;
 }
 
 /* 網頁捲軸【滑過時】把手的顏色 */
-::-webkit-scrollbar-thumb:hover {
+.content-box::-webkit-scrollbar-thumb:hover {
   background: #3b6046;
 }

@@ -1,24 +1,25 @@
 .boxIdea-GD {
-    max-width: 1024px;
+    max-width: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: justify;
     font-size: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     font-family: "Arial, sans-serif";
     font-weight: 500;
+
 }
 
 .care-GD{
-    width: 80%;
-    margin: 10% 10% 10% 10%;
+    width: 70%;
+    margin: 10% 15% 10% 15%;
     background: rgba(16, 30, 227, 0.194);
     padding: 10px;
     border-radius: 20px 20px 20px 20px;
 }
-
+/* ==============SDGs==================== */
 .boxHistory-GD {
     display: grid;
     width: 90%;
@@ -49,19 +50,57 @@
 
 .show-on-large-screen{
     margin: 0 10% 0 10%;
-    width:1%;
-    height:400px;
-    background:rgba(16, 30, 227, 0.194);
     margin:20% 49.5% 10% 49.5%;
+}
+
+.show-on-large-screen img{
+    width:6px;
+    height: 500px;
+    object-fit: cover;
 }
 
 .grid-GD{
     display: grid;
-    grid-template-columns: 44% 22% 44%;
+    grid-template-columns: 34% 16% 10% 16% 34%;
     margin: 10% 17% 10% 5%;
-    /* gap: 10px; */
 }
 
+.SDGs_img_411{
+    width: calc(100% / 2);
+    justify-items: center;
+    align-items: center;
+    margin-top: 70%;
+    justify-content: center;
+    margin-left: 58px;
+    margin-right:23px;
+}
+.SDGs_img_812{
+    width: calc(100% / 2);
+    justify-items: center;
+    align-items: center;
+    margin-top: 100%;
+    justify-content: center;
+    margin-left: 24px;
+    margin-right:64px;
+}
+.SDGs_img img{
+    object-fit: cover;
+    margin: auto;
+    display: block;
+}
+
+.SDGs_GD{
+    display: grid;
+    justify-content: center;
+}
+
+.boxbox-GD{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* ==============SDGs=================== */
 .boxNeed-GD {
     max-width: 1024px;
     font-size: 20px;
@@ -69,6 +108,7 @@
     margin-left: 12%;
     margin-right: 10%;
     line-height:40px;
+    display: grid;
 }
 
 /* 大標 */
@@ -88,7 +128,7 @@ font-weight: bold;
     font-family: "Arial, sans-serif";
     color: rgba(29, 39, 179, 0.7);
     line-height: 0.3;
-    margin-top: 8%;
+    margin-top: 2%;
     margin-left: 10%;
     margin-right: 10%;
     font-weight: bold;
@@ -99,36 +139,56 @@ font-weight: bold;
     font-size: 20px;
     font-family: Arial, sans-serif;
     color:  rgba(29, 39, 179, 0.7);
-    line-height: 0.3;
-    margin: 4% 10% 4% 10%;
+    margin: 2% 10% 2% 10%;
     font-weight: bold;
 }
 
-/* .GD_1_image{
-    position:relative;
-    top: 1300px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: calc(100% / 4);
-    justify-items: center;
-    align-items: center;
-    margin: 25px;
-}
 
-.GD_1_image img {
+/* ============最下面內容============= */
+.box_all_GD{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    /* background-color: rgba(74, 179, 29, 0.7); */
     width: 100%;
-    object-fit: cover;
-    margin: auto;
-    display: block;
-} */
+    justify-content: center;
+}
 
-
-.box1_GD{
-
+.box1_GD,
+.box2_GD
+{
+    display: grid;
+    width: 400px;
+    border-radius: 10%;
+    padding: 10px;
+    margin-left: 32%;
 }
 
 
+.box1_GD_content{
+    font-size: 18px;
+}
+
+.box1_GD_title{
+    font-size: 24px;
+    font-weight: 600;
+    margin:none;
+    width: 80%;
+}
+
+.personnel_name_GD{
+    margin-top: 5%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.personnel_content_GD {
+    width: 60%;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+/* ========================= */
 
 
 @media screen and (max-width: 800px) {
@@ -147,7 +207,8 @@ font-weight: bold;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin-left: 10%;
+        width: 800px;
+        margin-left: 14%;
         margin-right: 10%;
         text-align: justify;
         font-size: 15px;
@@ -155,7 +216,7 @@ font-weight: bold;
     
     .care-GD{
         width: 78%;
-        margin: 10% 6% 10% 6%;
+        margin: 10% 6% 10% 9%;
         background: rgba(16, 30, 227, 0.194);
         border-radius: 20px 20px 20px 20px;
     }
@@ -180,13 +241,77 @@ font-weight: bold;
         text-align: justify;
         margin-left: 10%;
         margin-right: 10%;
+        line-height:20px;
+    }
+    
+    .mintitle {
+        text-align: left;
+        font-size: 20px;
+        font-family: Arial, sans-serif;
+        color:  rgba(29, 39, 179, 0.7);
+        margin: 4% 10% 3% 10%;
+        font-weight: bold;
+    }
+    
+    .grid-GD{
+        width: 90%;
+        margin-left: 8px;
     }
 
+    /* ============================== */
+    .SDGs_img_411,.SDGs_img_812{
+        display:inline-block;
+        width: calc(40% / 2);
+        justify-items: center;
+        align-items: center;
+        margin-top: 10%;
+        justify-content: center;
+        margin-left: 77px;
+        margin-right:0;
+    }
+    
+    .SDGs_img img{
+        object-fit: cover;
+        margin: auto;
+        display: block;
+    }
+    
+    .SDGs_GD{
+        display: grid;
+        justify-content: center;
+    }
+    /* =========================== */
 
+    .box_all_GD{
+        margin: 10% 0 10% 0;
+    }
 
+    .box1_GD,
+    .box2_GD
+    {
+        width: 200px;
+        border-radius: 10%;
+        padding: 10px;
+        margin-left: 15%;
+    }
+    .min_box{
+        display:inline-block;
+    }
+
+    .box1_GD_title{
+        font-size: 20px;
+    }
+
+    .personnel_name_GD{
+        font-size: 18px;
+    }
+    .personnel_content_GD {
+        font-size: 14px;
+        width: 60%;
+    }
 }
 
-@media (min-width: 601px) {
+/* @media (min-width: 601px) {
 .show-on-large-screen {
     width: 1%;
     height: 400px;
@@ -195,10 +320,10 @@ font-weight: bold;
 }
 
 
-}
+} */
 
 
-@media (max-width: 600px) {
+@media (max-width: 815px) {
 .show-on-large-screen {
     display: none;
 }
@@ -221,3 +346,33 @@ font-weight: bold;
     display: block !important;
 }
 }
+
+
+@media screen and (min-width: 1600px){
+    .show-on-large-screen img{
+        width:6px;
+        height: 700px;
+        object-fit: cover;
+    }
+}
+
+
+
+/* .GD_1_image{
+    position:relative;
+    top: 1300px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: calc(100% / 4);
+    justify-items: center;
+    align-items: center;
+    margin: 25px;
+}
+
+.GD_1_image img {
+    width: 100%;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+} */
