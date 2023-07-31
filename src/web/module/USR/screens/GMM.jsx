@@ -25,7 +25,7 @@ export default function GMM() {
             <div className="contain">
 
                 <div className="img">
-                    <img src={require('../../../_basic/images/all.png')} alt="climb.png" style={{ width: 800, height: 825 }}></img>
+                    {/* <img src={require('../../../_basic/images/all.png')} alt="climb.png" style={{ width: 800, height: 825 }}></img> */}
                 </div>
             </div>
 
