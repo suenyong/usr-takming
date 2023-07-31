@@ -20,9 +20,9 @@
 .service-content {
   display:flex;
   flex-wrap: wrap;
-  margin-left: 5%;
-  margin-right: 5%;
-  width: 90%;
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 40%;
   justify-content: center;
   /* background-color: beige; */
 }
@@ -162,6 +162,64 @@
 }
 
 .btn-Link:hover{
+  background: #1b412d;
+  transition: 0.9s;
+}
+
+.boxB {
+  margin-left: 0 !important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* background: #1f3d4738; */
+}
+
+.card-body1{
+  background: #356c5697;
+  width: 140px;
+  height: 60px;
+  position: absolute;
+  border-radius: 15px;
+  backdrop-filter: blur(5px) !important;
+  padding:30px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.cardB {
+  background-color: #3f7051;
+  width: 200px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 4px solid #3a7877;
+  margin: 2%;
+}
+
+.card-title1{
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.btn-Link1{
+  color: #dcdcdc;
+  background: #468457;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none !important;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-Link1:hover{
   background: #1b412d;
   transition: 0.9s;
 }

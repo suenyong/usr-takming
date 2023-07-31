@@ -1,6 +1,5 @@
 import "../styles/Service.css";
 import React, { useState } from "react";
-import tw from "../images/台灣拚完.png";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
@@ -69,6 +68,85 @@ export default function Service() {
       imgSrc: require("../images/animal.jpg"),
       title: "動物保護志工培訓",
       link:"https://manner.takming.edu.tw/var/file/8/1008/img/14/411489015.pdf",
+    },
+
+  ];
+
+  const cardData1 = [
+    {
+      imgSrc: require("../images/Homeless.jpg"),
+      title: "「2020 歡樂聖誕~街友服務",
+      link:"https://manner.takming.edu.tw/var/file/8/1008/img/14/428844962.pdf",
+    },
+    {
+      imgSrc: require("../images/BinBin.jpg"),
+      title: "「來去德明彬彬ㄅ一ㄤˋㄅ一ㄤˋ」生態 暨社團教學活動",
+      link:"http://manner.takming.edu.tw/var/file/8/1008/img/14/186449923.pdf",
+    },
+    {
+      imgSrc: require("../images/StoneLake109.jpg"),
+      title: "109 年白石湖生態營」活動",
+      link:"https://manner.takming.edu.tw/var/file/8/1008/img/14/144581186.pdf",
+    },
+    {
+      imgSrc: require("../images/WenhuSchool.jpg"),
+      title: "109 年度「文湖國小生態教學」活動",
+      link:"https://manner.takming.edu.tw/var/file/8/1008/img/14/384592079.pdf",
+    },
+    {
+      imgSrc: require("../images/TA-Q-BIN-2020.jpg"),
+      title: "2020-聖誕宅急便",
+      link:"https://manner.takming.edu.tw/var/file/8/1008/img/14/636127978.pdf",
+    },
+    {
+      imgSrc: require("../images/Vulnerable14.jpg"),
+      title: "弱勢關懷課輔",
+      link:"https://manner.takming.edu.tw/var/file/8/1008/img/14/698511545.pdf",
+    },
+    {
+      imgSrc: require("../images/animal.jpg"),
+      title: "動物保護志工培訓",
+      link:"https://manner.takming.edu.tw/var/file/8/1008/img/14/411489015.pdf",
+    },
+
+  ];
+
+  const cardData2 = [
+    {
+      imgSrc: require("../images/fraternity109.jpg"),
+      title: "109-年度第三季博愛慶生會",
+      link:"http://manner.takming.edu.tw/var/file/8/1008/img/14/986341926.pdf",
+    },
+
+  ];
+
+  const cardData3 = [
+    {
+      imgSrc: require("../images/achievement109.jpg"),
+      title: "109-年度大學社會責任實踐基地-忠治「部落.愛轉動」-成果發表會",
+      link:"http://manner.takming.edu.tw/var/file/8/1008/img/14/625052883.pd",
+    },
+    {
+      imgSrc: require("../images/Summer109.jpg"),
+      title: "109-年度大學社會責任實踐基地-忠治「部落.愛轉動」-暑期夏令營",
+      link:"http://manner.takming.edu.tw/var/file/8/1008/img/14/709433889.pdf",
+    },
+  ];
+
+  const cardData4 = [
+    {
+      imgSrc: require("../images/HengshanSchool109.jpg"),
+      title: "109-年橫山國小-「暑期-環教、理財、品格、創意夏令營」",
+      link:"http://manner.takming.edu.tw/var/file/8/1008/img/14/125978186.pdf",
+    },
+
+  ];
+
+  const cardData5 = [
+    {
+      imgSrc: require("../images/LOVE_HOPE.jpg"),
+      title: "愛與希望 - 菲你不可",
+      link:"https://manner.takming.edu.tw/var/file/8/1008/img/14/548951769.pdf",
     },
 
   ];
@@ -230,70 +308,17 @@ export default function Service() {
                 >
                   服務足跡
                 </p>
-                <div style={{ textAlign: "left", marginLeft: "50px" }}>
-                  <a
-                    href="https://manner.takming.edu.tw/var/file/8/1008/img/14/698511545.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    德明科大辦理「弱勢關懷課輔」十四年不間斷
-                  </a>
-                </div>
-                <div style={{ textAlign: "left", marginLeft: "50px" }}>
-                  <a
-                    href="https://manner.takming.edu.tw/var/file/8/1008/img/14/428844962.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    德明科大辦理「2020 歡樂聖誕~街友服務」活動
-                  </a>
-                </div>
-                <div style={{ textAlign: "left", marginLeft: "50px" }}>
-                  <a
-                    href="https://manner.takming.edu.tw/var/file/8/1008/img/14/636127978.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    德明科大辦理「2020 聖誕宅急便」活動
-                  </a>
-                </div>
-                <div style={{ textAlign: "left", marginLeft: "50px" }}>
-                  <a
-                    href="https://manner.takming.edu.tw/var/file/8/1008/img/14/411489015.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    德明科大舉辦「動物保護志工培訓」活動
-                  </a>
-                </div>
-                <div style={{ textAlign: "left", marginLeft: "50px" }}>
-                  <a
-                    href="http://manner.takming.edu.tw/var/file/8/1008/img/14/186449923.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    德明科大辦理「來去德明彬彬ㄅ一ㄤˋㄅ一ㄤˋ」生態
-                    暨社團教學活動
-                  </a>
-                </div>
-                <div style={{ textAlign: "left", marginLeft: "50px" }}>
-                  <a
-                    href="https://manner.takming.edu.tw/var/file/8/1008/img/14/144581186.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    德明科大辦理「109 年白石湖生態營」活動
-                  </a>
-                </div>
-                <div style={{ textAlign: "left", marginLeft: "50px" }}>
-                  <a
-                    href="https://manner.takming.edu.tw/var/file/8/1008/img/14/384592079.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    德明科大辦理 109 年度「文湖國小生態教學」活動
-                  </a>
-                </div>
+                <div className="boxB">
+                {cardData1.map((card, index) => (
+                  <div key={index} class="cardB">
+                    <div className="card-body1">
+                      <div className="card-title1">{card.title}</div>
+                      <button className="btn-Link1" onClick={() => handleButtonClick(card.contentId, card.link)} >Open PDF</button>
+                    </div>
+                    <img src={card.imgSrc} />
+                  </div>
+                ))}
+              </div>
               </div>
             )}
             {selectedContent === "content7" && (
@@ -307,15 +332,17 @@ export default function Service() {
                 >
                   服務足跡
                 </p>
-                <div style={{ textAlign: "left", marginLeft: "50px" }}>
-                  <a
-                    href="http://manner.takming.edu.tw/var/file/8/1008/img/14/986341926.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    德明科大辦理「109 年度第三季博愛慶生會」服務活動
-                  </a>
-                </div>
+                <div className="boxB">
+                {cardData2.map((card, index) => (
+                  <div key={index} class="cardB">
+                    <div className="card-body1">
+                      <div className="card-title1">{card.title}</div>
+                      <button className="btn-Link1" onClick={() => handleButtonClick(card.contentId, card.link)} >Open PDF</button>
+                    </div>
+                    <img src={card.imgSrc} />
+                  </div>
+                ))}
+              </div>
               </div>
             )}
 
@@ -330,26 +357,17 @@ export default function Service() {
                 >
                   服務足跡
                 </p>
-                <div style={{ textAlign: "left", marginLeft: "50px" }}>
-                  <a
-                    href="http://manner.takming.edu.tw/var/file/8/1008/img/14/625052883.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    德明科大 學務處舉辦 109
-                    年度大學社會責任實踐基地-忠治「部落.愛轉動」 成果發表會
-                  </a>
-                </div>
-                <div style={{ textAlign: "left", marginLeft: "50px" }}>
-                  <a
-                    href="http://manner.takming.edu.tw/var/file/8/1008/img/14/709433889.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    德明科大舉辦 109
-                    年度大學社會責任實踐基地-忠治「部落.愛轉動」 暑期夏令營
-                  </a>
-                </div>
+                <div className="boxB">
+                {cardData3.map((card, index) => (
+                  <div key={index} class="cardB">
+                    <div className="card-body1">
+                      <div className="card-title1">{card.title}</div>
+                      <button className="btn-Link1" onClick={() => handleButtonClick(card.contentId, card.link)} >Open PDF</button>
+                    </div>
+                    <img src={card.imgSrc} />
+                  </div>
+                ))}
+              </div>
               </div>
             )}
 
@@ -364,16 +382,17 @@ export default function Service() {
                 >
                   服務足跡
                 </p>
-                <div style={{ textAlign: "left", marginLeft: "50px" }}>
-                  <a
-                    href="http://manner.takming.edu.tw/var/file/8/1008/img/14/125978186.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    德明科大學務處舉辦 109 年橫山國小
-                    「暑期-環教、理財、品格、創意夏令營」
-                  </a>
-                </div>
+                <div className="boxB">
+                {cardData4.map((card, index) => (
+                  <div key={index} class="cardB">
+                    <div className="card-body1">
+                      <div className="card-title1">{card.title}</div>
+                      <button className="btn-Link1" onClick={() => handleButtonClick(card.contentId, card.link)} >Open PDF</button>
+                    </div>
+                    <img src={card.imgSrc} />
+                  </div>
+                ))}
+              </div>
               </div>
             )}
 
@@ -406,32 +425,20 @@ export default function Service() {
                 >
                   服務足跡
                 </p>
-                <div style={{ textAlign: "left", marginLeft: "50px" }}>
-                  <a
-                    href="https://manner.takming.edu.tw/var/file/8/1008/img/14/548951769.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    德明科大連續 12 年「菲律賓-聖誕鞋盒活動」 永續播愛不間斷
-                  </a>
-                </div>
+                <div className="boxB">
+                {cardData5.map((card, index) => (
+                  <div key={index} class="cardB">
+                    <div className="card-body1">
+                      <div className="card-title1">{card.title}</div>
+                      <button className="btn-Link1" onClick={() => handleButtonClick(card.contentId, card.link)} >Open PDF</button>
+                    </div>
+                    <img src={card.imgSrc} />
+                  </div>
+                ))}
+              </div>
               </div>
             )}
-            <div className="service-heading">服務類型</div>
-            <div className="button-row">
-              <button className="service-button">國際關懷</button>
-              <button className="service-button">環保標題</button>
-              <button className="service-button">偏鄉服務</button>
-            </div>
-            <div className="button-row">
-              <button className="service-button">社區服務</button>
-              <button className="service-button">科技服務</button>
-              <button className="service-button">地方創生</button>
-            </div>
-            <div className="button-row">
-              <button className="service-button">教育輔導</button>
-              <button className="service-button">創意設計</button>
-            </div>
+            
           </div>
           {/* <img src={tw} alt="台灣拚完圖片" className="service-image-TW" /> */}
         </div>
