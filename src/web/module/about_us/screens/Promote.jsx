@@ -1,20 +1,32 @@
 import "../styles/Promote.css";
-import React from "react";
+import React, { useEffect } from "react";
 import no from "../images/no-pic.png";
 import Contact from "../../home/components/contactus/Contact";
+import AOS from "aos";
+
 
 export default function Promote() {
+
+
+  useEffect(() => {
+    AOS.init({
+    duration: 700,
+    });
+}, [])
+
   return (
     <>
     <div className="back-to-home">
-     <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/關於我們/推動單位介紹</a>
+    <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/關於我們/推動單位介紹</a>
     </div>
-      <h1
-        style={{
-          textAlign: "center",
-          fontSize: "40px",
-          fontFamily: "Arial, sans-serif",
-          color:"#336666"
+    <h1 data-aos="zoom-out-down" style={{ 
+        textAlign: 'center', 
+        color: '#fff',
+        backgroundColor:"#90cbc0",
+        width:"40%",
+        marginRight:"30%",
+        marginLeft:"30%",
+        marginTop:"13%",
         }}>
         推動單位-研究發展處
         </h1>

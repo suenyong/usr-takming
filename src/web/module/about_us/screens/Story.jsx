@@ -1,12 +1,19 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/Story.css";
 import Contact from "../../home/components/contactus/Contact";
-
+import AOS from "aos";
 
 
 export default function Story() {
+    useEffect(() => {
+        AOS.init({
+        duration: 700,
+        });
+    }, [])
+
+
     const sliderRef = useRef(null);
 
     const settings = {
@@ -24,19 +31,21 @@ export default function Story() {
         <div className="back-to-home">
     <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/精彩報導</a>
     </div>
-        <h1
-        style={{
-        textAlign: "center",
-        fontSize: "40px",
-        fontFamily: "Arial, sans-serif",
-        color:"#336666"
+    <h1 data-aos="zoom-out-down" style={{ 
+        textAlign: 'center', 
+        color: '#fff',
+        backgroundColor:"#90cbc0",
+        width:"40%",
+        marginRight:"30%",
+        marginLeft:"30%",
+        marginTop:"13%",
         }}>
         精彩報導
         </h1>
             
             <div className="centered-container">
                 <div className="boxS">
-                樂活碳點影片介紹:<br/>
+                樂活碳點影片介紹：<br/>
                 <a href="https://www.youtube.com/watch?v=W_JwvYAAdcA&t=1s" target="_blank" >https://www.youtube.com/watch?v=W_JwvYAAdcA&t=1s</a>
                 </div>
             </div>

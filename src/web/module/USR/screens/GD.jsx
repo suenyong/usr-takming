@@ -3,8 +3,10 @@ import "../styles/GD.css";
 import Contact from "../../home/components/contactus/Contact";
 import GD_1 from "../images/GD_1.png";
 import blue_line from "../images/blue_line.png";
-import SDGs4 from "../images/SDGs4.png";
-import SDGs11 from "../images/SDGs11.png";
+import SDGs4 from "../images/sdgs4.png";
+import SDGs11 from "../images/sdgs11.png";
+import SDGs8 from "../images/sdgs8.png";
+import SDGs12 from "../images/sdgs12.png";
 
 export default function GD() {
 return (
@@ -82,8 +84,8 @@ return (
     </div>
     {/* ======================= */}
     <div className="SDGs-GD">
-        <img src={SDGs4} alt="SDGs4" className="SDGs_img_812" />
-        <img src={SDGs11} alt="SDGs11" className="SDGs_img_812" />
+        <img src={SDGs8} alt="SDGs4" className="SDGs_img_812" />
+        <img src={SDGs12} alt="SDGs11" className="SDGs_img_812" />
     </div>
     {/* ======================= */}
     <div className="boxPlan-GD">

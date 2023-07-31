@@ -1,10 +1,17 @@
-
+import AOS from "aos";
 import "../styles/Report.css";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Contact from "../../home/components/contactus/Contact";
 
 
 export default function Report() {
+    useEffect(() => {
+        AOS.init({
+        duration: 700,
+        });
+    }, [])
+
+
     const fileName = "大學生社會責任年度報告書.pdf";
     const filePath = "/path/to/your/pdf/file.pdf";
     return (
@@ -12,12 +19,14 @@ export default function Report() {
     <div className="back-to-home">
      <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/關於我們/大學生社會責任年度報告書</a>
     </div>
-        <h1
-        style={{
-          textAlign: "center",
-          fontSize: "40px",
-          fontFamily: "Arial, sans-serif",
-          color:"#336666"
+    <h1 data-aos="zoom-out-down" style={{ 
+        textAlign: 'center', 
+        color: '#fff',
+        backgroundColor:"#90cbc0",
+        width:"40%",
+        marginRight:"30%",
+        marginLeft:"30%",
+        marginTop:"13%",
         }}>
         大學生社會責任年度報告書
         </h1>

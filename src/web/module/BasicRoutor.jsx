@@ -502,12 +502,12 @@ export default function MenuComponent() {
                     open={Boolean(anchorEl)}
                     onClose={handleClose}
                   >
-                    <Link
+                    {/* <Link
                       to="/idea"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleClose}>德明USR理念</MenuItem>
-                    </Link>
+                    </Link> */}
 
                     <Link
                       to="/PushCore"

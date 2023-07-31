@@ -1,11 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "../../USRHUB/styles/UH110.css"
 import ImageFiles from '../component/ImageFiles';
 import Contact from '../../home/components/contactus/Contact';
-
+import AOS from "aos";
 
 export default function UH111(){
     
+    useEffect(() => {
+        AOS.init({
+        duration: 700,
+        });
+    }, [])
+
     const [selectedContent, setSelectedContent] = useState('content1');
 
     const handleButtonClick = (contentId) => {
@@ -37,7 +43,15 @@ export default function UH111(){
         <div className="back-to-home">
     <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/USR HUB/111</a>
     </div>
-        <h1 style={{ textAlign: "center", fontSize: "40px", fontFamily: "Arial, sans-serif",color:"#336666" }}>
+    <h1 data-aos="zoom-out-down" style={{ 
+        textAlign: 'center', 
+        color: '#fff',
+        backgroundColor:"#90cbc0",
+        width:"40%",
+        marginRight:"30%",
+        marginLeft:"30%",
+        marginTop:"13%",
+        }}>
                 111企劃
             </h1>
 

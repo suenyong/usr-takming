@@ -1,7 +1,7 @@
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(217, 226, 225);
+  background-color: rgba(176, 224, 219, 0.619);
   border-radius: 10px;
   padding: 10px;
 }
@@ -29,15 +29,15 @@
   transition: transform 0.5s ease;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  background-color: rgb(10, 94, 84);
+  background-color: rgba(92, 152, 144, 0.487);
   cursor: pointer;
   z-index: 1;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px; /* 設定放大後的寬度 */
-  height: 400px; /* 設定放大後的高度 */
+  width: 500px; /* 設定放大後的寬度 */
+  height: 500px; /* 設定放大後的高度 */
 }
 
 

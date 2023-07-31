@@ -151,7 +151,7 @@
     .boxIdea {
         position: relative;
         margin: 0 auto;
-        width: 300px;
+        width: 80%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -224,7 +224,7 @@
     }
 
     .contain2nd {
-        width: 300px;
+        width: 80%;
     }
 }
 
@@ -294,13 +294,14 @@
 
     .GMM_text1,.GMM_text2{
         display: inline-block;
-        width: 300px;
+        width: 80%;
         height: 100%;
         background-color: rgba(194, 200, 198, 0.328);
         border-radius: 10px;
         padding: 20px;
         margin-right:none ;
-        margin-left: 30px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     
     .GMM_text2{
@@ -309,7 +310,7 @@
 
     .GMM_image1{
         width: calc(100% / 1.5);
-        margin-left: 70px;
+        margin-left: 90px;
         margin-top: 50px;
     }
 

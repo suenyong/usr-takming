@@ -1,104 +1,280 @@
-.container {
-  display: block;
-  align-items: center;
-  text-align: center;
-  min-height: 260px;
-  width: 70%;
+
+.title_Usr {
+  position: relative;
+  text-align: left;
+  font-size: 25px;
+  margin-top:10%;
+  width: 300px;
+  background-image:linear-gradient(to right,#89f5cc7e,#6fccbc4d,#89f5ee6f,#89eef56f,#89f5f353,#89f0f51f);
 }
 
-.conversation4 {
-  display: flex;
-  /* margin-bottom: 20px; */
-  /* margin-left: 8%; */
-  margin-top: 20%;
+@media screen and (max-width:800px){
+  .title_Usr{
+        font-size: 20px;
+        width: 200px;
+        margin-left: 30px;
+    }
+
+    .PushCore {
+      position: relative;
+      margin: 0 0 0 0;
+      width: 300px;
+      /* margin-top: 10%;
+      margin-left:10%;
+      margin-right:10%; */
+    }
 }
 
-.conversation11 {
-  display: flex;
-  /* margin-bottom: 20px; */
-  /* margin-left: 8%; */
-  margin-top: 20%;
+.PushCore {
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  display: block !important;
+  place-items: center;
+  /* margin-top: 10%;
+  margin-left:10%;
+  margin-right:10%; */
 }
 
-.image {
-  margin-right: 20px;
+
+.PusCoreSDGs{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  place-items: center;
+  margin-top: 15%;
 }
 
 .text-content {
   display: block;
-  width: 70%;
+  position: relative;
+  margin: 0 auto;
+  width: 900px;
   text-align: justify;
   font-family: "Arial, sans-serif";
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 40px;
 }
-
-.text {
-  display: block;
-  font-family: "Arial, sans-serif";
-  max-width: 80%;
-  text-align: justify;
-}
-
-.image img {
-  max-width: 100%;
-  height: auto;
-  line-height: 1.5;
-}
-
-.title_Usr {
-  text-align: center;
-  font-size: 35px;
-  margin-top:10%;
-}
-
-@media screen and (max-width:800px) {
-  .title_Usr {
-    font-size: 18px; /* 這裡可以調整適合的字體大小 */
+@media screen and (max-width:800px){
+  .text-content{
+    width: 300px;
+    margin: 0 0 0 0;
   }
 }
 
-.PushCore {
-  display: grid;
-  place-items: center;
-  background-color: rgba(230, 167, 167, 0.5);
-  width: 80%;
+.idea1-content{
+  position: relative;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  width: 900px;
+  font-size: 18px;
+  font-weight: 550;
   margin-top: 10%;
-  margin-left:10%;
-  margin-right:10%;
-  border-radius:"10px";
-  box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
+
+.idea-content{
+  position: relative;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  width: 900px;
+  font-size: 18px;
+  font-weight: 550;
+}
+@media screen and (max-width:800px){
+  .idea-content{
+    margin: 30px 0 0 30px;
+    width: 330px;
+    font-size: 15px;
+    }
+
+    .idea1-content{
+      margin: 30px 10% 0 30px;
+      width: 330px;
+      font-size: 15px;
+      }
+
+    .one_idea_box{
+      width: 80%;
+      margin: 0 0 0 0;
+      width: 300px;
+    
+    }
+
+}
+
+.one_idea_box{
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  min-height: 260px;
+  width: 400;
+}
+
+/* 翻面4 */
+
+.conversation4 {
+  width: 320px;
+  height: 420px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.cover_4, .back4{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform .25s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(118, 43, 25, 0.19), 0 6px 6px rgba(92, 21, 21, 0.23);
+  
+}
+
+.cover_4 img{
+  border-radius: 10px;
+}
+
+.cover_4 {
+  background-image: linear-gradient( 111.4deg,  rgba(238,113,113,1) 1%, rgba(246,215,148,1) 58% );
+  transform: rotateY(0deg);
+  display: flex;
+
+}
+
+.conversation4:hover .cover_4{
+  transform: rotateY(180deg);
+}
+
+.back4 {
+  background-image: linear-gradient( 111.4deg,  rgba(238,113,113,1) 1%, rgba(246,215,148,1) 58% );
+  transform: rotateY(-180deg);
+  position: absolute;
+  overflow-y:auto;
+  padding: 10px;
+}
+.conversation4:hover .back4{
+  transform: rotateY(0deg);
+}
+
+/* 翻面11 */
+.conversation11 {
+  width: 320px;
+  height: 420px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.cover_11, .back11{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform .25s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(118, 43, 25, 0.19), 0 6px 6px rgba(92, 21, 21, 0.23);
+
+}
+
+.cover_11 img{
+  border-radius: 10px;
+}
+
+.cover_11 {
+  background-image: radial-gradient( circle 763px at 18.3% 24.1%,  rgba(255,249,137,1) 7.4%, rgba(226,183,40,1) 58.3% );
+  transform: rotateY(0deg);
+  display: flex;
+}
+
+.conversation11:hover .cover_11{
+  transform: rotateY(180deg);
+}
+
+.back11 {
+  background-image: radial-gradient( circle 763px at 18.3% 24.1%,  rgba(255,249,137,1) 7.4%, rgba(226,183,40,1) 58.3% );
+  transform: rotateY(-180deg);
+  position: absolute;
+  overflow-y: auto;
+  padding: 10px;
+  height: 420px;
+}
+.conversation11:hover .back11{
+  transform: rotateY(0deg);
+}
+/* ========================================== */
+
+
+@media screen and (max-width:800px){
 
 .PusCoreSDGs{
-  display: grid;
+  display: inline-block;
   place-items: center;
+  margin-top: 15%;
+  margin-left: 10%;
+}
+.container {
+
+  margin-top:10%;
+
+}
 }
 
-p {
-  font-size: 18px;
+
+
+
+/* 網頁捲軸【寬度】 */
+.back4::-webkit-scrollbar {
+  width: 10px;
 }
 
-/* 媒體查詢 */
-@media (max-width: 768px) {
-  .container {
-    width: 90%;
-  }
-  
-  .conversation4,
-  .conversation11 {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-    margin-top: 10%;
-  }
+/* 網頁捲軸【背景】顏色 */
+.back4::-webkit-scrollbar-track {
+  background: #d7a8a86a;
+}
 
-  .image {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
+/* 網頁捲軸【把手】顏色 */
+.back4::-webkit-scrollbar-thumb {
+  background: #9b3f3fbb;
+  border-radius: 10px;
+}
 
-  .text {
-    max-width: 100%;
-  }
+/* 網頁捲軸【滑過時】把手的顏色 */
+.back4::-webkit-scrollbar-thumb:hover {
+  background: #da2323;
+}
+
+/* ========================================== */
+
+/* 網頁捲軸【寬度】 */
+.back11::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* 網頁捲軸【背景】顏色 */
+.back11::-webkit-scrollbar-track {
+  background: #585a4b6a;
+}
+
+/* 網頁捲軸【把手】顏色 */
+.back11::-webkit-scrollbar-thumb {
+  background: #d9ca23;
+  border-radius: 10px;
+}
+
+/* 網頁捲軸【滑過時】把手的顏色 */
+.back11::-webkit-scrollbar-thumb:hover {
+  background: #f6e200;
 }

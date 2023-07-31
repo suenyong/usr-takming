@@ -5,11 +5,12 @@
     width: 650px;
     height: 250px;
     border-radius: 10px;
-    background-color: rgb(246, 243, 243);
+    background-color: rgba(124, 169, 160, 0.337);
     top: 50%;
     left: 50%;
     margin:5%;
     margin-top: 0%;
+    color: #195d3287;
 }
 
 .centered-container {
@@ -17,4 +18,5 @@
     justify-content: center;
     align-items: center;
     height: 80vh; /* 調整高度來置中整個頁面 */
+
 }
