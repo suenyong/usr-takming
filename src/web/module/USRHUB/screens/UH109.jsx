@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "../../USRHUB/styles/UH110.css"
 import ImageFiles from "../component/ImageFiles.jsx";
 import Contact from '../../home/components/contactus/Contact';
-
+import AOS from "aos";
 
 export default function UH109() {
-
+    
+    useEffect(() => {
+        AOS.init({
+        duration: 700,
+        });
+    }, [])
     const [selectedContent, setSelectedContent] = useState('content1');
 
     const handleButtonClick = (contentId) => {
