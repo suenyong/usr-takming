@@ -3,71 +3,62 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { Button } from '@mui/material';
+import CardActionArea from '@mui/material/CardActionArea';
 
 export default function Achieve() {
     const cardData = [
         {
             imgSrc: require('../../../../_basic/images/NM_image1.jpg'),
-            date: '日期:XXX',
             title: '活動名稱',
-            description: '一些描述內容.................',
+            // Url:'https://www.takming.edu.tw/schtm/default.asp'
         },
         {
             imgSrc: require('../../../../_basic/images/NM_image1.jpg'),
-            date: '日期:XXX',
             title: '活動名稱',
-            description: '一些描述內容.................',
+            // Url:'https://www.takming.edu.tw/schtm/default.asp'
         },
         {
-            imgSrc: require('../../../../_basic/images/NM_image2.JPG'),
-            date: '日期:XXX',
+            imgSrc: require('../../../../_basic/images/NM_image2.png'),
             title: '活動名稱',
-            description: '一些描述內容.................',
+            // Url:'https://www.takming.edu.tw/schtm/default.asp'
         },
         {
-            imgSrc: require('../../../../_basic/images/NM_image2.JPG'),
-            date: '日期:XXX',
+            imgSrc: require('../../../../_basic/images/NM_image2.png'),
             title: '活動名稱',
-            description: '一些描述內容.................',
+            // Url:'https://www.takming.edu.tw/schtm/default.asp'
         },
         {
-            imgSrc: require('../../../../_basic/images/NM_image3.jpg'),
-            date: '日期:XXX',
+            imgSrc: require('../../../../_basic/images/NM_image3.png'),
             title: '活動名稱',
-            description: '一些描述內容.................',
+            // Url:'https://www.takming.edu.tw/schtm/default.asp'
         },
         {
-            imgSrc: require('../../../../_basic/images/NM_image3.jpg'),
-            date: '日期:XXX',
+            imgSrc: require('../../../../_basic/images/NM_image3.png'),
             title: '活動名稱',
-            description: '一些描述內容.................',
-        },
+            // Url:'https://www.takming.edu.tw/schtm/default.asp'
+        }
     ];
 
     return (
         <>
             <div className="hr-line"></div>
+
             <h1 style={{ textAlign: 'center', color: 'navy' }}>成果展現</h1>
+
             <div className="boxAchieve">
                 {cardData.map((card, index) => (
-                    <Card key={index} className="cardAchieve">
-                        <img src={card.imgSrc} alt={`Image_${index + 1}`} style={{ width: 360, height: 240 }} />
-                        <CardContent>
-                            <Typography gutterBottom variant="h7" component="div">
-                                <p style={{ lineHeight: 0 }}>{card.date}</p>
-                            </Typography>
-                            <Typography gutterBottom variant="h6" component="div">
-                                <p style={{ lineHeight: 1, textAlign: 'center' }}>{card.title}</p>
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                {card.description}
-                            </Typography>
-                        </CardContent>
-                        <Button size="large">閱讀更多</Button>
-                    </Card>
+                    <CardActionArea key={index} href={card.Url} target="_blank" rel="noopener noreferrer">
+                        <div className="container">
+                            <div className="image">
+                                <img src={card.imgSrc} alt={`Image_${index + 1}`} />
+                            </div>
+                            <div className="text">
+                                <h3>{card.title}</h3>
+                            </div>
+                        </div>
+                    </CardActionArea>
                 ))}
             </div>
         </>
     );
-}
+};
