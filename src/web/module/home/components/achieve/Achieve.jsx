@@ -1,11 +1,15 @@
 import "./styles/Achievements.css";
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
+import AOS from "aos";
 
 export default function Achieve() {
+
+    React.useEffect(() => {
+        AOS.init({
+          duration: 700,
+        });
+      }, []);
     const cardData = [
         {
             imgSrc: require('../../../../_basic/images/NM_image1.jpg'),
@@ -41,9 +45,20 @@ export default function Achieve() {
 
     return (
         <>
-            <div className="hr-line"></div>
+            {/* <div className="hr-line"></div> */}
 
-            <h1 style={{ textAlign: 'center', color: 'navy' }}>成果展現</h1>
+            <h1
+            data-aos="zoom-out-down"
+            style={{
+            textAlign: "center",
+            color: "#fff",
+            backgroundColor: "#90cbc0",
+            width: "40%",
+            marginRight: "30%",
+            marginLeft: "30%",
+            marginTop: "13%",
+            }}
+        >成果展現</h1>
 
             <div className="boxAchieve">
                 {cardData.map((card, index) => (
