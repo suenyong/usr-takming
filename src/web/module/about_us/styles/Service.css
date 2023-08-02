@@ -32,7 +32,7 @@
   justify-content: flex-start;
   gap: 10px;
   flex-wrap: wrap;
-  
+
 }
 
 .button-row {
@@ -41,6 +41,7 @@
   width: 100%;
   /* margin-bottom: 20px; */
 }
+
 /* ==============PDF================= */
 
 .boxA {
@@ -55,14 +56,14 @@
   /* background: #1f3d4738; */
 }
 
-.card-body{
-  background-image: radial-gradient( circle 788px at 0.7% 3.4%,  rgba(164, 231, 192, 0.50) 0%, rgba(255,255,255,1) 90% );
+.card-body {
+  background-image: radial-gradient(circle 788px at 0.7% 3.4%, rgba(164, 231, 192, 0.50) 0%, rgba(255, 255, 255, 1) 90%);
   width: 200px;
   height: 140px;
   position: absolute;
   border-radius: 15px;
   backdrop-filter: blur(5px) !important;
-  padding:30px ;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,7 +78,7 @@
   margin: 2%;
 }
 
-.card-title{
+.card-title {
   text-transform: uppercase;
   margin: 10% 0 10% 0;
   font-size: 15px;
@@ -86,7 +87,7 @@
   line-height: 40px;
 }
 
-.btn-Link{
+.btn-Link {
   color: #dcdcdc;
   background: #5e9b6e;
   padding: 10px 20px;
@@ -97,7 +98,7 @@
   cursor: pointer;
 }
 
-.btn-Link:hover{
+.btn-Link:hover {
   background: #1b412d;
   transition: 0.9s;
 }
@@ -115,20 +116,21 @@
   height: 100%;
   /* object-fit: cover; */
   border-radius: 15px;
+  background-color: cadetblue;
 }
 
 
 /* 以下是塞選按鈕 */
-.p_USRHUB{
+.p_USRHUB {
   margin: 1% 5% 1% 5%;
   text-align: left;
 }
 
 
 
-.button_HUB2{
+.button_HUB2 {
   display: flex;
-  margin-left:10%;
+  margin-left: 10%;
   margin-right: 10%;
   margin-top: 5%;
   border: 4px solid rgb(48, 66, 50);
@@ -147,7 +149,7 @@
   border-radius: 10px;
 }
 
-.btu_stlyes:hover{
+.btu_stlyes:hover {
   cursor: pointer;
   background-color: #257773;
   transition: 0.5s;
@@ -159,7 +161,8 @@
   font-size: 19px;
   width: 100%;
 }
-.button_text:hover{
+
+.button_text:hover {
   color: #ffffff;
 }
 
@@ -176,20 +179,22 @@
   align-items: center;
   width: 100%;
   /* background: #1f3d4738; */
+  position: static;
+  z-index: 1;
 }
 
-.card-body1{
-  background-image: radial-gradient( circle 788px at 0.7% 3.4%,  rgba(164, 231, 192, 0.50) 0%, rgba(255,255,255,1) 90% );
+.card-body1 {
+  background-image: radial-gradient(circle 788px at 0.7% 3.4%, rgba(164, 231, 192, 0.50) 0%, rgba(255, 255, 255, 1) 90%);
   width: 200px;
   height: 140px;
   position: absolute;
+  z-index: 10;
   border-radius: 15px;
   backdrop-filter: blur(5px) !important;
-  padding:30px ;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
 .cardB {
@@ -199,9 +204,11 @@
   border-radius: 20px;
   border: 4px solid #92cecab5;
   margin: 2%;
+  position: relative;
+  z-index: 1;
 }
 
-.card-title1{
+.card-title1 {
   text-transform: uppercase;
   margin: 10% 0 10% 0;
   font-size: 15px;
@@ -210,7 +217,7 @@
   line-height: 40px;
 }
 
-.btn-Link1{
+.btn-Link1 {
   color: #dcdcdc;
   background: #5e9b6e;
   padding: 10px 20px;
@@ -221,23 +228,24 @@
   cursor: pointer;
 }
 
-.btn-Link1:hover{
+.btn-Link1:hover {
   background: #1b412d;
   transition: 0.9s;
 }
 
 
 
-.btn-Link1:hover{
+.btn-Link1:hover {
   background: #1b412d;
   transition: 0.9s;
 }
+
 /* === */
 .service-heading {
   display: grid;
   font-family: Arial, sans-serif;
   margin-bottom: 20px;
-  background-image:linear-gradient(to right,#89f5cc7e,#6fccbc4d,#89f5ee6f,#89eef56f,#89f5f353,#89f0f51f);
+  background-image: linear-gradient(to right, #89f5cc7e, #6fccbc4d, #89f5ee6f, #89eef56f, #89f5f353, #89f0f51f);
   color: #1b5953;
   position: relative;
   text-align: left;
@@ -245,11 +253,11 @@
   width: 100px;
 }
 
-.service-heading2{
+.service-heading2 {
   display: grid;
   font-family: Arial, sans-serif;
   margin-bottom: 20px;
-  background-image:linear-gradient(to right,#89f5cc7e,#6fccbc4d,#89f5ee6f,#89eef56f,#89f5f353,#89f0f51f);
+  background-image: linear-gradient(to right, #89f5cc7e, #6fccbc4d, #89f5ee6f, #89eef56f, #89f5f353, #89f0f51f);
   color: #1b5953;
   position: relative;
   text-align: left;
@@ -257,12 +265,12 @@
   width: 100px;
 }
 
-.service-heading3{
+.service-heading3 {
   display: grid;
   font-family: Arial, sans-serif;
   margin-top: 50%;
-  margin-left: 10% ;
-  background-image:linear-gradient(to right,#89f5cc7e,#6fccbc4d,#89f5ee6f,#89eef56f,#89f5f353,#89f0f51f);
+  margin-left: 10%;
+  background-image: linear-gradient(to right, #89f5cc7e, #6fccbc4d, #89f5ee6f, #89eef56f, #89f5f353, #89f0f51f);
   color: #1b5953;
   position: relative;
   text-align: left;
@@ -274,18 +282,18 @@
   position: relative;
   text-align: left;
   font-size: 25px;
-  margin-top:10%;
+  margin-top: 10%;
   width: 300px;
-  background-image:linear-gradient(to right,#89f5cc7e,#6fccbc4d,#89f5ee6f,#89eef56f,#89f5f353,#89f0f51f);
+  background-image: linear-gradient(to right, #89f5cc7e, #6fccbc4d, #89f5ee6f, #89eef56f, #89f5f353, #89f0f51f);
 }
 
-.but_text{
+.but_text {
   position: relative;
   text-align: left;
   color: #1b5953;
   font-size: 25px;
   width: 100px;
-  background-image:linear-gradient(to right,#89f5cc7e,#6fccbc4d,#89f5ee6f,#89eef56f,#89f5f353,#89f0f51f);
+  background-image: linear-gradient(to right, #89f5cc7e, #6fccbc4d, #89f5ee6f, #89eef56f, #89f5f353, #89f0f51f);
 }
 
 
@@ -293,10 +301,10 @@
   /* border: 4px solid rgb(48, 66, 50); */
   width: 80%;
   height: 200px;
-  margin: 2% 10% 2% 10%;  
+  margin: 2% 10% 2% 10%;
 }
 
-.jump_information_in{
+.jump_information_in {
   /* position: absolute; */
   /* border: 4px solid rgb(48, 66, 50); */
   width: 80%;
@@ -305,47 +313,57 @@
   background-color: #72a3981f;
   border-radius: 10px;
 }
+
 #element1 {
-  top: 1000px; 
+  top: 1000px;
 }
 
 #element2 {
-  top: 1100px; /* 调整第二个元素的垂直位置 */
+  top: 1100px;
+  /* 调整第二个元素的垂直位置 */
 }
 
-.in-out-all{
-/* background-color: #886262; */
-width: 80%;
-margin-left: 8%;
+.in-out-all {
+  /* background-color: #886262; */
+  width: 80%;
+  margin-left: 8%;
 
 }
 
-.button_HUB_in{
+.button_HUB_in {
   display: flex;
-  margin-left:5%;
+  margin-left: 5%;
   margin-right: 5%;
   margin-top: 5%;
   /* border: 4px solid rgb(48, 66, 50); */
 
 }
 
-.button_HUB_out{
+.button_HUB_out {
   display: flex;
-  margin-left:5%;
+  margin-left: 5%;
   margin-right: 5%;
   /* margin-top: 5%; */
   /* border: 4px solid rgb(48, 66, 50); */
 }
 
-.TWimg{
+.TWimg {
   display: block;
   width: 40%;
   margin-top: 10%;
   margin-left: 20%;
 }
 
-@media screen and (max-width: 768px){
-  .TWimg{
+.scroll-div {
+  width: 100%;
+  height: 235px;
+  /* background-color: brown; */
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 768px) {
+  .TWimg {
     display: none;
   }
 }
