@@ -23,14 +23,14 @@ export default function Report() {
         textAlign: 'center', 
         color: '#fff',
         backgroundColor:"#90cbc0",
-        width:"40%",
-        marginRight:"30%",
-        marginLeft:"30%",
+        width:"50%",
+        marginRight:"25%",
+        marginLeft:"25%",
         marginTop:"13%",
         }}>
         大學生社會責任年度報告書
         </h1>
-        <div className="centered-container">
+        <div className="centered-container_Report">
             <div className="boxR">
                 尚無資料
             </div>

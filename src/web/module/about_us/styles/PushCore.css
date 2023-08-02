@@ -265,16 +265,16 @@
 
 /* 網頁捲軸【背景】顏色 */
 .back11::-webkit-scrollbar-track {
-  background: #585a4b6a;
+  background: #e0e3ca6a;
 }
 
 /* 網頁捲軸【把手】顏色 */
 .back11::-webkit-scrollbar-thumb {
-  background: #d9ca23;
+  background: #b9ac1c;
   border-radius: 10px;
 }
 
 /* 網頁捲軸【滑過時】把手的顏色 */
 .back11::-webkit-scrollbar-thumb:hover {
-  background: #f6e200;
+  background: #fbe815;
 }

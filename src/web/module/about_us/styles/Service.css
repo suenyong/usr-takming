@@ -1,59 +1,9 @@
-.service-container {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  /* background-color: aqua; */
-}
-
-.service-title {
-  display:flex;
-  font-size: 40px;
-  font-family: Arial, sans-serif;
-  color:#336666;
-  text-align: center;
-  margin-top: 20px;
-  /* height: 200px;
-  width: 20px; */
-  justify-content: center;
-}
-
-.service-content {
-  display:flex;
-  flex-wrap: wrap;
-  margin-left: 30%;
-  margin-right: 30%;
-  width: 40%;
-  justify-content: center;
-  /* background-color: beige; */
-}
-
-.service-text {
-  margin-top: 100px;
-  margin-left: 0px;
-  height: 100%;
-  
-}
-
-.service-text-container {
-  border: 2px solid black;
-  margin-top: 100px;
-  padding: 20px;
-}
-
-
-.service-heading {
-  display: flex;
-  font-size: 40px;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+/* .service-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
-  background-color: rgba(55, 98, 84, 0.3);
-  justify-content: center;
-}
+  margin-top: 10%;
+} */
 
 .service-button {
   display: flex;
@@ -76,11 +26,6 @@
   background-color: rgb(8, 109, 13);
 }
 
-.service-image-TW {
-  margin-top: 150px;
-  margin-left: 100px;
-  width: 50%;
-}
 
 .button-container {
   display: flex;
@@ -96,17 +41,9 @@
   width: 100%;
   /* margin-bottom: 20px; */
 }
-
-.hr-line {
-    width: 100%;
-    height: 2px;
-    background-color: darkblue;
-    margin-top: 50px;
-    margin-bottom: 10px;
-}
+/* ==============PDF================= */
 
 .boxA {
-  margin-top: 20%;
   margin-bottom: 20%;
   margin-left: 0 !important;
   width: 100%;
@@ -119,8 +56,8 @@
 }
 
 .card-body{
-  background: #356c5697;
-  width: 260px;
+  background-image: radial-gradient( circle 788px at 0.7% 3.4%,  rgba(164, 231, 192, 0.50) 0%, rgba(255,255,255,1) 90% );
+  width: 200px;
   height: 140px;
   position: absolute;
   border-radius: 15px;
@@ -132,12 +69,11 @@
 }
 
 .cardA {
-  background-color: #3f7051;
-  width: 320px;
+  width: 260px;
   height: 200px;
   overflow: hidden;
-  border-radius: 15px;
-  border: 4px solid #3a7877;
+  border-radius: 20px;
+  border: 4px solid #92cecab5;
   margin: 2%;
 }
 
@@ -152,7 +88,7 @@
 
 .btn-Link{
   color: #dcdcdc;
-  background: #468457;
+  background: #5e9b6e;
   padding: 10px 20px;
   border-radius: 5px;
   border: none !important;
@@ -166,21 +102,86 @@
   transition: 0.9s;
 }
 
-.boxB {
-  margin-left: 0 !important;
+
+.cardA img {
   width: 100%;
   height: 100%;
+  /* object-fit: cover; */
+  border-radius: 15px;
+}
+
+.cardB img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  border-radius: 15px;
+}
+
+
+/* 以下是塞選按鈕 */
+.p_USRHUB{
+  margin: 1% 5% 1% 5%;
+  text-align: left;
+}
+
+
+
+.button_HUB2{
+  display: flex;
+  margin-left:10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  border: 4px solid rgb(48, 66, 50);
+}
+
+.btu_stlyes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 2px solid #257773;
+  margin: 2%;
+  cursor: pointer;
+  width: 110px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.btu_stlyes:hover{
+  cursor: pointer;
+  background-color: #257773;
+  transition: 0.5s;
+}
+
+
+.button_text {
+  color: #040404;
+  font-size: 19px;
+  width: 100%;
+}
+.button_text:hover{
+  color: #ffffff;
+}
+
+
+.button_container {
+  display: flex;
+}
+
+/* ================================= */
+.boxB {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 100%;
   /* background: #1f3d4738; */
 }
 
 .card-body1{
-  background: #356c5697;
-  width: 140px;
-  height: 60px;
+  background-image: radial-gradient( circle 788px at 0.7% 3.4%,  rgba(164, 231, 192, 0.50) 0%, rgba(255,255,255,1) 90% );
+  width: 200px;
+  height: 140px;
   position: absolute;
   border-radius: 15px;
   backdrop-filter: blur(5px) !important;
@@ -192,25 +193,26 @@
 }
 
 .cardB {
-  background-color: #3f7051;
-  width: 200px;
-  height: 120px;
+  width: 260px;
+  height: 200px;
   overflow: hidden;
-  border-radius: 15px;
-  border: 4px solid #3a7877;
+  border-radius: 20px;
+  border: 4px solid #92cecab5;
   margin: 2%;
 }
 
 .card-title1{
   text-transform: uppercase;
+  margin: 10% 0 10% 0;
   font-size: 15px;
   color: #ffffff;
   font-weight: 900;
+  line-height: 40px;
 }
 
 .btn-Link1{
   color: #dcdcdc;
-  background: #468457;
+  background: #5e9b6e;
   padding: 10px 20px;
   border-radius: 5px;
   border: none !important;
@@ -224,60 +226,126 @@
   transition: 0.9s;
 }
 
-.cardA img {
-  width: 100%;
-  height: 100%;
-  /* object-fit: cover; */
-  border-radius: 15px;
-}
 
-.menu-link:visited {
-  color: #0e11e9; /* 已訪問連結的顏色 */
-  text-decoration: none; /* 移除下劃線 */
-}
 
-/* 以下是塞選按鈕 */
-.p_USRHUB{
-  margin: 10%;
+.btn-Link1:hover{
+  background: #1b412d;
+  transition: 0.9s;
+}
+/* === */
+.service-heading {
+  display: grid;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+  background-image:linear-gradient(to right,#89f5cc7e,#6fccbc4d,#89f5ee6f,#89eef56f,#89f5f353,#89f0f51f);
+  color: #1b5953;
+  position: relative;
   text-align: left;
+  font-size: 25px;
+  width: 100px;
 }
 
-.button_HUB{
-  display: flex;
-  margin-left: 15%;
-  margin-top: 0;
+.service-heading2{
+  display: grid;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+  background-image:linear-gradient(to right,#89f5cc7e,#6fccbc4d,#89f5ee6f,#89eef56f,#89f5f353,#89f0f51f);
+  color: #1b5953;
+  position: relative;
+  text-align: left;
+  font-size: 25px;
+  width: 100px;
 }
 
-.btu_stlyes {
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  width: 90%;
+.service-heading3{
+  display: grid;
+  font-family: Arial, sans-serif;
+  margin-top: 50%;
+  margin-left: 10% ;
+  background-image:linear-gradient(to right,#89f5cc7e,#6fccbc4d,#89f5ee6f,#89eef56f,#89f5f353,#89f0f51f);
+  color: #1b5953;
+  position: relative;
+  text-align: left;
+  font-size: 25px;
+  width: 140px;
 }
 
-.color_circle1 {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #257773;
-  margin-right: 10px;
+.title_Service {
+  position: relative;
+  text-align: left;
+  font-size: 25px;
+  margin-top:10%;
+  width: 300px;
+  background-image:linear-gradient(to right,#89f5cc7e,#6fccbc4d,#89f5ee6f,#89eef56f,#89f5f353,#89f0f51f);
 }
 
-.button_text {
-  color: #040404;
-  font-size: 19px;
+.but_text{
+  position: relative;
+  text-align: left;
+  color: #1b5953;
+  font-size: 25px;
+  width: 100px;
+  background-image:linear-gradient(to right,#89f5cc7e,#6fccbc4d,#89f5ee6f,#89eef56f,#89f5f353,#89f0f51f);
+}
+
+
+.jump_but_in {
+  /* border: 4px solid rgb(48, 66, 50); */
   width: 80%;
+  height: 200px;
+  margin: 2% 10% 2% 10%;  
 }
 
-.btu_stlyes.selected .color_circle {
-  background-color: #ff0000; /* 选中状态的颜色 */
+.jump_information_in{
+  /* position: absolute; */
+  /* border: 4px solid rgb(48, 66, 50); */
+  width: 80%;
+  height: 280px;
+  margin: 2% 10% 2% 15%;
+  background-color: #72a3981f;
+  border-radius: 10px;
+}
+#element1 {
+  top: 1000px; 
 }
 
-.button_container {
+#element2 {
+  top: 1100px; /* 调整第二个元素的垂直位置 */
+}
+
+.in-out-all{
+/* background-color: #886262; */
+width: 80%;
+margin-left: 8%;
+
+}
+
+.button_HUB_in{
   display: flex;
+  margin-left:5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  /* border: 4px solid rgb(48, 66, 50); */
+
 }
 
+.button_HUB_out{
+  display: flex;
+  margin-left:5%;
+  margin-right: 5%;
+  /* margin-top: 5%; */
+  /* border: 4px solid rgb(48, 66, 50); */
+}
 
+.TWimg{
+  display: block;
+  width: 40%;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+@media screen and (max-width: 768px){
+  .TWimg{
+    display: none;
+  }
+}

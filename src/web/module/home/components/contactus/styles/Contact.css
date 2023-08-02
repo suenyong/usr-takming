@@ -3,7 +3,7 @@
   justify-content: center; /* 將元素水平置中 */
   align-items: center; /* 將元素垂直置中 */
   min-height: 260px; /* 設置容器的高度，這裡假設你想將整個內容置中 */
-  background-color: #9ad2c8;/* 背景顏色設為藍色 */
+  background-image:linear-gradient(0deg, rgba(0, 255, 225, 0.195), rgba(90, 243, 225, 0.281) 40%, rgba(170, 243, 235, 0));
   margin-top: 30px;
 
 }

@@ -25,3 +25,8 @@
     text-decoration: none; /* 移除底线 */
     color: #224439; /* 修改链接文字颜色，这里使用红色作为示例 */
   }
+
+  a:hover{
+    color: #369160;
+  }
+  

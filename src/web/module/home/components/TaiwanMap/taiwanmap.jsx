@@ -27,7 +27,7 @@ import Philippinessever from "./images/philippinesevent.png"; //菲律賓活動�
 import sever1 from "./images/nophoto.png"; //無照片
 import sever2 from "./images/TaipeiEventPhotos.png"; //台北活動照片
 import sever3 from "./images/New TaipeiEventPhotos.png"; //新北活動照片
-import Service from "./Service"; //點閱讀更多跳至
+import Service from "../../../about_us/screens/Service"; //點閱讀更多跳至
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 const TaiwanMap = () => {
