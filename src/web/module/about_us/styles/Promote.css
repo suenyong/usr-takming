@@ -1,5 +1,3 @@
-
-
 .container_promote {
   width: 80%;
   margin: 10% 10%;
@@ -29,19 +27,44 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%; /* 新增 */
+  width: 50%;
+  /* 新增 */
 }
 
 .image-container img {
-  width: auto; /* 修改 */
-  max-width: 100px; /* 新增 */
+  width: auto;
+  /* 修改 */
+  max-width: 100px;
+  /* 新增 */
   height: auto;
 }
 
 .job-title {
   font-size: 20px;
   font-weight: bold;
-  
+
+}
+
+.return-But {
+  position: sticky;
+  bottom: 2rem;
+  right: 2rem;
+  margin-left: 92%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9AD2C8;
+  border-radius: 50%;
+  text-decoration: none;
+  width: 70px;
+  height: 70px;
+
+}
+
+.return-object {
+  color: white;
+  font-size: 30px;
+  transition: .3s ease;
 }
 
 @media screen and (max-width: 768px) {

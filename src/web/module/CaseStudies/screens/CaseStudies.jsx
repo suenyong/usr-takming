@@ -7,7 +7,7 @@ import US_image_1 from "../../CaseStudies/images/US_image_1.png";
 import ASEAN_5 from "../../CaseStudies/images/ASEAN_5.JPG";
 import { SettingCaseStudies } from "../../CaseStudies/screens/SettingCaseStudies";
 import Contact from '../../home/components/contactus/Contact';
-import AOS from "aos";
+import { AiOutlineHome } from 'react-icons/ai';
 
 
 export default function CaseStudies() {
@@ -20,7 +20,7 @@ export default function CaseStudies() {
 
   const carouselItems1 = [
     {
-      title:"109/09/04(五)第一場德明創新服務座談-電商社群創新商業模式",
+      title: "109/09/04(五)第一場德明創新服務座談-電商社群創新商業模式",
       date: "由東森得意購股份有限公司研發新事業部『顧武男』執行長，為我們拉開序幕，從產業資歷分享到目前東森集團的新創商業模式超前部屬等豐富的實戰分享，讓所有聽講者受益良多。雖然礙於時間短暫，但不減大家的熱情交流，是本次座談會最棒的收穫！",
     },
     {
@@ -91,132 +91,123 @@ export default function CaseStudies() {
   const carouselItems3 = [
     {
       title: "109/11/17(二)東協跨境電商講座—網紅核心課plus",
-      date:"由名格娛樂有限公司蘇彥翰執行長為外籍學生做實務交流分享。電商產業的興起，網紅也逐漸成為電商經營的一群，當紅的自媒體、數位媒體也順勢成長，越來越多人懂得運用網路在賺錢。蘇執行長除了分享許多網紅案例也為大家做了行銷分析及S.M.A.R.T理論的分享，透過討論練習可以互相分享及交流，外籍生大家反應都很熱烈。"
-      }, {
+      date: "由名格娛樂有限公司蘇彥翰執行長為外籍學生做實務交流分享。電商產業的興起，網紅也逐漸成為電商經營的一群，當紅的自媒體、數位媒體也順勢成長，越來越多人懂得運用網路在賺錢。蘇執行長除了分享許多網紅案例也為大家做了行銷分析及S.M.A.R.T理論的分享，透過討論練習可以互相分享及交流，外籍生大家反應都很熱烈。"
+    }, {
       title: "109/11/20(五)東協跨境電商講座—網紅核心課plus",
-      date:"新興電子商務模式不段推陳出新，像年輕世代常見的自媒體、網路直播、網紅youtube等都是時下新模式，而講師透過自家網紅及正在栽培的外籍學生作為例子，從網路電商到網紅youtube拍攝等，讓外籍同學能見識到平常課程外的實際案例，加深他們對於電子商務及跨境電商的印象。"
-      }, {
+      date: "新興電子商務模式不段推陳出新，像年輕世代常見的自媒體、網路直播、網紅youtube等都是時下新模式，而講師透過自家網紅及正在栽培的外籍學生作為例子，從網路電商到網紅youtube拍攝等，讓外籍同學能見識到平常課程外的實際案例，加深他們對於電子商務及跨境電商的印象。"
+    }, {
       title: "109/11/23(一)東協跨境電商講座—跨境電商實務",
-      date:"本次邀請昭博國際商務股份有限公司產品技術總監劉俊宏先生蒞校分享。網路跨國交易等日益盛行，比起傳統的國際貿易耗時長價格高方便性欠缺等，跨境電商平台的演進，促使簡易的貿易模式，並減少耗時及不必要的中間成本，今天的跨境電商實務課程，除了讓外籍生能聽到學到除了教科書上的理論外，實際的業界交流，更能加深他們的印象。"
-      }, {
+      date: "本次邀請昭博國際商務股份有限公司產品技術總監劉俊宏先生蒞校分享。網路跨國交易等日益盛行，比起傳統的國際貿易耗時長價格高方便性欠缺等，跨境電商平台的演進，促使簡易的貿易模式，並減少耗時及不必要的中間成本，今天的跨境電商實務課程，除了讓外籍生能聽到學到除了教科書上的理論外，實際的業界交流，更能加深他們的印象。"
+    }, {
       title: "109/11/26(四)東協跨境電商講座-網紅電商課程",
-      date:"自媒體無論境內或境外日益盛行，而網紅電商、媒體等也為此帶來龐大商機。今日講師的課程不單方面介紹網紅電商，更帶領外籍同學從自我發現到如何以自我興趣及探索自我，來找到如果成為自媒體的博客主該如何找到正確的軌道。除此也透過心理測驗等方式，讓大家更了解自我，也可找到自己及團隊的各自強項，才能各司其職。"
-      }, {
+      date: "自媒體無論境內或境外日益盛行，而網紅電商、媒體等也為此帶來龐大商機。今日講師的課程不單方面介紹網紅電商，更帶領外籍同學從自我發現到如何以自我興趣及探索自我，來找到如果成為自媒體的博客主該如何找到正確的軌道。除此也透過心理測驗等方式，讓大家更了解自我，也可找到自己及團隊的各自強項，才能各司其職。"
+    }, {
       title: "109/11/30(一)東協跨境電商講座-跨境電商物流",
-      date:"本堂課邀請昭博國際股份有限公司產品行銷副理林子穩先生蒞校分享。跨境電商營運模式解析(包含出口型、進口型、轉口型)，跨境物流的方式及計費說明(供應鏈及貿易FCD、物流材積方式及各式物流評比等)，執行跨境物流前必須注意賣給誰、貨物狀態、時效性成本等，講師今天的課程解析的很詳細，也聽到同學反應與目前所學有共通關聯，能達到學以致用的效果很好。"
-      }, {
+      date: "本堂課邀請昭博國際股份有限公司產品行銷副理林子穩先生蒞校分享。跨境電商營運模式解析(包含出口型、進口型、轉口型)，跨境物流的方式及計費說明(供應鏈及貿易FCD、物流材積方式及各式物流評比等)，執行跨境物流前必須注意賣給誰、貨物狀態、時效性成本等，講師今天的課程解析的很詳細，也聽到同學反應與目前所學有共通關聯，能達到學以致用的效果很好。"
+    }, {
       title: "109/12/03(四)東協跨境電商講座-國際行銷",
-      date:"本次邀請雄德股份有限公司商務長李良頤先生蒞校分享。從行銷的定義到國際行銷的整個環境過程分析，行銷工具的應用（產品、定位、推廣、通路）及策略行為（市場區隔、品牌定位、設定目標對象）。行銷自動化工具的介紹（客戶關係管理、電子郵件、社群數據、一頁式網頁互動及自動化客服等），串接資料來源的連結資源（主要對廣告投放及資料分析的依據）。"
-      }, {
+      date: "本次邀請雄德股份有限公司商務長李良頤先生蒞校分享。從行銷的定義到國際行銷的整個環境過程分析，行銷工具的應用（產品、定位、推廣、通路）及策略行為（市場區隔、品牌定位、設定目標對象）。行銷自動化工具的介紹（客戶關係管理、電子郵件、社群數據、一頁式網頁互動及自動化客服等），串接資料來源的連結資源（主要對廣告投放及資料分析的依據）。"
+    }, {
       title: "109/12/11(五)東協跨境電商講座-全球跨境電商品牌",
-      date:"本次邀請樂利數位科技股份有限公司國際業務部越南顧問阮氏碧撿小姐蒞校分享。全球跨境電商也是目前日漸盛行的產業，過去傳統的國際貿易過程繁雜極不方便，透過現今跨境平台整合及數據分析後，讓跨境電商能連結全球。從交易成立、支付結算、國際物流等過程分析等商業活動，介紹目前的跨境現況及趨勢等。"
-      }, {
+      date: "本次邀請樂利數位科技股份有限公司國際業務部越南顧問阮氏碧撿小姐蒞校分享。全球跨境電商也是目前日漸盛行的產業，過去傳統的國際貿易過程繁雜極不方便，透過現今跨境平台整合及數據分析後，讓跨境電商能連結全球。從交易成立、支付結算、國際物流等過程分析等商業活動，介紹目前的跨境現況及趨勢等。"
+    }, {
       title: "2020大專院校越南電商行銷企劃競賽活動花絮",
-      date:"在面臨少子化衝擊影響，招攬境外學生勢在必行，而本校目前近8000位學生，外籍生數量有400多位，其中又以越南生占多數高達395位，係本校一大優勢，將來越南學生不論是畢業歸國抑或是留在臺灣發展，都可以預期能替本校帶來更多學生。藉此舉辦大專院校越南電商行銷企劃競賽，培養外籍學生之網紅經營、社群行銷和跨境電商等經營能力。"
-      }
-    ];
+      date: "在面臨少子化衝擊影響，招攬境外學生勢在必行，而本校目前近8000位學生，外籍生數量有400多位，其中又以越南生占多數高達395位，係本校一大優勢，將來越南學生不論是畢業歸國抑或是留在臺灣發展，都可以預期能替本校帶來更多學生。藉此舉辦大專院校越南電商行銷企劃競賽，培養外籍學生之網紅經營、社群行銷和跨境電商等經營能力。"
+    }
+  ];
 
 
 
 
   return (
     <>
-<div className="back-to-home">
-     <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/案例分享</a>
-    </div>
-    <h1
-            data-aos="zoom-out-down"
-            style={{
-            textAlign: "center",
-            color: "#fff",
-            backgroundColor: "#90cbc0",
-            width: "40%",
-            marginRight: "30%",
-            marginLeft: "30%",
-            marginTop: "13%",
-            }}>
-            案例分享-服務創新育成</h1>
+      <div className="title">案例分享-服務創新育成</div>
 
       <div className="for-title">『Decantar AI商業應用實作坊』系列講座 </div>
 
 
-
-        <div className="text_CS">
-          『Decantar AI商業應用實作坊』系列講座(12/02、12/16、12/23、12/30)。從生活日常到娛樂，從商業決策到科研，ML/AI在我們日常生活的重要性與日俱增。從行動裝置語音助理、旅人最愛的GOOGLE翻譯、電子商務的推薦系統、結合生物辨識技術的門禁系統、讓停車場管理更流暢便利的車牌辨識，讓我們的工作與生活更便利、更輕鬆的機器學習技術。從ML機器學習到AI人工智慧，如何將科技應用到生活與商業上，德明科技大學與行動貝果合作開辦AI商業應用實作坊，參加者將利用12月裡4個周三下午，從零編碼、無AI基礎到最後能了解AI原理，並能利用行動貝果的DecantarAI做出應用模型。
-        </div>
+      <div className="text_CS">
+        『Decantar AI商業應用實作坊』系列講座(12/02、12/16、12/23、12/30)。從生活日常到娛樂，從商業決策到科研，ML/AI在我們日常生活的重要性與日俱增。從行動裝置語音助理、旅人最愛的GOOGLE翻譯、電子商務的推薦系統、結合生物辨識技術的門禁系統、讓停車場管理更流暢便利的車牌辨識，讓我們的工作與生活更便利、更輕鬆的機器學習技術。從ML機器學習到AI人工智慧，如何將科技應用到生活與商業上，德明科技大學與行動貝果合作開辦AI商業應用實作坊，參加者將利用12月裡4個周三下午，從零編碼、無AI基礎到最後能了解AI原理，並能利用行動貝果的DecantarAI做出應用模型。
+      </div>
 
 
       <div className="for-title">德明服務創新座談 </div>
       <div className="card_onedata">
-            {carouselItems1.map((item, index) => (
-                <div className="card">
-                  <span class="model-name">{item.title}</span>
-                  <span>{item.date}</span>
-                </div>
-              ))}
+        {carouselItems1.map((item, index) => (
+          <div className="card">
+            <span class="model-name">{item.title}</span>
+            <span>{item.date}</span>
+          </div>
+        ))}
       </div>
 
       <div className="for-title"> 『創業要Know How』系列講座 </div>
       <div className="card_onedata">
-            {carouselItems2.map((item, index) => (
-                <div className="card">
-                  <span class="model-name">{item.title}</span>
-                  <span>{item.date}</span>
-                </div>
-              ))}
+        {carouselItems2.map((item, index) => (
+          <div className="card">
+            <span class="model-name">{item.title}</span>
+            <span>{item.date}</span>
+          </div>
+        ))}
       </div>
 
 
       <h1
-            data-aos="zoom-out-down"
-            style={{
-            textAlign: "center",
-            color: "#fff",
-            backgroundColor: "#90cbc0",
-            width: "40%",
-            marginRight: "30%",
-            marginLeft: "30%",
-            marginTop: "13%",
-            }}>案例分享-東協跨境電商</h1>
+        data-aos="zoom-out-down"
+        style={{
+          textAlign: "center",
+          color: "#fff",
+          backgroundColor: "#90cbc0",
+          width: "40%",
+          marginRight: "30%",
+          marginLeft: "30%",
+          marginTop: "13%",
+        }}>案例分享-東協跨境電商</h1>
 
       <div className="for-title"> 東協跨境電商講座 </div>
       <div className="card_onedata">
-            {carouselItems3.map((item, index) => (
-                <div className="card">
-                  <span class="model-name">{item.title}</span>
-                  <span>{item.date}</span>
-                </div>
-              ))}
+        {carouselItems3.map((item, index) => (
+          <div className="card">
+            <span class="model-name">{item.title}</span>
+            <span>{item.date}</span>
+          </div>
+        ))}
       </div>
 
 
 
 
       <h1
-            data-aos="zoom-out-down"
-            style={{
-            textAlign: "center",
-            color: "#fff",
-            backgroundColor: "#90cbc0",
-            width: "40%",
-            marginRight: "30%",
-            marginLeft: "30%",
-            marginTop: "13%",
-            }}>案例分享-部落愛轉動</h1>
+        data-aos="zoom-out-down"
+        style={{
+          textAlign: "center",
+          color: "#fff",
+          backgroundColor: "#90cbc0",
+          width: "40%",
+          marginRight: "30%",
+          marginLeft: "30%",
+          marginTop: "13%",
+        }}>案例分享-部落愛轉動</h1>
 
-        <div className="text_TLTS">
+
+      <div className="text_TLTS">
         《烏來-忠治部落》透過部落文化及生態體驗活動，讓參與服務的師生更認識原住民文化、找回對原住民文化歸屬與認同感；透過體育及衛生教育教學課程，讓部落居民及孩童，養成良好運動及衛生保健習慣；透過闖關及方案活動進行，培育孩童從小建立正確理財觀念等。
-        
-        
-        <p>【校園新聞連結，帶領大家一同參與部落世界】</p>
-        
-        <p>◆德明科大舉辦109年度大學社會責任實踐基地-忠治「部落．愛轉動」暑期夏令營</p>
-        <a href="http://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18575" style={{fontSize:"15px", width:"100%",wordWrap: "break-word"}}>http://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18575</a>
-        <p>◆109年度大學社會責任實踐基地－忠治「部落．愛轉動」基隆海科館戶外教學活動</p>
-  
-        <a href="http://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18589" style={{fontSize:"15px", width:"100%",wordWrap: "break-word"}}>http://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18589</a>
-        </div>
 
+
+        <p>【校園新聞連結，帶領大家一同參與部落世界】</p>
+
+        <p>◆德明科大舉辦109年度大學社會責任實踐基地-忠治「部落．愛轉動」暑期夏令營</p>
+        <a href="http://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18575" style={{ fontSize: "15px", width: "100%", wordWrap: "break-word" }}>http://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18575</a>
+        <p>◆109年度大學社會責任實踐基地－忠治「部落．愛轉動」基隆海科館戶外教學活動</p>
+        <a href="http://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18589" style={{ fontSize: "15px", width: "100%", wordWrap: "break-word" }}>http://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18589</a>
+
+
+      </div>
+
+      {/* ====按鈕==== */}
+      <a href="http://localhost:3000/" className="return-But">
+        <AiOutlineHome className="return-object"></AiOutlineHome>
+      </a>
 
 
       <Contact />

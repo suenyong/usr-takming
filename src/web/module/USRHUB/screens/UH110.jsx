@@ -3,11 +3,13 @@ import "../../USRHUB/styles/UH110.css"
 import ImageFiles from '../component/ImageFiles';
 import Contact from '../../home/components/contactus/Contact';
 import AOS from "aos";
+import { AiOutlineHome } from 'react-icons/ai';
+
 
 export default function UH110() {
     useEffect(() => {
         AOS.init({
-        duration: 700,
+            duration: 700,
         });
     }, [])
 
@@ -17,18 +19,18 @@ export default function UH110() {
         setSelectedContent(contentId);
     };
 
-    const T110=[
+    const T110 = [
         { id: 1, src: require("../images/T110_1.jpg") },
         { id: 2, src: require("../images/T110_2.jpg") },
     ]
 
-    const A110=[
+    const A110 = [
         { id: 1, src: require("../images/A110_1.jpg") },
         { id: 2, src: require("../images/A110_2.jpg") },
         { id: 3, src: require("../images/A110_3.jpg") },
     ]
 
-    const Love110_Images=[
+    const Love110_Images = [
         { id: 1, src: require("../images/L110_1.jpg") },
         { id: 2, src: require("../images/L110_3.jpg") },
         { id: 3, src: require("../images/L110_2.JPG") },
@@ -49,25 +51,22 @@ export default function UH110() {
     return (
 
         <>
-        <div className="back-to-home">
-    <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/USR HUB/110</a>
-    </div>
-    <h1 data-aos="zoom-out-down" style={{ 
-        textAlign: 'center', 
-        color: '#fff',
-        backgroundColor:"#90cbc0",
-        width:"40%",
-        marginRight:"30%",
-        marginLeft:"30%",
-        marginTop:"13%",
-        }}>
+            <h1 data-aos="zoom-out-down" style={{
+                textAlign: 'center',
+                color: '#fff',
+                backgroundColor: "#90cbc0",
+                width: "40%",
+                marginRight: "30%",
+                marginLeft: "30%",
+                marginTop: "13%",
+            }}>
                 110企劃
             </h1>
 
             <h1 style={{ fontSize: "40px", fontFamily: "Arial, sans-serif", marginLeft: "10%" }}>
                 企劃類型
             </h1>
-            
+
             <div className="button_HUB">
                 <button className="btu_stlyes" onClick={() => handleButtonClick('content1')}>
                     <div className="color_circle"></div>
@@ -86,9 +85,9 @@ export default function UH110() {
 
 
             {selectedContent === 'content1' && (
-                <div className="p_USRHUB" style={{  fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
+                <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
 
-                <p style={{ fontSize: "30px"}}>服務創新育成</p> 
+                    <p style={{ fontSize: "30px" }}>服務創新育成</p>
 
                     「由研發處邀請國內外具有新服務商品、新商業模式、新技術應用之新創企業經理人，雙週舉辦「商業創新論壇」，邀請國內在推動商業創新的專業經理人蒞校演講，邀請內湖科技園 區廠商、本校師生參加，落實創新創意教育的理念。」
                     <p></p>
@@ -105,7 +104,7 @@ export default function UH110() {
                     (3) 輔導創新廠商遊隼科技股份有 限公司並進駐創新育成中心 (籌備中)。
 
                     <p>
-                    該名計畫助理執行論壇活動，並且 與業界廠商聯絡溝通，進行創新育 成發想，協助計畫順利執行。
+                        該名計畫助理執行論壇活動，並且 與業界廠商聯絡溝通，進行創新育 成發想，協助計畫順利執行。
                     </p>
 
 
@@ -119,9 +118,9 @@ export default function UH110() {
 
             {selectedContent === 'content2' && (
 
-                <div className="p_USRHUB" style={{  fontSize: "20px", fontFamily: "Arial, sans-serif" }}>
+                <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif" }}>
 
-                    <p style={{ fontSize: "30px"}}>東協跨境電商</p>
+                    <p style={{ fontSize: "30px" }}>東協跨境電商</p>
 
                     「由研發處整合本校 560 位的東協生（越南、印尼）在台生活需求，結合電商平台與直播 趨勢，教導電商透過直播知識與運作，培養外籍生電商之網紅經營、社群行銷和跨境電商經 營能力，期許畢業後能協助外籍生在台跨境或歸國落地創業。」
                     <p></p>
@@ -135,7 +134,7 @@ export default function UH110() {
                     <br></br>
                     (2) 110 年 11 月 06 日舉辦校 內「東協跨境電商行銷競 賽暨成果發表」
                     <p>
-                    該名計畫助理成為與越南當地 企業、學校溝通媒介橋樑，協助 計畫順利執行。
+                        該名計畫助理成為與越南當地 企業、學校溝通媒介橋樑，協助 計畫順利執行。
                     </p>
                     計畫衍生亮點成果案例(計畫成果中可供各界參考的執行亮點或特色內容)。 計畫於110年11月06日舉辦「跨境電商行銷競賽暨成果發表會」由東南亞外 籍生製作跨境電商行銷競賽，提供外籍生學術和實務交流的平台，也呼應本 USR Hub計畫主軸—數位科技支援多元族群（外籍生）的大學社會責任。計 畫衍生效益則是媒合兩位外籍生到計畫合作機構企業實習，培育跨境電商人 才。
 
@@ -144,9 +143,9 @@ export default function UH110() {
             )}
 
             {selectedContent === 'content3' && (
-                <div className="p_USRHUB" style={{  fontSize: "20px", fontFamily: "Arial, sans-serif" }}>
+                <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif" }}>
 
-                    <p style={{ fontSize: "30px"}}>部落愛轉動</p>
+                    <p style={{ fontSize: "30px" }}>部落愛轉動</p>
 
                     「由學務處課指組舉辦部落文化及生態體驗活動，因此選定位處烏來的忠治部落，於 110 年 10 月 9-10 日忠治部落青少年、兒童、社區居民計 35 名，忠治部落是離台北最近的泰雅族 部落，地緣關係部落有著極佳生態步道與自然環境。在本校協助下 109 年完成「忠治部落綠 地圖、來一攤(周邊美食、景點)」、110 年完成「忠治-甲蟲、獨角仙昆蟲」摺頁、簡介，並帶 領部落居民及青年至南投縣仁愛鄉法治村武界部落的參訪後，透過辦理本自然生態體驗活動 為讓忠治居民更認識自己部落、整合自然資源，並有發展地方特色之機會透過計畫執行使學 生有機會實際體驗城鄉交流服務經驗，培育未來參與社會的關懷奉獻能力，，啟發社區營造 思維，協助部落找回地區文化的認同感。」
                     <p></p>
@@ -163,9 +162,13 @@ export default function UH110() {
                     <ImageFiles images={Love110_Images} />
                 </div>
             )}
+            {/* ====按鈕==== */}
+            <a href="http://localhost:3000/" className="return-But">
+                <AiOutlineHome className="return-object"></AiOutlineHome>
+            </a>
 
 
-        <Contact />
+            <Contact />
         </>
 
     );

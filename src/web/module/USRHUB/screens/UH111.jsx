@@ -3,12 +3,14 @@ import "../../USRHUB/styles/UH110.css"
 import ImageFiles from '../component/ImageFiles';
 import Contact from '../../home/components/contactus/Contact';
 import AOS from "aos";
+import { AiOutlineHome } from 'react-icons/ai';
 
-export default function UH111(){
-    
+
+export default function UH111() {
+
     useEffect(() => {
         AOS.init({
-        duration: 700,
+            duration: 700,
         });
     }, [])
 
@@ -18,17 +20,17 @@ export default function UH111(){
         setSelectedContent(contentId);
     };
 
-    const T111=[
+    const T111 = [
         { id: 1, src: require("../images/T111_1.JPG") },
         { id: 2, src: require("../images/T111_2.jpg") },
     ]
 
-    const A111=[
+    const A111 = [
         { id: 1, src: require("../images/A111_1.jpg") },
         { id: 2, src: require("../images/A111_2.jpg") },
     ]
 
-    const Love111_Images=[
+    const Love111_Images = [
         { id: 3, src: require("../images/L111_3.jpg") },
         { id: 4, src: require("../images/L111_4.jpg") },
         { id: 5, src: require("../images/L111_5.jpg") },
@@ -37,28 +39,25 @@ export default function UH111(){
         { id: 8, src: require("../images/L111_8.jpg") },
         { id: 9, src: require("../images/L111_9.jpg") },
     ]
-    
-    return(
+
+    return (
         <>
-        <div className="back-to-home">
-    <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/USR HUB/111</a>
-    </div>
-    <h1 data-aos="zoom-out-down" style={{ 
-        textAlign: 'center', 
-        color: '#fff',
-        backgroundColor:"#90cbc0",
-        width:"40%",
-        marginRight:"30%",
-        marginLeft:"30%",
-        marginTop:"13%",
-        }}>
+            <h1 data-aos="zoom-out-down" style={{
+                textAlign: 'center',
+                color: '#fff',
+                backgroundColor: "#90cbc0",
+                width: "40%",
+                marginRight: "30%",
+                marginLeft: "30%",
+                marginTop: "13%",
+            }}>
                 111企劃
             </h1>
 
             <h1 style={{ fontSize: "40px", fontFamily: "Arial, sans-serif", marginLeft: "10%" }}>
                 企劃類型
             </h1>
-            
+
             <div className="button_HUB">
                 <button className="btu_stlyes" onClick={() => handleButtonClick('content1')}>
                     <div className="color_circle"></div>
@@ -76,11 +75,11 @@ export default function UH111(){
 
 
             {selectedContent === 'content1' && (
-                <div className="p_USRHUB" style={{  fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
+                <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
 
-                <p style={{ fontSize: "30px"}}>服務創新育成</p> 
+                    <p style={{ fontSize: "30px" }}>服務創新育成</p>
 
-                    <p style={{ fontSize: "25px"}}>111年執行情況:</p>
+                    <p style={{ fontSize: "25px" }}>111年執行情況:</p>
 
                     執行成效：延續邀請國內外具有新服務商品、新商業模式、新技術應 用之新創企業經理人，舉辦「商業創新論壇」，邀請國內在推動商業創新的專業經理人蒞校演講。
                     <p></p>
@@ -102,12 +101,12 @@ export default function UH111(){
 
             {selectedContent === 'content2' && (
 
-                <div className="p_USRHUB" style={{  fontSize: "20px", fontFamily: "Arial, sans-serif" }}>
+                <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif" }}>
 
-                    <p style={{ fontSize: "30px"}}>東協跨境電商</p>
+                    <p style={{ fontSize: "30px" }}>東協跨境電商</p>
 
-                    
-                    <p style={{ fontSize: "25px"}}>111年執行情況:</p>
+
+                    <p style={{ fontSize: "25px" }}>111年執行情況:</p>
 
                     辦理活動: 成果發表會
                     <p></p>
@@ -117,17 +116,17 @@ export default function UH111(){
             )}
 
             {selectedContent === 'content3' && (
-                <div className="p_USRHUB" style={{  fontSize: "20px", fontFamily: "Arial, sans-serif" }}>
+                <div className="p_USRHUB" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif" }}>
 
-                    <p style={{ fontSize: "30px"}}>部落愛轉動</p>
+                    <p style={{ fontSize: "30px" }}>部落愛轉動</p>
 
-                    <p style={{ fontSize: "25px"}}>111年執行情況:</p>
+                    <p style={{ fontSize: "25px" }}>111年執行情況:</p>
                     辦理活動: 地方關懷創生
                     <p></p>
                     111年整合校際資源，攜手相同理念、熱忱之中華科大、 聖約翰科大、馬偕醫護專校之原資中心共同規劃執行，四校共同設定之 14 「文化、體能、環教、衛教」等兩階段主題內容，提供給忠治部落青年及 孩童更具意涵之服務，且讓服務之四校學生也能相互學習交流，並擴展人 脈關係。
                     <p></p>
-            
-                    <p style={{ fontSize: "25px"}}>111年執行情況:</p>
+
+                    <p style={{ fontSize: "25px" }}>111年執行情況:</p>
                     辦理活動:地方關懷創生
                     <p></p>
                     111年忠治部落，透過辦理暑期主題營隊，執行「在地關 懷」、「永續環境」等政策目標外，並透過原民工作坊專 題講座、樂水部落參訪交流與體驗，讓忠治部落居民及青 年能有重新認識自己部落、整合自然資源、發展地方特 色，以促進「地方創生」之契機，該階段服務計有部落居 民、青少年、小朋友及兩校師生377人次參與。
@@ -136,8 +135,12 @@ export default function UH111(){
 
                 </div>
             )}
+            {/* ====按鈕==== */}
+            <a href="http://localhost:3000/" className="return-But">
+                <AiOutlineHome className="return-object"></AiOutlineHome>
+            </a>
 
-        <Contact />
+            <Contact />
         </>
 
     );

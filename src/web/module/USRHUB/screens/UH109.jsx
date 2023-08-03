@@ -3,12 +3,14 @@ import "../../USRHUB/styles/UH110.css"
 import ImageFiles from "../component/ImageFiles.jsx";
 import Contact from '../../home/components/contactus/Contact';
 import AOS from "aos";
+import { AiOutlineHome } from 'react-icons/ai';
+
 
 export default function UH109() {
-    
+
     useEffect(() => {
         AOS.init({
-        duration: 700,
+            duration: 700,
         });
     }, [])
     const [selectedContent, setSelectedContent] = useState('content1');
@@ -21,18 +23,18 @@ export default function UH109() {
 
 
 
-    const T109=[
+    const T109 = [
         { id: 1, src: require("../images/T109_1.jpg") },
         { id: 2, src: require("../images/T109_2.jpg") },
         { id: 3, src: require("../images/T109_3.jpg") },
     ]
 
-    const A109=[
+    const A109 = [
         { id: 1, src: require("../images/A109_1.jpg") },
         { id: 2, src: require("../images/A109_2.JPG") },
     ]
 
-    const Love109_Images=[
+    const Love109_Images = [
         { id: 1, src: require("../images/109IMG_4559.JPG") },
         { id: 2, src: require("../images/109IMG_4637.JPG") },
         { id: 3, src: require("../images/109IMG_4699.JPG") },
@@ -49,18 +51,15 @@ export default function UH109() {
 
     return (
         <>
-        <div className="back-to-home">
-    <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/USR HUB/109</a>
-    </div>
-    <h1 data-aos="zoom-out-down" style={{ 
-        textAlign: 'center', 
-        color: '#fff',
-        backgroundColor:"#90cbc0",
-        width:"40%",
-        marginRight:"30%",
-        marginLeft:"30%",
-        marginTop:"13%",
-        }}>
+            <h1 data-aos="zoom-out-down" style={{
+                textAlign: 'center',
+                color: '#fff',
+                backgroundColor: "#90cbc0",
+                width: "40%",
+                marginRight: "30%",
+                marginLeft: "30%",
+                marginTop: "13%",
+            }}>
                 109企劃
             </h1>
 
@@ -183,10 +182,14 @@ export default function UH109() {
                     合作夥伴
                     XXXXXXXXXXXXXXX
 
-                
-                    <ImageFiles images={Love109_Images}/>
+
+                    <ImageFiles images={Love109_Images} />
                 </div>
             )}
+            {/* ====按鈕==== */}
+            <a href="http://localhost:3000/" className="return-But">
+                <AiOutlineHome className="return-object"></AiOutlineHome>
+            </a>
             <Contact />
         </>
 
