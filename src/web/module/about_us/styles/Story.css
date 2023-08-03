@@ -1,32 +1,55 @@
-
 .boxS {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 650px;
-    height: 250px;
-    border-radius: 10px;
-    background-color: rgba(124, 169, 160, 0.337);
-    top: 50%;
-    left: 50%;
-    margin:5%;
-    margin-top: 0%;
-    color: #1a3725;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: rgba(124, 169, 160, 0.337);
+  top: 50%;
+  left: 50%;
+  margin: 5%;
+  margin-top: 0%;
+  color: #1a3725;
 }
 
 .centered-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh; /* 調整高度來置中整個頁面 */
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  /* 調整高度來置中整個頁面 */
+}
 
-  a {
-    text-decoration: none; /* 移除底线 */
-    color: #224439; /* 修改链接文字颜色，这里使用红色作为示例 */
-  }
+a {
+  text-decoration: none;
+  /* 移除底线 */
+  color: #224439;
+  /* 修改链接文字颜色，这里使用红色作为示例 */
+}
 
-  a:hover{
-    color: #369160;
-  }
-  
+a:hover {
+  color: #369160;
+}
+
+.return-But {
+  position: sticky;
+  bottom: 2rem;
+  right: 2rem;
+  margin-left: 92%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9AD2C8;
+  border-radius: 50%;
+  text-decoration: none;
+  width: 70px;
+  height: 70px;
+
+}
+
+.return-object {
+  color: white;
+  font-size: 30px;
+  transition: .3s ease;
+}

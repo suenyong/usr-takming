@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import no from "../images/no-pic.png";
 import Contact from "../../home/components/contactus/Contact";
 import AOS from "aos";
+import { AiOutlineHome } from 'react-icons/ai';
 
 
 export default function Promote() {
@@ -10,31 +11,28 @@ export default function Promote() {
 
   useEffect(() => {
     AOS.init({
-    duration: 700,
+      duration: 700,
     });
-}, [])
+  }, [])
 
   return (
     <>
-    <div className="back-to-home">
-    <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/關於我們/推動單位介紹</a>
-    </div>
-    <h1 data-aos="zoom-out-down" style={{ 
-        textAlign: 'center', 
+      <h1 data-aos="zoom-out-down" style={{
+        textAlign: 'center',
         color: '#fff',
-        backgroundColor:"#90cbc0",
-        width:"40%",
-        marginRight:"30%",
-        marginLeft:"30%",
-        marginTop:"13%",
-        }}>
+        backgroundColor: "#90cbc0",
+        width: "40%",
+        marginRight: "30%",
+        marginLeft: "30%",
+        marginTop: "13%",
+      }}>
         推動單位-研究發展處
-        </h1>
-        
+      </h1>
 
-  <div className="container_promote">
-    值此發展學校特色，創造競爭優勢之際，各個行政、學術單位無不卯足全力朝邁向優質科技大學的目標邁進。研究發展處的功能為建立產官學合作關係，促成國際學術交流，統籌學術研究推廣、教補款經費規劃與分配暨輔導學生生涯規劃等相關事項，其定位係扮演校內資源整合與學校對內及對外窗口的角色。
-  </div>
+
+      <div className="container_promote">
+        值此發展學校特色，創造競爭優勢之際，各個行政、學術單位無不卯足全力朝邁向優質科技大學的目標邁進。研究發展處的功能為建立產官學合作關係，促成國際學術交流，統籌學術研究推廣、教補款經費規劃與分配暨輔導學生生涯規劃等相關事項，其定位係扮演校內資源整合與學校對內及對外窗口的角色。
+      </div>
 
 
       {/* 以下是介紹成員 */}
@@ -183,6 +181,10 @@ export default function Promote() {
           </div>
         </div>
       </div>
+      {/* ====按鈕==== */}
+      <a href="http://localhost:3000/" className="return-But">
+        <AiOutlineHome className="return-object"></AiOutlineHome>
+      </a>
       <Contact />
     </>
   );

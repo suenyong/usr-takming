@@ -7,6 +7,8 @@ import Carousel from "../../../_basic/components/carousel/screens/Carousel";
 import React, { useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { AiOutlineHome } from 'react-icons/ai';
+
 
 export default function PushCore() {
   useEffect(() => {
@@ -16,12 +18,6 @@ export default function PushCore() {
   }, []);
   return (
     <>
-      {/* USR理念 */}
-      <div className="back-to-home">
-        <a href="/" style={{ textDecoration: "none", color: "inherit" }}>
-          回首頁/關於我們/德明推動USR核心整合理念
-        </a>
-      </div>
       {/* <div className="one_idea_box"> */}
       <h1
         data-aos="zoom-out-down"
@@ -126,6 +122,12 @@ export default function PushCore() {
         活動照片
       </h1>
       <Carousel />
+
+      {/* ====按鈕==== */}
+      <a href="http://localhost:3000/" className="return-But">
+        <AiOutlineHome className="return-object"></AiOutlineHome>
+      </a>
+
 
       <Contact />
     </>

@@ -1,6 +1,8 @@
 import { right } from "@popperjs/core";
 import Contact from "../../home/components/contactus/Contact";
 import "../styles/GMM.css"
+import { AiOutlineHome } from 'react-icons/ai';
+
 
 export default function GMM() {
 
@@ -9,10 +11,6 @@ export default function GMM() {
 
     return (
         <>
-            <div className="back-to-home">
-                <a href="/" style={{ textDecoration: "none", color: "inherit" }}>回首頁/USR/內湖金面山在地風華 - 永續實踐計畫</a>
-            </div>
-
             <div className="Big_title">
                 推動金面山USR理念目標
             </div>
@@ -21,7 +19,7 @@ export default function GMM() {
                 而金面山山腳下的西湖商圈以及白石湖休閒農業區，同樣面臨著有著良好的商家但觀光人潮有待提升的困境，缺乏在地特色與商圈的連結，也缺乏多樣性的在地旅遊 體驗行程規劃。
                 面對這些問題與挑戰，本計畫希望利用金面山的人文、自然生態與小百岳的優勢，串聯西湖商圈與白石湖的觀光，透過「樂活與創生跨領域學分學程」課程規劃，師生增能的共學形式，實踐在地關懷的大學社會責任，落實具有在地文化色彩的永續旅遊發展，計畫目標對焦 SDGs4 優質教育與 SDGs11 永續城市及社區，以培育學生具備跨領域及解決問題的能力及永續樂活人才，達成在地活化與永續社區發展之目標。
             </div>
-{/* =================================================================== */}
+            {/* =================================================================== */}
             <div className="contain-GMM">
                 <div className="image_box">
                     <div className="GMM_text1">
@@ -30,23 +28,23 @@ export default function GMM() {
                     </div>
                     <img src={require("..//images/climb.png")} className="GMM_image1"></img>
                 </div>
-{/* ==================================== */}
+                {/* ==================================== */}
 
                 <div class="show-GMM">
-                        <img src={require("..//images/Line.png")} alt="blue_line" />
+                    <img src={require("..//images/Line.png")} alt="blue_line" />
                 </div>
 
-{/* ==================================== */}
+                {/* ==================================== */}
                 <div className="image_box">
                     <img src={require("..//images/mount.png")} className="GMM_image2"></img>
                     <div className="GMM_text2">
                         <div className="imges_title" >問題意識與計畫目標</div>
                         依循 USR 推動目標以「人才培育」和 「在地鏈結」為核心，透過設計思考以人為本的設計精神，從在地需求出發， 將實踐場域鎖定在學校在地之內湖金面山、西湖商圈以及白石湖休閒農業區， 除與本校有著深切地緣關係外，內湖金面山雖擁有豐富的人文與自然資源且為 小百岳之一，但是知名度卻鮮為人知，且缺乏在地導覽機制與人才。而金面山 山腳下的西湖商圈以及白石湖休閒農業區，同樣面臨著有著良好的商家但觀光 人潮有待提升的困境，缺乏在地特色與商圈的連結，也缺乏多樣性的在地旅遊體驗行程規劃。面對這些問題與挑戰，本計畫希望利用金面山的人文、自然生態與小百岳的優勢，串聯西湖商圈與白石湖的觀光，透過「樂活與創生跨領域 學分學程」課程規劃，師生增能的共學形式，實踐在地關懷的大學社會責任， 落實具有在地文化色彩的永續旅遊發展，計畫目標對焦 SDGs4 優質教育與 SDGs11 永續城市及社區，以培育學生具備跨領域及解決問題的能力及永續樂活 人才，達成在地活化與永續社區發展之目標。
                     </div>
-                </div>        
+                </div>
             </div>
-{/* ==================================================================== */}
-<div className="contain2nd">
+            {/* ==================================================================== */}
+            <div className="contain2nd">
                 <div className="M_title" >社會實踐議題(含SDGs)</div>
 
                 <img src={require('../images/sdgs4.png')} alt="SDGs4.png" className="SDGs4_GMM" ></img>
@@ -86,14 +84,19 @@ export default function GMM() {
                 </div>
 
                 <div className="M_title">合作夥伴</div>
-                    <div className="boxNeed_GMM">執行團隊</div>
+                <div className="boxNeed_GMM">執行團隊</div>
                 <div className="boxNeed_min">
                     <p>陳百盛、劉完淳、李琇玲、謝碧鳳、吳劍蘭、陳偉瑀、張谷光、徐翠琇</p>
                     <div className="boxNeed_GMM">外部合作夥伴</div>
                     <p>陳金讚、謝淑勤、李孟娜、李國隆、劉宜敏、黃俊隆、郭昭君、邱佳慧、王明旭、李銘、尉培元、史晴</p>
                 </div>
-                </div>
-            
+
+            </div>
+            {/* ====按鈕==== */}
+            <a href="http://localhost:3000/" className="return-But">
+                <AiOutlineHome className="return-object"></AiOutlineHome>
+            </a>
+
             <Contact />
         </>
     );

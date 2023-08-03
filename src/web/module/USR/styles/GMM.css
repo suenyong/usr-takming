@@ -1,29 +1,29 @@
-
-.Big_title{
+.Big_title {
     text-align: center;
     font-size: 30px;
     font-family: "Arial, sans-serif";
-    color: rgb(99,182,130);;
+    color: rgb(99, 182, 130);
+    ;
     position: relative;
     margin: 0 auto;
     width: 900px;
     font-weight: bold;
     margin-top: 150px;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
 
-.M_title{
+.M_title {
     position: relative;
     margin: 0 auto;
     width: 900px;
     text-align: left;
     font-size: 20px;
     font-family: Arial, sans-serif;
-    color: rgb(99,182,130);
+    color: rgb(99, 182, 130);
     line-height: 0.3;
     font-weight: bold;
     margin-top: 150px;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
 
 .boxIdea {
@@ -65,7 +65,7 @@
     font-weight: 500;
 }
 
-.boxNeed_min{
+.boxNeed_min {
     position: relative;
     margin: 0 auto;
     width: 900px;
@@ -74,7 +74,7 @@
 
 }
 
-.boxNeed_GMM{
+.boxNeed_GMM {
     position: relative;
     margin: 0 auto;
     width: 900px;
@@ -91,17 +91,17 @@
 }
 
 
-.SDGs4_GMM{
+.SDGs4_GMM {
     position: relative;
     margin: 0 auto;
-    max-width:100px;
+    max-width: 100px;
     max-height: auto;
     float: left;
     margin-left: 100px;
     margin-top: 120px;
 }
 
-.SDGs11_GMM{
+.SDGs11_GMM {
     position: relative;
     margin: 0 auto;
     max-width: 100px;
@@ -109,6 +109,28 @@
     float: left;
     margin-left: 100px;
     margin-top: 340px;
+}
+
+.return-But {
+    position: sticky;
+    bottom: 2rem;
+    right: 2rem;
+    margin-left: 92%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9AD2C8;
+    border-radius: 50%;
+    text-decoration: none;
+    width: 70px;
+    height: 70px;
+
+}
+
+.return-object {
+    color: white;
+    font-size: 30px;
+    transition: .3s ease;
 }
 
 @media (max-width: 800px) {
@@ -122,32 +144,35 @@
         left: 40%;
         transform: translateX(-50%);
     }
+
+
 }
 
-@media screen and (max-width:800px){
-    .Big_title{
+@media screen and (max-width:800px) {
+    .Big_title {
         text-align: center;
         font-size: 25px;
         font-family: "Arial, sans-serif";
-        color: rgb(99,182,130);;
+        color: rgb(99, 182, 130);
+        ;
         width: 200px;
         font-weight: bold;
     }
 
-    .M_title{
+    .M_title {
         position: relative;
         margin: 0 auto;
         width: 300px;
         text-align: left;
         font-size: 20px;
         font-family: Arial, sans-serif;
-        color: rgb(99,182,130);
+        color: rgb(99, 182, 130);
         line-height: 0.3;
         font-weight: bold;
         margin-top: 150px;
-        margin-bottom:50px;
+        margin-bottom: 50px;
     }
-    
+
     .boxIdea {
         position: relative;
         margin: 0 auto;
@@ -160,7 +185,7 @@
         font-family: "Arial, sans-serif";
         font-weight: 500;
     }
-    
+
     .boxSDG {
         display: flex;
         flex-wrap: wrap;
@@ -173,20 +198,20 @@
         font-size: 20px;
         margin-top: 70px;
     }
-    
+
     .boxNeed {
         position: relative;
         margin: 0 auto;
         width: 300px;
-        display:inline-grid;
+        display: inline-grid;
         justify-content: center;
         text-align: justify;
         font-size: 20px;
         font-family: "Arial, sans-serif";
         font-weight: 500;
     }
-    
-    .boxNeed_min{
+
+    .boxNeed_min {
         position: relative;
         margin: 0 auto;
         width: 300px;
@@ -196,8 +221,8 @@
         text-align: left;
         margin-top: 15px;
     }
-    
-    .boxNeed_GMM{
+
+    .boxNeed_GMM {
         position: relative;
         margin: 0 auto;
         width: 300px;
@@ -205,8 +230,8 @@
         font-weight: 600;
     }
 
-    .SDGs4_GMM{
-        max-width:100px;
+    .SDGs4_GMM {
+        max-width: 100px;
         max-height: auto;
         float: left;
         margin-left: 150;
@@ -214,7 +239,7 @@
         margin-bottom: 40px;
     }
 
-    .SDGs11_GMM{
+    .SDGs11_GMM {
         max-width: 100px;
         max-height: auto;
         float: left;
@@ -226,12 +251,14 @@
     .contain2nd {
         width: 80%;
     }
+
+
 }
 
 /* ============ */
 
 
-.contain-GMM{
+.contain-GMM {
     display: grid;
     grid-template-columns: 85% 10% 85%;
     justify-content: center;
@@ -242,41 +269,43 @@
     margin-top: 100px;
 }
 
-.GMM_image1,.GMM_image2{
+.GMM_image1,
+.GMM_image2 {
     width: calc(100% / 1.2);
     justify-items: center;
     align-items: center;
 }
 
 
-.GMM_text1,.GMM_text2{
+.GMM_text1,
+.GMM_text2 {
     width: 300px;
     height: 100%;
     background-color: rgba(194, 200, 198, 0.328);
     border-radius: 10px;
     padding: 20px;
-    margin-right:10px ;
+    margin-right: 10px;
 }
 
-.GMM_text2{
+.GMM_text2 {
     margin-top: 80px !important;
 }
 
-.imges_title{
+.imges_title {
     position: relative;
     margin: 0 auto;
     width: 300px;
     text-align: left;
     font-size: 20px;
     font-family: Arial, sans-serif;
-    color: rgb(99,182,130);
+    color: rgb(99, 182, 130);
     font-weight: bold;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
 @media screen and (max-width: 800px) {
 
-    .contain-GMM{
+    .contain-GMM {
         display: inline-block;
         grid-template-columns: 85% 10% 85%;
         justify-content: center;
@@ -286,35 +315,36 @@
         width: 350px;
         margin-top: 100px;
     }
-    
 
-    .show-GMM{
+
+    .show-GMM {
         display: none;
     }
 
-    .GMM_text1,.GMM_text2{
+    .GMM_text1,
+    .GMM_text2 {
         display: inline-block;
         width: 80%;
         height: 100%;
         background-color: rgba(194, 200, 198, 0.328);
         border-radius: 10px;
         padding: 20px;
-        margin-right:none ;
+        margin-right: none;
         margin-left: 10%;
         margin-right: 10%;
     }
-    
-    .GMM_text2{
+
+    .GMM_text2 {
         margin-top: 80px !important;
     }
 
-    .GMM_image1{
+    .GMM_image1 {
         width: calc(100% / 1.5);
         margin-left: 90px;
         margin-top: 50px;
     }
 
-    .GMM_image2{
+    .GMM_image2 {
         display: none;
     }
 

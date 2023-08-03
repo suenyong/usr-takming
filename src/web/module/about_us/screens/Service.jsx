@@ -8,6 +8,8 @@ import Contact from "../../home/components/contactus/Contact";
 // import { Link } from "react-router-dom";
 import TWimg from "../images/taiwan.png";
 import AOS from "aos";
+import { AiOutlineHome } from 'react-icons/ai';
+
 
 export default function Service() {
   useEffect(() => {
@@ -165,11 +167,6 @@ export default function Service() {
 
   return (
     <>
-      <div className="back-to-home">
-        <a href="/" style={{ textDecoration: "none", color: "inherit" }}>
-          回首頁/服務據點/服務足跡
-        </a>
-      </div>
       <h1
         data-aos="zoom-out-down"
         style={{
@@ -468,6 +465,12 @@ export default function Service() {
           </div>
         ))}
       </div>
+
+      {/* ====按鈕==== */}
+      <a href="http://localhost:3000/" className="return-But">
+        <AiOutlineHome className="return-object"></AiOutlineHome>
+      </a>
+
       <Contact />
     </>
   );
