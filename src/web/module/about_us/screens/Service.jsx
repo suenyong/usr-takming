@@ -170,286 +170,286 @@ export default function Service() {
           回首頁/服務據點/服務足跡
         </a>
       </div>
-        <h1
-          data-aos="zoom-out-down"
-          style={{
-            textAlign: "center",
-            color: "#fff",
-            backgroundColor: "#90cbc0",
-            width: "40%",
-            marginRight: "30%",
-            marginLeft: "30%",
-            marginTop: "13%",
-          }}
-        >
-          服務足跡
-        </h1>
-{/* ===以下是內容=============================*/}
-          <div className="service-container">
-<div className="in-out-all">
-            <h1 className="title_Service">目前服務過</h1>
-{/* ===國內按鈕=================================================== */}
-<div className="button_HUB_in">
-                <h1 className="service-heading">國內</h1>
-                    {/* 台北按鈕 */}
-                    <button
-                      className="btu_stlyes"
-                      onClick={() => handleButtonClick("content1")}
-                    >
-                      <div className="color_circle1"></div>
-                      <div className="button_text">台北</div>
-                    </button>
-                    {/* 新北按鈕 */}
-                    <button
-                      className="btu_stlyes"
-                      onClick={() => handleButtonClick("content2")}
-                    >
-                      <div className="color_circle1"></div>
-                      <div className="button_text">新北</div>
-                    </button>
-                    {/* 台灣全部按鈕*/}
-                    <button
-                      className="btu_stlyes"
-                      onClick={() => handleButtonClick("content5")}
-                    >
-                      <div className="color_circle1"></div>
-                      <div className="button_text">全部</div>
-                    </button>
-</div>
-{/* ===跳出按鈕==============================================*/}
-<div className="jump_but_in">
-  <div className="but_text">地區</div>
-                    {/* 台北資訊按鈕 */}
-                    {selectedContent === "content1" && (
-                      <div
-                        className="p_USRHUB"
-                        style={{ fontSize: "20px", fontFamily: "Arial, sans-serif" }}
-                      >
-                        <p style={{ fontSize: "25px" }}>台北地區</p>
-                        <div className="button_container">
-                          <button
-                            className="btu_stlyes"
-                            onClick={() => handleButtonClick("content6")}
-                          >
-                            <div className="color_circle1"></div>
-                            <div className="button_text">內湖</div>
-                          </button>
-                          <button
-                            className="btu_stlyes"
-                            onClick={() => handleButtonClick("content7")}
-                          >
-                            <div className="color_circle1"></div>
-                            <div className="button_text">中山</div>
-                          </button>
-                        </div>
-                      </div>
-                    )}
-                    {/* 新北資訊按鈕 */}
-                    {selectedContent === "content2" && (
-                      <div
-                        className="p_USRHUB"
-                        style={{ fontSize: "20px", fontFamily: "Arial, sans-serif" }}
-                      >
-                        <p style={{ fontSize: "25px" }}>新北地區</p>
-                        <div className="button_container">
-                          <button
-                            className="btu_stlyes"
-                            onClick={() => handleButtonClick("content8")}
-                          >
-                            <div className="color_circle1"></div>
-                            <div className="button_text">烏來</div>
-                          </button>
-                          <button
-                            className="btu_stlyes"
-                            onClick={() => handleButtonClick("content9")}
-                          >
-                            <div className="color_circle1"></div>
-                            <div className="button_text">三芝</div>
-                          </button>
-                        </div>
-                      </div>
-                    )}
-                    {/* 台灣全部資訊按鈕*/}
-                    {selectedContent === "content5" && (
-                      <div
-                        className="p_USRHUB"
-                        style={{ fontSize: "20px", fontFamily: "Arial, sans-serif" }}
-                      >
-                        <p style={{ fontSize: "25px" }}>全部地區</p>
-                        <div className="button_container">
-                          <button
-                            className="btu_stlyes"
-                            onClick={() => handleButtonClick("content6")}
-                          >
-                            <div className="color_circle1"></div>
-                            <div className="button_text">內湖</div>
-                          </button>
-                          <button
-                            className="btu_stlyes"
-                            onClick={() => handleButtonClick("content7")}
-                          >
-                            <div className="color_circle1"></div>
-                            <div className="button_text">中山</div>
-                          </button>
-                          <button
-                            className="btu_stlyes"
-                            onClick={() => handleButtonClick("content8")}
-                          >
-                            <div className="color_circle1"></div>
-                            <div className="button_text">烏來</div>
-                          </button>
-                          <button
-                            className="btu_stlyes"
-                            onClick={() => handleButtonClick("content9")}
-                          >
-                            <div className="color_circle1"></div>
-                            <div className="button_text">三芝</div>
-                          </button>
-                        </div>
-                      </div>
-                    )}
-</div>
-{/* ===跳出資訊==============================================*/}
-<div className="jump_information_in" id="element2">
-<div className="but_text">案例</div>
-                    {/* data1 */}
-                    {selectedContent === "content6" && (
-                      <div>
-                        <div className="boxB">
-                          {cardData1.map((card, index) => (
-                            <div key={index} class="cardB">
-                              <div className="card-body1">
-                                <div className="card-title1">{card.title}</div>
-                                <button
-                                  className="btn-Link1"
-                                  onClick={() =>
-                                    handleButtonClick(card.contentId, card.link)
-                                  }
-                                >
-                                  Open PDF
-                                </button>
-                              </div>
-                              <img src={card.imgSrc} />
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                    {/* data2 */}
-                    {selectedContent === "content7" && (
-                      <div>
-
-                        <div className="boxB">
-                          {cardData2.map((card, index) => (
-                            <div key={index} class="cardB">
-                              <div className="card-body1">
-                                <div className="card-title1">{card.title}</div>
-                                <button
-                                  className="btn-Link1"
-                                  onClick={() =>
-                                    handleButtonClick(card.contentId, card.link)
-                                  }
-                                >
-                                  Open PDF
-                                </button>
-                              </div>
-                              <img src={card.imgSrc} />
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                    {/* data3 */}
-                    {selectedContent === "content8" && (
-                      <div>
-
-                        <div className="boxB">
-                          {cardData3.map((card, index) => (
-                            <div key={index} class="cardB">
-                              <div className="card-body1">
-                                <div className="card-title1">{card.title}</div>
-                                <button
-                                  className="btn-Link1"
-                                  onClick={() =>
-                                    handleButtonClick(card.contentId, card.link)
-                                  }
-                                >
-                                  Open PDF
-                                </button>
-                              </div>
-                              <img src={card.imgSrc} />
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                    {/* data4 */}
-                    {selectedContent === "content9" && (
-                      <div>
-
-                        <div className="boxB">
-                          {cardData4.map((card, index) => (
-                            <div key={index} class="cardB">
-                              <div className="card-body1">
-                                <div className="card-title1">{card.title}</div>
-                                <button
-                                  className="btn-Link1"
-                                  onClick={() =>
-                                    handleButtonClick(card.contentId, card.link)
-                                  }
-                                >
-                                  Open PDF
-                                </button>
-                              </div>
-                              <img src={card.imgSrc} />
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-</div>
-{/* ===國外按鈕=================================================== */}
-<div className="button_HUB_out">
-              <h1 className="service-heading2">國外</h1>
+      <h1
+        data-aos="zoom-out-down"
+        style={{
+          textAlign: "center",
+          color: "#fff",
+          backgroundColor: "#90cbc0",
+          width: "40%",
+          marginRight: "30%",
+          marginLeft: "30%",
+          marginTop: "13%",
+        }}
+      >
+        服務足跡
+      </h1>
+      {/* ===以下是內容=============================*/}
+      <div className="service-container">
+        <div className="in-out-all">
+          <h1 className="title_Service">目前服務過</h1>
+          {/* ===國內按鈕=================================================== */}
+          <div className="button_HUB_in">
+            <h1 className="service-heading">國內</h1>
+            {/* 台北按鈕 */}
+            <button
+              className="btu_stlyes"
+              onClick={() => handleButtonClick("content1")}
+            >
+              <div className="color_circle1"></div>
+              <div className="button_text">台北</div>
+            </button>
+            {/* 新北按鈕 */}
+            <button
+              className="btu_stlyes"
+              onClick={() => handleButtonClick("content2")}
+            >
+              <div className="color_circle1"></div>
+              <div className="button_text">新北</div>
+            </button>
+            {/* 台灣全部按鈕*/}
+            <button
+              className="btu_stlyes"
+              onClick={() => handleButtonClick("content5")}
+            >
+              <div className="color_circle1"></div>
+              <div className="button_text">全部</div>
+            </button>
+          </div>
+          {/* ===跳出按鈕==============================================*/}
+          <div className="jump_but_in">
+            <div className="but_text">地區</div>
+            {/* 台北資訊按鈕 */}
+            {selectedContent === "content1" && (
+              <div
+                className="p_USRHUB"
+                style={{ fontSize: "20px", fontFamily: "Arial, sans-serif" }}
+              >
+                <p style={{ fontSize: "25px" }}>台北地區</p>
+                <div className="button_container">
                   <button
                     className="btu_stlyes"
-                    onClick={() => handleButtonClick("content11")}
+                    onClick={() => handleButtonClick("content6")}
                   >
                     <div className="color_circle1"></div>
-                    <div className="button_text">菲律賓</div>
+                    <div className="button_text">內湖</div>
                   </button>
-</div>
-{/* ===跳出資訊==============================================*/}
-              {/* data5 */}
-<div className="jump_information_in" id="element2">
-<div className="but_text">案例</div>
-              {selectedContent === "content11" && (
-                <div>
-                  <div className="boxB">
-                    {cardData5.map((card, index) => (
-                      <div key={index} class="cardB">
-                        <div className="card-body1">
-                          <div className="card-title1">{card.title}</div>
-                          <button
-                            className="btn-Link1"
-                            onClick={() =>
-                              handleButtonClick(card.contentId, card.link)
-                            }
-                            >
-                            Open PDF
-                          </button>
-                        </div>
-                        <img src={card.imgSrc} />
-                      </div>
-                    ))}
-                  </div>
+                  <button
+                    className="btu_stlyes"
+                    onClick={() => handleButtonClick("content7")}
+                  >
+                    <div className="color_circle1"></div>
+                    <div className="button_text">中山</div>
+                  </button>
                 </div>
-              )}
-</div>
-</div>
-{/* ========================================================== */}
-{/* <img src={TWimg} className="TWimg" /> */}
+              </div>
+            )}
+            {/* 新北資訊按鈕 */}
+            {selectedContent === "content2" && (
+              <div
+                className="p_USRHUB"
+                style={{ fontSize: "20px", fontFamily: "Arial, sans-serif" }}
+              >
+                <p style={{ fontSize: "25px" }}>新北地區</p>
+                <div className="button_container">
+                  <button
+                    className="btu_stlyes"
+                    onClick={() => handleButtonClick("content8")}
+                  >
+                    <div className="color_circle1"></div>
+                    <div className="button_text">烏來</div>
+                  </button>
+                  <button
+                    className="btu_stlyes"
+                    onClick={() => handleButtonClick("content9")}
+                  >
+                    <div className="color_circle1"></div>
+                    <div className="button_text">三芝</div>
+                  </button>
+                </div>
+              </div>
+            )}
+            {/* 台灣全部資訊按鈕*/}
+            {selectedContent === "content5" && (
+              <div
+                className="p_USRHUB"
+                style={{ fontSize: "20px", fontFamily: "Arial, sans-serif" }}
+              >
+                <p style={{ fontSize: "25px" }}>全部地區</p>
+                <div className="button_container">
+                  <button
+                    className="btu_stlyes"
+                    onClick={() => handleButtonClick("content6")}
+                  >
+                    <div className="color_circle1"></div>
+                    <div className="button_text">內湖</div>
+                  </button>
+                  <button
+                    className="btu_stlyes"
+                    onClick={() => handleButtonClick("content7")}
+                  >
+                    <div className="color_circle1"></div>
+                    <div className="button_text">中山</div>
+                  </button>
+                  <button
+                    className="btu_stlyes"
+                    onClick={() => handleButtonClick("content8")}
+                  >
+                    <div className="color_circle1"></div>
+                    <div className="button_text">烏來</div>
+                  </button>
+                  <button
+                    className="btu_stlyes"
+                    onClick={() => handleButtonClick("content9")}
+                  >
+                    <div className="color_circle1"></div>
+                    <div className="button_text">三芝</div>
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+          {/* ===跳出資訊==============================================*/}
+          <div className="jump_information_in" id="element2">
+            <div className="but_text">案例</div>
+            {/* data1 */}
+            {selectedContent === "content6" && (
+              <div className="scroll-div">
+                <div className="boxB">
+                  {cardData1.map((card, index) => (
+                    <div key={index} class="cardB">
+                      <div className="card-body1">
+                        <div className="card-title1">{card.title}</div>
+                        <button
+                          className="btn-Link1"
+                          onClick={() =>
+                            handleButtonClick(card.contentId, card.link)
+                          }
+                        >
+                          Open PDF
+                        </button>
+                      </div>
+                      <img src={card.imgSrc} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            {/* data2 */}
+            {selectedContent === "content7" && (
+              <div>
+
+                <div className="boxB">
+                  {cardData2.map((card, index) => (
+                    <div key={index} class="cardB">
+                      <div className="card-body1">
+                        <div className="card-title1">{card.title}</div>
+                        <button
+                          className="btn-Link1"
+                          onClick={() =>
+                            handleButtonClick(card.contentId, card.link)
+                          }
+                        >
+                          Open PDF
+                        </button>
+                      </div>
+                      <img src={card.imgSrc} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            {/* data3 */}
+            {selectedContent === "content8" && (
+              <div>
+
+                <div className="boxB">
+                  {cardData3.map((card, index) => (
+                    <div key={index} class="cardB">
+                      <div className="card-body1">
+                        <div className="card-title1">{card.title}</div>
+                        <button
+                          className="btn-Link1"
+                          onClick={() =>
+                            handleButtonClick(card.contentId, card.link)
+                          }
+                        >
+                          Open PDF
+                        </button>
+                      </div>
+                      <img src={card.imgSrc} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            {/* data4 */}
+            {selectedContent === "content9" && (
+              <div>
+
+                <div className="boxB">
+                  {cardData4.map((card, index) => (
+                    <div key={index} class="cardB">
+                      <div className="card-body1">
+                        <div className="card-title1">{card.title}</div>
+                        <button
+                          className="btn-Link1"
+                          onClick={() =>
+                            handleButtonClick(card.contentId, card.link)
+                          }
+                        >
+                          Open PDF
+                        </button>
+                      </div>
+                      <img src={card.imgSrc} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+          {/* ===國外按鈕=================================================== */}
+          <div className="button_HUB_out">
+            <h1 className="service-heading2">國外</h1>
+            <button
+              className="btu_stlyes"
+              onClick={() => handleButtonClick("content11")}
+            >
+              <div className="color_circle1"></div>
+              <div className="button_text">菲律賓</div>
+            </button>
+          </div>
+          {/* ===跳出資訊==============================================*/}
+          {/* data5 */}
+          <div className="jump_information_in" id="element2">
+            <div className="but_text">案例</div>
+            {selectedContent === "content11" && (
+              <div>
+                <div className="boxB">
+                  {cardData5.map((card, index) => (
+                    <div key={index} class="cardB">
+                      <div className="card-body1">
+                        <div className="card-title1">{card.title}</div>
+                        <button
+                          className="btn-Link1"
+                          onClick={() =>
+                            handleButtonClick(card.contentId, card.link)
+                          }
+                        >
+                          Open PDF
+                        </button>
+                      </div>
+                      <img src={card.imgSrc} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
+        {/* ========================================================== */}
+        {/* <img src={TWimg} className="TWimg" /> */}
+      </div>
       {/* 所有pdf
       <div className="service-heading3">所有案例</div>
       <div className="boxA">
