@@ -361,7 +361,7 @@ export default function Service() {
             )}
             {/* data3 */}
             {selectedContent === "content8" && (
-              <div>
+              <div className="scroll-div">
 
                 <div className="boxB">
                   {cardData3.map((card, index) => (
