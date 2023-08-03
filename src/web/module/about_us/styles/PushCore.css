@@ -108,7 +108,7 @@
 
 }
 
-.container {
+.containerPC {
   position: relative;
   margin: 0 auto;
   display: inline-block;
@@ -225,7 +225,7 @@
   margin-top: 15%;
   margin-left: 10%;
 }
-.container {
+.containerPC {
 
   margin-top:10%;
 

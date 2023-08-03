@@ -84,7 +84,7 @@ export default function PushCore() {
       {/* </div> */}
 
       <div className="PusCoreSDGs">
-        <div class="container">
+        <div class="containerPC">
           <div class="conversation4">
             <div class="cover_4">
               <img src={SDGs4} alt="SDGs4" />
@@ -97,7 +97,7 @@ export default function PushCore() {
           </div>
         </div>
 
-        <div class="container">
+        <div class="containerPC">
           <div class="conversation11">
             <div class="cover_11">
               <img src={SDGs11} alt="SDGs11" />
