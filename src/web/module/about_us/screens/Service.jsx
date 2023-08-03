@@ -448,9 +448,9 @@ export default function Service() {
           </div>
         </div>
         {/* ========================================================== */}
-        {/* <img src={TWimg} className="TWimg" /> */}
+        <img src={TWimg} className="TWimg" />
       </div>
-      {/* 所有pdf
+      {/* 所有pdf */}
       <div className="service-heading3">所有案例</div>
       <div className="boxA">
         {cardData.map((card, index) => (
@@ -467,7 +467,7 @@ export default function Service() {
             <img src={card.imgSrc} />
           </div>
         ))}
-      </div> */}
+      </div>
       <Contact />
     </>
   );
