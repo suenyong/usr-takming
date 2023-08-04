@@ -343,13 +343,13 @@ const TaiwanMap = () => {
           <div className="content-box" > 
             <div
               style={{
-                color: "black",
-                fontSize: "0.5vw",
+                color: "#2a6663",
+                fontSize: "16px",
                 zIndex: 0.5,
                 width: "35vw",
                 textAlign: "justify",
                 whiteSpace: "pre-wrap",
-                marginTop: "10vh",
+                marginTop: "15%",
                 fontFamily: '"Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif',
               }}
             >
