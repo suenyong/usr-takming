@@ -8,6 +8,8 @@ import ASEAN_5 from "../../CaseStudies/images/ASEAN_5.JPG";
 import { SettingCaseStudies } from "../../CaseStudies/screens/SettingCaseStudies";
 import Contact from '../../home/components/contactus/Contact';
 import { AiOutlineHome } from 'react-icons/ai';
+import AOS from "aos";
+
 
 
 export default function CaseStudies() {
@@ -121,7 +123,18 @@ export default function CaseStudies() {
 
   return (
     <>
-      <div className="title">案例分享-服務創新育成</div>
+      
+      <h1
+            data-aos="zoom-out-down"
+            style={{
+            textAlign: "center",
+            color: "#fff",
+            backgroundColor: "#90cbc0",
+            width: "40%",
+            marginRight: "30%",
+            marginLeft: "30%",
+            marginTop: "13%",
+            }} className="title">案例分享-服務創新育成</h1>
 
       <div className="for-title">『Decantar AI商業應用實作坊』系列講座 </div>
 
