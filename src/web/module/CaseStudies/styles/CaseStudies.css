@@ -38,7 +38,7 @@
   line-height: 1.5;
   margin-left: 20%;
   height: 50%;
-  width: 90%;
+  width: 60%;
   /* font-size: 20px; */
   /* background-color:rgba(224, 149, 149, 0.69); */
 }
@@ -73,21 +73,6 @@
   margin: 50px;
 }
 
-.textTy1 {
-  width: 80%;
-  /* background-color:rgba(78, 143, 143, 0.69); */
-}
-
-.textTy2 {
-  width: 80%;
-  /* background-color:rgba(228, 223, 59, 0.69); */
-}
-
-.textTy3 {
-  width: 80%;
-  /* background-color:rgba(59, 118, 228, 0.69); */
-}
-
 .text_TLTS {
   display: block;
   text-align: justify;
@@ -110,7 +95,7 @@
 }
 
 .card {
-  margin: 2% 2% 2% 2%;
+  margin: 2% 2% 2% 5%;
   width: 90%;
   display: flex;
   flex-direction: column;
