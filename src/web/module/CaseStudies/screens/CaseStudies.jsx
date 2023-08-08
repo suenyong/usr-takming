@@ -156,7 +156,7 @@ export default function CaseStudies() {
           marginLeft: "25%",
           marginTop: "13%",
         }}>
-        案例分享-<br/>服務創新育成
+        服務創新育成
       </h1>
 
       <div className="for-title">『Decantar AI商業應用實作坊』系列講座 </div>
@@ -166,7 +166,7 @@ export default function CaseStudies() {
         AI商業應用實作坊』系列講座(12/02、12/16、12/23、12/30)。從生活日常到娛樂，從商業決策到科研，ML/AI在我們日常生活的重要性與日俱增。從行動裝置語音助理、旅人最愛的GOOGLE翻譯、電子商務的推薦系統、結合生物辨識技術的門禁系統、讓停車場管理更流暢便利的車牌辨識，讓我們的工作與生活更便利、更輕鬆的機器學習技術。從ML機器學習到AI人工智慧，如何將科技應用到生活與商業上，德明科技大學與行動貝果合作開辦AI商業應用實作坊，參加者將利用12月裡4個周三下午，從零編碼、無AI基礎到最後能了解AI原理，並能利用行動貝果的DecantarAI做出應用模型。
       </div>
 
-      <div className="for-title">德明服務創新座談 </div>
+      {/* <div className="for-title">德明服務創新座談 </div> */}
       <Carousel>
         {carouselItems1.map((item, index) => (
           <div className="carousel-page" key={index}>
@@ -200,10 +200,10 @@ export default function CaseStudies() {
           marginLeft: "25%",
           marginTop: "13%",
         }}>
-        案例分享-<br/>東協跨境電商
+        東協跨境電商
       </h1>
 
-      <div className="for-title"> 東協跨境電商講座 </div>
+      {/* <div className="for-title"> 東協跨境電商講座 </div> */}
       <div className="for-title"> 『創業要Know How』系列講座 </div>
       <Carousel>
         {carouselItems3.map((item, index) => (
@@ -227,7 +227,7 @@ export default function CaseStudies() {
           marginLeft: "33%",
           marginTop: "13%",
         }}>
-        案例分享-部落愛轉動
+            部落愛轉動
       </h1>
 
       <div className="text_TLTS">
