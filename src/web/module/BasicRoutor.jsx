@@ -276,7 +276,7 @@ export default function MenuComponent() {
                         marginLeft: "-20px",
                       }}
                     >
-                      精彩報導
+                      亮點報導
                     </Typography>
                   </Button>
                   <Menu
@@ -290,7 +290,7 @@ export default function MenuComponent() {
                       to="/Story"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
-                      <MenuItem onClick={handleArticleClose}>精彩報導</MenuItem>
+                      <MenuItem onClick={handleArticleClose}>亮點報導</MenuItem>
                     </Link>
                   </Menu>
                   <Button
@@ -309,7 +309,7 @@ export default function MenuComponent() {
                         marginLeft: "-20px",
                       }}
                     >
-                      案例分享
+                      精彩講座
                     </Typography>
                   </Button>
                   <Menu
@@ -323,7 +323,7 @@ export default function MenuComponent() {
                       to="/CaseStudies"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
-                      <MenuItem onClick={handleCaseClose}>案例分享</MenuItem>
+                      <MenuItem onClick={handleCaseClose}>精彩講座</MenuItem>
                     </Link>
                   </Menu>
                   <Button
@@ -413,12 +413,12 @@ export default function MenuComponent() {
                       德明甘丹內科園區永續時尚實踐計畫
                     </MenuItem>
                     </Link>
-                    <MenuItem onClick={handleUsrSubmenuClick}>
+                    {/* <MenuItem onClick={handleUsrSubmenuClick}>
                       場域經營
-                    </MenuItem>
+                    </MenuItem> */}
                   </Menu>
 
-                  <Menu
+                  {/* <Menu
                     id="submenu-popper"
                     open={Boolean(submenuAnchorEl)}
                     anchorEl={submenuAnchorEl}
@@ -430,7 +430,7 @@ export default function MenuComponent() {
                     <MenuItem onClick={handleUsrSubmenuClose}>
                       德明甘丹
                     </MenuItem>
-                  </Menu>
+                  </Menu> */}
 
                   <Button
                     className="link-button"
@@ -488,8 +488,8 @@ export default function MenuComponent() {
                   >
                     <MenuItem onClick={handleClick}>關於我們</MenuItem>
                     <MenuItem onClick={handleLocationClick}>服務據點</MenuItem>
-                    <MenuItem onClick={handleArticleClick}>精彩報導</MenuItem>
-                    <MenuItem onClick={handleCaseClick}>案例分享</MenuItem>
+                    <MenuItem onClick={handleArticleClick}>亮點報導</MenuItem>
+                    <MenuItem onClick={handleCaseClick}>精彩講座</MenuItem>
                     <MenuItem onClick={handleHubClick}>USR HUB</MenuItem>
                     <MenuItem onClick={handleUsrClick}>USR</MenuItem>
                     <MenuItem onClick={handleLinkClick}>重要連結</MenuItem>
@@ -561,7 +561,7 @@ export default function MenuComponent() {
                       to="/Story"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
-                      <MenuItem onClick={handleArticleClose}>精彩報導</MenuItem>
+                      <MenuItem onClick={handleArticleClose}>亮點報導</MenuItem>
                     </Link>
                   </Menu>
                   {/* 案例分享 */}
@@ -576,7 +576,7 @@ export default function MenuComponent() {
                       to="/CaseStudies"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
-                      <MenuItem onClick={handleCaseClose}>案例分享</MenuItem>
+                      <MenuItem onClick={handleCaseClose}>精彩講座</MenuItem>
                     </Link>
                   </Menu>
                   {/* USR HUB */}
@@ -630,9 +630,9 @@ export default function MenuComponent() {
                       德明甘丹內科園區永續時尚實踐計畫
                     </MenuItem>
                     </Link>
-                    <MenuItem onClick={handleUsrSubmenuClick}>
+                    {/* <MenuItem onClick={handleUsrSubmenuClick}>
                       場域經營
-                    </MenuItem>
+                    </MenuItem> */}
                   </Menu>
                   <Menu
                     id="submenu-popper"

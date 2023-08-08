@@ -60,11 +60,11 @@ export default function UH110() {
                 marginLeft: "30%",
                 marginTop: "13%",
             }}>
-                110企劃
+                110成果
             </h1>
 
             <h1 style={{ fontSize: "40px", fontFamily: "Arial, sans-serif", marginLeft: "10%" }}>
-                企劃類型
+                活動成果
             </h1>
 
             <div className="button_HUB">
