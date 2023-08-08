@@ -79,7 +79,7 @@ export default function UH111() {
 
                     <p style={{ fontSize: "30px" }}>服務創新育成</p>
 
-                    <p style={{ fontSize: "25px" }}>111年執行情況:</p>
+                    <p style={{ fontSize: "25px" }}>111年執行成效:</p>
 
                     執行成效：延續邀請國內外具有新服務商品、新商業模式、新技術應 用之新創企業經理人，舉辦「商業創新論壇」，邀請國內在推動商業創新的專業經理人蒞校演講。
                     <p></p>

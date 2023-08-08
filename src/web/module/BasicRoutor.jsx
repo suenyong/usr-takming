@@ -257,7 +257,7 @@ export default function MenuComponent() {
                       to="/Service"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
-                      <MenuItem onClick={handleLocationClose}>服務足跡</MenuItem>
+                      <MenuItem onClick={handleLocationClose}>服務據點</MenuItem>
                     </Link>
                   </Menu>
                   <Button
@@ -546,7 +546,7 @@ export default function MenuComponent() {
                       to="/Service"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
-                      <MenuItem onClick={handleLocationClose}>服務足跡</MenuItem>
+                      <MenuItem onClick={handleLocationClose}>服務據點</MenuItem>
                     </Link>
                   </Menu>
                   {/* 精彩報導 */}

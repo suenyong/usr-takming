@@ -55,7 +55,7 @@ export default function Story() {
                 <div className="boxS">
                     {videos.map((video, index) => (
                         <React.Fragment key={index}>
-                            {video.name}:<br />
+                            {video.name}<br />
                             <a href={video.link} target="_blank" rel="noreferrer">{video.link}</a>
                             <br />
                         </React.Fragment>
