@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/Story.css";
@@ -6,28 +7,36 @@ import Contact from "../../home/components/contactus/Contact";
 import AOS from "aos";
 import { AiOutlineHome } from 'react-icons/ai';
 
-
-
 export default function Story() {
+    const [videos, setVideos] = useState([]);
+
     useEffect(() => {
         AOS.init({
             duration: 700,
         });
-    }, [])
 
+        // 從後端 API 取得資料
+        fetchVideos();
+    }, []);
 
-    const sliderRef = useRef(null);
-
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 400,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        swipeToSlide: true,
-        autoplay: true,
-        autoplaySpeed: 4000,
+    const fetchVideos = () => {
+        axios.get("http://localhost:8080/storyuser/storyall")
+            .then(response => {
+                console.log("取得的新影片資料:", response.data);
+                // 取得舊的影片狀態
+                const oldVideos = [...videos];
+                // 將新的資料放在舊資料的前面
+                const updatedVideos = [...response.data, ...oldVideos];
+                // 更新狀態
+                setVideos(updatedVideos);
+            })
+            .catch(error => {
+                console.error("取得影片失敗:", error);
+            });
     };
+    
+    
+    
     return (
         <>
             <h1 data-aos="zoom-out-down" style={{
@@ -41,21 +50,26 @@ export default function Story() {
             }}>
                 精彩報導
             </h1>
-
+    
             <div className="centered-container">
                 <div className="boxS">
-                    樂活碳點影片介紹：<br />
-                    <a href="https://www.youtube.com/watch?v=W_JwvYAAdcA&t=1s" target="_blank" >https://www.youtube.com/watch?v=W_JwvYAAdcA&t=1s</a>
+                    {videos.map((video, index) => (
+                        <React.Fragment key={index}>
+                            {video.name}:<br />
+                            <a href={video.link} target="_blank" rel="noreferrer">{video.link}</a>
+                            <br />
+                        </React.Fragment>
+                    ))}
                 </div>
             </div>
-
+    
             {/* ====按鈕==== */}
             <a href="http://localhost:3000/" className="return-But">
                 <AiOutlineHome className="return-object"></AiOutlineHome>
             </a>
-
-
+    
             <Contact />
         </>
     )
+    
 }
