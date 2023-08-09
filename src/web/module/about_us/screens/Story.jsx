@@ -21,18 +21,14 @@ export default function Story() {
 
     const fetchVideos = () => {
         axios.get("http://localhost:8080/storyuser/storyall")
-            .then(response => {
-                console.log("取得的新影片資料:", response.data);
-                // 取得舊的影片狀態
-                const oldVideos = [...videos];
-                // 將新的資料放在舊資料的前面
-                const updatedVideos = [...response.data, ...oldVideos];
-                // 更新狀態
-                setVideos(updatedVideos);
-            })
-            .catch(error => {
-                console.error("取得影片失敗:", error);
-            });
+        .then(response => {
+            console.log("取得的新影片資料:", response.data.data);
+            setVideos(response.data.data);
+        })
+        .catch(error => {
+            console.error("取得影片失敗:", error);
+        });
+    
     };
     
     
