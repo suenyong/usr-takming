@@ -46,7 +46,7 @@ export default function Service() {
     {
       imgSrc: require("../images/achievement109.jpg"),
       title: "109-年度大學社會責任實踐基地-忠治「部落.愛轉動」-成果發表會",
-      link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/625052883.pd",
+      link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/625052883.pdf",
     },
     {
       imgSrc: require("../images/Summer109.jpg"),
@@ -130,7 +130,7 @@ export default function Service() {
     {
       imgSrc: require("../images/achievement109.jpg"),
       title: "109-年度大學社會責任實踐基地-忠治「部落.愛轉動」-成果發表會",
-      link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/625052883.pd",
+      link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/625052883.pdf",
     },
     {
       imgSrc: require("../images/Summer109.jpg"),
