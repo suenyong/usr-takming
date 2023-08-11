@@ -58,6 +58,13 @@ export default function Report() {
       </h1>
       <div className="centered-container-important">
         <div className="boxImport">
+          {Links.map((Link, index) => (
+            <React.Fragment key={index}>
+              {Link.name}:<br />
+              <a href={Link.link} target="_blank" rel="noreferrer">{Link.link}</a>
+              <br />
+            </React.Fragment>
+          ))}
 
           <span> 教育部大學社會責任推動中心：<a href="https://usr.moe.gov.tw/tw" target="_blank">https://usr.moe.gov.tw/tw</a></span>
           <br />
