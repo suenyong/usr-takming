@@ -1,7 +1,7 @@
 .boxImport {
     display: inline-block;
     width: 650px;
-    height: 250px;
+    height: 55%;
     border-radius: 10px;
     background-color: rgba(124, 169, 160, 0.337);
     top: 50%;
@@ -24,4 +24,15 @@ display: flex;
 justify-content:  flex-start;
 text-align: center;
 margin-left: 10%;
+}
+
+@media screen and (max-width: 768px){
+
+    .boxImport span {
+        display: grid !important;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+        }
+    
 }
