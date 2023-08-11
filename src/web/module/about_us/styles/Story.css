@@ -1,7 +1,7 @@
 .boxS {
  display: inline-block;
     width: 650px;
-    height:18%;
+    height:55%;
     border-radius: 10px;
     background-color: rgba(124, 169, 160, 0.337);
     top: 50%;
@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 80vh;
   /* 調整高度來置中整個頁面 */
 }
 
