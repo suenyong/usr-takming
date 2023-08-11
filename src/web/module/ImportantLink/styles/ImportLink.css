@@ -1,7 +1,5 @@
 .boxImport {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
     width: 650px;
     height: 250px;
     border-radius: 10px;
@@ -11,6 +9,7 @@
     margin:5%;
     margin-top: 0%;
     color: #1a3725;
+    padding: 3%;
 }
 
 .centered-container-important {
@@ -18,4 +17,11 @@
     justify-content: center;
     align-items: center;
     height: 80vh; /* 調整高度來置中整個頁面 */
+}
+
+.boxImport span {
+display: flex;
+justify-content:  flex-start;
+text-align: center;
+margin-left: 10%;
 }

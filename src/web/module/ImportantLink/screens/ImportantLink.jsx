@@ -59,17 +59,17 @@ export default function Report() {
       <div className="centered-container-important">
         <div className="boxImport">
 
-          教育部大學社會責任推動中心：<a href="https://usr.moe.gov.tw/tw">https://usr.moe.gov.tw/tw</a>
+          <span> 教育部大學社會責任推動中心：<a href="https://usr.moe.gov.tw/tw">https://usr.moe.gov.tw/tw</a></span>
           <br />
-          ESG遠見USR大學社會責任：<a href="https://esg.gvm.com.tw/article/25878">https://esg.gvm.com.tw/article/25878</a>
+          <span>ESG遠見USR大學社會責任：<a href="https://esg.gvm.com.tw/article/25878">https://esg.gvm.com.tw/article/25878</a></span>
           <br />
-          URS天下雜誌2023排行：<a href="https://csr.cw.com.tw/article/43195">https://csr.cw.com.tw/article/43195</a>
+          <span>URS天下雜誌2023排行：<a href="https://csr.cw.com.tw/article/43195">https://csr.cw.com.tw/article/43195</a></span>
           <br />
-          USR EXPO 2022大學社會實踐博覽會：<a href="https://2022usrexpo.org/">https://2022usrexpo.org/</a>
+          <span>USR2022大學社會實踐博覽會：<a href="https://2022usrexpo.org/">https://2022usrexpo.org/</a></span>
           <br />
-          USR EXPO 2021大學社會實踐博覽會：<a href="https://2021usrexpo.org/">https://2021usrexpo.org/</a>
+          <span>USR2021大學社會實踐博覽會：<a href="https://2021usrexpo.org/">https://2021usrexpo.org/</a></span>
           <br />
-          USR EXPO 2020大學社會實踐博覽會：<a href="https://www.2020usrexpo.org/">https://www.2020usrexpo.org/</a>
+          <span>USR2020大學社會實踐博覽會：<a href="https://www.2020usrexpo.org/">https://www.2020usrexpo.org/</a></span>
           <br />
         </div>
       </div>
