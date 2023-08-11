@@ -51,11 +51,12 @@ export default function Story() {
                 <div className="boxS">
                     {videos.map((video, index) => (
                         <React.Fragment key={index}>
-                            {video.name}<br />
-                            <a href={video.link} target="_blank" rel="noreferrer">{video.link}</a>
+                            <span>{video.name} <a href={video.link} target="_blank" rel="noreferrer">{video.link}</a></span>
                             <br />
                         </React.Fragment>
                     ))}
+                    {/* 靜態網址 */}
+                        <span>樂活碳點影片介紹：<a href="https://www.youtube.com/watch?v=W_JwvYAAdcA&t=1s">https://www.youtube.com/watch?v=W_JwvYAAdcA&t=1s</a></span>
                 </div>
             </div>
     

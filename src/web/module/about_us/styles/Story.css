@@ -1,16 +1,15 @@
 .boxS {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 650px;
-  height: 250px;
-  border-radius: 10px;
-  background-color: rgba(124, 169, 160, 0.337);
-  top: 50%;
-  left: 50%;
-  margin: 5%;
-  margin-top: 0%;
-  color: #1a3725;
+ display: inline-block;
+    width: 650px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: rgba(124, 169, 160, 0.337);
+    top: 50%;
+    left: 50%;
+    margin:5%;
+    margin-top: 0%;
+    color: #1a3725;
+    padding: 3%;
 }
 
 .centered-container {
@@ -52,4 +51,11 @@ a:hover {
   color: white;
   font-size: 30px;
   transition: .3s ease;
+}
+
+.boxS span {
+display: flex;
+justify-content:  flex-start;
+text-align: center;
+margin-left: 7%;
 }
