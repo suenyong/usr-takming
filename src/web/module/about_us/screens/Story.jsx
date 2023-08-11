@@ -56,7 +56,7 @@ export default function Story() {
                         </React.Fragment>
                     ))}
                     {/* 靜態網址 */}
-                        <span>樂活碳點影片介紹：<a href="https://www.youtube.com/watch?v=W_JwvYAAdcA&t=1s">https://www.youtube.com/watch?v=W_JwvYAAdcA&t=1s</a></span>
+                        <span>樂活碳點影片介紹：<a href="https://www.youtube.com/watch?v=W_JwvYAAdcA&t=1s" target="_blank">https://www.youtube.com/watch?v=W_JwvYAAdcA&t=1s</a></span>
                 </div>
             </div>
     
