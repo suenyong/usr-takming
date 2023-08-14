@@ -31,6 +31,7 @@ import UH111 from "../module/USRHUB/screens/UH111";
 import GMM from "./USR/screens/GMM";
 import ImportantLink from "../module/ImportantLink/screens/ImportantLink";
 import GD from "./USR/screens/GD";
+import GMM_history from "./USR/screens/GMM_history";
 
 
 export default function MenuComponent() {
@@ -158,7 +159,7 @@ export default function MenuComponent() {
             }}
           >
             <a href="/" style={{ textDecoration: "none", color: "inherit" }}>
-            <img src={logoImage} alt="德明USR" className="logo" />
+              <img src={logoImage} alt="德明USR" className="logo" />
             </a>
           </div>
 
@@ -409,9 +410,9 @@ export default function MenuComponent() {
                       to="/GD"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
-                    <MenuItem onClick={handleUsrSubmenuClick}>
-                      德明甘丹內科園區永續時尚實踐計畫
-                    </MenuItem>
+                      <MenuItem onClick={handleUsrSubmenuClick}>
+                        德明甘丹內科園區永續時尚實踐計畫
+                      </MenuItem>
                     </Link>
                     {/* <MenuItem onClick={handleUsrSubmenuClick}>
                       場域經營
@@ -462,7 +463,7 @@ export default function MenuComponent() {
                       to="/ImportantLink"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
-                    <MenuItem onClick={handleLinkClose}>重要連結</MenuItem>
+                      <MenuItem onClick={handleLinkClose}>重要連結</MenuItem>
                     </Link>
                   </Menu>
                 </>
@@ -626,9 +627,9 @@ export default function MenuComponent() {
                       to="/GD"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
-                    <MenuItem onClick={handleUsrSubmenuClick}>
-                      德明甘丹內科園區永續時尚實踐計畫
-                    </MenuItem>
+                      <MenuItem onClick={handleUsrSubmenuClick}>
+                        德明甘丹內科園區永續時尚實踐計畫
+                      </MenuItem>
                     </Link>
                     {/* <MenuItem onClick={handleUsrSubmenuClick}>
                       場域經營
@@ -648,7 +649,7 @@ export default function MenuComponent() {
                     </MenuItem>
                   </Menu>
                   {/* 重要連結 */}
-                                    <Menu
+                  <Menu
                     id="link-menu"
                     anchorEl={linkAnchorEl}
                     keepMounted
@@ -659,7 +660,7 @@ export default function MenuComponent() {
                       to="/ImportantLink"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
-                    <MenuItem onClick={handleLinkClose}>重要連結</MenuItem>
+                      <MenuItem onClick={handleLinkClose}>重要連結</MenuItem>
                     </Link>
                   </Menu>
 
@@ -681,6 +682,7 @@ export default function MenuComponent() {
             <Route path="/UH110" element={<UH110 />} />
             <Route path="/UH111" element={<UH111 />} />
             <Route path="/GMM" element={<GMM />} />
+            <Route path="/GMM_history" element={<GMM_history />} />
             <Route path="/GD" element={<GD />} />
             <Route path="/ImportantLink" element={<ImportantLink />} />
           </Routes>
