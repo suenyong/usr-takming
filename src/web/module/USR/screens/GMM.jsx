@@ -2,6 +2,7 @@ import { right } from "@popperjs/core";
 import Contact from "../../home/components/contactus/Contact";
 import "../styles/GMM.css"
 import { AiOutlineHome } from 'react-icons/ai';
+import GMM_history from "./GMM_history";
 
 
 export default function GMM() {
@@ -23,7 +24,7 @@ export default function GMM() {
             <div className="contain-GMM">
                 <div className="image_box">
                     <div className="GMM_text1">
-                        <div className="imges_title" >歷史</div>
+                        <div className="imges_title" >歷史 <a href="./GMM_history" className="GMMbut">查看更多</a></div>
                         內湖金面山座落於北市連綿山巒中， 為五指山系之西南稜，其山頂的巨岩含石英細顆，裸露的石英砂岩在太陽照射下閃閃發亮，因此被稱為金面山。加上金面山位於內湖金龍產業道路邊，若從金龍產業道路方向仰望山頂巨石，猶如一把剪刀插向天際，因此又名剪刀石山。金面山至今還保留有「清代採石場」的古蹟遺址，是《清光緒8年(1882年)》所設立的，目前已經由台北市政府指定為市定古蹟。金面山海拔雖僅258公尺，但在山頂巨岩登高望遠，大台北盆地風光盡收眼底，一面可俯瞰山腳下蜿蜒的基隆河及 大湖、碧湖，另一面俱是蒼翠山丘綿延，感受內湖所謂的「一河二湖山多多」。 金面山擁有豐富的人文資產與自然資源，雖為小百岳之一但是知名度卻鮮為人知。金面山親山步道最多人出發的環山路登山口即在本校德明財經科技大學旁，因地緣關係與本校密不可分，破碎化的歷史文化保存使得外地移入居民缺乏對在地的認識也缺乏在地導覽機制與人才，本校位居內湖最高學府，身負人才培育使命的大學，深耕教育善盡社會責任，具有責無旁貸的使命！針對金面山的歷史文化傳承題，本校以「在地鏈結」與 「人才培育」兩個主軸規劃分年逐步建構金面山的人文歷史知識的數位保存與發 展，協助金面山文化傳承和創造永續樂活的白石湖社區。
                     </div>
                     <img src={require("..//images/climb.png")} className="GMM_image1"></img>

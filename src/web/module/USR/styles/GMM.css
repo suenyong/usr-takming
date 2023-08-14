@@ -133,6 +133,12 @@
     transition: .3s ease;
 }
 
+.GMMbut {
+    background-color: rgba(194, 200, 198, 0.328);
+    font-size: 16px;
+    margin-left: 10px;
+}
+
 @media (max-width: 800px) {
     .img {
         width: 90%;
