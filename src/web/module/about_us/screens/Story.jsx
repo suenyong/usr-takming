@@ -44,7 +44,7 @@ export default function Story() {
                 marginLeft: "30%",
                 marginTop: "13%",
             }}>
-                精彩報導
+                亮點報導
             </h1>
     
             <div className="centered-container">

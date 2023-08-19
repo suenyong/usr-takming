@@ -1,50 +1,58 @@
 .container_promote {
-  width: 80%;
-  margin: 10% 10%;
+  width: 70%;
+  margin:5% 15% 5% 15%;
   text-align: justify;
   font-size: 20px;
+
 }
 
 .team-members {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  /* background-color: beige; */
 }
 
 .team-member {
-  width: 50%;
+  width: 250px;
+  height: 250px;
   margin-top: 30px;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
+  /* background-color: rgb(185, 185, 60); */
 }
 
 .member-info {
+  /* background-color: rgb(62, 62, 46); */
+  justify-content: center;
   text-align: center;
 }
 
-.image-container {
-  display: flex;
+.image-container_promote{
   justify-content: center;
-  align-items: center;
-  width: 50%;
-  /* 新增 */
+  text-align: center;
 }
 
-.image-container img {
-  width: auto;
-  /* 修改 */
-  max-width: 100px;
-  /* 新增 */
+.image-container_promote img {
+  width: 150px;
   height: auto;
+  border-radius: 50%;
+  justify-content: center;
+  text-align: center;
+
 }
 
 .job-title {
   font-size: 20px;
   font-weight: bold;
-
+  /* background-color: rgb(133, 133, 115); */
+  justify-content: center;
+  text-align: center;
 }
 
+
+/* 小房子 */
 .return-But {
   position: sticky;
   bottom: 2rem;
@@ -60,12 +68,13 @@
   height: 70px;
 
 }
-
 .return-object {
   color: white;
   font-size: 30px;
   transition: .3s ease;
 }
+
+
 
 @media screen and (max-width: 768px) {
   .team-member {

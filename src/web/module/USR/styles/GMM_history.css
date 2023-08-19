@@ -12,15 +12,29 @@
     margin-bottom: 50px;
 }
 
-.GMM_box {
+.GMM_Mtitle{
+    /* text-align: center; */
+    font-size: 25px;
+    font-family: "Arial, sans-serif";
+    color: rgb(99, 182, 130);
+    ;
     position: relative;
     margin: 0 auto;
+    width: 900px;
+    font-weight: bold;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.GMM_box {
+    position: relative;
+    margin: 20px 11% 20px 11%;
     width: 900px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: justify;
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Arial, sans-serif";
     font-weight: 500;
 }
