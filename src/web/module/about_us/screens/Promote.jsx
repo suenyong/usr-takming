@@ -54,14 +54,14 @@ export default function Promote() {
             <div className="member-info">
               <div className="job-title">{member.jobTitle}</div>
               <div className="image-container_promote">
-                <img src={member.profileImagePath} alt={`${member.name}的照片`} />
+                <img src={`../../about_us/images/${member.profileImagePath}`} alt={`${member.name}的照片`} />
               </div>
               <p>{member.name}</p>
             </div>
           </div>
         ))}
       </div>
-      
+
       {/* <div className="team-members">
         <div className="team-member">
           <div className="member-info">
