@@ -52,10 +52,11 @@ export default function Promote() {
         {teamData.map((member, index) => (
           <div className="team-member" key={index}>
             <div className="member-info">
-              <div className="job-title">{member.jobTitle}</div>
+            <div className="job-title">{member.posts}</div>
               <div className="image-container_promote">
                 <img src={require(`../../about_us/images/${member.profileImagePath}`)} alt={`${member.name}的照片`} />
               </div>
+              <div className="job-title">{member.jobTitle}</div>
               <p>{member.name}</p>
             </div>
           </div>
@@ -65,10 +66,11 @@ export default function Promote() {
       {/* <div className="team-members">
         <div className="team-member">
           <div className="member-info">
-            <div className="job-title">研發長</div>
+          <div className="job-title">計畫主持人</div>
             <div className="image-container_promote">
               <img src={no} alt="德明財經科技大學研究發展處" />
             </div>
+            <div className="job-title">研發長</div>
             <p>姓名：陳百盛</p>
           </div>
         </div>
