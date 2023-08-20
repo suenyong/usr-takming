@@ -54,7 +54,7 @@ export default function Promote() {
             <div className="member-info">
             <div className="job-title">{member.posts}</div>
               <div className="image-container_promote">
-                <img src={require(`../../about_us/images/${member.profileImagePath}`)} alt={`${member.name}的照片`} />
+              <img src={`http://localhost:8080/Promote/uploads/${member.profileImagePath}`} alt={member.name} />
               </div>
               <div className="job-title">{member.jobTitle}</div>
               <p>{member.name}</p>
