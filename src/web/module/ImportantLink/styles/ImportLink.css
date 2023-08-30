@@ -34,5 +34,18 @@ margin-left: 10%;
         align-items: center;
         margin-left: 5%;
         }
-    
+    .boxImport p{
+        font-size: 12px;
+    }
+    .boxImport a{
+        font-size: 12px;
+
+    }
+    .boxImport{
+        line-height:1.5;
+        height:90%;
+    }
 }
+
+
+

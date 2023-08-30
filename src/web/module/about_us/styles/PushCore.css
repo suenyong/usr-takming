@@ -4,6 +4,7 @@
   font-size: 25px;
   margin-top: 10%;
   width: 300px;
+  font-family:"Noto SansTC" ,"Roboto", sans-serif !important  ;
   background-image: linear-gradient(to right, #89f5cc7e, #6fccbc4d, #89f5ee6f, #89eef56f, #89f5f353, #89f0f51f);
 }
 
@@ -92,7 +93,7 @@
   margin: 0 auto;
   width: 900px;
   text-align: justify;
-  font-family: "Arial, sans-serif";
+  font-family:"Noto SansTC" ,"Roboto", sans-serif !important  ;
   line-height: 1.5;
   font-size: 40px;
 }
@@ -112,6 +113,8 @@
   font-size: 18px;
   font-weight: 550;
   margin-top: 10%;
+  font-family:"Noto SansTC" ,"Roboto", sans-serif !important  ;
+
 }
 
 .idea-content {
@@ -121,6 +124,7 @@
   width: 900px;
   font-size: 18px;
   font-weight: 550;
+  font-family:"Noto SansTC" ,"Roboto", sans-serif !important  ;
 }
 
 @media screen and (max-width:800px) {
@@ -182,6 +186,7 @@
   align-items: center;
   text-align: justify;
   border-radius: 10px;
+  font-family:"Noto SansTC" ,"Roboto", sans-serif !important  ;
   box-shadow: 0 10px 20px rgba(118, 43, 25, 0.19), 0 6px 6px rgba(92, 21, 21, 0.23);
 
 }
@@ -231,6 +236,7 @@
   justify-content: center;
   align-items: center;
   text-align: justify;
+  font-family:"Noto SansTC" ,"Roboto", sans-serif !important  ;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(118, 43, 25, 0.19), 0 6px 6px rgba(92, 21, 21, 0.23);
 

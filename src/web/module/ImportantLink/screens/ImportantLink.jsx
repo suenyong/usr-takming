@@ -60,12 +60,11 @@ export default function Report() {
         <div className="boxImport">
           {Links.map((Link, index) => (
             <React.Fragment key={index}>
-              {Link.name}:<br />
-              <a href={Link.link} target="_blank" rel="noreferrer">{Link.link}</a>
+              <span>{Link.name}:<a href={Link.link} target="_blank" rel="noreferrer">{Link.link}</a></span>
               <br />
             </React.Fragment>
           ))}
-
+{/* 
           <span> 教育部大學社會責任推動中心：<a href="https://usr.moe.gov.tw/tw" target="_blank">https://usr.moe.gov.tw/tw</a></span>
           <br />
           <span>ESG遠見USR大學社會責任：<a href="https://esg.gvm.com.tw/article/25878" target="_blank">https://esg.gvm.com.tw/article/25878</a></span>
@@ -77,7 +76,7 @@ export default function Report() {
           <span>USR2021大學社會實踐博覽會：<a href="https://2021usrexpo.org/" target="_blank">https://2021usrexpo.org/</a></span>
           <br />
           <span>USR2020大學社會實踐博覽會：<a href="https://www.2020usrexpo.org/" target="_blank">https://www.2020usrexpo.org/</a></span>
-          <br />
+          <br /> */}
         </div>
       </div>
 

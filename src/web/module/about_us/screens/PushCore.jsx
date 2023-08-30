@@ -29,6 +29,7 @@ export default function PushCore() {
           marginRight: "30%",
           marginLeft: "30%",
           marginTop: "13%",
+          fontFamily:'"Noto SansTC" ,"Roboto", sans-serif !important' 
         }}
       >
         USR的理念
