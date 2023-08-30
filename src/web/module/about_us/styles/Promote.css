@@ -32,25 +32,34 @@
 .image-container_promote{
   justify-content: center;
   text-align: center;
+  
+
 }
 
 .image-container_promote img {
-  width: 150px;
-  height: auto;
-  border-radius: 50%;
-  justify-content: center;
-  text-align: center;
-
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  
 }
+
+
 
 .job-title {
   font-size: 20px;
   font-weight: bold;
-  /* background-color: rgb(133, 133, 115); */
+  margin-bottom: 30px;
   justify-content: center;
   text-align: center;
 }
-
+.job{
+  font-size:18px;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(152, 196, 179, 0.768);
+}
 
 /* 小房子 */
 .return-But {
