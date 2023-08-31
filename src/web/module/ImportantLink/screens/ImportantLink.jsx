@@ -64,7 +64,10 @@ export default function Report() {
               <br />
             </React.Fragment>
           ))}
-{/* 
+
+
+          {/* 靜態網址 */}
+          {/* 
           <span> 教育部大學社會責任推動中心：<a href="https://usr.moe.gov.tw/tw" target="_blank">https://usr.moe.gov.tw/tw</a></span>
           <br />
           <span>ESG遠見USR大學社會責任：<a href="https://esg.gvm.com.tw/article/25878" target="_blank">https://esg.gvm.com.tw/article/25878</a></span>
@@ -77,8 +80,11 @@ export default function Report() {
           <br />
           <span>USR2020大學社會實踐博覽會：<a href="https://www.2020usrexpo.org/" target="_blank">https://www.2020usrexpo.org/</a></span>
           <br /> */}
+
+          
         </div>
       </div>
+
 
       {/* ====按鈕==== */}
       <a href="http://localhost:3000/" className="return-But">

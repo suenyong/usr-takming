@@ -1,6 +1,6 @@
 .boxS {
  display: inline-block;
-    width: 650px;
+    width: 680px;
     height:55%;
     border-radius: 10px;
     background-color: rgba(124, 169, 160, 0.337);
@@ -16,10 +16,46 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 65vh;
   /* 調整高度來置中整個頁面 */
 }
 
+.boxS span {
+display: flex;
+justify-content:  flex-start;
+text-align: center;
+margin-left: 0 auto;
+}
+
+@media screen and (max-width: 768px){
+
+  .boxS span {
+      display: grid !important;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5%;
+    }
+    .boxS span {
+      display: grid !important;
+      justify-content: center;
+      align-items: center;
+      margin-left: 2px;
+    }
+    .boxS p{
+      font-size: 10px;
+    }
+    .boxS a{
+        font-size: 12px;
+
+    }
+    .boxS{
+        line-height:1.5;
+        height:45%;
+    }
+}
+
+
+/* ALL*/
 a {
   text-decoration: none;
   /* 移除底线 */
@@ -51,22 +87,4 @@ a:hover {
   color: white;
   font-size: 30px;
   transition: .3s ease;
-}
-
-.boxS span {
-display: flex;
-justify-content:  flex-start;
-text-align: center;
-margin-left: 5%;
-}
-
-@media screen and (max-width: 768px){
-
-  .boxS span {
-      display: grid !important;
-      justify-content: center;
-      align-items: center;
-      margin-left: 5%;
-      }
-  
 }

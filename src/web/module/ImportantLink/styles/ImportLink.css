@@ -1,7 +1,7 @@
 .boxImport {
     display: inline-block;
     width: 650px;
-    height: 55%;
+    height: 47%;
     border-radius: 10px;
     background-color: rgba(124, 169, 160, 0.337);
     top: 50%;
@@ -43,7 +43,7 @@ margin-left: 10%;
     }
     .boxImport{
         line-height:1.5;
-        height:90%;
+        height:80%;
     }
 }
 
