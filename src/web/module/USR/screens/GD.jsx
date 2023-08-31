@@ -171,7 +171,7 @@ export default function GD() {
                         <li>
                             112年開始執行本計畫，並在綠色概念機制下，教育場域內一般民眾對永續環境的認識與深化
                         </li>
-                        <li>透過國際宣傳，113年開始與國際品牌或社區進 行國際合作計畫</li>
+                        <li>透過國際宣傳，113年開始與國際品牌或社區進行國際合作計畫</li>
                     </ul>
                 </div>
             </div>
@@ -206,7 +206,7 @@ export default function GD() {
                 <div className="mintitle">國際資源連結規劃</div>
 
                 <div className="boxNeed-GD">
-                    Burberry、J Crew、Footlocker 等5個品牌庫 存布料國際平台合作The UN
+                    Burberry、J.Crew、Footlocker 等5個品牌庫存布料國際平台合作The UN
                     Alliance for Sustainable Fashion (聯合 國永續時尚聯盟)
                 </div>
             </div>
