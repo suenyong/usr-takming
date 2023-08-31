@@ -1,20 +1,6 @@
-.GMM_title {
-    text-align: center;
-    font-size: 30px;
-    font-family: "Arial, sans-serif";
-    color: white;
-    ;
-    position: relative;
-    margin: 0 auto;
-    width: 250px;
-    font-weight: bold;
-    margin-top: 150px;
-    margin-bottom: 20px;
-    background-color: rgb(150, 209, 197);
-    padding: 0.5%;
-}
 
-.GMM_Mtitle {
+
+.GMM_Mtitle_history {
     text-align: center;
     font-size: 30px;
     font-family: "Arial, sans-serif";
@@ -23,10 +9,11 @@
     width: 900px;
     font-weight: bold;
     margin-top: 30px;
+    color: #366444;
     /* margin-bottom: 50px; */
 }
 
-.GMM_box {
+.GMM_box_history {
     position: relative;
     margin: 20px 11% 20px 5%;
     width: 45%;
@@ -37,21 +24,55 @@
     font-size: 18px;
     font-family: "Arial, sans-serif";
     font-weight: 500;
+    
+
+}
+#OSC{
+    overflow: auto;
+    max-height: 300px;
+    top: 125px;
 }
 
-.Gbox {
+
+
+.Content_history {
+    width: 1000px;
+    height: 410px;
+    background-color: rgb(229, 255, 215);
+    display: grid;
+    align-items: center;
+    /* margin: 30px 0px 10px 6%; */
+    margin: 30px auto;
+    border-radius: 10px;
+    border: 3px rgb(86, 176, 120) dashed;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 10px;
+
+}
+
+.Gbox_history {
     max-width: 90%;
     /* background-color: burlywood; */
     display: grid;
     align-items: center;
     margin: 0 auto;
+    
 }
 
-.Map {
+#Map {
     width: 860px;
     /* margin-left: 200px; */
     position: relative;
     margin: 0 auto;
+    /* background-color: brown; */
+}
+#remind{
+    width: 860px;
+    position: relative;
+    margin: 0 auto;
+    left: -80px;
     /* background-color: brown; */
 }
 
@@ -70,6 +91,7 @@
     margin-bottom: 5px;
 }
 
+
 .Road_2 {
     display: flex;
     align-items: center;
@@ -80,25 +102,20 @@
     /* background-color: brown; */
 }
 
-.Content {
-    width: 1000px;
-    height: 410px;
-    background-color: rgb(229, 255, 215);
-    display: grid;
-    align-items: center;
-    margin: 30px 0px 10px 6%;
-    border-radius: 10px;
-    border: 3px rgb(86, 176, 120) dashed;
-    align-items: center;
-    justify-content: center;
+#y span {
+    color: #f2b714;
+}
+#b span {
+    color: rgb(28, 72, 248);
 }
 
+
 .Rock {
-    max-width: 350px;
-    margin-left: 200px;
+    max-width: 280px;
+    margin-left: 130px;
     position: relative;
-    top: -355px;
-    left: 40%;
+    top: -305px;
+    left: 49%;
     /* background-color: blue; */
 }
 
@@ -106,31 +123,39 @@
     max-width: 380px;
     margin-left: 200px;
     position: relative;
-    top: -475px;
-    left: 40%;
+    top: -45px;
+    left: 37%;
     /* background-color: blue; */
 }
 
 .Stone {
-    max-width: 280px;
+    max-width: 230px;
     margin-left: 200px;
     position: relative;
-    /* top: -410px; */
+    top: -350px;
     left: 45%;
 }
 
 .Temple {
-    max-width: 383px;
+    max-width: 363px;
     margin-left: 200px;
     position: relative;
-    /* top: -238px; */
-    left: 40%;
+    top: -208px;
+    left: 38%;
+}
+#CT{
+    top: 35px;
 }
 
 .Gaduo {
     max-width: 383px;
     margin-left: 200px;
     position: relative;
-    /* top: -275px; */
-    left: 40%;
+    top: -265px;
+    left: 38%;
 }
+#GA{
+    top: 20px;
+}
+
+
