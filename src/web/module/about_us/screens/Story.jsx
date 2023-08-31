@@ -51,8 +51,8 @@ export default function Story() {
                 <div className="boxS">
                     {videos.map((video, index) => (
                         <React.Fragment key={index}>
-                        <span>{video.name} <a href={video.link} target="_blank" rel="noreferrer">{video.link}</a></span> 
-                            <br />
+                        <span>{video.name}<a href={video.link} target="_blank" rel="noreferrer">{video.link}</a></span> 
+                        <br />
                         </React.Fragment>
                     ))}
                     {/* 靜態網址 */}
