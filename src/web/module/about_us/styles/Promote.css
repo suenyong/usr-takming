@@ -50,7 +50,7 @@
   color: #213a1f;
   margin: auto;
   background-color: rgba(152, 196, 179, 0.768);
-  border-radius: 10px;
+  border-radius:0 0 10px 10px;
 }
 
 .job-title {
@@ -59,7 +59,7 @@
   margin-bottom: 10px;
   justify-content: center;
   text-align: center;
-  color: #416961;
+  color: #25564c;
 }
 #boxp{
   width: 200px;
