@@ -20,7 +20,7 @@ export default function Story() {
     }, []);
 
     const fetchVideos = () => {
-        axios.get("http://localhost:8080/storyuser/storyall")
+        axios.get("http://localhost:8081/storyuser/storyall")
         .then(response => {
             console.log("取得的新影片資料:", response.data.data);
             setVideos(response.data.data);
