@@ -1,15 +1,18 @@
 .image-slide {
     width: calc(100% / 4);
     justify-items: center;
-    margin: 25px;
+    align-items: center;
+    margin: 15px;
+    
   }
   
   .image-slide img {
-    width: 70%;
-    /* aspect-ratio: 16/9; */
+    width: 320px;
+    height: 260px;
     object-fit: cover;
-    margin: auto;
     display: block;
+    margin: 0 auto;
+  
   }
   
   .hr_mg{

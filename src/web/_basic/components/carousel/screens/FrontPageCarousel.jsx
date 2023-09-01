@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import "../styles/Carousel.css";
+import "../styles/FrontpageCarousel.css";
 import { settings } from "../../settings/setting_frontpage";
 
 
@@ -18,7 +18,7 @@ export default function FronPageCarousel(){
       <div className="hr_mg">
         <Slider {...settings}>
           {photos.map(photo => (
-            <div key={photo.id} className="image-slide">
+            <div key={photo.id} className="image-slide-Frontpage">
               <img src={photo.src} alt={`Photo_${photo.id}`} />
             </div>
           ))}
