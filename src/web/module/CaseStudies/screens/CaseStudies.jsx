@@ -17,6 +17,7 @@ export default function CaseStudies() {
     });
   }, []);
 
+  
   const carouselItems1 = [
     {
       title: "109/09/04(五)第一場德明創新服務座談-電商社群創新商業模式",
