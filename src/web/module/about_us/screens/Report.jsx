@@ -31,7 +31,7 @@ export default function Report() {
             </h1>
             <div className="centered-container_Report">
                 <div className="boxR">
-                    尚無資料
+                    資料準備中
                 </div>
             </div>
             {/* ====按鈕==== */}
