@@ -373,7 +373,7 @@ export default function MenuComponent() {
                         marginLeft: "-20px",
                       }}
                     >
-                      樂活探點
+                      樂活碳點
                     </Typography>
                   </Button>
                   <Menu
@@ -388,7 +388,7 @@ export default function MenuComponent() {
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleLohasCarbonDotClose}>
-                        樂活探點
+                      樂活碳點
                       </MenuItem>
                     </Link>
                   </Menu>
@@ -511,7 +511,7 @@ export default function MenuComponent() {
                     <MenuItem onClick={handleLocationClick}>服務據點</MenuItem>
                     <MenuItem onClick={handleArticleClick}>亮點報導</MenuItem>
                     <MenuItem onClick={handleCaseClick}>精彩講座</MenuItem>
-                    <MenuItem onClick={handleLohasCarbonDotClick}>樂活探點</MenuItem>
+                    <MenuItem onClick={handleLohasCarbonDotClick}>樂活碳點</MenuItem>
                     <MenuItem onClick={handleUsrClick}>USR</MenuItem>
                     <MenuItem onClick={handleLinkClick}>重要連結</MenuItem>
                   </Menu>
@@ -617,7 +617,7 @@ export default function MenuComponent() {
                       <MenuItem onClick={handleCaseClose}>精彩講座</MenuItem>
                     </Link>
                   </Menu>
-                  {/* 樂活探點 */}
+                  {/* 樂活碳點 */}
                   <Menu
                     id="LohasCarbonDo-menu"
                     anchorEl={LohasCarbonDotAnchorEl}
@@ -629,7 +629,7 @@ export default function MenuComponent() {
                       to="/LohasCarbonDot"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
-                      <MenuItem onClick={handleLohasCarbonDotClose}>樂活探點</MenuItem>
+                      <MenuItem onClick={handleLohasCarbonDotClose}>樂活碳點</MenuItem>
                     </Link>
                   </Menu>
 
