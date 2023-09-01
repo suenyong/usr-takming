@@ -51,13 +51,14 @@ export default function Promote() {
       <div className="team-members">
         {teamData.map((member, index) => (
           <div className="team-member" key={index}>
-            <div className="member-info">
+            <div className="member-info" id="boxp">
             <div className="job-title">{member.posts}</div>
               <div className="image-container_promote">
               <img src={`http://localhost:8080/Promote/uploads/${member.profileImagePath}`} alt={member.name} />
               </div>
-              <div className="job">{member.jobTitle}</div>
-              <p>{member.name}</p>
+              <div className="job"><p>{member.name}</p></div>
+              {/* {member.jobTitle} */}
+              
             </div>
           </div>
         ))}

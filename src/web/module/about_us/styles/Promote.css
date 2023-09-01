@@ -3,7 +3,7 @@
   margin:5% 15% 5% 15%;
   text-align: justify;
   font-size: 20px;
-
+  font-weight: bold;
 }
 
 .team-members {
@@ -42,23 +42,39 @@
   object-fit: cover;
   display: block;
   margin: 0 auto;
+  border-radius: 5px 5px 0 0 ;
   
 }
 
-
+.member-info p{
+  color: #213a1f;
+  margin: auto;
+  background-color: rgba(152, 196, 179, 0.768);
+  border-radius:0 0 10px 10px;
+}
 
 .job-title {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   justify-content: center;
   text-align: center;
+  color: #25564c;
 }
+#boxp{
+  width: 200px;
+  height:220px;
+  background-color: rgba(118, 190, 152, 0.457);
+  border-radius: 10px;
+}
+
 .job{
   font-size:18px;
   justify-content: center;
   text-align: center;
-  background-color: rgba(152, 196, 179, 0.768);
+  color: #466b64;
+  font-weight: bold;
+  /* background-color: rgba(152, 196, 179, 0.768); */
 }
 
 /* 小房子 */

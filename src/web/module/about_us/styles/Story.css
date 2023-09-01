@@ -22,6 +22,7 @@
 
 .boxS span {
 display: flex;
+width: 700px;
 justify-content:  flex-start;
 text-align: center;
 margin-left: 0 auto;
@@ -40,6 +41,7 @@ margin-left: 0 auto;
       justify-content: center;
       align-items: center;
       margin-left: 2px;
+      width:100%;
     }
     .boxS p{
       font-size: 10px;
@@ -51,6 +53,7 @@ margin-left: 0 auto;
     .boxS{
         line-height:1.5;
         height:45%;
+        width: 90%;
     }
 }
 
