@@ -32,12 +32,14 @@ import GMM from "./USR/screens/GMM";
 import ImportantLink from "../module/ImportantLink/screens/ImportantLink";
 import GD from "./USR/screens/GD";
 import GMM_history from "./USR/screens/GMM_history";
+import LohasCarbonDot from "./LohasCarbonDot/screens/LohasCarbonDot";
 
 
 export default function MenuComponent() {
   const [anchorEl, setAnchorEl] = useState(null);//關於我們的選單
   const [articleAnchorEl, setArticleAnchorEl] = useState(null);//精彩報導選單
   const [caseAnchorEl, setCaseAnchorEl] = useState(null);
+  const [LohasCarbonDotAnchorEl, setLohasCarbonDotAnchorEl] = useState(null);
   const [hubAnchorEl, setHubAnchorEl] = useState(null);
   const [usrAnchorEl, setUsrAnchorEl] = useState(null);
   const [usrSubmenuEl, setUsrSubmenuEl] = useState(null);
@@ -82,6 +84,14 @@ export default function MenuComponent() {
   const handleCaseClose = () => {
     setCaseAnchorEl(null);
   };
+// 樂活探點
+  const handleLohasCarbonDotClick = (event) => {
+    setLohasCarbonDotAnchorEl(event.currentTarget);
+    handleMenuClose();
+  };
+  const handleLohasCarbonDotClose = () => {
+    setLohasCarbonDotAnchorEl(null);
+  };
 
   const handleHubClick = (event) => {
     setHubAnchorEl(event.currentTarget);
@@ -119,6 +129,7 @@ export default function MenuComponent() {
     setSubmenuAnchorEl(null);
     setUsrAnchorEl(null);
   };
+  
 
   const handleLinkClick = (event) => {
     setLinkAnchorEl(event.currentTarget);
@@ -217,6 +228,25 @@ export default function MenuComponent() {
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <MenuItem onClick={handleClose}>推動單位介紹</MenuItem>
+                    </Link>
+
+                    <Link
+                      to="/UH109"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleSubmenuClick}>109年USR HUB計畫</MenuItem>
+                    </Link>
+                    <Link
+                      to="/UH110"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleSubmenuClick}>110年USR HUB計畫</MenuItem>
+                    </Link>
+                    <Link
+                      to="/UH111"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleSubmenuClick}>111年USR HUB計畫</MenuItem>
                     </Link>
 
                     <Link
@@ -330,7 +360,7 @@ export default function MenuComponent() {
                   <Button
                     className="hub-button"
                     color="primary"
-                    onClick={handleHubClick}
+                    onClick={handleLohasCarbonDotClick}
                   >
                     <ListItemIcon>
                       <GrainIcon />
@@ -343,33 +373,23 @@ export default function MenuComponent() {
                         marginLeft: "-20px",
                       }}
                     >
-                      USR HUB
+                      樂活探點
                     </Typography>
                   </Button>
                   <Menu
                     id="hub-menu"
-                    anchorEl={hubAnchorEl}
+                    anchorEl={LohasCarbonDotAnchorEl}
                     keepMounted
-                    open={Boolean(hubAnchorEl)}
-                    onClose={handleHubClose}
+                    open={Boolean(LohasCarbonDotAnchorEl)}
+                    onClose={handleLohasCarbonDotClick}
                   >
                     <Link
-                      to="/UH109"
+                      to="/LohasCarbonDot"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
-                      <MenuItem onClick={handleSubmenuClick}>109</MenuItem>
-                    </Link>
-                    <Link
-                      to="/UH110"
-                      style={{ textDecoration: "none", color: "inherit" }}
-                    >
-                      <MenuItem onClick={handleSubmenuClick}>110</MenuItem>
-                    </Link>
-                    <Link
-                      to="/UH111"
-                      style={{ textDecoration: "none", color: "inherit" }}
-                    >
-                      <MenuItem onClick={handleSubmenuClick}>111</MenuItem>
+                      <MenuItem onClick={handleLohasCarbonDotClose}>
+                        樂活探點
+                      </MenuItem>
                     </Link>
                   </Menu>
                   <Button
@@ -491,7 +511,7 @@ export default function MenuComponent() {
                     <MenuItem onClick={handleLocationClick}>服務據點</MenuItem>
                     <MenuItem onClick={handleArticleClick}>亮點報導</MenuItem>
                     <MenuItem onClick={handleCaseClick}>精彩講座</MenuItem>
-                    <MenuItem onClick={handleHubClick}>USR HUB</MenuItem>
+                    <MenuItem onClick={handleLohasCarbonDotClick}>樂活探點</MenuItem>
                     <MenuItem onClick={handleUsrClick}>USR</MenuItem>
                     <MenuItem onClick={handleLinkClick}>重要連結</MenuItem>
                   </Menu>
@@ -525,7 +545,24 @@ export default function MenuComponent() {
                     >
                       <MenuItem onClick={handleClose}>推動單位介紹</MenuItem>
                     </Link>
-
+                    <Link
+                      to="/UH109"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleSubmenuClick}>109年USR HUB計畫</MenuItem>
+                    </Link>
+                    <Link
+                      to="/UH110"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleSubmenuClick}>110年USR HUB計畫</MenuItem>
+                    </Link>
+                    <Link
+                      to="/UH111"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <MenuItem onClick={handleSubmenuClick}>111年USR HUB計畫</MenuItem>
+                    </Link>
                     <Link
                       to="/Report"
                       style={{ textDecoration: "none", color: "inherit" }}
@@ -580,33 +617,22 @@ export default function MenuComponent() {
                       <MenuItem onClick={handleCaseClose}>精彩講座</MenuItem>
                     </Link>
                   </Menu>
-                  {/* USR HUB */}
+                  {/* 樂活探點 */}
                   <Menu
-                    id="hub-menu"
-                    anchorEl={hubAnchorEl}
+                    id="LohasCarbonDo-menu"
+                    anchorEl={LohasCarbonDotAnchorEl}
                     keepMounted
-                    open={Boolean(hubAnchorEl)}
-                    onClose={handleHubClose}
+                    open={Boolean(LohasCarbonDotAnchorEl)}
+                    onClose={handleLohasCarbonDotClose}
                   >
                     <Link
-                      to="/UH109"
+                      to="/LohasCarbonDot"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
-                      <MenuItem onClick={handleSubmenuClick}>109</MenuItem>
-                    </Link>
-                    <Link
-                      to="/UH110"
-                      style={{ textDecoration: "none", color: "inherit" }}
-                    >
-                      <MenuItem onClick={handleSubmenuClick}>110</MenuItem>
-                    </Link>
-                    <Link
-                      to="/UH111"
-                      style={{ textDecoration: "none", color: "inherit" }}
-                    >
-                      <MenuItem onClick={handleSubmenuClick}>111</MenuItem>
+                      <MenuItem onClick={handleLohasCarbonDotClose}>樂活探點</MenuItem>
                     </Link>
                   </Menu>
+
                   {/* USR */}
                   <Menu
                     id="usr-menu"
@@ -685,6 +711,7 @@ export default function MenuComponent() {
             <Route path="/GMM_history" element={<GMM_history />} />
             <Route path="/GD" element={<GD />} />
             <Route path="/ImportantLink" element={<ImportantLink />} />
+            <Route path="/ImportantLink" element={<LohasCarbonDot />} />
           </Routes>
         </div>
       </Router>
