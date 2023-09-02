@@ -20,7 +20,7 @@ import PushCore from "./about_us/screens/PushCore";
 import Promote from "./about_us/screens/Promote";
 import Report from "./about_us/screens/Report";
 import Story from "./about_us/screens/Story";
-import logoImage from "./logo.png";
+import logoImage from "./logo2.png";
 import "./menu.css";
 // import Idea from "./about_us/screens/idea";
 import CaseStudies from "./CaseStudies/screens/CaseStudies";
