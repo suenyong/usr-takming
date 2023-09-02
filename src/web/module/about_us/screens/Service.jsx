@@ -14,7 +14,7 @@ import { AiOutlineHome } from 'react-icons/ai';
 export default function Service() {
   useEffect(() => {
     AOS.init({
-      duration: 700,
+      duration: 900,
     });
   }, []);
   const cardData = [

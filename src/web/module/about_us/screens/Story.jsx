@@ -12,7 +12,7 @@ export default function Story() {
 
     useEffect(() => {
         AOS.init({
-            duration: 700,
+            duration: 900,
         });
 
         // 從後端 API 取得資料

@@ -11,7 +11,7 @@ export default function Promote() {
 
   useEffect(() => {
     AOS.init({
-      duration: 700,
+      duration: 900,
     });
 
     fetchTeamData();

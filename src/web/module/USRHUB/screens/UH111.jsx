@@ -10,7 +10,7 @@ export default function UH111() {
 
     useEffect(() => {
         AOS.init({
-            duration: 700,
+            duration: 900,
         });
     }, [])
 

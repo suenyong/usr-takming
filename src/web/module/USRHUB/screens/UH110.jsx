@@ -9,7 +9,7 @@ import { AiOutlineHome } from 'react-icons/ai';
 export default function UH110() {
     useEffect(() => {
         AOS.init({
-            duration: 700,
+            duration: 900,
         });
     }, [])
 

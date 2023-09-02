@@ -13,7 +13,7 @@ import { AiOutlineHome } from 'react-icons/ai';
 export default function PushCore() {
   useEffect(() => {
     AOS.init({
-      duration: 600,
+      duration: 900,
     });
   }, []);
   return (

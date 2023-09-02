@@ -10,7 +10,7 @@ export default function UH109() {
 
     useEffect(() => {
         AOS.init({
-            duration: 700,
+            duration: 900,
         });
     }, [])
     const [selectedContent, setSelectedContent] = useState('content1');

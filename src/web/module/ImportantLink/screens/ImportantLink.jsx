@@ -11,7 +11,7 @@ export default function Report() {
 
   useEffect(() => {
     AOS.init({
-      duration: 700,
+      duration: 900,
     });
     fetchLinks();
     // const mockLinks = [

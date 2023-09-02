@@ -711,7 +711,7 @@ export default function MenuComponent() {
             <Route path="/GMM_history" element={<GMM_history />} />
             <Route path="/GD" element={<GD />} />
             <Route path="/ImportantLink" element={<ImportantLink />} />
-            <Route path="/ImportantLink" element={<LohasCarbonDot />} />
+            <Route path="/LohasCarbonDot" element={<LohasCarbonDot />} />
           </Routes>
         </div>
       </Router>
