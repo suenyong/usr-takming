@@ -51,7 +51,7 @@ export default function UH109() {
 
     return (
         <>
-            <h1 data-aos="zoom-out-down" style={{
+            <h1 data-aos="zoom-out-down" className="dynamic" style={{
                 textAlign: 'center',
                 color: '#fff',
                 backgroundColor: "#90cbc0",

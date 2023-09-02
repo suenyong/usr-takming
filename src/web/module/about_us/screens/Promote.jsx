@@ -31,7 +31,7 @@ export default function Promote() {
 
   return (
     <>
-      <h1 data-aos="zoom-out-down" style={{
+      <h1 data-aos="zoom-out-down" className="dynamic" style={{
         textAlign: 'center',
         color: '#fff',
         backgroundColor: "#90cbc0",

@@ -146,6 +146,10 @@ export default function MenuComponent() {
     setMenuAnchorEl(null);
   };
 
+  const customIconStyle = {
+    color: 'rgb(15, 125, 136)', // 在这里设置你想要的颜色
+  };
+
   useEffect(() => {
     window.addEventListener("resize", () => {
       setWindowWidth(window.innerWidth);
@@ -155,30 +159,18 @@ export default function MenuComponent() {
   return (
     <>
       <Router>
-        <div className="App" style={{ marginTop: "10px" }}>
-          <div
-            className="search-container"
-            style={{
-              marginBottom: "10px",
-              textAlign: "center",
-            }}
-          ></div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
+        <div className="App" style={{ margin: "auto" }}>
+
+
+          <div className="nav-container">
+            <div className="line-top">
+            <div className="about-usr">
+            <div className="home-logo">
             <a href="/" style={{ textDecoration: "none", color: "inherit" }}>
               <img src={logoImage} alt="德明USR" className="logo" />
             </a>
           </div>
-
-          <div className="nav-container">
-            <div className="full-width-line"></div>
-            <div className="line"></div>
-            <div className="about-usr">
-              {windowWidth > 920 ? (
+              {windowWidth > 958 ? (
                 <>
                   <Button
                     className="about-usr-button"
@@ -187,14 +179,15 @@ export default function MenuComponent() {
                     onClick={handleClick}
                   >
                     <ListItemIcon>
-                      <InfoIcon />
+                      <InfoIcon style={customIconStyle}  />
                     </ListItemIcon>
                     <Typography
-                      variant="h6"
+                      // 
                       sx={{
                         fontWeight: "bold",
                         color: "black",
                         marginLeft: "-20px",
+                        
                       }}
                     >
                       關於我們
@@ -264,10 +257,10 @@ export default function MenuComponent() {
                     onClick={handleLocationClick}
                   >
                     <ListItemIcon>
-                      <LocationOnIcon />
+                      <LocationOnIcon style={customIconStyle}  />
                     </ListItemIcon>
                     <Typography
-                      variant="h6"
+                      
                       sx={{
                         fontWeight: "bold",
                         color: "black",
@@ -297,10 +290,10 @@ export default function MenuComponent() {
                     onClick={handleArticleClick}
                   >
                     <ListItemIcon>
-                      <ArticleIcon />
+                      <ArticleIcon style={customIconStyle}  />
                     </ListItemIcon>
                     <Typography
-                      variant="h6"
+                      
                       sx={{
                         fontWeight: "bold",
                         color: "black",
@@ -330,10 +323,10 @@ export default function MenuComponent() {
                     onClick={handleCaseClick}
                   >
                     <ListItemIcon>
-                      <ShareIcon />
+                      <ShareIcon style={customIconStyle}  />
                     </ListItemIcon>
                     <Typography
-                      variant="h6"
+                      
                       sx={{
                         fontWeight: "bold",
                         color: "black",
@@ -363,10 +356,10 @@ export default function MenuComponent() {
                     onClick={handleLohasCarbonDotClick}
                   >
                     <ListItemIcon>
-                      <GrainIcon />
+                      <GrainIcon style={customIconStyle}  />
                     </ListItemIcon>
                     <Typography
-                      variant="h6"
+                      
                       sx={{
                         fontWeight: "bold",
                         color: "black",
@@ -398,10 +391,10 @@ export default function MenuComponent() {
                     onClick={handleUsrClick}
                   >
                     <ListItemIcon>
-                      <LocalFloristIcon />
+                      <LocalFloristIcon style={customIconStyle}  />
                     </ListItemIcon>
                     <Typography
-                      variant="h6"
+                      
                       sx={{
                         fontWeight: "bold",
                         color: "black",
@@ -459,10 +452,9 @@ export default function MenuComponent() {
                     onClick={handleLinkClick}
                   >
                     <ListItemIcon>
-                      <LinkIcon />
+                      <LinkIcon style={customIconStyle}  />
                     </ListItemIcon>
                     <Typography
-                      variant="h6"
                       sx={{
                         fontWeight: "bold",
                         color: "black",
@@ -496,7 +488,7 @@ export default function MenuComponent() {
                     style={{ marginRight: "-20px" }}
                   >
                     <ListItemIcon>
-                      <MenuIcon />
+                      <MenuIcon style={customIconStyle}  />
                     </ListItemIcon>
                   </Button>
 
@@ -693,7 +685,7 @@ export default function MenuComponent() {
                 </>
               )}
             </div>
-            <div className="line"></div>
+            </div>
           </div>
           <Routes>
             <Route path="/" element={<Home />} />

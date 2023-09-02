@@ -15,7 +15,7 @@ AOS.init({
 return (
 <>
     <h1
-    data-aos="zoom-out-down"
+    data-aos="zoom-out-down" className="dynamic"
     style={{
         textAlign: "center",
         color: "#fff",
