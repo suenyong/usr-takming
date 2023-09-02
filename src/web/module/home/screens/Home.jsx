@@ -5,10 +5,13 @@ import Contact from "../components/contactus/Contact";
 import background_2 from "../../home/screens/image/background_2.png";
 import FronPageCarousel from "../../../_basic/components/carousel/screens/FrontPageCarousel";
 import "../styles/Home.css";
-
-
 import TaiwanMap from "../components/TaiwanMap/taiwanmap";
 import UsrUsrHub from "../components/UsrUsrHub/UsrUsrHub";
+import AllName from "../components/AllName/AllName";
+
+
+
+
 export default function Home() {
 
 
@@ -32,8 +35,10 @@ export default function Home() {
         <UsrUsrHub />
         <div className="block-distance"></div>
         <TaiwanMap />
-        <div className="block-distance"></div>
+        {/* <div className="block-distance"></div> */}
+        {/* <div className="block-distance"></div> */}
         <Contact />
+        <AllName />
       </div>
     </>
   );

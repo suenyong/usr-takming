@@ -1,0 +1,13 @@
+.allName{
+    display: flex;
+    justify-content:flex-start;
+    height: 0 auto;
+    position: relative;
+    background-color: rgba(0, 255, 225, 0.195);
+
+}
+
+.allName p{
+    margin-left: 30px;
+    font-style: italic;
+}
