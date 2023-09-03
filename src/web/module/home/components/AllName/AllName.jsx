@@ -7,9 +7,11 @@ export default function AllName() {
     return (
     <>
         <div className="allName">
-            <p>@USR官網由 德明財經科技大學 資訊管理系113學年度畢業專題生開發<br/>
-             ZHANG SHU TING, TANG ZONG RAY, NI MIN ZHU, 
-             JIANG MING FANG, LEE TING HSUAN, SU EN YONG</p>
+        <p>
+            開發者：<br/>
+            德明財經科技大學資訊管理系113實務專題生<br/>
+            張舒婷、塘宗叡、倪敏筑、江明芳、李庭萱、蘇恩詠
+        </p>
         </div>
     </>
     );
