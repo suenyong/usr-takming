@@ -340,18 +340,16 @@ export default function Service() {
                 <div className="boxB">
                   {cardData1.map((card, index) => (
                     <div key={index} class="cardB">
-                      <div className="card-body1">
+                      <div className="card-body">
                       <div className="card-date">{card.date}</div>
-                        <div className="card-title1">{card.title}</div>
-                        <button
-                          className="btn-Link1"
-                          onClick={() =>
-                            handleButtonClick(card.contentId, card.link)
-                          }
-                        >
-                          Open PDF
-                        </button>
-                      </div>
+                      <div className="card-title">{card.title}</div>
+                      <button
+                        className="btn-Link"
+                        onClick={() => handleButtonClick(card.contentId, card.link)}
+                      >
+                        Open PDF
+                      </button>
+                    </div>
                       <img src={card.imgSrc} />
                     </div>
                   ))}
@@ -365,18 +363,16 @@ export default function Service() {
                 <div className="boxB">
                   {cardData2.map((card, index) => (
                     <div key={index} class="cardB">
-                      <div className="card-body1">
+                      <div className="card-body">
                       <div className="card-date">{card.date}</div>
-                        <div className="card-title1">{card.title}</div>
-                        <button
-                          className="btn-Link1"
-                          onClick={() =>
-                            handleButtonClick(card.contentId, card.link)
-                          }
-                        >
-                          Open PDF
-                        </button>
-                      </div>
+                      <div className="card-title">{card.title}</div>
+                      <button
+                        className="btn-Link"
+                        onClick={() => handleButtonClick(card.contentId, card.link)}
+                      >
+                        Open PDF
+                      </button>
+                    </div>
                       <img src={card.imgSrc} />
                     </div>
                   ))}
@@ -390,18 +386,16 @@ export default function Service() {
                 <div className="boxB">
                   {cardData3.map((card, index) => (
                     <div key={index} class="cardB">
-                      <div className="card-body1">
+                      <div className="card-body">
                       <div className="card-date">{card.date}</div>
-                        <div className="card-title1">{card.title}</div>
-                        <button
-                          className="btn-Link1"
-                          onClick={() =>
-                            handleButtonClick(card.contentId, card.link)
-                          }
-                        >
-                          Open PDF
-                        </button>
-                      </div>
+                      <div className="card-title">{card.title}</div>
+                      <button
+                        className="btn-Link"
+                        onClick={() => handleButtonClick(card.contentId, card.link)}
+                      >
+                        Open PDF
+                      </button>
+                    </div>
                       <img src={card.imgSrc} />
                     </div>
                   ))}
@@ -415,18 +409,16 @@ export default function Service() {
                 <div className="boxB">
                   {cardData4.map((card, index) => (
                     <div key={index} class="cardB">
-                      <div className="card-body1">
+                      <div className="card-body">
                       <div className="card-date">{card.date}</div>
-                        <div className="card-title1">{card.title}</div>
-                        <button
-                          className="btn-Link1"
-                          onClick={() =>
-                            handleButtonClick(card.contentId, card.link)
-                          }
-                        >
-                          Open PDF
-                        </button>
-                      </div>
+                      <div className="card-title">{card.title}</div>
+                      <button
+                        className="btn-Link"
+                        onClick={() => handleButtonClick(card.contentId, card.link)}
+                      >
+                        Open PDF
+                      </button>
+                    </div>
                       <img src={card.imgSrc} />
                     </div>
                   ))}
@@ -454,18 +446,16 @@ export default function Service() {
                 <div className="boxB">
                   {cardData5.map((card, index) => (
                     <div key={index} class="cardB">
-                      <div className="card-body1">
+                      <div className="card-body">
                       <div className="card-date">{card.date}</div>
-                        <div className="card-title1">{card.title}</div>
-                        <button
-                          className="btn-Link1"
-                          onClick={() =>
-                            handleButtonClick(card.contentId, card.link)
-                          }
-                        >
-                          Open PDF
-                        </button>
-                      </div>
+                      <div className="card-title">{card.title}</div>
+                      <button
+                        className="btn-Link"
+                        onClick={() => handleButtonClick(card.contentId, card.link)}
+                      >
+                        Open PDF
+                      </button>
+                    </div>
                       <img src={card.imgSrc} />
                     </div>
                   ))}
