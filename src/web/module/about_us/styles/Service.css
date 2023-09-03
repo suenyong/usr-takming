@@ -78,13 +78,19 @@
   margin: 2%;
 }
 
+.card-date{
+  color: #ffffff;
+  font-weight: 900;
+}
+
+
 .card-title {
   text-transform: uppercase;
-  margin: 10% 0 10% 0;
+  margin: 5% 0 5% 0;
   font-size: 15px;
   color: #ffffff;
   font-weight: 900;
-  line-height: 40px;
+  line-height: 30px;
 }
 
 .btn-Link {

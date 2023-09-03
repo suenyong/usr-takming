@@ -17,9 +17,11 @@ export default function Service() {
       duration: 900,
     });
   }, []);
+  // 新增日期資料
   const cardData = [
     {
       imgSrc: require("../images/LOVE_HOPE.jpg"),
+      date:"2011~2021",
       title: "愛與希望 - 菲你不可",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/548951769.pdf",
     },
@@ -453,6 +455,7 @@ export default function Service() {
         {cardData.map((card, index) => (
           <div key={index} class="cardA">
             <div className="card-body">
+              <div className="card-date">{card.date}</div>
               <div className="card-title">{card.title}</div>
               <button
                 className="btn-Link"

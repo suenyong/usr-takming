@@ -123,6 +123,16 @@
   display: block;
 }
 
+
+.carousel .slider-wrapper.axis-horizontal .slider .slide {
+  flex-direction: column;
+  flex-flow: column;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+}
+
 .css-xmp9fi-MuiTypography-root {
   margin: 0 !important;
   font-weight: 400 !important;

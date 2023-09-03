@@ -48,7 +48,7 @@ export default function PushCore() {
 
       {/* <div className="PushCore"> */}
       <h1
-        data-aos="zoom-out-down" className="dynamic"
+        data-aos="zoom-out-down"
         style={{
           textAlign: "center",
           color: "#fff",
