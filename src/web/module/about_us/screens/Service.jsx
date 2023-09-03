@@ -27,56 +27,67 @@ export default function Service() {
     },
     {
       imgSrc: require("../images/Homeless.jpg"),
+      date:"2020-12-25",
       title: "「2020 歡樂聖誕~街友服務",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/428844962.pdf",
     },
     {
       imgSrc: require("../images/BinBin.jpg"),
+      date:"2020-06-06",
       title: "「來去德明彬彬ㄅ一ㄤˋㄅ一ㄤˋ」生態 暨社團教學活動",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/186449923.pdf",
     },
     {
       imgSrc: require("../images/StoneLake109.jpg"),
+      date:"2020-12-19",
       title: "109 年白石湖生態營」活動",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/144581186.pdf",
     },
     {
       imgSrc: require("../images/WenhuSchool.jpg"),
+      date:"2020-12-17",
       title: "109 年度「文湖國小生態教學」活動",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/384592079.pdf",
     },
     {
       imgSrc: require("../images/achievement109.jpg"),
+      date:"2023-07-21",
       title: "109-年度大學社會責任實踐基地-忠治「部落.愛轉動」-成果發表會",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/625052883.pdf",
     },
     {
       imgSrc: require("../images/Summer109.jpg"),
+      date:"2020-07-26~2022-07-31",
       title: "109-年度大學社會責任實踐基地-忠治「部落.愛轉動」-暑期夏令營",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/709433889.pdf",
     },
     {
       imgSrc: require("../images/fraternity109.jpg"),
+      date:"2020-10-07",
       title: "109-年度第三季博愛慶生會",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/986341926.pdf",
     },
     {
       imgSrc: require("../images/HengshanSchool109.jpg"),
+      date:"2020-07-07~2020-07-10",
       title: "109-年橫山國小-「暑期-環教、理財、品格、創意夏令營」",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/125978186.pdf",
     },
     {
       imgSrc: require("../images/TA-Q-BIN-2020.jpg"),
+      date:"2020-12-24",
       title: "2020-聖誕宅急便",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/636127978.pdf",
     },
     {
       imgSrc: require("../images/Vulnerable14.jpg"),
+      date:"2022-05-28",
       title: "弱勢關懷課輔",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/698511545.pdf",
     },
     {
       imgSrc: require("../images/animal.jpg"),
+      date:"2020-10～2020-12",
       title: "動物保護志工培訓",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/411489015.pdf",
     },
@@ -85,36 +96,43 @@ export default function Service() {
   const cardData1 = [
     {
       imgSrc: require("../images/Homeless.jpg"),
+      date:"2020-12-25",
       title: "「2020 歡樂聖誕~街友服務",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/428844962.pdf",
     },
     {
       imgSrc: require("../images/BinBin.jpg"),
+      date:"2020-06-06",
       title: "「來去德明彬彬ㄅ一ㄤˋㄅ一ㄤˋ」生態 暨社團教學活動",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/186449923.pdf",
     },
     {
       imgSrc: require("../images/StoneLake109.jpg"),
+      date:"2020-12-19",
       title: "109 年白石湖生態營」活動",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/144581186.pdf",
     },
     {
       imgSrc: require("../images/WenhuSchool.jpg"),
+      date:"2020-12-17",
       title: "109 年度「文湖國小生態教學」活動",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/384592079.pdf",
     },
     {
       imgSrc: require("../images/TA-Q-BIN-2020.jpg"),
+      date:"2020-12-24",
       title: "2020-聖誕宅急便",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/636127978.pdf",
     },
     {
       imgSrc: require("../images/Vulnerable14.jpg"),
+      date:"2022-05-28",
       title: "弱勢關懷課輔",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/698511545.pdf",
     },
     {
       imgSrc: require("../images/animal.jpg"),
+      date:"2020-10～2020-12",
       title: "動物保護志工培訓",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/411489015.pdf",
     },
@@ -123,6 +141,7 @@ export default function Service() {
   const cardData2 = [
     {
       imgSrc: require("../images/fraternity109.jpg"),
+      date:"2020-10-07",
       title: "109-年度第三季博愛慶生會",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/986341926.pdf",
     },
@@ -131,11 +150,13 @@ export default function Service() {
   const cardData3 = [
     {
       imgSrc: require("../images/achievement109.jpg"),
+      date:"2020-07-21",
       title: "109-年度大學社會責任實踐基地-忠治「部落.愛轉動」-成果發表會",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/625052883.pdf",
     },
     {
       imgSrc: require("../images/Summer109.jpg"),
+      date:"2020-07-26~2022-07-31",
       title: "109-年度大學社會責任實踐基地-忠治「部落.愛轉動」-暑期夏令營",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/709433889.pdf",
     },
@@ -144,6 +165,7 @@ export default function Service() {
   const cardData4 = [
     {
       imgSrc: require("../images/HengshanSchool109.jpg"),
+      date:"2020-07-07~2020-07-10",
       title: "109-年橫山國小-「暑期-環教、理財、品格、創意夏令營」",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/125978186.pdf",
     },
@@ -152,6 +174,7 @@ export default function Service() {
   const cardData5 = [
     {
       imgSrc: require("../images/LOVE_HOPE.jpg"),
+      date:"2020~2021",
       title: "愛與希望 - 菲你不可",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/548951769.pdf",
     },
@@ -318,6 +341,7 @@ export default function Service() {
                   {cardData1.map((card, index) => (
                     <div key={index} class="cardB">
                       <div className="card-body1">
+                      <div className="card-date">{card.date}</div>
                         <div className="card-title1">{card.title}</div>
                         <button
                           className="btn-Link1"
@@ -342,6 +366,7 @@ export default function Service() {
                   {cardData2.map((card, index) => (
                     <div key={index} class="cardB">
                       <div className="card-body1">
+                      <div className="card-date">{card.date}</div>
                         <div className="card-title1">{card.title}</div>
                         <button
                           className="btn-Link1"
@@ -366,6 +391,7 @@ export default function Service() {
                   {cardData3.map((card, index) => (
                     <div key={index} class="cardB">
                       <div className="card-body1">
+                      <div className="card-date">{card.date}</div>
                         <div className="card-title1">{card.title}</div>
                         <button
                           className="btn-Link1"
@@ -390,6 +416,7 @@ export default function Service() {
                   {cardData4.map((card, index) => (
                     <div key={index} class="cardB">
                       <div className="card-body1">
+                      <div className="card-date">{card.date}</div>
                         <div className="card-title1">{card.title}</div>
                         <button
                           className="btn-Link1"
@@ -428,6 +455,7 @@ export default function Service() {
                   {cardData5.map((card, index) => (
                     <div key={index} class="cardB">
                       <div className="card-body1">
+                      <div className="card-date">{card.date}</div>
                         <div className="card-title1">{card.title}</div>
                         <button
                           className="btn-Link1"
