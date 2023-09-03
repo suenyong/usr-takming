@@ -148,6 +148,7 @@ export default function CaseStudies() {
     <>
       <h1
         data-aos="zoom-out-down"
+        className="dynamic"
         style={{
           textAlign: "center",
           color: "#fff",
@@ -219,7 +220,7 @@ export default function CaseStudies() {
       </Carousel>
 
       <h1
-        data-aos="zoom-out-down" className="dynamic"
+        data-aos="zoom-out-down" 
         style={{
           textAlign: "center",
           color: "#fff",

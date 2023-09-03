@@ -21,6 +21,7 @@ export default function PushCore() {
       {/* <div className="one_idea_box"> */}
       <h1
         data-aos="zoom-out-down"
+        className="dynamic"
         style={{
           textAlign: "center",
           color: "#fff",
