@@ -18,7 +18,7 @@ export default function Promote() {
   }, [])
 
   const fetchTeamData = () => {
-    axios.get("http://localhost:8081/Promote/PromoteAll")
+    axios.get("http://192.192.140.222:8081/Promote/PromoteAll")
       .then(response => {
         console.log("取得團隊資料：", response.data.data);
         setTeamData(response.data.data);
@@ -54,7 +54,7 @@ export default function Promote() {
             <div className="member-info" id="boxp">
             <div className="job-title">{member.posts}</div>
               <div className="image-container_promote">
-              <img src={`http://localhost:8081/Promote/uploads/${member.profileImagePath}`} alt={member.name} />
+              <img src={`http://192.192.140.222:8081/Promote/uploads/${member.profileImagePath}`} alt={member.name} />
               </div>
               <div className="job"><p>{member.name}</p></div>
               {/* {member.jobTitle} */}
