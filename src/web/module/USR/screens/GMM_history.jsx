@@ -14,7 +14,16 @@ export default function GMM_history() {
 
     return (
         <>
-            <h1 data-aos="zoom-out-down" id="GMM_intro">景點介紹</h1>
+            <h1 data-aos="zoom-out-down" className="dynamic" style={{
+                textAlign: 'center',
+                color: '#fff',
+                backgroundColor: "#90cbc0",
+                width: "33%",
+                marginRight: "33%",
+                marginLeft: "33%",
+                marginTop: "13%",
+                marginBottom: "10%"
+            }}>景點介紹</h1>
 
             <div className="Gbox_history">
                 <img src={require("..//images/路線圖.png")} id="Map"></img>
@@ -97,7 +106,7 @@ export default function GMM_history() {
             </div>
 
             {/* ====按鈕==== */}
-            <a href="http://localhost:80/" className="return-But">
+            <a href="/" className="return-But">
                 <AiOutlineHome className="return-object"></AiOutlineHome>
             </a>
 

@@ -12,7 +12,7 @@ export default function Story() {
 
     useEffect(() => {
         AOS.init({
-            duration: 700,
+            duration: 900,
         });
 
         // 從後端 API 取得資料
@@ -20,7 +20,7 @@ export default function Story() {
     }, []);
 
     const fetchVideos = () => {
-        axios.get("http://localhost:8080/storyuser/storyall")
+        axios.get("http://localhost:8081/storyuser/storyall")
         .then(response => {
             console.log("取得的新影片資料:", response.data.data);
             setVideos(response.data.data);
@@ -35,7 +35,7 @@ export default function Story() {
     
     return (
         <>
-            <h1 data-aos="zoom-out-down" style={{
+            <h1 data-aos="zoom-out-down" className="dynamic" style={{
                 textAlign: 'center',
                 color: '#fff',
                 backgroundColor: "#90cbc0",
@@ -61,7 +61,7 @@ export default function Story() {
             </div>
     
             {/* ====按鈕==== */}
-            <a href="http://localhost:80/" className="return-But">
+            <a  href="/" className="return-But">
                 <AiOutlineHome className="return-object"></AiOutlineHome>
             </a>
     

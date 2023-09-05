@@ -41,13 +41,13 @@
   flex: 1;
   margin-left: 20px; /* 設置文字左側間距 */
   white-space: nowrap; /* 文字不換行 */
+  line-height: 15px;
+  margin-top: 25px;
 }
 
 .contact-text {
   margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 15px;
 }
-
 
 

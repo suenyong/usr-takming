@@ -11,14 +11,14 @@ export default function Promote() {
 
   useEffect(() => {
     AOS.init({
-      duration: 700,
+      duration: 900,
     });
 
     fetchTeamData();
   }, [])
 
   const fetchTeamData = () => {
-    axios.get("http://localhost:8080/Promote/PromoteAll")
+    axios.get("http://192.192.140.222:8081/Promote/PromoteAll")
       .then(response => {
         console.log("取得團隊資料：", response.data.data);
         setTeamData(response.data.data);
@@ -31,7 +31,7 @@ export default function Promote() {
 
   return (
     <>
-      <h1 data-aos="zoom-out-down" style={{
+      <h1 data-aos="zoom-out-down" className="dynamic" style={{
         textAlign: 'center',
         color: '#fff',
         backgroundColor: "#90cbc0",
@@ -54,7 +54,7 @@ export default function Promote() {
             <div className="member-info" id="boxp">
             <div className="job-title">{member.posts}</div>
               <div className="image-container_promote">
-              <img src={`http://localhost:8080/Promote/uploads/${member.profileImagePath}`} alt={member.name} />
+              <img src={`http://192.192.140.222:8081/Promote/uploads/${member.profileImagePath}`} alt={member.name} />
               </div>
               <div className="job"><p>{member.name}</p></div>
               {/* {member.jobTitle} */}
@@ -81,7 +81,7 @@ export default function Promote() {
 
 
       {/* ====按鈕==== */}
-      <a href="http://localhost:80/" className="return-But">
+      <a  href="/" className="return-But">
         <AiOutlineHome className="return-object"></AiOutlineHome>
       </a>
       <Contact />

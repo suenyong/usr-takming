@@ -148,6 +148,7 @@ export default function CaseStudies() {
     <>
       <h1
         data-aos="zoom-out-down"
+        className="dynamic"
         style={{
           textAlign: "center",
           color: "#fff",
@@ -219,7 +220,7 @@ export default function CaseStudies() {
       </Carousel>
 
       <h1
-        data-aos="zoom-out-down"
+        data-aos="zoom-out-down" 
         style={{
           textAlign: "center",
           color: "#fff",
@@ -256,7 +257,7 @@ export default function CaseStudies() {
       </div>
 
       {/* ====按鈕==== */}
-      <a href="http://localhost:80/" className="return-But">
+      <a  href="/" className="return-But">
         <AiOutlineHome className="return-object"></AiOutlineHome>
       </a>
 

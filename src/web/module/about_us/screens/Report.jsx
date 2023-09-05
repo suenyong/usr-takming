@@ -9,7 +9,7 @@ import { AiOutlineHome } from 'react-icons/ai';
 export default function Report() {
     useEffect(() => {
         AOS.init({
-            duration: 700,
+            duration: 900,
         });
     }, [])
 
@@ -18,7 +18,7 @@ export default function Report() {
     const filePath = "/path/to/your/pdf/file.pdf";
     return (
         <>
-            <h1 data-aos="zoom-out-down" style={{
+            <h1 data-aos="zoom-out-down" className="dynamic" style={{
                 textAlign: 'center',
                 color: '#fff',
                 backgroundColor: "#90cbc0",
@@ -35,7 +35,7 @@ export default function Report() {
                 </div>
             </div>
             {/* ====按鈕==== */}
-            <a href="http://localhost:80/" className="return-But">
+            <a  href="/" className="return-But">
                 <AiOutlineHome className="return-object"></AiOutlineHome>
             </a>
 

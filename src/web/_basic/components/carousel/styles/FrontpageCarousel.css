@@ -3,6 +3,7 @@ width: calc(100% / 4);
 justify-items: center;
 align-items: center;
 margin: 15px;
+margin-top: 55px !important;
 
 }
 
@@ -33,6 +34,7 @@ color: rgb(42, 145, 161) !important;
 .carousel .slide {
 text-align:start!important;
 height: 80%!important;
+
 
 }
 

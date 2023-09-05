@@ -11,7 +11,7 @@ export default function Report() {
 
   useEffect(() => {
     AOS.init({
-      duration: 700,
+      duration: 900,
     });
     fetchLinks();
     // const mockLinks = [
@@ -28,7 +28,7 @@ export default function Report() {
   // const filePath = "/path/to/your/pdf/file.pdf";
 
   const fetchLinks = () => {
-    axios.get("http://localhost:8080/Link/Linkall")
+    axios.get("http://localhost:8081/Link/Linkall")
       .then(response => {
         console.log("取得最新連結資料：", response.data);
         const oldLinks = [...Links];
@@ -43,7 +43,7 @@ export default function Report() {
   return (
     <>
       <h1
-        data-aos="zoom-out-down"
+        data-aos="zoom-out-down" className="dynamic"
         style={{
           textAlign: "center",
           color: "#fff",
@@ -87,7 +87,7 @@ export default function Report() {
 
 
       {/* ====按鈕==== */}
-      <a href="http://localhost:80/" className="return-But">
+      <a  href="/" className="return-But">
         <AiOutlineHome className="return-object"></AiOutlineHome>
       </a>
       <Contact />

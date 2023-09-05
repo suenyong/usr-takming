@@ -10,7 +10,7 @@ export default function UH111() {
 
     useEffect(() => {
         AOS.init({
-            duration: 700,
+            duration: 900,
         });
     }, [])
 
@@ -42,7 +42,7 @@ export default function UH111() {
 
     return (
         <>
-            <h1 data-aos="zoom-out-down" style={{
+            <h1 data-aos="zoom-out-down" className="dynamic" style={{
                 textAlign: 'center',
                 color: '#fff',
                 backgroundColor: "#90cbc0",
@@ -51,7 +51,7 @@ export default function UH111() {
                 marginLeft: "30%",
                 marginTop: "13%",
             }}>
-                111成果
+               111 USR Hub計畫 
             </h1>
 
             <h1 style={{ fontSize: "40px", fontFamily: "Arial, sans-serif", marginLeft: "10%" }}>
@@ -77,7 +77,7 @@ export default function UH111() {
             {selectedContent === 'content1' && (
                 <div className="p_USRHUB-UH" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
 
-                    <p style={{ fontSize: "30px" }}>服務創新育成</p>
+                    <p style={{ fontSize: "30px" }}>子計畫1：服務創新育成</p>
 
                     <p style={{ fontSize: "25px" }}>111年執行情況:</p>
 
@@ -102,7 +102,7 @@ export default function UH111() {
 
                 <div className="p_USRHUB-UH" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif" }}>
 
-                    <p style={{ fontSize: "30px" }}>東協跨境電商</p>
+                    <p style={{ fontSize: "30px" }}>子計畫 2：東協跨境電商</p>
 
 
                     <p style={{ fontSize: "25px" }}>111年執行情況:</p>
@@ -117,7 +117,7 @@ export default function UH111() {
             {selectedContent === 'content3' && (
                 <div className="p_USRHUB-UH" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif" }}>
 
-                    <p style={{ fontSize: "30px" }}>部落愛轉動</p>
+                    <p style={{ fontSize: "30px" }}>子計畫 3：部落愛轉動</p>
 
                     <p style={{ fontSize: "25px" }}>111年執行成效:</p>
                     辦理活動: 地方關懷創生
@@ -135,7 +135,7 @@ export default function UH111() {
                 </div>
             )}
             {/* ====按鈕==== */}
-            <a href="http://localhost:80/" className="return-But">
+            <a href="/" className="return-But">
                 <AiOutlineHome className="return-object"></AiOutlineHome>
             </a>
 

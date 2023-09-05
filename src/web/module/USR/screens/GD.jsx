@@ -12,7 +12,7 @@ import { AiOutlineHome } from 'react-icons/ai';
 export default function GD() {
     return (
         <>
-            <div className="bigtitle">計畫整體發展之總目標</div>
+            <div className="bigtitle" >計畫整體發展之總目標</div>
 
             <div className="boxIdea-GD">
                 本計畫的場域為內湖科學園區，地價昂貴，部分紡織企業將公司場所堆放庫存布，逐年增加負擔，處理方式並不環保，因此若能將庫存布捐
@@ -280,7 +280,7 @@ export default function GD() {
                 </div>
             </div>
             {/* ====按鈕==== */}
-            <a href="http://localhost:80/" className="return-But">
+            <a  href="/"className="return-But">
                 <AiOutlineHome className="return-object"></AiOutlineHome>
             </a>
             {/* =================================== */}

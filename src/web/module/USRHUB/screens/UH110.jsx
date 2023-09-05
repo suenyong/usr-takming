@@ -9,7 +9,7 @@ import { AiOutlineHome } from 'react-icons/ai';
 export default function UH110() {
     useEffect(() => {
         AOS.init({
-            duration: 700,
+            duration: 900,
         });
     }, [])
 
@@ -51,7 +51,7 @@ export default function UH110() {
     return (
 
         <>
-            <h1 data-aos="zoom-out-down" style={{
+            <h1 data-aos="zoom-out-down" className="dynamic" style={{
                 textAlign: 'center',
                 color: '#fff',
                 backgroundColor: "#90cbc0",
@@ -60,7 +60,7 @@ export default function UH110() {
                 marginLeft: "30%",
                 marginTop: "13%",
             }}>
-                110成果
+                110 USR Hub計畫
             </h1>
 
             <h1 style={{ fontSize: "40px", fontFamily: "Arial, sans-serif", marginLeft: "10%" }}>
@@ -87,7 +87,7 @@ export default function UH110() {
             {selectedContent === 'content1' && (
                 <div className="p_USRHUB-UH" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif", }}>
 
-                    <p style={{ fontSize: "30px" }}>服務創新育成</p>
+                    <p style={{ fontSize: "30px" }}>子計畫1：服務創新育成</p>
 
                     「由研發處邀請國內外具有新服務商品、新商業模式、新技術應用之新創企業經理人，雙週舉辦「商業創新論壇」，邀請國內在推動商業創新的專業經理人蒞校演講，邀請內湖科技園 區廠商、本校師生參加，落實創新創意教育的理念。」
                     <p></p>
@@ -120,7 +120,7 @@ export default function UH110() {
 
                 <div className="p_USRHUB-UH" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif" }}>
 
-                    <p style={{ fontSize: "30px" }}>東協跨境電商</p>
+                    <p style={{ fontSize: "30px" }}>子計畫2：東協跨境電商</p>
 
                     「由研發處整合本校 560 位的東協生（越南、印尼）在台生活需求，結合電商平台與直播趨勢，教導電商透過直播知識與運作，培養外籍生電商之網紅經營、社群行銷和跨境電商經營能力，期許畢業後能協助外籍生在台跨境或歸國落地創業。」
                     <p></p>
@@ -145,7 +145,7 @@ export default function UH110() {
             {selectedContent === 'content3' && (
                 <div className="p_USRHUB-UH" style={{ fontSize: "20px", fontFamily: "Arial, sans-serif" }}>
 
-                    <p style={{ fontSize: "30px" }}>部落愛轉動</p>
+                    <p style={{ fontSize: "30px" }}>子計畫3：部落愛轉動</p>
 
                     「由學務處課指組舉辦部落文化及生態體驗活動，因此選定位處烏來的忠治部落，於 110 年 10 月 9-10 日忠治部落青少年、兒童、社區居民計 35 名，忠治部落是離台北最近的泰雅族部落，地緣關係部落有著極佳生態步道與自然環境。在本校協助下 109 年完成「忠治部落綠地圖、來一攤(周邊美食、景點)」、110 年完成「忠治-甲蟲、獨角仙昆蟲」摺頁、簡介，並帶領部落居民及青年至南投縣仁愛鄉法治村武界部落的參訪後，透過辦理本自然生態體驗活動為讓忠治居民更認識自己部落、整合自然資源，並有發展地方特色之機會透過計畫執行使學生有機會實際體驗城鄉交流服務經驗，培育未來參與社會的關懷奉獻能力，啟發社區營造思維，協助部落找回地區文化的認同感。」
                     <p></p>
@@ -163,7 +163,7 @@ export default function UH110() {
                 </div>
             )}
             {/* ====按鈕==== */}
-            <a href="http://localhost:80/" className="return-But">
+            <a  href="/" className="return-But">
                 <AiOutlineHome className="return-object"></AiOutlineHome>
             </a>
 

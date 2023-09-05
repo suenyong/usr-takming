@@ -14,67 +14,80 @@ import { AiOutlineHome } from 'react-icons/ai';
 export default function Service() {
   useEffect(() => {
     AOS.init({
-      duration: 700,
+      duration: 900,
     });
   }, []);
+  // 新增日期資料
   const cardData = [
     {
       imgSrc: require("../images/LOVE_HOPE.jpg"),
+      date:"2011~2021",
       title: "愛與希望 - 菲你不可",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/548951769.pdf",
     },
     {
       imgSrc: require("../images/Homeless.jpg"),
+      date:"2020-12-25",
       title: "「2020 歡樂聖誕~街友服務",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/428844962.pdf",
     },
     {
       imgSrc: require("../images/BinBin.jpg"),
+      date:"2020-06-06",
       title: "「來去德明彬彬ㄅ一ㄤˋㄅ一ㄤˋ」生態 暨社團教學活動",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/186449923.pdf",
     },
     {
       imgSrc: require("../images/StoneLake109.jpg"),
+      date:"2020-12-19",
       title: "109 年白石湖生態營」活動",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/144581186.pdf",
     },
     {
       imgSrc: require("../images/WenhuSchool.jpg"),
+      date:"2020-12-17",
       title: "109 年度「文湖國小生態教學」活動",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/384592079.pdf",
     },
     {
       imgSrc: require("../images/achievement109.jpg"),
+      date:"2023-07-21",
       title: "109-年度大學社會責任實踐基地-忠治「部落.愛轉動」-成果發表會",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/625052883.pdf",
     },
     {
       imgSrc: require("../images/Summer109.jpg"),
+      date:"2020-07-26~2022-07-31",
       title: "109-年度大學社會責任實踐基地-忠治「部落.愛轉動」-暑期夏令營",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/709433889.pdf",
     },
     {
       imgSrc: require("../images/fraternity109.jpg"),
+      date:"2020-10-07",
       title: "109-年度第三季博愛慶生會",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/986341926.pdf",
     },
     {
       imgSrc: require("../images/HengshanSchool109.jpg"),
+      date:"2020-07-07~2020-07-10",
       title: "109-年橫山國小-「暑期-環教、理財、品格、創意夏令營」",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/125978186.pdf",
     },
     {
       imgSrc: require("../images/TA-Q-BIN-2020.jpg"),
+      date:"2020-12-24",
       title: "2020-聖誕宅急便",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/636127978.pdf",
     },
     {
       imgSrc: require("../images/Vulnerable14.jpg"),
+      date:"2022-05-28",
       title: "弱勢關懷課輔",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/698511545.pdf",
     },
     {
       imgSrc: require("../images/animal.jpg"),
+      date:"2020-10～2020-12",
       title: "動物保護志工培訓",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/411489015.pdf",
     },
@@ -83,36 +96,43 @@ export default function Service() {
   const cardData1 = [
     {
       imgSrc: require("../images/Homeless.jpg"),
+      date:"2020-12-25",
       title: "「2020 歡樂聖誕~街友服務",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/428844962.pdf",
     },
     {
       imgSrc: require("../images/BinBin.jpg"),
+      date:"2020-06-06",
       title: "「來去德明彬彬ㄅ一ㄤˋㄅ一ㄤˋ」生態 暨社團教學活動",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/186449923.pdf",
     },
     {
       imgSrc: require("../images/StoneLake109.jpg"),
+      date:"2020-12-19",
       title: "109 年白石湖生態營」活動",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/144581186.pdf",
     },
     {
       imgSrc: require("../images/WenhuSchool.jpg"),
+      date:"2020-12-17",
       title: "109 年度「文湖國小生態教學」活動",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/384592079.pdf",
     },
     {
       imgSrc: require("../images/TA-Q-BIN-2020.jpg"),
+      date:"2020-12-24",
       title: "2020-聖誕宅急便",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/636127978.pdf",
     },
     {
       imgSrc: require("../images/Vulnerable14.jpg"),
+      date:"2022-05-28",
       title: "弱勢關懷課輔",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/698511545.pdf",
     },
     {
       imgSrc: require("../images/animal.jpg"),
+      date:"2020-10～2020-12",
       title: "動物保護志工培訓",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/411489015.pdf",
     },
@@ -121,6 +141,7 @@ export default function Service() {
   const cardData2 = [
     {
       imgSrc: require("../images/fraternity109.jpg"),
+      date:"2020-10-07",
       title: "109-年度第三季博愛慶生會",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/986341926.pdf",
     },
@@ -129,11 +150,13 @@ export default function Service() {
   const cardData3 = [
     {
       imgSrc: require("../images/achievement109.jpg"),
+      date:"2020-07-21",
       title: "109-年度大學社會責任實踐基地-忠治「部落.愛轉動」-成果發表會",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/625052883.pdf",
     },
     {
       imgSrc: require("../images/Summer109.jpg"),
+      date:"2020-07-26~2022-07-31",
       title: "109-年度大學社會責任實踐基地-忠治「部落.愛轉動」-暑期夏令營",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/709433889.pdf",
     },
@@ -142,6 +165,7 @@ export default function Service() {
   const cardData4 = [
     {
       imgSrc: require("../images/HengshanSchool109.jpg"),
+      date:"2020-07-07~2020-07-10",
       title: "109-年橫山國小-「暑期-環教、理財、品格、創意夏令營」",
       link: "http://manner.takming.edu.tw/var/file/8/1008/img/14/125978186.pdf",
     },
@@ -150,6 +174,7 @@ export default function Service() {
   const cardData5 = [
     {
       imgSrc: require("../images/LOVE_HOPE.jpg"),
+      date:"2020~2021",
       title: "愛與希望 - 菲你不可",
       link: "https://manner.takming.edu.tw/var/file/8/1008/img/14/548951769.pdf",
     },
@@ -168,7 +193,7 @@ export default function Service() {
   return (
     <>
       <h1
-        data-aos="zoom-out-down"
+        data-aos="zoom-out-down" className="dynamic"
         style={{
           textAlign: "center",
           color: "#fff",
@@ -315,17 +340,16 @@ export default function Service() {
                 <div className="boxB">
                   {cardData1.map((card, index) => (
                     <div key={index} class="cardB">
-                      <div className="card-body1">
-                        <div className="card-title1">{card.title}</div>
-                        <button
-                          className="btn-Link1"
-                          onClick={() =>
-                            handleButtonClick(card.contentId, card.link)
-                          }
-                        >
-                          Open PDF
-                        </button>
-                      </div>
+                      <div className="card-body">
+                      <div className="card-date">{card.date}</div>
+                      <div className="card-title">{card.title}</div>
+                      <button
+                        className="btn-Link"
+                        onClick={() => handleButtonClick(card.contentId, card.link)}
+                      >
+                        Open PDF
+                      </button>
+                    </div>
                       <img src={card.imgSrc} />
                     </div>
                   ))}
@@ -339,17 +363,16 @@ export default function Service() {
                 <div className="boxB">
                   {cardData2.map((card, index) => (
                     <div key={index} class="cardB">
-                      <div className="card-body1">
-                        <div className="card-title1">{card.title}</div>
-                        <button
-                          className="btn-Link1"
-                          onClick={() =>
-                            handleButtonClick(card.contentId, card.link)
-                          }
-                        >
-                          Open PDF
-                        </button>
-                      </div>
+                      <div className="card-body">
+                      <div className="card-date">{card.date}</div>
+                      <div className="card-title">{card.title}</div>
+                      <button
+                        className="btn-Link"
+                        onClick={() => handleButtonClick(card.contentId, card.link)}
+                      >
+                        Open PDF
+                      </button>
+                    </div>
                       <img src={card.imgSrc} />
                     </div>
                   ))}
@@ -363,17 +386,16 @@ export default function Service() {
                 <div className="boxB">
                   {cardData3.map((card, index) => (
                     <div key={index} class="cardB">
-                      <div className="card-body1">
-                        <div className="card-title1">{card.title}</div>
-                        <button
-                          className="btn-Link1"
-                          onClick={() =>
-                            handleButtonClick(card.contentId, card.link)
-                          }
-                        >
-                          Open PDF
-                        </button>
-                      </div>
+                      <div className="card-body">
+                      <div className="card-date">{card.date}</div>
+                      <div className="card-title">{card.title}</div>
+                      <button
+                        className="btn-Link"
+                        onClick={() => handleButtonClick(card.contentId, card.link)}
+                      >
+                        Open PDF
+                      </button>
+                    </div>
                       <img src={card.imgSrc} />
                     </div>
                   ))}
@@ -387,17 +409,16 @@ export default function Service() {
                 <div className="boxB">
                   {cardData4.map((card, index) => (
                     <div key={index} class="cardB">
-                      <div className="card-body1">
-                        <div className="card-title1">{card.title}</div>
-                        <button
-                          className="btn-Link1"
-                          onClick={() =>
-                            handleButtonClick(card.contentId, card.link)
-                          }
-                        >
-                          Open PDF
-                        </button>
-                      </div>
+                      <div className="card-body">
+                      <div className="card-date">{card.date}</div>
+                      <div className="card-title">{card.title}</div>
+                      <button
+                        className="btn-Link"
+                        onClick={() => handleButtonClick(card.contentId, card.link)}
+                      >
+                        Open PDF
+                      </button>
+                    </div>
                       <img src={card.imgSrc} />
                     </div>
                   ))}
@@ -425,17 +446,16 @@ export default function Service() {
                 <div className="boxB">
                   {cardData5.map((card, index) => (
                     <div key={index} class="cardB">
-                      <div className="card-body1">
-                        <div className="card-title1">{card.title}</div>
-                        <button
-                          className="btn-Link1"
-                          onClick={() =>
-                            handleButtonClick(card.contentId, card.link)
-                          }
-                        >
-                          Open PDF
-                        </button>
-                      </div>
+                      <div className="card-body">
+                      <div className="card-date">{card.date}</div>
+                      <div className="card-title">{card.title}</div>
+                      <button
+                        className="btn-Link"
+                        onClick={() => handleButtonClick(card.contentId, card.link)}
+                      >
+                        Open PDF
+                      </button>
+                    </div>
                       <img src={card.imgSrc} />
                     </div>
                   ))}
@@ -453,6 +473,7 @@ export default function Service() {
         {cardData.map((card, index) => (
           <div key={index} class="cardA">
             <div className="card-body">
+              <div className="card-date">{card.date}</div>
               <div className="card-title">{card.title}</div>
               <button
                 className="btn-Link"
@@ -467,7 +488,7 @@ export default function Service() {
       </div>
 
       {/* ====按鈕==== */}
-      <a href="http://localhost:80/" className="return-But">
+      <a  href="/" className="return-But">
         <AiOutlineHome className="return-object"></AiOutlineHome>
       </a>
 
