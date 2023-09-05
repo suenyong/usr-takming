@@ -48,6 +48,7 @@ export default function GMM() {
             <div className="contain2nd">
                 <div className="M_title" >社會實踐議題(含SDGs)</div>
 
+
                 <img src={require('../images/sdgs4.png')} alt="SDGs4.png" className="SDGs4_GMM" ></img>
                 <div className="boxSDG">
                     1.SDGs 4：優質教育—培育跨領域人才以本校學生為基礎，開設校級「樂活與創生跨領域學分學程」課程，整合走讀護照、導覽培訓、遊程規劃與文案設計、內容行銷與創意市場的規劃以吸引具社會實踐機之學生修讀。透過學程課程厚植學生對在地的認識及創新執行能力， 3 並以學程發展之課程模式與實作，讓知識與社會實踐共進之協力與合作模式相互為用。
