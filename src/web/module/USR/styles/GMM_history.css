@@ -310,10 +310,10 @@
 
     .Rock {
         width: calc(100% / 1.0);
-        margin: 0 auto;
+        /* margin: 0 auto; */
         position: relative;
         top: -450px;
-        left: 43px;
+        left: -80px;
         /* display: flex;
         align-items: center; */
 
@@ -340,10 +340,10 @@
 
     .Stone {
         width: calc(100% / 1.0);
-        margin: 0 auto;
+        /* margin: 0 auto; */
         position: relative;
         top: -500px;
-        left: 75px;
+        left: -125px;
     }
 
     .Temple {
