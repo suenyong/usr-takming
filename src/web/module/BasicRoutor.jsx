@@ -218,12 +218,12 @@ export default function MenuComponent() {
                         </MenuItem>
                       </Link>
 
-                      <Link
+                      {/* <Link
                         to="/Promote"
                         style={{ textDecoration: "none", color: "inherit" }}
                       >
                         <MenuItem onClick={handleClose}>推動單位介紹</MenuItem>
-                      </Link>
+                      </Link> */}
 
                       <Link
                         to="/UH109"
@@ -392,7 +392,7 @@ export default function MenuComponent() {
                           marginLeft: "-20px",
                         }}
                       >
-                        USR
+                        USR實踐計畫
                       </Typography>
                     </Button>
                     <Menu
@@ -495,7 +495,7 @@ export default function MenuComponent() {
                       <MenuItem onClick={handleArticleClick}>亮點報導</MenuItem>
                       <MenuItem onClick={handleCaseClick}>精彩講座</MenuItem>
                       <MenuItem onClick={handleLohasCarbonDotClick}>樂活碳點</MenuItem>
-                      <MenuItem onClick={handleUsrClick}>USR</MenuItem>
+                      <MenuItem onClick={handleUsrClick}>USR實踐計畫</MenuItem>
                       <MenuItem onClick={handleLinkClick}>重要連結</MenuItem>
                     </Menu>
                     {/* 關於我們選單 */}
@@ -522,12 +522,12 @@ export default function MenuComponent() {
                         </MenuItem>
                       </Link>
 
-                      <Link
+                      {/* <Link
                         to="/Promote"
                         style={{ textDecoration: "none", color: "inherit" }}
                       >
                         <MenuItem onClick={handleClose}>推動單位介紹</MenuItem>
-                      </Link>
+                      </Link> */}
                       <Link
                         to="/UH109"
                         style={{ textDecoration: "none", color: "inherit" }}

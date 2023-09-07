@@ -16,7 +16,7 @@ export default function GMM() {
             <h1 data-aos="zoom-out-down" className="dynamic" style={{
                 textAlign: 'center',
                 color: '#fff',
-                backgroundColor: "#90cbc0",
+                backgroundColor: "rgb(99, 182, 130)",
                 width: "40%",
                 marginRight: "30%",
                 marginLeft: "30%",
