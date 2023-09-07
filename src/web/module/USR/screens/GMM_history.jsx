@@ -6,29 +6,29 @@ import { AiFillStar } from 'react-icons/ai';
 import AOS from "aos";
 
 export default function GMM_history() {
-        useEffect(() => {
+    useEffect(() => {
         AOS.init({
-          duration: 700,
+            duration: 700,
         });
-      }, []);
+    }, []);
 
     return (
         <>
-        <h1 data-aos="zoom-out-down" className="dynamic" style={{
-        textAlign: 'center',
-        color: '#fff',
-        backgroundColor: "#90cbc0",
-        width: "33%",
-        marginRight: "33%",
-        marginLeft: "33%",
-        marginTop: "13%",
-        marginBottom: "10%"
-        }}>景點介紹</h1>
+            <h1 data-aos="zoom-out-down" className="dynamic" style={{
+                textAlign: 'center',
+                color: '#fff',
+                backgroundColor: "#90cbc0",
+                width: "33%",
+                marginRight: "33%",
+                marginLeft: "33%",
+                marginTop: "13%",
+                marginBottom: "10%"
+            }}>景點介紹</h1>
 
             <div className="Gbox_history">
                 <img src={require("..//images/路線圖.png")} id="Map"></img>
                 <div id="remind" >
-                    <h4 style={{ color: "red", marginLeft: 140 }}>*(2)號入口 從西湖捷運站下車會經過258巷到德明財經科技大學</h4>
+                    <h4 id="red">*(2)號入口 從西湖捷運站下車會經過258巷到德明財經科技大學</h4>
                     <div className="Road"><AiFillStar className="Road_star"></AiFillStar>建議路線：</div>
                     <div className="Road_2" id="y">喜歡挑戰的遊客可以選擇比較有難度的大岩壁<span>(黃色路線)</span></div>
                     <div className="Road_2" id="b">喜歡輕鬆休閒或是帶小朋友的可以選擇<span>(藍色路線)</span></div>
@@ -38,7 +38,10 @@ export default function GMM_history() {
 
             <div className="Gbox_history">
                 <div className="Content_history">
-                    <div className="GMM_Mtitle_history">打石場</div>
+                    <div className="GMM_Mtitle_history">
+                        <img src={require("..//images/圖片1.png")} className="GMM_num"></img>
+                        打石場
+                    </div>
                     <div className="GMM_box_history">
                         創建年代為清光緒八年，於清代及日治時期被稱為北勢湖採石場， 乃臺北城築城之官方採石場。
                         清末光緒年間計畫興築臺北府城牆時，選用內湖及大直一帶山區所產的石材作為建材。
@@ -49,7 +52,10 @@ export default function GMM_history() {
                 </div>
 
                 <div className="Content_history">
-                    <div className="GMM_Mtitle_history">論劍亭</div>
+                    <div className="GMM_Mtitle_history">
+                        <img src={require("..//images/圖片4.png")} className="GMM_num"></img>
+                        論劍亭
+                    </div>
                     <div className="GMM_box_history" id="OSC">
                         論劍亭的由來可以追溯到35年前，一個由山友搭建的涼亭。於2000年政治大選時，眾多山友在此討論政治，周先生說不論政治，論山就好，但因金面山不大，不適合命名為論山亭，在這裡閒聊就像是論劍，故命名為論劍亭。
                         論劍亭於2008年前被人放火燒毀，於2010年左右由大地工程處重建，同期也搭建了重陽亭、華山亭。論劍亭的其中一面牆，貼滿了金面山的-台北盆地的攝影作品與山間雲彩的，周先生是個喜歡登山攝影的社區人士，每天早上都會到論劍亭報到，所以也被譽為金面山土地公。
@@ -60,7 +66,10 @@ export default function GMM_history() {
                 </div>
 
                 <div className="Content_history">
-                    <div className="GMM_Mtitle_history">大壁岩</div>
+                    <div className="GMM_Mtitle_history">
+                        <img src={require("..//images/圖片3.png")} className="GMM_num"></img>
+                        大壁岩
+                    </div>
                     <div className="GMM_box_history">
                         自然景觀，大坡度面積岩壁，沿途陡峭的路段都有設置拉繩，大岩壁上有人工鑿出的階梯，繩索也設置完善，建議手套帶著可防手拉繩時擦傷。只要穩穩地踏好步伐，再藉由拉繩輔助，回頭就可眺望台北市景。
                         想體驗低難度的攀爬可以選擇此路線，算是比較特殊有趣的地形，需要些微的手腳並用比較方便安全。雖然難度不高但還是具有一定的危險性，所以基本的穿著跟鞋子就要選過，還是要稍微準備一下，至少抓地力比較好些。
@@ -70,7 +79,10 @@ export default function GMM_history() {
                 </div>
 
                 <div className="Content_history">
-                    <div className="GMM_Mtitle_history">竹月寺</div>
+                    <div className="GMM_Mtitle_history">
+                        <img src={require("..//images/圖片2.png")} className="GMM_num"></img>
+                        竹月寺
+                    </div>
                     <div className="GMM_box_history" id="CT">
                         竹月寺主殿主供千手觀世音菩薩，副供脅侍文殊菩薩與普賢菩薩，兩側分別是伽藍菩薩與韋馱菩薩。右側副殿地藏王菩薩。左側副殿觀音菩薩(普陀山觀音)。
                         在悠久的中國歷史，觀音菩薩除了是民間信仰的代表，更是家家戶戶都知道的神佛，所以如果是喜歡走道場，參拜上香的人，這裡是不錯的地點非常合適。從入山口起算約500公尺，耗時約25分鐘腳程，此寺寧靜祥和，也有熱情的住持阿姨會向您解說附近的地理介紹。
@@ -79,7 +91,10 @@ export default function GMM_history() {
                 </div>
 
                 <div className="Content_history">
-                    <div className="GMM_Mtitle_history">大金面山(剪刀石)</div>
+                    <div className="GMM_Mtitle_history">
+                        <img src={require("..//images/圖片5.png")} className="GMM_num"></img>
+                        大金面山(剪刀石)
+                    </div>
                     <div className="GMM_box_history" id="GA">
                         金面山俗稱剪刀石山，海拔258公尺，位於內湖金龍寺之西側山稜。 由於其山頂的巨岩含石英細顆， 在陽光下閃閃發亮，因此被稱為金面山。
                         山頂有一巨石，凸向北方，從碧山巖望去，頗似一穿出天際的剪刀，故又名「剪刀石山」。有人說它像鳥嘴般或是螃蟹的大螯等，無論像什麼，都是自然界的奇觀。金面山雖然山勢不高，但因峰頂巨岩疊錯，氣勢偉峻，視野開闊，頗具大山的格局，因此假日不乏登山客到此一遊。
@@ -91,7 +106,7 @@ export default function GMM_history() {
             </div>
 
             {/* ====按鈕==== */}
-            <a  href="/" className="return-But">
+            <a href="/" className="return-But">
                 <AiOutlineHome className="return-object"></AiOutlineHome>
             </a>
 

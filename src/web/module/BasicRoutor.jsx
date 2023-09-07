@@ -105,7 +105,8 @@ export default function MenuComponent() {
 
   const handleSubmenuClick = (event) => {
     setHubSubmenuEl(event.currentTarget);
-    setHubAnchorEl(null); // Close the hub menu after selecting a submenu item
+    handleClose(); 
+    
   };
   const handleSubmenuClose = () => {
     setHubSubmenuEl(null);

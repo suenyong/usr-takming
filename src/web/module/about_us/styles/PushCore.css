@@ -4,6 +4,14 @@
   font-size: 25px;
   margin-top: 10%;
   width: 300px;
+  color: #4c776e;
+  font-family:"Noto SansTC" ,"Roboto", sans-serif !important  ;
+  background-image: linear-gradient(to right, #89f5cc7e, #6fccbc4d, #89f5ee6f, #89eef56f, #89f5f353, #89f0f51f);
+}
+.title_Usr_long{
+  margin: 5% 0 3% 0;
+  color: #4c776e;
+  font-size: 24px;
   font-family:"Noto SansTC" ,"Roboto", sans-serif !important  ;
   background-image: linear-gradient(to right, #89f5cc7e, #6fccbc4d, #89f5ee6f, #89eef56f, #89f5f353, #89f0f51f);
 }
@@ -23,6 +31,10 @@
   height: 70px;
 
 }
+.unnamed{
+  width: 50%;
+  margin: 5% 25% 5% 25%;
+}
 
 .return-object {
   color: white;
@@ -37,6 +49,16 @@
     margin-left: 30px;
   }
 
+  .title_Usr_long{
+    margin: 30px 0 0 20px;
+    font-size: 15px;
+  }
+  
+
+  .unnamed{
+    width: 300px;
+    margin: 30px 0 0 30px;
+  }
   .PushCore {
     position: relative;
     margin: 0 0 0 0;
