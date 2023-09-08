@@ -304,28 +304,28 @@ export default function Service() {
                     onClick={() => handleButtonClick("content6")}
                   >
                     <div className="color_circle1"></div>
-                    <div className="button_text">內湖</div>
+                    <div className="button_text-min">內湖</div>
                   </button>
                   <button
                     className="btu_stlyes"
                     onClick={() => handleButtonClick("content7")}
                   >
                     <div className="color_circle1"></div>
-                    <div className="button_text">中山</div>
+                    <div className="button_text-min">中山</div>
                   </button>
                   <button
                     className="btu_stlyes"
                     onClick={() => handleButtonClick("content8")}
                   >
                     <div className="color_circle1"></div>
-                    <div className="button_text">烏來</div>
+                    <div className="button_text-min">烏來</div>
                   </button>
                   <button
                     className="btu_stlyes"
                     onClick={() => handleButtonClick("content9")}
                   >
                     <div className="color_circle1"></div>
-                    <div className="button_text">三芝</div>
+                    <div className="button_text-min">三芝</div>
                   </button>
                 </div>
               </div>

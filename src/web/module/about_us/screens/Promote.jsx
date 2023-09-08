@@ -1,6 +1,5 @@
 import "../styles/Promote.css";
 import React, { useEffect, useState } from "react";
-import no from "../images/no-pic.png";
 import Contact from "../../home/components/contactus/Contact";
 import AOS from "aos";
 import { AiOutlineHome } from 'react-icons/ai';

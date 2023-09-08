@@ -3,7 +3,6 @@
     font-size: 30px;
     font-family: "Arial, sans-serif";
     color: rgb(99, 182, 130);
-    ;
     position: relative;
     margin: 0 auto;
     width: 900px;
@@ -80,6 +79,7 @@
     width: 900px;
     font-size: 20px;
     font-weight: 600;
+    margin-top: 10px;
 }
 
 
@@ -225,12 +225,12 @@
         flex-wrap: wrap;
         justify-content: left;
         text-align: left;
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     .boxNeed_GMM {
         position: relative;
-        margin: 0 auto;
+        margin: 30px auto;
         width: 300px;
         font-size: 20px;
         font-weight: 600;
