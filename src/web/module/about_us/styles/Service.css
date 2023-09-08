@@ -163,7 +163,9 @@
 }
 
 
-.button_text {
+.button_text,
+.button_text-min
+{
   color: #346f48;
   font-size: 19px;
   width: 100%;
@@ -173,7 +175,9 @@
 .button_text:hover {
   color: #ffffff;
 }
-
+.button_text-min:hover {
+  color: #ffffff;
+}
 
 .button_container {
   display: flex;
@@ -435,5 +439,13 @@
   margin: 2% 5% 2% 5%;
   background-color: #72a3981f;
   border-radius: 10px;
+}
+
+.button_text-min
+{
+  color: #346f48;
+  font-size: 12px;
+  width: 100%;
+  font-weight: bold;
 }
 }
