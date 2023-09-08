@@ -1,0 +1,223 @@
+#LCD_title {
+    text-align: center;
+    color: #fff;
+    background-color: #90cbc0;
+    width: 40%;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-top: 13%;
+}
+
+#Opening {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    ;
+    width: 63%;
+    position: relative;
+    margin: 0 auto;
+    white-space: normal;
+}
+
+#RR {
+    color: red;
+    text-align: center;
+    position: relative;
+    margin: 15px auto;
+    width: 80%;
+}
+
+.LCD_contain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Pointer {
+    width: 65%;
+    border: 3px solid black;
+    position: relative;
+    margin: 10px auto;
+}
+
+#Intro {
+    width: 30%;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 130px;
+}
+
+#Signup {
+    width: 21%;
+    position: relative;
+}
+
+.LCD_contain2 {
+    width: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 350px);
+    gap: 10px;
+    position: relative;
+    margin: 30px auto;
+    /* background-color: aqua; */
+}
+
+.Shot {
+    width: 65%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.Shot3 {
+    width: 60%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.Shot4 {
+    width: 70%;
+    position: relative;
+    margin: 10px auto;
+}
+
+#Text {
+    font-size: 20px;
+    position: relative;
+    top: 8px;
+    left: 15px;
+}
+
+.Point {
+    width: 55%;
+    border: 3px dashed rgb(89, 153, 97);
+    border-radius: 10px;
+    background-color: rgb(209, 250, 187);
+    ;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+#LCD_ul2 {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    #LCD_title {
+        text-align: center;
+        color: #fff;
+        background-color: #90cbc0;
+        width: 45%;
+        /* margin-right: 30%; */
+        margin-left: 30%;
+        margin-top: 13%;
+    }
+
+    #Opening {
+        /* color: black;
+        font-size: 21px;
+        font-weight: bold;
+        text-align: center;
+        ;
+        width: 90%;
+        position: relative;
+        margin: 0 auto; */
+        display: none;
+    }
+
+    #RR {
+        font-size: 33px;
+        color: red;
+        text-align: center;
+        position: relative;
+        margin: 15px auto;
+        width: 90%;
+    }
+
+    .LCD_contain {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Pointer {
+        width: 90%;
+        border: 3px solid black;
+        position: relative;
+        margin: 10px auto;
+    }
+
+    #Intro {
+        width: 50%;
+        position: relative;
+        margin-top: 10px;
+        margin-right: 30px;
+    }
+
+    #Signup {
+        width: 35%;
+        position: relative;
+        /* left: -50px; */
+    }
+
+    .LCD_contain2 {
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(1, 350px);
+        gap: 10px;
+        position: relative;
+        margin: 30px auto;
+        /* background-color: aqua; */
+    }
+
+    .Shot {
+        width: 80%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .Shot3 {
+        width: 80%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .Shot4 {
+        width: 80%;
+        position: relative;
+        margin: 10px auto;
+    }
+
+    #Text {
+        font-size: 20px;
+        position: relative;
+        top: 10px;
+        left: 15px;
+    }
+
+    .Point {
+        width: 90%;
+        border: 3px dashed rgb(89, 153, 97);
+        border-radius: 10px;
+        background-color: rgb(209, 250, 187);
+        ;
+        position: relative;
+        margin: 0 auto;
+
+    }
+
+    #LCD_ul {
+        display: none;
+    }
+
+    #LCD_ul2 {
+        display: grid;
+    }
+}

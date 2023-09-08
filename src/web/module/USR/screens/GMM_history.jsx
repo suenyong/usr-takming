@@ -26,7 +26,7 @@ export default function GMM_history() {
             }}>景點介紹</h1>
 
             <div className="Gbox_history">
-                <img src={require("..//images/路線圖.png")} id="Map"></img>
+                <img src={require("..//images/walk.png")} id="Map"></img>
                 <div id="remind" >
                     <h4 id="red">*(2)號入口 從西湖捷運站下車會經過258巷到德明財經科技大學</h4>
                     <div className="Road"><AiFillStar className="Road_star"></AiFillStar>建議路線：</div>
@@ -39,10 +39,10 @@ export default function GMM_history() {
             <div className="Gbox_history">
                 <div className="Content_history">
                     <div className="GMM_Mtitle_history">
-                        <img src={require("..//images/圖片1.png")} className="GMM_num"></img>
+                        <img src={require("..//images/one.png")} className="GMM_num"></img>
                         打石場
                     </div>
-                    <div className="GMM_box_history">
+                    <div className="GMM_box_history" id="Ro">
                         創建年代為清光緒八年，於清代及日治時期被稱為北勢湖採石場， 乃臺北城築城之官方採石場。
                         清末光緒年間計畫興築臺北府城牆時，選用內湖及大直一帶山區所產的石材作為建材。
                         現在臺北城牆的舊石料尚可在下水道及金山南路電信局旁舊監獄圍牆看到可為證。內湖山區的石料開採除了供應城牆外，一直持續到日據時期及戰後，成為民間建材來源之一。
@@ -53,7 +53,7 @@ export default function GMM_history() {
 
                 <div className="Content_history">
                     <div className="GMM_Mtitle_history">
-                        <img src={require("..//images/圖片4.png")} className="GMM_num"></img>
+                        <img src={require("..//images/four.png")} className="GMM_num"></img>
                         論劍亭
                     </div>
                     <div className="GMM_box_history" id="OSC">
@@ -67,10 +67,10 @@ export default function GMM_history() {
 
                 <div className="Content_history">
                     <div className="GMM_Mtitle_history">
-                        <img src={require("..//images/圖片3.png")} className="GMM_num"></img>
+                        <img src={require("..//images/three.png")} className="GMM_num"></img>
                         大壁岩
                     </div>
-                    <div className="GMM_box_history">
+                    <div className="GMM_box_history" id="STO">
                         自然景觀，大坡度面積岩壁，沿途陡峭的路段都有設置拉繩，大岩壁上有人工鑿出的階梯，繩索也設置完善，建議手套帶著可防手拉繩時擦傷。只要穩穩地踏好步伐，再藉由拉繩輔助，回頭就可眺望台北市景。
                         想體驗低難度的攀爬可以選擇此路線，算是比較特殊有趣的地形，需要些微的手腳並用比較方便安全。雖然難度不高但還是具有一定的危險性，所以基本的穿著跟鞋子就要選過，還是要稍微準備一下，至少抓地力比較好些。
                         如果不常運動或是真的有懼高症特別怕的人而還想要來的話可以先考慮一下狀況或是走入口左邊的路線，雖然是巨石路也要稍微爬，但是沒有大岩壁這邊陡峭也比較安全，另外大岩壁這邊其實情況允許的話可以回頭望一下，沒有遮蔽物風景視野超級美！
@@ -80,7 +80,7 @@ export default function GMM_history() {
 
                 <div className="Content_history">
                     <div className="GMM_Mtitle_history">
-                        <img src={require("..//images/圖片2.png")} className="GMM_num"></img>
+                        <img src={require("..//images/two.png")} className="GMM_num"></img>
                         竹月寺
                     </div>
                     <div className="GMM_box_history" id="CT">
@@ -92,7 +92,7 @@ export default function GMM_history() {
 
                 <div className="Content_history">
                     <div className="GMM_Mtitle_history">
-                        <img src={require("..//images/圖片5.png")} className="GMM_num"></img>
+                        <img src={require("..//images/five.png")} className="GMM_num"></img>
                         大金面山(剪刀石)
                     </div>
                     <div className="GMM_box_history" id="GA">
