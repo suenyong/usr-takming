@@ -50,6 +50,7 @@ export default function PushCore() {
       {/* <div className="PushCore"> */}
       <h1
         data-aos="zoom-out-down"
+        className="dynamic"
         style={{
           textAlign: "center",
           color: "#fff",
@@ -60,7 +61,7 @@ export default function PushCore() {
           marginTop: "13%",
         }}
       >
-        USR實踐計畫介紹：
+        德明財經科技大學推動USR實踐計畫介紹
       </h1>
       <div class="text-content">
         <div class="title_Usr"> USR Hub願景 </div>
