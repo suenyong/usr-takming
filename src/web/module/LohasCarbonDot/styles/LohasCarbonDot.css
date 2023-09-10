@@ -10,22 +10,32 @@
 
 #Opening {
     color: black;
-    font-size: 20px;
+    font-size:30px;
     font-weight: bold;
+    /* justify-content: center; */
     text-align: center;
-    ;
-    width: 63%;
+    width: 70%;
     position: relative;
-    margin: 0 auto;
+    margin: 70px auto;
     white-space: normal;
+    line-height: 10vh;
+}
+
+#Opening span {
+    font-size: 50px;
+    color: #952c2c;
+    padding: 20px;
 }
 
 #RR {
-    color: red;
+    color: rgb(254, 251, 251);
     text-align: center;
     position: relative;
-    margin: 15px auto;
-    width: 80%;
+    margin: 75px auto;
+    width: 30%;
+    background-color: rgb(181, 92, 92);
+    font-size: 30px;
+    padding: 5px;
 }
 
 .LCD_contain {
@@ -118,23 +128,28 @@
     }
 
     #Opening {
-        /* color: black;
-        font-size: 21px;
+        color: black;
+        font-size: 20px;
         font-weight: bold;
-        text-align: center;
-        ;
-        width: 90%;
+        justify-content: center;
+        width: 80%;
         position: relative;
-        margin: 0 auto; */
-        display: none;
+        margin: 70px auto;
+        white-space: normal;
+        line-height: 5vh;
+    }
+
+    #Opening span {
+        font-size: 40px;
+        color: #952c2c;
+        padding: 20px;
     }
 
     #RR {
-        font-size: 33px;
-        color: red;
+        font-size: 23px;
         text-align: center;
         position: relative;
-        margin: 15px auto;
+        margin: 65px auto;
         width: 90%;
     }
 

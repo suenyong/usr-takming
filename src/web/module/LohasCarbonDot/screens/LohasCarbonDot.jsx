@@ -23,18 +23,19 @@ export default function LohasCarbonDot() {
             </h1>
 
             <div id="Opening">
-                永續是趨勢、減碳是日常、樂活是人生 ! 要如何三者兼顧，就從下載樂活碳點APP開始吧，
-                從日常生活、每日步行、關注綠色新聞、健走金面山養成減碳生活，邁向樂活人生 !
+                <span>“</span>永續是趨勢、減碳是日常、樂活是人生！<span>”</span>
+                <p/>
+                要如何三者兼顧，就從下載樂活碳點APP開始，從日常生活、每日步行、關注綠色新聞、健走金面山養成減碳生活，邁向樂活人生 !
             </div>
 
-            <h2 id="RR">減碳沒有奇蹟，只有累積!</h2>
+            <h2 id="RR">減碳沒有奇蹟，只有累積！</h2>
 
             <div className="LCD_contain">
                 <img src={require("..//images/point.png")} id="Pointer" ></img>
             </div>
 
             <div className="LCD_contain">
-                <img src={require("..//images/intro.png")} id="Intro"></img>
+                {/* <img src={require("..//images/intro.png")} id="Intro"></img> */}
                 <img src={require("..//images/signup.png")} id="Signup"></img>
             </div>
 
