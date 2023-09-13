@@ -20,6 +20,18 @@
     white-space: normal;
     line-height: 10vh;
 }
+#Opening1{
+    color: black;
+    font-size:30px;
+    font-weight: bold;
+    /* justify-content: center; */
+    text-align: center;
+    width: 70%;
+    position: relative;
+    margin: 70px auto;
+    white-space: normal;
+    line-height: 10vh;
+}
 
 #Opening span {
     font-size: 50px;
@@ -129,20 +141,32 @@
 
     #Opening {
         color: black;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bold;
         justify-content: center;
-        width: 80%;
+        width: 100%;
         position: relative;
         margin: 70px auto;
         white-space: normal;
         line-height: 5vh;
     }
 
+    #Opening1{
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        justify-content: center;
+        width: 75%;
+        position: relative;
+        margin: 30px auto;
+        white-space: normal;
+        line-height: 5vh;
+    }
+
     #Opening span {
-        font-size: 40px;
+        font-size: 24px;
         color: #952c2c;
-        padding: 20px;
+        padding: 6px;
     }
 
     #RR {
