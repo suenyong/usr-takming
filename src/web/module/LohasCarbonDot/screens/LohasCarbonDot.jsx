@@ -24,7 +24,8 @@ export default function LohasCarbonDot() {
 
             <div id="Opening">
                 <span>“</span>永續是趨勢、減碳是日常、樂活是人生！<span>”</span>
-                <p/>
+                <p/></div>
+            <div id="Opening1">
                 要如何三者兼顧，就從下載樂活碳點APP開始，從日常生活、每日步行、關注綠色新聞、健走金面山養成減碳生活，邁向樂活人生 !
             </div>
 
