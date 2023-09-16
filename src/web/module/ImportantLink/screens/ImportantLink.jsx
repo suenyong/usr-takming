@@ -28,7 +28,7 @@ export default function Report() {
   // const filePath = "/path/to/your/pdf/file.pdf";
 
   const fetchLinks = () => {
-    axios.get("http://localhost:8081/Link/Linkall")
+    axios.get("http://192.192.140.222:8081/Link/Linkall")
       .then(response => {
         console.log("取得最新連結資料：", response.data);
         const oldLinks = [...Links];
