@@ -392,7 +392,7 @@ export default function MenuComponent() {
                           marginLeft: "-20px",
                         }}
                       >
-                        USR實踐計畫
+                        USR計畫
                       </Typography>
                     </Button>
                     <Menu
@@ -495,7 +495,7 @@ export default function MenuComponent() {
                       <MenuItem onClick={handleArticleClick}>亮點報導</MenuItem>
                       <MenuItem onClick={handleCaseClick}>精彩講座</MenuItem>
                       <MenuItem onClick={handleLohasCarbonDotClick}>樂活碳點</MenuItem>
-                      <MenuItem onClick={handleUsrClick}>USR實踐計畫</MenuItem>
+                      <MenuItem onClick={handleUsrClick}>USR 計畫</MenuItem>
                       <MenuItem onClick={handleLinkClick}>重要連結</MenuItem>
                     </Menu>
                     {/* 關於我們選單 */}
