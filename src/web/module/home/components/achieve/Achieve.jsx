@@ -14,32 +14,32 @@ export default function Achieve() {
         {
             imgSrc: require('../../../../_basic/images/NM_image1.png'),
             // title: '活動名稱',
-            Url: '../../../../about_us/images/animal.jpg'
+            Url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/411489015.pdf'
         },
         {
             imgSrc: require('../../../../_basic/images/NM_image2.png'),
             // title: '活動名稱',
-            // Url:'https://www.takming.edu.tw/schtm/default.asp'
+            Url: 'http://manner.takming.edu.tw/var/file/8/1008/img/14/125978186.pdf'
         },
         {
             imgSrc: require('../../../../_basic/images/NM_image3.png'),
             // title: '活動名稱',
-            // Url:'https://www.takming.edu.tw/schtm/default.asp'
+            Url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/548951769.pdf'
         },
         {
             imgSrc: require('../../../../_basic/images/NM_image4.png'),
             // title: '活動名稱',
-            // Url:'https://www.takming.edu.tw/schtm/default.asp'
+            Url: 'http://manner.takming.edu.tw/var/file/8/1008/img/14/709433889.pdf'
         },
         {
             imgSrc: require('../../../../_basic/images/NM_image5.png'),
             // title: '活動名稱',
-            // Url:'https://www.takming.edu.tw/schtm/default.asp'
+            Url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/698511545.pdf'
         },
         {
             imgSrc: require('../../../../_basic/images/NM_image6.png'),
             // title: '活動名稱',
-            // Url:'https://www.takming.edu.tw/schtm/default.asp'
+            Url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/144581186.pdf'
         }
     ];
 
@@ -63,14 +63,16 @@ export default function Achieve() {
             <div className="boxAchieve">
                 {cardData.map((card, index) => (
                     <CardActionArea key={index}>
-                        <div className="container">
-                            <div className="image">
-                                <img src={card.imgSrc} alt={`Image_${index + 1}`} />
-                            </div>
-                            {/* <div className="text">
+                        <a href={card.Url} key={index} target="_blank">
+                            <div className="container">
+                                <div className="image">
+                                    <img src={card.imgSrc} alt={`Image_${index + 1}`} />
+                                </div>
+                                {/* <div className="text">
                                 <h3>{card.title}</h3>
                             </div> */}
-                        </div>
+                            </div>
+                        </a>
                     </CardActionArea>
                 ))}
             </div>
