@@ -12,19 +12,9 @@ export default function Achieve() {
     }, []);
     const cardData = [
         {
-            imgSrc: require('../../../../_basic/images/NM_image1.jpg'),
+            imgSrc: require('../../../../_basic/images/NM_image1.png'),
             // title: '活動名稱',
-            // Url:'https://www.takming.edu.tw/schtm/default.asp'
-        },
-        {
-            imgSrc: require('../../../../_basic/images/NM_image1.jpg'),
-            // title: '活動名稱',
-            // Url:'https://www.takming.edu.tw/schtm/default.asp'
-        },
-        {
-            imgSrc: require('../../../../_basic/images/NM_image2.png'),
-            // title: '活動名稱',
-            // Url:'https://www.takming.edu.tw/schtm/default.asp'
+            Url: '../../../../about_us/images/animal.jpg'
         },
         {
             imgSrc: require('../../../../_basic/images/NM_image2.png'),
@@ -37,7 +27,17 @@ export default function Achieve() {
             // Url:'https://www.takming.edu.tw/schtm/default.asp'
         },
         {
-            imgSrc: require('../../../../_basic/images/NM_image3.png'),
+            imgSrc: require('../../../../_basic/images/NM_image4.png'),
+            // title: '活動名稱',
+            // Url:'https://www.takming.edu.tw/schtm/default.asp'
+        },
+        {
+            imgSrc: require('../../../../_basic/images/NM_image5.png'),
+            // title: '活動名稱',
+            // Url:'https://www.takming.edu.tw/schtm/default.asp'
+        },
+        {
+            imgSrc: require('../../../../_basic/images/NM_image6.png'),
             // title: '活動名稱',
             // Url:'https://www.takming.edu.tw/schtm/default.asp'
         }
