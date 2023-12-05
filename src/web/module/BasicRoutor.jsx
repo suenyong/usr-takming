@@ -33,13 +33,15 @@ import ImportantLink from "../module/ImportantLink/screens/ImportantLink";
 import GD from "./USR/screens/GD";
 import GMM_history from "./USR/screens/GMM_history";
 import LohasCarbonDot from "./LohasCarbonDot/screens/LohasCarbonDot";
-
+import Chillax from "./Chillax/screens/chillax";
+import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
 
 export default function MenuComponent() {
   const [anchorEl, setAnchorEl] = useState(null);//關於我們的選單
   const [articleAnchorEl, setArticleAnchorEl] = useState(null);//精彩報導選單
   const [caseAnchorEl, setCaseAnchorEl] = useState(null);
-  const [LohasCarbonDotAnchorEl, setLohasCarbonDotAnchorEl] = useState(null);
+  const [LohasCarbonDotAnchorEl, setLohasCarbonDotAnchorEl] = useState(null);//樂活碳點
+  const [ChillaxAnchorEl, setChillaxAnchorEl] = useState(null);//chillax
   const [hubAnchorEl, setHubAnchorEl] = useState(null);
   const [usrAnchorEl, setUsrAnchorEl] = useState(null);
   const [usrSubmenuEl, setUsrSubmenuEl] = useState(null);
@@ -94,6 +96,16 @@ export default function MenuComponent() {
     setLohasCarbonDotAnchorEl(null);
   };
 
+  //Chillax
+  const handleChillaxClick = (event) => {
+    window.location.href = "/Chillax";
+    handleMenuClose();
+  };
+  const handleChillaxClose = () => {
+    setChillaxAnchorEl(null);
+  };
+
+
   const handleHubClick = (event) => {
     setHubAnchorEl(event.currentTarget);
     handleMenuClose();
@@ -105,7 +117,7 @@ export default function MenuComponent() {
 
   const handleSubmenuClick = (event) => {
     setHubSubmenuEl(event.currentTarget);
-    handleClose(); 
+    handleClose();
     setHubAnchorEl(null); // Close the hub menu after selecting a submenu item
   };
   const handleSubmenuClose = () => {
@@ -469,6 +481,42 @@ export default function MenuComponent() {
                         <MenuItem onClick={handleLinkClose}>重要連結</MenuItem>
                       </Link>
                     </Menu>
+                    {/* Chillax */}
+                    <Button
+                      className="hub-button"
+                      color="primary"
+                      onClick={handleChillaxClick}
+                    >
+                      <ListItemIcon>
+                        <AirportShuttleIcon style={customIconStyle} />
+                      </ListItemIcon>
+                      <Typography
+                        sx={{
+                          fontWeight: "bold",
+                          color: "black",
+                          marginLeft: "-20px",
+                        }}
+                      >
+                        Chillax
+                      </Typography>
+                    </Button>
+                    <Menu
+                      id="hub-menu"
+                      anchorEl={ChillaxAnchorEl}
+                      keepMounted
+                      open={Boolean(ChillaxAnchorEl)}
+                      onClose={handleChillaxClick}
+                    >
+                      <Link
+                        to="/Chillax"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        <MenuItem onClick={handleChillaxClose}>
+                          Chillax
+                        </MenuItem>
+                      </Link>
+                    </Menu>
+
                   </>
                 ) : (
                   <>
@@ -497,6 +545,7 @@ export default function MenuComponent() {
                       <MenuItem onClick={handleLohasCarbonDotClick}>樂活碳點</MenuItem>
                       <MenuItem onClick={handleUsrClick}>USR 計畫</MenuItem>
                       <MenuItem onClick={handleLinkClick}>重要連結</MenuItem>
+                      <MenuItem onClick={handleChillaxClick}>Chillax</MenuItem>
                     </Menu>
                     {/* 關於我們選單 */}
                     <Menu
@@ -601,6 +650,21 @@ export default function MenuComponent() {
                         <MenuItem onClick={handleLohasCarbonDotClose}>樂活碳點</MenuItem>
                       </Link>
                     </Menu>
+                    {/* chllax */}
+                    <Menu
+                      id="LohasCarbonDo-menu"
+                      anchorEl={ChillaxAnchorEl}
+                      keepMounted
+                      open={Boolean(ChillaxAnchorEl)}
+                      onClose={handleChillaxClose}
+                    >
+                      <Link
+                        to="/Chillax"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        <MenuItem onClick={handleChillaxClose}>chllax</MenuItem>
+                      </Link>
+                    </Menu>
 
                     {/* USR */}
                     <Menu
@@ -681,6 +745,7 @@ export default function MenuComponent() {
             <Route path="/GD" element={<GD />} />
             <Route path="/ImportantLink" element={<ImportantLink />} />
             <Route path="/LohasCarbonDot" element={<LohasCarbonDot />} />
+            <Route path="/Chillax" element={<Chillax />} />
           </Routes>
         </div>
       </Router>
