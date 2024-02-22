@@ -17,7 +17,15 @@ export default function LohasCarbonDot() {
         <>
             <h1
                 data-aos="zoom-out-down" className="dynamic"
-                id="LCD_title"
+                style={{
+                    textAlign: "center",
+                    color: "#fff",
+                    backgroundColor: "#90cbc0",
+                    width: "40%",
+                    marginRight: "30%",
+                    marginLeft: "30%",
+                    marginTop: "13%",
+                  }}
             >
                 樂活碳點
             </h1>

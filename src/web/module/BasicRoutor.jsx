@@ -482,7 +482,7 @@ export default function MenuComponent() {
                       </Link>
                     </Menu>
                     {/* Chillax */}
-                    <Button
+                    {/* <Button
                       className="hub-button"
                       color="primary"
                       onClick={handleChillaxClick}
@@ -515,7 +515,7 @@ export default function MenuComponent() {
                           Chillax
                         </MenuItem>
                       </Link>
-                    </Menu>
+                    </Menu> */}
 
                   </>
                 ) : (
@@ -545,7 +545,7 @@ export default function MenuComponent() {
                       <MenuItem onClick={handleLohasCarbonDotClick}>樂活碳點</MenuItem>
                       <MenuItem onClick={handleUsrClick}>USR 計畫</MenuItem>
                       <MenuItem onClick={handleLinkClick}>重要連結</MenuItem>
-                      <MenuItem onClick={handleChillaxClick}>Chillax</MenuItem>
+                      {/* <MenuItem onClick={handleChillaxClick}>Chillax</MenuItem> */}
                     </Menu>
                     {/* 關於我們選單 */}
                     <Menu
@@ -651,7 +651,7 @@ export default function MenuComponent() {
                       </Link>
                     </Menu>
                     {/* chllax */}
-                    <Menu
+                    {/* <Menu
                       id="LohasCarbonDo-menu"
                       anchorEl={ChillaxAnchorEl}
                       keepMounted
@@ -664,7 +664,7 @@ export default function MenuComponent() {
                       >
                         <MenuItem onClick={handleChillaxClose}>chllax</MenuItem>
                       </Link>
-                    </Menu>
+                    </Menu> */}
 
                     {/* USR */}
                     <Menu
@@ -745,7 +745,7 @@ export default function MenuComponent() {
             <Route path="/GD" element={<GD />} />
             <Route path="/ImportantLink" element={<ImportantLink />} />
             <Route path="/LohasCarbonDot" element={<LohasCarbonDot />} />
-            <Route path="/Chillax" element={<Chillax />} />
+            {/* <Route path="/Chillax" element={<Chillax />} /> */}
           </Routes>
         </div>
       </Router>
