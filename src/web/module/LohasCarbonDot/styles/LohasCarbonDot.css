@@ -128,6 +128,12 @@
     display: none;
 }
 
+#vido{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 22px;
+}
+
 @media screen and (max-width:800px) {
     #LCD_title {
         text-align: center;
@@ -259,4 +265,9 @@
     #LCD_ul2 {
         display: grid;
     }
+
+    #vido{
+    font-size: 16px;
+}
+
 }
