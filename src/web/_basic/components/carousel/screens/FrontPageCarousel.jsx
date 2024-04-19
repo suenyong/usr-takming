@@ -7,11 +7,12 @@ import { settings } from "../../settings/setting_frontpage";
 export default function FronPageCarousel(){
 
     const photos = [
-        { id: 1, src: require("../images/frontpageimage1.jpg") },
-        { id: 2, src: require("../images/frontpageimage2.jpg") },
-        { id: 3, src: require("../images/FrongPage_4.png") },
-        { id: 4, src: require("../images/GMM.jpg") },
-        { id: 5, src: require("../images/GD.jpg") },
+        { id: 1, src: require("../images/1713168456853.jpg") },
+        { id: 2, src: require("../images/frontpageimage1.jpg") },
+        { id: 3, src: require("../images/frontpageimage2.jpg") },
+        { id: 4, src: require("../images/FrongPage_4.png") },
+        { id: 6, src: require("../images/GMM.jpg") },
+        { id: 7, src: require("../images/GD.jpg") },
       ];
 
     return (
