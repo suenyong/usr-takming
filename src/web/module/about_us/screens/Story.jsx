@@ -8,7 +8,7 @@ import AOS from "aos";
 import { AiOutlineHome } from 'react-icons/ai';
 
 export default function Story() {
-    const [videos, setVideos] = useState([]);
+    // const [videos, setVideos] = useState([]);
 
     useEffect(() => {
         AOS.init({
@@ -16,21 +16,64 @@ export default function Story() {
         });
 
         // 從後端 API 取得資料
-        fetchVideos();
+        // fetchVideos();
     }, []);
 
-    const fetchVideos = () => {
-        axios.get("http://192.192.140.222:8081/storyuser/storyall")
-        .then(response => {
-            console.log("取得的新影片資料:", response.data.data);
-            setVideos(response.data.data);
-        })
-        .catch(error => {
-            console.error("取得影片失敗:", error);
-        });
+    // const fetchVideos = () => {
+    //     axios.get("http://192.192.140.222:8081/storyuser/storyall")
+    //     .then(response => {
+    //         console.log("取得的新影片資料:", response.data.data);
+    //         setVideos(response.data.data);
+    //     })
+    //     .catch(error => {
+    //         console.error("取得影片失敗:", error);
+    //     });
     
-    };
+    // };
     
+
+    const videos = [
+        {
+            name:"德明科大 USR 夏令營「我的財富自由不是夢」：",
+            link:"https://money.udn.com/money/amp/story/5723/7333500",
+        },
+        {
+            name:"德明科大USR 團隊積極推廣「樂活減碳」：",
+            link:"https://money.udn.com/money/story/5723/7928898",
+        },
+        {
+            name:"德明科大USR夏令營-「財經好好玩」：",
+            link:"https://money.udn.com/money/story/5635/7384075",
+        },
+        {
+            name:"德明科大「理財探索家」冬令營 引領孩子輕鬆學習小錢包大智慧：",
+            link:"https://money.udn.com/money/story/5723/7750950",
+        },
+        {
+            name:"德明科大全國唯一 榮獲ESG物流永續傑出獎：",
+            link:"https://money.udn.com/money/story/6722/7891534",
+        },
+        {
+            name:"德明科大助西湖學童培養財經觀：",
+            link:"https://money.udn.com/money/story/5723/7799022",
+        },
+        {
+            name:"德明科大攜手西湖實中 啟發青少年理財新思維：",
+            link:"https://money.udn.com/money/story/5723/7673123",
+        },
+        {
+            name:"德明科大致力永續教育在地化：",
+            link:"https://money.udn.com/money/story/5723/7843259",
+        },
+        {
+            name:"德明科大落實 USR 舉辦國中教師財經素養研習營：",
+            link:"https://money.udn.com/money/story/5723/7405392",
+        },
+        {
+            name:"德明科大USR「樂活碳點」走訪金面山風華：",
+            link:"https://money.udn.com/money/story/5723/7967640",
+        },
+    ]
     
     
     return (

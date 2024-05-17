@@ -7,38 +7,41 @@ import axios from "axios";
 
 
 export default function Report() {
-  const [Links, setLinks] = useState([]);
+  // const [Links, setLinks] = useState([]);
 
   useEffect(() => {
     AOS.init({
       duration: 900,
     });
-    fetchLinks();
-    // const mockLinks = [
-    //   { name: 'Google', link: 'https://www.google.com' },
-    //   { name: 'Facebook', link: 'https://www.facebook.com' },
-    //   // 添加更多模拟数据...
-    // ];
-
-    // setLinks(mockLinks);
-
+    // fetchLinks();
   }, []);
 
   // const fileName = "大學生社會責任年度報告書.pdf";
   // const filePath = "/path/to/your/pdf/file.pdf";
 
-  const fetchLinks = () => {
-    axios.get("http://192.192.140.222:8081/Link/Linkall")
-      .then(response => {
-        console.log("取得最新連結資料：", response.data);
-        const oldLinks = [...Links];
-        const updatedLinks = [...response.data, ...oldLinks];
-        setLinks(updatedLinks);
-      })
-      .catch(error => {
-        console.error("取得連結失敗：", error);
-      });
-  }
+  // const fetchLinks = () => {
+  //   axios.get("http://192.192.140.222:8081/Link/Linkall")
+  //     .then(response => {
+  //       console.log("取得最新連結資料：", response.data);
+  //       const oldLinks = [...Links];
+  //       const updatedLinks = [...response.data, ...oldLinks];
+  //       setLinks(updatedLinks);
+  //     })
+  //     .catch(error => {
+  //       console.error("取得連結失敗：", error);
+  //     });
+  // }
+
+  const Links = [
+      { name: 'ESG遠見USR大學社會責任', link: 'https://esg.gvm.com.tw/article/25878' },
+      { name: 'URS天下雜誌2023排行', link: 'https://csr.cw.com.tw/article/43195' },
+      { name: 'USR2020大學社會實踐博覽會', link: 'https://www.2020usrexpo.org/' },
+      { name: 'USR2021大學社會實踐博覽會', link: 'https://2021usrexpo.org/' },
+      { name: 'USR2022大學社會實踐博覽會', link: 'https://2022usrexpo.org/' },
+      { name: '教育部大學社會責任推動中心', link: 'https://usr.moe.gov.tw/tw' },
+    ];
+
+
 
   return (
     <>
@@ -60,7 +63,7 @@ export default function Report() {
         <div className="boxImport">
           {Links.map((Link, index) => (
             <React.Fragment key={index}>
-              <span>{Link.name}:<a href={Link.link} target="_blank" rel="noreferrer">{Link.link}</a></span>
+              <span>{Link.name}<a href={Link.link} target="_blank" rel="noreferrer">{Link.link}</a></span>
               <br />
             </React.Fragment>
           ))}
