@@ -482,7 +482,7 @@ export default function MenuComponent() {
                       </Link>
                     </Menu>
                     {/* Chillax */}
-                    {/* <Button
+                    <Button
                       className="hub-button"
                       color="primary"
                       onClick={handleChillaxClick}
@@ -515,7 +515,7 @@ export default function MenuComponent() {
                           Chillax
                         </MenuItem>
                       </Link>
-                    </Menu> */}
+                    </Menu>
 
                   </>
                 ) : (
@@ -745,7 +745,7 @@ export default function MenuComponent() {
             <Route path="/GD" element={<GD />} />
             <Route path="/ImportantLink" element={<ImportantLink />} />
             <Route path="/LohasCarbonDot" element={<LohasCarbonDot />} />
-            {/* <Route path="/Chillax" element={<Chillax />} /> */}
+            <Route path="/Chillax" element={<Chillax />} />
           </Routes>
         </div>
       </Router>

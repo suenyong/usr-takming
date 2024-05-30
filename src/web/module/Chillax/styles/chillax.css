@@ -1,176 +1,299 @@
-/* .button3 img {
-    width: 60px; 
-    height: 40px;
-    transform: scale(0.8); 
-  }
-  .button1 img {
-    width: 60px;
-    height: 40px;
-    transform: scale(0.8); 
-  }
-  .button2 img {
-    width: 60px;
-    height: 40px;
-    transform: scale(0.8);
-  }
-.button3 {
-    background: transparent;
-    position: relative;
-    padding: 5px 15px;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 60;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid #E1306C;
-    border-radius: 25px;
-    outline: none;
-    overflow: hidden;
-    color: #E1306C;
-    transition: color 0.3s 0.1s ease-out;
-    text-align: center;
-  }
-  
-  .button3 span {
-    margin: 10px;
-  }
-  
-  .button3::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    content: '';
-    border-radius: 50%;
-    display: block;
-    width: 20em;
-    height: 20em;
-    left: -5em;
-    text-align: center;
-    transition: box-shadow 0.5s ease-out;
-    z-index: -1;
-  }
-  
-  .button3:hover {
-    color: #fff;
-    border: 1px solid #E1306C;
-  }
-  
-  .button3:hover::before {
-    box-shadow: inset 0 0 0 10em #E1306C;
-  }
+ .in_btn img {
+   width: 35px;
+   height: 35px;
+   transform: scale(0.8);
+ }
 
-  .button1 {
-    background: transparent;
-    position: relative;
-    padding: 5px 15px;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 60;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid #1876F2;
-    border-radius: 25px;
-    outline: none;
-    overflow: hidden;
-    color: #1876F2;
-    transition: color 0.3s 0.1s ease-out;
-    text-align: center;
-  }
-  
-  .button1 span {
-    margin: 10px;
-  }
-  
-  .button1:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    content: '';
-    border-radius: 50%;
-    display: block;
-    width: 20em;
-    height: 20em;
-    left: -5em;
-    text-align: center;
-    transition: box-shadow 0.5s ease-out;
-    z-index: -1;
-  }
-  
-  .button1:hover {
-    color: #fff;
-    border: 1px solid #1876F2;
-  }
-  
-  .button1:hover::before {
-    box-shadow: inset 0 0 0 10em #1876F2;
-  }
-  
-  .button2 {
-    background: transparent;
-    position: relative;
-    padding: 5px 15px;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 60;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid #ff0000;
-    border-radius: 25px;
-    outline: none;
-    overflow: hidden;
-    color: #ff0000;
-    transition: color 0.3s 0.1s ease-out;
-    text-align: center;
-  }
-  
-  .button2 span {
-    margin: 10px;
-  }
-  
-  .button2:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    content: '';
-    border-radius: 50%;
-    display: block;
-    width: 20em;
-    height: 20em;
-    left: -5em;
-    text-align: center;
-    transition: box-shadow 0.5s ease-out;
-    z-index: -1;
-  }
-  
-  .button2:hover {
-    color: #fff;
-    border: 1px solid #ff0000;
-  }
-  
-  .button2:hover::before {
-    box-shadow: inset 0 0 0 10em #ff0000;
-  }
-  .boxSDG {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin: 0 auto;
-    width: 70px;
-    text-align: justify;
-    font-size: 20px;
-    margin-top: 70px;
-} */
+ .fb_btn img {
+   width: 33px;
+   height: 33px;
+   transform: scale(0.8);
+ }
+
+ .you_btn img {
+   width: 60px;
+   height: 40px;
+   transform: scale(0.8);
+ }
+
+ .line_btn img {
+   width: 50px;
+   height: 45px;
+   transform: scale(0.8);
+ }
+
+ .threads_btn img {
+   width: 32px;
+   height: 32px;
+   transform: scale(0.8);
+ }
+
+ .in_btn {
+   background: transparent;
+   position: relative;
+   padding: 5px 15px;
+   display: flex;
+   align-items: center;
+   font-size: 17px;
+   font-weight: 60;
+   text-decoration: none;
+   cursor: pointer;
+   border: 1px solid #E1306C;
+   border-radius: 25px;
+   outline: none;
+   overflow: hidden;
+   color: #E1306C;
+   transition: color 0.3s 0.1s ease-out;
+   text-align: center;
+ }
+
+ .in_btn span {
+   margin: 10px;
+   margin-left: 25px;
+
+ }
+
+ .in_btn::before {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   content: '';
+   border-radius: 50%;
+   display: block;
+   width: 20em;
+   height: 20em;
+   left: -5em;
+   text-align: center;
+   transition: box-shadow 0.5s ease-out;
+   z-index: -1;
+ }
+
+ .in_btn:hover {
+   color: #fff;
+   border: 1px solid #E1306C;
+ }
+
+ .in_btn:hover::before {
+   box-shadow: inset 0 0 0 10em #E1306C;
+ }
+
+ .fb_btn {
+   background: transparent;
+   position: relative;
+   padding: 5px 15px;
+   display: flex;
+   align-items: center;
+   font-size: 17px;
+   font-weight: 60;
+   text-decoration: none;
+   cursor: pointer;
+   border: 1px solid #1876F2;
+   border-radius: 25px;
+   outline: none;
+   overflow: hidden;
+   color: #1876F2;
+   transition: color 0.3s 0.1s ease-out;
+   text-align: center;
+ }
+
+ .fb_btn span {
+   margin: 10px;
+   margin-left: 25px;
+
+ }
+
+ .fb_btn:before {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   content: '';
+   border-radius: 50%;
+   display: block;
+   width: 20em;
+   height: 20em;
+   left: -5em;
+   text-align: center;
+   transition: box-shadow 0.5s ease-out;
+   z-index: -1;
+ }
+
+ .fb_btn:hover {
+   color: #fff;
+   border: 1px solid #1876F2;
+ }
+
+ .fb_btn:hover::before {
+   box-shadow: inset 0 0 0 10em #1876F2;
+ }
+
+ .you_btn {
+   background: transparent;
+   position: relative;
+   padding: 5px 15px;
+   display: flex;
+   align-items: center;
+   font-size: 17px;
+   font-weight: 60;
+   text-decoration: none;
+   cursor: pointer;
+   border: 1px solid #ff0000;
+   border-radius: 25px;
+   outline: none;
+   overflow: hidden;
+   color: #ff0000;
+   transition: color 0.3s 0.1s ease-out;
+   text-align: center;
+ }
+
+ .you_btn span {
+   margin: 10px;
+ }
+
+ .you_btn:before {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   content: '';
+   border-radius: 50%;
+   display: block;
+   width: 20em;
+   height: 20em;
+   left: -5em;
+   text-align: center;
+   transition: box-shadow 0.5s ease-out;
+   z-index: -1;
+ }
+
+ .you_btn:hover {
+   color: #fff;
+   border: 1px solid #ff0000;
+ }
+
+ .you_btn:hover::before {
+   box-shadow: inset 0 0 0 10em #ff0000;
+ }
+
+ .line_btn {
+   background: transparent;
+   position: relative;
+   padding: 5px 15px;
+   display: flex;
+   align-items: center;
+   font-size: 17px;
+   font-weight: 60;
+   text-decoration: none;
+   cursor: pointer;
+   border: 1px solid #4CAF50;
+   border-radius: 25px;
+   outline: none;
+   overflow: hidden;
+   color: #4CAF50;
+   transition: color 0.3s 0.1s ease-out;
+   text-align: center;
+   width: 140px;
+ }
+
+ .line_btn span {
+   margin: 10px;
+   margin-left: 23px;
+ }
+
+ .line_btn:before {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   content: '';
+   border-radius: 50%;
+   display: block;
+   width: 20em;
+   height: 20em;
+   left: -5em;
+   text-align: center;
+   transition: box-shadow 0.5s ease-out;
+   z-index: -1;
+ }
+
+ .line_btn:hover {
+   color: #fff;
+   border: 1px solid #4CAF50;
+ }
+
+ .line_btn:hover::before {
+   box-shadow: inset 0 0 0 10em #4CAF50;
+ }
+
+ .threads_btn {
+   background: transparent;
+   position: relative;
+   padding: 5px 15px;
+   display: flex;
+   align-items: center;
+   font-size: 17px;
+   font-weight: 60;
+   text-decoration: none;
+   cursor: pointer;
+   border: 1px solid #000000;
+   border-radius: 25px;
+   outline: none;
+   overflow: hidden;
+   color: #000000;
+   transition: color 0.3s 0.1s ease-out;
+   text-align: center;
+   width: 135px;
+ }
+
+ .threads_btn span {
+   margin-left: 25px;
+ }
+
+ .threads_btn:before {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   content: '';
+   border-radius: 50%;
+   display: block;
+   width: 20em;
+   height: 20em;
+   left: -5em;
+   text-align: center;
+   transition: box-shadow 0.5s ease-out;
+   z-index: -1;
+ }
+
+ .threads_btn:hover {
+   color: #fff;
+   border: 1px solid #000000;
+ }
+
+ .threads_btn:hover::before {
+   box-shadow: inset 0 0 0 10em #000000;
+ }
+
+ .boxSDG {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   margin: 0 auto;
+   width: 70px;
+   text-align: justify;
+   font-size: 20px;
+   margin-top: 70px;
+ }
