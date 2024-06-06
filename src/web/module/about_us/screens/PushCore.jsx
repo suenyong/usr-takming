@@ -1,7 +1,7 @@
 import "../styles/PushCore.css";
 import AOS from "aos";
-import SDGs4 from "../images/sdgs4.png";
-import SDGs11 from "../images/sdgs11.png";
+import SDGs4 from "../images/SDGs4.png";
+import SDGs11 from "../images/SDGs11.png";
 import Unnamed from"../images/unnamed.png";
 import Contact from "../../home/components/contactus/Contact";
 import Carousel from "../../../_basic/components/carousel/screens/Carousel";
