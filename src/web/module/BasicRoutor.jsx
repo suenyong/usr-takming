@@ -482,7 +482,7 @@ export default function MenuComponent() {
                       </Link>
                     </Menu>
                     {/* Chillax */}
-                    <Button
+                    {/* <Button
                       className="hub-button"
                       color="primary"
                       onClick={handleChillaxClick}
@@ -515,7 +515,7 @@ export default function MenuComponent() {
                           Chillax
                         </MenuItem>
                       </Link>
-                    </Menu>
+                    </Menu> */}
 
                   </>
                 ) : (
