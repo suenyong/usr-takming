@@ -4,10 +4,25 @@ import Contact from "../../home/components/contactus/Contact";
 import AOS from "aos";
 import { AiOutlineHome } from 'react-icons/ai';
 import axios from "axios";
+import { makeStyles } from '@material-ui/core/styles';
+import Pagination from '@material-ui/lab/Pagination';
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      marginTop: theme.spacing(2),
+      display: 'flex',
+      justifyContent: 'center',
+    },
+  },
+}));
 
 export default function Report() {
   const [Links, setLinks] = useState([]);
+  const classes = useStyles();
+  const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 10;
 
   useEffect(() => {
     AOS.init({
@@ -40,6 +55,14 @@ export default function Report() {
       });
   }
 
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = Links.slice(indexOfFirstPost, indexOfLastPost);
+
+  const handlePageChange = (event, value) => {
+    setCurrentPage(value);
+  };
+
   return (
     <>
       <h1
@@ -58,12 +81,16 @@ export default function Report() {
       </h1>
       <div className="centered-container-important">
         <div className="boxImport">
-          {Links.map((Link, index) => (
-            <React.Fragment key={index}>
-              <span>{Link.name}:<a href={Link.link} target="_blank" rel="noreferrer">{Link.link}</a></span>
-              <br />
-            </React.Fragment>
-          ))}
+          {loading ? (
+            <h1 style={{ fontSize: 20 }}>Loading...</h1>
+          ) : (
+            currentPosts.map((video, index) => (
+              <React.Fragment key={index}>
+                <span>{video.name}<a href={video.link} target="_blank" rel="noreferrer">{video.link}</a></span>
+                <br />
+              </React.Fragment>
+            ))
+          )}
 
 
           {/* 靜態網址 */}
@@ -81,13 +108,22 @@ export default function Report() {
           <span>USR2020大學社會實踐博覽會：<a href="https://www.2020usrexpo.org/" target="_blank">https://www.2020usrexpo.org/</a></span>
           <br /> */}
 
-          
+
         </div>
+      </div>
+
+      {/* ====頁數==== */}
+      <div className={classes.root}>
+        <Pagination
+          count={Math.ceil(Links.length / postsPerPage)}
+          page={currentPage}
+          onChange={handlePageChange}
+        />
       </div>
 
 
       {/* ====按鈕==== */}
-      <a  href="/" className="return-But">
+      <a href="/" className="return-But">
         <AiOutlineHome className="return-object"></AiOutlineHome>
       </a>
       <Contact />

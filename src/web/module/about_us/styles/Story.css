@@ -1,93 +1,39 @@
-.boxS {
- display: inline-block;
-    width: 680px;
-    height:55%;
-    border-radius: 10px;
-    background-color: rgba(124, 169, 160, 0.337);
-    top: 50%;
-    left: 50%;
-    margin:5%;
-    margin-top: 0%;
-    color: #1a3725;
-    padding: 3%;
-}
-
 .centered-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 65vh;
-  /* 調整高度來置中整個頁面 */
+  height: auto;
 }
 
-.boxS span {
-display: flex;
-width: 700px;
-justify-content:  flex-start;
-text-align: center;
-margin-left: 0 auto;
+.boxS {
+  display: block;
+  width: 55%;
+  height: 500px;
+  background-color: rgba(124, 169, 160, 0.337);
+  border-radius: 10px;
+  text-align: center;
 }
 
-@media screen and (max-width: 768px){
+@media (max-width: 768px) {
+  .boxS {
+    display: block;
+    width: 70%;
+    height: 600px;
+    background-color: rgba(124, 169, 160, 0.337);
+    border-radius: 10px;
+    text-align: center;
 
-  .boxS span {
-      display: grid !important;
-      justify-content: center;
-      align-items: center;
-      margin-left: 5%;
-    }
-    .boxS span {
-      display: grid !important;
-      justify-content: center;
-      align-items: center;
-      margin-left: 2px;
-      width:100%;
-    }
-    .boxS p{
-      font-size: 10px;
-    }
-    .boxS a{
-        font-size: 12px;
-
-    }
-    .boxS{
-        line-height:1.5;
-        height:45%;
-        width: 90%;
-    }
+  }
 }
 
+@media (max-width: 576px) {
+  .boxS {
+    display: block;
+    max-width: 90%;
+    height: 900px;
+    background-color: rgba(124, 169, 160, 0.337);
+    border-radius: 10px;
+    text-align: center;
 
-/* ALL*/
-a {
-  text-decoration: none;
-  /* 移除底线 */
-  color: #224439;
-  /* 修改链接文字颜色，这里使用红色作为示例 */
-}
-
-a:hover {
-  color: #369160;
-}
-
-.return-But {
-  position: sticky;
-  bottom: 2rem;
-  right: 2rem;
-  margin-left: 92%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #9AD2C8;
-  border-radius: 50%;
-  text-decoration: none;
-  width: 70px;
-  height: 70px;
-
-}
-
-.return-object {
-  color: white;
-  font-size: 30px;
-  transition: .3s ease;
+  }
 }

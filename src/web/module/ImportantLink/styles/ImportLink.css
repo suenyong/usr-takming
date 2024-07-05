@@ -1,51 +1,46 @@
 .boxImport {
-    display: inline-block;
-    width: 650px;
-    height: 47%;
-    border-radius: 10px;
+    display: block;
+    width: 55%;
+    height: 500px;
     background-color: rgba(124, 169, 160, 0.337);
-    top: 50%;
-    left: 50%;
-    margin:5%;
-    margin-top: 0%;
-    color: #1a3725;
-    padding: 3%;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .centered-container-important {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh; /* 調整高度來置中整個頁面 */
+    height: auto;
 }
 
 .boxImport span {
-display: flex;
-justify-content:  flex-start;
-text-align: center;
-margin-left: 10%;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    margin-left: 10%;
 }
 
-@media screen and (max-width: 768px){
+@media (max-width: 768px) {
+    .boxImport {
+        display: block;
+        width: 70%;
+        height: 600px;
+        background-color: rgba(124, 169, 160, 0.337);
+        border-radius: 10px;
+        text-align: center;
 
-    .boxImport span {
-        display: grid !important;
-        justify-content: center;
-        align-items: center;
-        margin-left: 5%;
-        }
-    .boxImport p{
-        font-size: 12px;
-    }
-    .boxImport a{
-        font-size: 12px;
-
-    }
-    .boxImport{
-        line-height:1.5;
-        height:80%;
     }
 }
 
+@media (max-width: 576px) {
+    .boxImport {
+        display: block;
+        max-width: 90%;
+        height: 900px;
+        background-color: rgba(124, 169, 160, 0.337);
+        border-radius: 10px;
+        text-align: center;
 
-
+    }
+}
