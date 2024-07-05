@@ -53,16 +53,14 @@ export default function GMM_history() {
 
                 <div className="Content_history">
                     <div className="GMM_Mtitle_history">
-                        <img src={require("..//images/four.png")} className="GMM_num"></img>
-                        論劍亭
+                        <img src={require("..//images/two.png")} className="GMM_num"></img>
+                        竹月寺
                     </div>
-                    <div className="GMM_box_history" id="OSC">
-                        論劍亭的由來可以追溯到35年前，一個由山友搭建的涼亭。於2000年政治大選時，眾多山友在此討論政治，周先生說不論政治，論山就好，但因金面山不大，不適合命名為論山亭，在這裡閒聊就像是論劍，故命名為論劍亭。
-                        論劍亭於2008年前被人放火燒毀，於2010年左右由大地工程處重建，同期也搭建了重陽亭、華山亭。論劍亭的其中一面牆，貼滿了金面山的-台北盆地的攝影作品與山間雲彩的，周先生是個喜歡登山攝影的社區人士，每天早上都會到論劍亭報到，所以也被譽為金面山土地公。
-                        論劍亭由在地耆老周永良先生命名，上面還有許多他拍攝的照片，是台北內湖環山路登山步道的秘境。緊鄰剪刀石山山頂的兩層式木造涼亭，空間寬敞，二樓設有座椅、掛鐘，一樓展覽圖片。通往剪刀石前的站點，是最大的涼亭，有上下兩層各有不同的景觀。此處無提供水源及廁所，純粹是可遮陽、擋雨的休息處。很多人會在此處休息或是用餐，向外左邊可看到碧湖，右側則是美麗華，前面正是101大樓視野非常好，是眺望內湖及台北市的絕佳地點。
-                        看到論劍亭等於幾乎快到達了山頂，剩下不到200公尺平緩的山徑。
+                    <div className="GMM_box_history" id="CT">
+                        竹月寺主殿主供千手觀世音菩薩，副供脅侍文殊菩薩與普賢菩薩，兩側分別是伽藍菩薩與韋馱菩薩。右側副殿地藏王菩薩。左側副殿觀音菩薩(普陀山觀音)。
+                        在悠久的中國歷史，觀音菩薩除了是民間信仰的代表，更是家家戶戶都知道的神佛，所以如果是喜歡走道場，參拜上香的人，這裡是不錯的地點非常合適。從入山口起算約500公尺，耗時約25分鐘腳程，此寺寧靜祥和，也有熱情的住持阿姨會向您解說附近的地理介紹。
                     </div>
-                    <img src={require("..//images/pavilion.jpg")} className="Pavilion"></img>
+                    <img src={require("..//images/temple.jpg")} className="Temple"></img>
                 </div>
 
                 <div className="Content_history">
@@ -78,16 +76,19 @@ export default function GMM_history() {
                     <img src={require("..//images/stone.jpg")} className="Stone"></img>
                 </div>
 
+               
                 <div className="Content_history">
                     <div className="GMM_Mtitle_history">
-                        <img src={require("..//images/two.png")} className="GMM_num"></img>
-                        竹月寺
+                        <img src={require("..//images/four.png")} className="GMM_num"></img>
+                        論劍亭
                     </div>
-                    <div className="GMM_box_history" id="CT">
-                        竹月寺主殿主供千手觀世音菩薩，副供脅侍文殊菩薩與普賢菩薩，兩側分別是伽藍菩薩與韋馱菩薩。右側副殿地藏王菩薩。左側副殿觀音菩薩(普陀山觀音)。
-                        在悠久的中國歷史，觀音菩薩除了是民間信仰的代表，更是家家戶戶都知道的神佛，所以如果是喜歡走道場，參拜上香的人，這裡是不錯的地點非常合適。從入山口起算約500公尺，耗時約25分鐘腳程，此寺寧靜祥和，也有熱情的住持阿姨會向您解說附近的地理介紹。
+                    <div className="GMM_box_history" id="OSC">
+                        論劍亭的由來可以追溯到35年前，一個由山友搭建的涼亭。於2000年政治大選時，眾多山友在此討論政治，周先生說不論政治，論山就好，但因金面山不大，不適合命名為論山亭，在這裡閒聊就像是論劍，故命名為論劍亭。
+                        論劍亭於2008年前被人放火燒毀，於2010年左右由大地工程處重建，同期也搭建了重陽亭、華山亭。論劍亭的其中一面牆，貼滿了金面山的-台北盆地的攝影作品與山間雲彩的，周先生是個喜歡登山攝影的社區人士，每天早上都會到論劍亭報到，所以也被譽為金面山土地公。
+                        論劍亭由在地耆老周永良先生命名，上面還有許多他拍攝的照片，是台北內湖環山路登山步道的秘境。緊鄰剪刀石山山頂的兩層式木造涼亭，空間寬敞，二樓設有座椅、掛鐘，一樓展覽圖片。通往剪刀石前的站點，是最大的涼亭，有上下兩層各有不同的景觀。此處無提供水源及廁所，純粹是可遮陽、擋雨的休息處。很多人會在此處休息或是用餐，向外左邊可看到碧湖，右側則是美麗華，前面正是101大樓視野非常好，是眺望內湖及台北市的絕佳地點。
+                        看到論劍亭等於幾乎快到達了山頂，剩下不到200公尺平緩的山徑。
                     </div>
-                    <img src={require("..//images/temple.jpg")} className="Temple"></img>
+                    <img src={require("..//images/pavilion.jpg")} className="Pavilion"></img>
                 </div>
 
                 <div className="Content_history">

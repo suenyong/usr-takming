@@ -16,6 +16,7 @@ export default function Report() {
   //   fetchLinks();
   // }, []);
 
+
   // const fileName = "大學生社會責任年度報告書.pdf";
   // const filePath = "/path/to/your/pdf/file.pdf";
 
@@ -63,7 +64,7 @@ export default function Report() {
         <div className="boxImport">
           {Links.map((Link, index) => (
             <React.Fragment key={index}>
-              <span>{Link.name}:<a href={Link.link} target="_blank" rel="noreferrer">{Link.link}</a></span>
+              <span>{Link.name}<a href={Link.link} target="_blank" rel="noreferrer">{Link.link}</a></span>
               <br />
             </React.Fragment>
           ))}

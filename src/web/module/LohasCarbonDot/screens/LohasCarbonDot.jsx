@@ -81,6 +81,10 @@ export default function LohasCarbonDot() {
                     <li>金面山，三個點掃QRCode+定位即分別可得、竹月寺2碳幣、論劍亭3碳幣、剪刀石5碳幣</li>
                 </ul>
             </div>
+            <div id="vido" >
+                <span>樂活碳點影片介紹：<a href="https://www.youtube.com/watch?v=W_Jw。vYAAdcA&t=1s" target="_blank">https://www.youtube.com/watch?v=W_JwvYAAdcA&t=1s</a></span>
+
+            </div>
 
 
             {/* ====按鈕==== */}

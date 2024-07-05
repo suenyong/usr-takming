@@ -1,10 +1,10 @@
 .boxS {
  display: inline-block;
-    width: 680px;
-    height:55%;
+    width: 850px;
+    height: 75%;
     border-radius: 10px;
     background-color: rgba(124, 169, 160, 0.337);
-    top: 50%;
+    top: 450%;
     left: 50%;
     margin:5%;
     margin-top: 0%;
@@ -16,13 +16,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 65vh;
+  height: 110vh;
   /* 調整高度來置中整個頁面 */
 }
 
 .boxS span {
 display: flex;
-width: 700px;
+width: 1000px;
 justify-content:  flex-start;
 text-align: center;
 margin-left: 0 auto;
@@ -52,7 +52,7 @@ margin-left: 0 auto;
     }
     .boxS{
         line-height:1.5;
-        height:45%;
+        height:85%;
         width: 90%;
     }
 }

@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh; /* 調整高度來置中整個頁面 */
+    height: 90vh; /* 調整高度來置中整個頁面 */
 }
 
 .boxImport span {
@@ -39,11 +39,10 @@ margin-left: 10%;
     }
     .boxImport a{
         font-size: 12px;
-
     }
     .boxImport{
         line-height:1.5;
-        height:80%;
+        height:60%;
     }
 }
 
