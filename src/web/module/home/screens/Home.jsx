@@ -8,6 +8,7 @@ import "../styles/Home.css";
 import TaiwanMap from "../components/TaiwanMap/taiwanmap";
 import UsrUsrHub from "../components/UsrUsrHub/UsrUsrHub";
 import AllName from "../components/AllName/AllName";
+import BrowserOfReaders from "../../../_basic/components/BrowserOfReaders";
 
 
 
@@ -39,6 +40,7 @@ export default function Home() {
         {/* <div className="block-distance"></div> */}
         <Contact />
         <AllName />
+        <BrowserOfReaders />
       </div>
     </>
   );
