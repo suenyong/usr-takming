@@ -1,6 +1,6 @@
-import BasicRoutor from './web/module/BasicRoutor';
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import BasicRoutor from './web/module/BasicRoutor';
 
 export default function App() {
   useEffect(() => {

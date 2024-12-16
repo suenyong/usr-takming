@@ -1,0 +1,48 @@
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+
+}
+
+.member-info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content:space-around;
+}
+
+.image_container_promote {
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 3px;
+  box-shadow: 30px -6px teal;
+  margin: 30px;
+}
+
+.job {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #105e37;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.image_container_promote img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px 5px 0 0 ;
+  padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .team-members {
+    margin-right: 150px;
+  
+  }
+}

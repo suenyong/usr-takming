@@ -1,0 +1,200 @@
+.page-background {
+    background-color: #f8f4e1;
+    background-attachment: scroll, local;
+    display: flex;
+    flex-direction: column;
+}
+
+.GMM-title {
+    text-align: center;
+    color: #fff;
+    background-color: rgba(203, 190, 144, 1);
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-bottom: 10%;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    max-width: 1000px;
+    overflow-x: visible;
+}
+
+.heading {
+    color: #000;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-left: 15%;
+}
+.mountain-title{
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 10px;
+}
+.mountain-img{
+    width: 20%;
+    height: auto;
+    position: relative;
+    top: 27px;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.image-line{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    top:20px;
+}
+
+.image-line img {
+    height: auto;
+}
+
+.image-line img:first-child {
+    width: 100px;
+}
+
+.image-line img:last-child {
+    width: 300px;
+}
+
+.line2 {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.double-line {
+    width: 100%;
+    height: 8px;
+    border-top: 1px solid black;
+    border-bottom: 3px solid black;
+}
+
+.color-block2{
+    background-color: #d3e2e9;
+}
+
+.story-text{
+    line-height: 2.8;
+    padding: 40px;
+}
+
+.story-img-space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+}
+.story-img-space img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.section-in-r2 {
+    flex: 1;
+    margin-right: 2%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fishText3{
+    line-height: 3.5;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.fishText4{
+    line-height: 3.5;
+    font-size: 18px;
+    margin: 10px 20% 0 20%;
+}
+
+
+.img-min-title{
+    margin: 0 0 0 20px;
+}
+
+.fish-img{
+    max-width: 580px;
+    height: auto;
+}
+
+.fish-img2{
+    width: 480px;
+    height: auto;
+}
+
+.manyM{
+    margin-left: 5%;
+}
+.double-text{
+    position: relative;
+    left: 0;
+}
+
+@media (max-width: 1048px) {
+
+    .GMM-title {
+        margin-top: 30%;
+    }
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .heading {
+        margin-left: 2%;
+    }
+    .mountain-img{
+        width: 80px;
+        position: relative;
+        top:60px;
+    }
+
+    .story-img-space {
+        flex-direction: column; /* 確保內容垂直堆疊 */
+        gap: 12px; /* 調整間距讓內容更緊湊 */
+        padding: 0 16px; /* 增加內邊距，避免內容貼邊 */
+    }
+
+    .story-img-space img {
+        width: 100%;
+    }
+
+    .fishText3{
+        font-size: 14px;
+    }
+    .fishText4{
+        font-size: 14px;
+        margin: 10px 10% 0 10%;
+    }
+
+    .image-line img:last-child {
+        width: 200px;
+    }
+    
+}

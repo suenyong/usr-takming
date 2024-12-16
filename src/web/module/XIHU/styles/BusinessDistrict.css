@@ -1,0 +1,286 @@
+
+.page-background {
+    background-color: #f8f4e1;
+    background-attachment: scroll, local;
+    display: flex;
+    flex-direction: column;
+}
+
+.BD-title {
+    text-align: center;
+    color: #fff;
+    background-color: rgba(203, 190, 144, 1);
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-bottom: 10%;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    max-width: 1000px;
+    overflow-x: visible;
+}
+.drink-container {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    gap: 10px; 
+    padding: 10px;
+}
+
+.drink-img {
+    width: 150px; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+.drink-text {
+    flex: 1; 
+    font-size: 18px;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.section2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 70px;
+    padding: 20px;
+}
+
+.text-block {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.image-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.image-block img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-min-title {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.drink-title{
+    font-weight: bold;
+    font-size: 40px;
+}
+.drink-store{
+    line-height: 2.8;
+    font-size: 18px;
+}
+
+.fish-img{
+    max-width: 580px;
+    height: auto;
+}
+.fish-img2{
+    max-width: 430px;
+    height: auto;
+}
+
+.section-in-r {
+    flex: 1;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-in-r h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.section-in-r div {
+    font-size: 20px;
+    text-align: center;
+    text-align: left;
+}
+.fishText{
+    line-height: 2;
+    font-size: 20px;
+}
+
+.section-in-r2 {
+    flex: 1;
+    margin-right: 2%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.fishText2{
+    line-height: 2;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.heading {
+    color: #000;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.double-line {
+    width: 100%;
+    height: 8px;
+    border-top: 1px solid black;
+    border-bottom: 3px solid black;
+}
+
+.img-min-title{
+    margin: 20px;
+}
+
+.color-block{
+    background-color: #e3e0d1;
+}
+
+.color-block-2{
+    background: linear-gradient(to top right, #e3e0d1 50%, transparent 50%);
+}
+
+.a-left {
+    position: relative;
+    background-color: #c6c4b8;
+    height: 50px;
+    width: 52%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #000;
+    clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+}
+
+.a-right {
+    position: relative;
+    left: 480px;
+    top:-50px;
+    background-color: #e3e1d9;
+    height: 50px;
+    width: 52%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #000; 
+    clip-path: polygon(5% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+
+@media (max-width: 1048px) {
+
+    .BD-title {
+        margin-top: 30%;
+    }
+
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .drink-title{
+        font-size: 25px;
+    }
+
+    .fish-img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .fish-img2 {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section-in-r {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .section-in-r h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .section-in-r div {
+        font-size: 18px;
+    }
+    .fishText{
+        font-size: 15px;
+    }
+    .fishText2{
+        font-size: 15px;
+    }
+
+    .img-min-title{
+        margin: 1px;
+    }
+
+    .drink-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .a-left {
+        left: -8px;
+        width: 47.5%;
+        font-size: 12px;
+        text-align: start;
+        padding: 10px;
+    }
+    
+    .a-right {
+        left: 168px;
+        top:-70px;
+        width: 47.5%;
+        font-size: 12px;
+        text-align: end;
+        padding: 10px;
+    }
+    
+    
+}
+
+

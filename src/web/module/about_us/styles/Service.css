@@ -2,7 +2,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  margin-top: 10%;
+  margin-top: 5%;
+}
+
+.service_container{
+  margin-right: 33.33%;
+  
 }
 
 .service-button {
@@ -149,7 +154,7 @@
   justify-content: center;
   background-color: #ffffff;
   border: 2px solid #257773;
-  margin: 5%;
+  margin: 2%;
   cursor: pointer;
   width: 110px;
   height: 40px;
@@ -181,6 +186,8 @@
 
 .button_container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
 }
 
 /* ================================= */
@@ -293,7 +300,7 @@
 .service-heading3 {
   display: grid;
   margin-top: 10%;
-  margin-left: 10%;
+  margin-left: 3%;
   background-image: linear-gradient(to right, #89f5cc7e, #6fccbc4d, #89f5ee6f, #89eef56f, #89f5f353, #89f0f51f);
   color: #1b5953;
   position: relative;
@@ -448,4 +455,9 @@
   width: 100%;
   font-weight: bold;
 }
+
+.service-container{
+  display: block;
+}
+
 }

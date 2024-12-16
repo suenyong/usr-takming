@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import Contact from "../../home/components/contactus/Contact";
 import AOS from "aos";
+import React, { useEffect, useState } from "react";
 import { AiOutlineHome } from "react-icons/ai";
+import Contact from "../../home/components/contactus/Contact";
 import "../styles/LohasCarbonDot.css";
 
 export default function LohasCarbonDot() {
@@ -25,7 +25,7 @@ export default function LohasCarbonDot() {
                     marginRight: "30%",
                     marginLeft: "30%",
                     marginTop: "13%",
-                  }}
+                }}
             >
                 樂活碳點
             </h1>

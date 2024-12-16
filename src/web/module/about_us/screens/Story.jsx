@@ -1,37 +1,40 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "../styles/Story.css";
-import Contact from "../../home/components/contactus/Contact";
 import AOS from "aos";
+import React, { useEffect, useState } from "react";
 import { AiOutlineHome } from 'react-icons/ai';
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import { NewsApi } from "../../../_basic/Protocol/NewsApi";
+import Contact from "../../home/components/contactus/Contact";
+import "../styles/Story.css";
 
 export default function Story() {
-    // const [videos, setVideos] = useState([]);
-    // const [videos, setVideos] = useState([]);
+    const [NData, setNData] = useState([]);
+    useEffect(() => {
+        AOS.init({
+            duration: 900,
+        });
+    }, []);
 
-    // useEffect(() => {
-    //     AOS.init({
-    //         duration: 900,
-    //     });
+    useEffect(() => {
+        const fetchNData = async () => {
+            try {
+            const data = await NewsApi.getAllNews();
+            if (Array.isArray(data)) {
+                const sortedData = data.sort((a, b) => b.id - a.id);
+                setNData(sortedData);
+                console.log("亮點報導所有資料:", sortedData);
+            } else {
+                console.error("取得所有亮點報導失敗");
+            }
+            } catch (error) {
+            console.error("取得所有亮點報導失敗", error);
+            }
+        };
 
-    //     // 從後端 API 取得資料
-    //     fetchVideos();
-    // }, []);
+        fetchNData();
+        }, []);
 
-    // const fetchVideos = () => {
-    //     axios.get("http://192.192.140.222:8081/storyuser/storyall")
-    //     .then(response => {
-    //         console.log("取得的新影片資料:", response.data.data);
-    //         setVideos(response.data.data);
-    //     })
-    //     .catch(error => {
-    //         console.error("取得影片失敗:", error);
-    //     });
-    
-    // };
-    const videos = [
+    const news = [
         {
             name:"德明科大 USR 夏令營「我的財富自由不是夢」：",
             link:"https://money.udn.com/money/amp/story/5723/7333500",
@@ -69,8 +72,8 @@ export default function Story() {
             link:"https://money.udn.com/money/story/5723/7405392",
         },
         {
-            name:"校園新聞-ESG物流永續傑出獎：",
-            link:"https://money.udn.com/money/story/6722/7891534",
+            name:"德明科大USR「樂活碳點」走訪金面山風華：",
+            link:"https://money.udn.com/money/story/5723/7967640",
         },
     ]
     
@@ -91,14 +94,12 @@ export default function Story() {
     
             <div className="centered-container">
                 <div className="boxS">
-                    {videos.map((video, index) => (
-                        <React.Fragment key={index}>
-                        <span>{video.name}<a href={video.link} target="_blank" rel="noreferrer">{video.link}</a></span> 
+                    {NData.map((news) => (
+                        <React.Fragment key={news.id}>
+                        <span>{news.name}<>：</><a href={news.link} target="_blank" rel="noreferrer">{news.link}</a></span> 
                         <br />
                         </React.Fragment>
                     ))}
-                    {/* 靜態網址 */}
-                        {/* <span>樂活碳點影片介紹：<a href="https://www.youtube.com/watch?v=W_JwvYAAdcA&t=1s" target="_blank">https://www.youtube.com/watch?v=W_JwvYAAdcA&t=1s</a></span> */}
                 </div>
             </div>
     

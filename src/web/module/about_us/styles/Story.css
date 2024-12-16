@@ -10,13 +10,13 @@
     margin-top: 0%;
     color: #1a3725;
     padding: 3%;
+    background-attachment: scroll, local;
 }
 
 .centered-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 110vh;
   /* 調整高度來置中整個頁面 */
 }
 
@@ -29,22 +29,16 @@ margin-left: 0 auto;
 }
 
 @media screen and (max-width: 768px){
-
-  .boxS span {
-      display: grid !important;
-      justify-content: center;
-      align-items: center;
-      margin-left: 5%;
-    }
     .boxS span {
       display: grid !important;
       justify-content: center;
       align-items: center;
-      margin-left: 2px;
+      margin-left: 5px;
       width:100%;
+      font-size: 12px;
     }
     .boxS p{
-      font-size: 10px;
+      font-size: 12px;
     }
     .boxS a{
         font-size: 12px;

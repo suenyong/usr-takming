@@ -1,67 +1,61 @@
-import React, { useEffect, useState } from "react";
+import ArticleIcon from "@mui/icons-material/Article";
+import FilterHdrIcon from '@mui/icons-material/FilterHdr';
+import GrainIcon from "@mui/icons-material/Grain";
+import InfoIcon from "@mui/icons-material/Info";
+import LinkIcon from "@mui/icons-material/Link";
+import LocalFloristIcon from "@mui/icons-material/LocalFlorist";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import MenuIcon from "@mui/icons-material/Menu";
+import ShareIcon from "@mui/icons-material/Share";
 import {
   Button,
+  ListItemIcon,
   Menu,
   MenuItem,
   Typography,
-  ListItemIcon,
 } from "@mui/material";
-import InfoIcon from "@mui/icons-material/Info";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import ArticleIcon from "@mui/icons-material/Article";
-import ShareIcon from "@mui/icons-material/Share";
-import GrainIcon from "@mui/icons-material/Grain";
-import LocalFloristIcon from "@mui/icons-material/LocalFlorist";
-import LinkIcon from "@mui/icons-material/Link";
-import MenuIcon from "@mui/icons-material/Menu";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import Home from "./home/screens/Home";
+import React, { useEffect, useState } from "react";
+import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Partner from "./USR/screens/Partner";
 import PushCore from "./about_us/screens/PushCore";
-import Promote from "./about_us/screens/Promote";
 import Report from "./about_us/screens/Report";
 import Story from "./about_us/screens/Story";
+import Home from "./home/screens/Home";
 import logoImage from "./logo2.png";
 import "./menu.css";
 // import Idea from "./about_us/screens/idea";
-import CaseStudies from "./CaseStudies/screens/CaseStudies";
-import Service from "./about_us/screens/Service";
+import ImportantLink from "../module/ImportantLink/screens/ImportantLink";
 import UH109 from "../module/USRHUB/screens/UH109";
 import UH110 from "../module/USRHUB/screens/UH110";
 import UH111 from "../module/USRHUB/screens/UH111";
-import GMM from "./USR/screens/GMM";
-import ImportantLink from "../module/ImportantLink/screens/ImportantLink";
-import GD from "./USR/screens/GD";
-import GMM_history from "./USR/screens/GMM_history";
-import LohasCarbonDot from "./LohasCarbonDot/screens/LohasCarbonDot";
+import BusinessDistrict from "../module/XIHU/screns/BusinessDistrict";
+import GMMReport from "../module/XIHU/screns/GMMReport";
+import CaseStudies from "./CaseStudies/screens/CaseStudies";
 import Chillax from "./Chillax/screens/chillax";
-import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
+import LohasCarbonDot from "./LohasCarbonDot/screens/LohasCarbonDot";
+import GD from "./USR/screens/GD";
+import GMM from "./USR/screens/GMM";
+import GMM_history from "./USR/screens/GMM_history";
+import Service from "./about_us/screens/Service";
 
 export default function MenuComponent() {
-  const [anchorEl, setAnchorEl] = useState(null);//關於我們的選單
+  const [anchorEl, setAnchorEl] = useState(null);//關於我們選單
+  const [XIHUanchorEl, setXIHUAnchorEl] = useState(null);//關於我們選單
   const [articleAnchorEl, setArticleAnchorEl] = useState(null);//精彩報導選單
-  const [caseAnchorEl, setCaseAnchorEl] = useState(null);
+  const [caseAnchorEl, setCaseAnchorEl] = useState(null);//精彩講座選單
   const [LohasCarbonDotAnchorEl, setLohasCarbonDotAnchorEl] = useState(null);//樂活碳點
-  const [ChillaxAnchorEl, setChillaxAnchorEl] = useState(null);//chillax
-  const [hubAnchorEl, setHubAnchorEl] = useState(null);
-  const [usrAnchorEl, setUsrAnchorEl] = useState(null);
-  const [usrSubmenuEl, setUsrSubmenuEl] = useState(null);
-  const [linkAnchorEl, setLinkAnchorEl] = useState(null);
-  // const [contactAnchorEl, setContactAnchorEl] = useState(null);
-  const [menuAnchorEl, setMenuAnchorEl] = useState(null);
-  const [hubSubmenuEl, setHubSubmenuEl] = useState(null);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  const [locationAnchorEl, setLocationAnchorEl] = useState(null);
+  const [hubAnchorEl, setHubAnchorEl] = useState(null);//HUB選單
+  const [hubSubmenuEl, setHubSubmenuEl] = useState(null);//HUB選單
+  const [usrAnchorEl, setUsrAnchorEl] = useState(null);//USR選單
+  const [usrSubmenuEl, setUsrSubmenuEl] = useState(null);//USR選單
   const [submenuAnchorEl, setSubmenuAnchorEl] = useState(null);
+  const [locationAnchorEl, setLocationAnchorEl] = useState(null);//服務足跡選單
+  const [linkAnchorEl, setLinkAnchorEl] = useState(null);//重要連結選單
+  const [ChillaxAnchorEl, setChillaxAnchorEl] = useState(null);//chillax選單
+  
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [menuAnchorEl, setMenuAnchorEl] = useState(null);
 
-  //服務足跡
-  const handleLocationClick = (event) => {
-    window.location.href = "/Service";
-    handleMenuClose();
-  };
-  const handleLocationClose = () => {
-    setLocationAnchorEl(null);
-  };
   //關於我們
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -69,6 +63,22 @@ export default function MenuComponent() {
   };
   const handleClose = () => {
     setAnchorEl(null);
+  };
+  //認識西湖
+  const handleXIHUClick = (event) => {
+    setXIHUAnchorEl(event.currentTarget);
+    handleMenuClose();
+  };
+  const handleXIHUClose = () => {
+    setXIHUAnchorEl(null);
+  };
+  //服務足跡
+  const handleLocationClick = (event) => {
+    window.location.href = "/Service";
+    handleMenuClose();
+  };
+  const handleLocationClose = () => {
+    setLocationAnchorEl(null);
   };
   //精彩報導
   const handleArticleClick = (event) => {
@@ -105,7 +115,7 @@ export default function MenuComponent() {
     setChillaxAnchorEl(null);
   };
 
-
+  //Hub
   const handleHubClick = (event) => {
     setHubAnchorEl(event.currentTarget);
     handleMenuClose();
@@ -114,7 +124,6 @@ export default function MenuComponent() {
     setHubAnchorEl(null);
     setHubSubmenuEl(null);
   };
-
   const handleSubmenuClick = (event) => {
     setHubSubmenuEl(event.currentTarget);
     handleClose();
@@ -123,6 +132,7 @@ export default function MenuComponent() {
   const handleSubmenuClose = () => {
     setHubSubmenuEl(null);
   };
+
   //USR
   const handleUsrClick = (event) => {
     setUsrAnchorEl(event.currentTarget);
@@ -131,7 +141,6 @@ export default function MenuComponent() {
   const handleUsrClose = () => {
     setUsrAnchorEl(null);
   };
-
   const handleUsrSubmenuClick = (event) => {
     if (event.currentTarget.textContent === "場域經營") {
       setSubmenuAnchorEl(event.currentTarget);
@@ -144,7 +153,7 @@ export default function MenuComponent() {
     setUsrAnchorEl(null);
   };
 
-
+ //重要連結
   const handleLinkClick = (event) => {
     window.location.href = "/ImportantLink";
     handleMenuClose();
@@ -153,15 +162,17 @@ export default function MenuComponent() {
     setLinkAnchorEl(null);
   };
 
+  // 手機視窗
   const handleMenuClick = (event) => {
     setMenuAnchorEl(event.currentTarget);
   };
   const handleMenuClose = () => {
     setMenuAnchorEl(null);
   };
+  
 
   const customIconStyle = {
-    color: 'rgb(15, 125, 136)', // 在这里设置你想要的颜色
+    color: 'rgb(15, 125, 136)',
   };
 
   useEffect(() => {
@@ -184,8 +195,9 @@ export default function MenuComponent() {
                     <img src={logoImage} alt="德明USR" className="logo" />
                   </a>
                 </div>
-                {windowWidth > 958 ? (
+                {windowWidth > 1048 ? (
                   <>
+                    {/* 關於我們 =====================================================*/}
                     <Button
                       className="about-usr-button"
                       color="primary"
@@ -230,25 +242,20 @@ export default function MenuComponent() {
                         </MenuItem>
                       </Link>
 
-                      {/* <Link
-                        to="/Promote"
-                        style={{ textDecoration: "none", color: "inherit" }}
-                      >
-                        <MenuItem onClick={handleClose}>推動單位介紹</MenuItem>
-                      </Link> */}
-
                       <Link
                         to="/UH109"
                         style={{ textDecoration: "none", color: "inherit" }}
                       >
                         <MenuItem onClick={handleSubmenuClick}>109年USR HUB計畫</MenuItem>
                       </Link>
+
                       <Link
                         to="/UH110"
                         style={{ textDecoration: "none", color: "inherit" }}
                       >
                         <MenuItem onClick={handleSubmenuClick}>110年USR HUB計畫</MenuItem>
                       </Link>
+                      
                       <Link
                         to="/UH111"
                         style={{ textDecoration: "none", color: "inherit" }}
@@ -260,11 +267,54 @@ export default function MenuComponent() {
                         to="/Report"
                         style={{ textDecoration: "none", color: "inherit" }}
                       >
-                        <MenuItem onClick={handleClose}>
-                          大學生社會責任年度報告書
-                        </MenuItem>
+                        <MenuItem onClick={handleClose}>大學生社會責任年度報告書 </MenuItem>
                       </Link>
                     </Menu>
+                    {/* 關於我們 =====================================================*/}
+                    <Button
+                      className="about-usr-button"
+                      color="primary"
+                      disableElevation={true}
+                      onClick={handleXIHUClick}
+                    >
+                      <ListItemIcon>
+                        <FilterHdrIcon style={customIconStyle} />
+                      </ListItemIcon>
+                      <Typography
+                        sx={{
+                          fontWeight: "bold",
+                          color: "black",
+                          marginLeft: "-20px",
+
+                        }}
+                      >
+                        認識西湖
+                      </Typography>
+                    </Button>
+                    <Menu
+                      id="simple-menu"
+                      anchorEl={XIHUanchorEl}
+                      keepMounted
+                      open={Boolean(XIHUanchorEl)}
+                      onClose={handleXIHUClose}
+                    >
+
+                      <Link
+                        to="/BusinessDistrict"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        <MenuItem onClick={handleXIHUClose}>西湖商圈 </MenuItem>
+                      </Link>
+
+                      <Link
+                        to="/GMMReport"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        <MenuItem onClick={handleXIHUClose}>金面山報導 </MenuItem>
+                      </Link>
+                    </Menu>
+
+                   {/* 服務據點 ===================================================== */}
                     <Button
                       className="service-button"
                       color="primary"
@@ -298,28 +348,30 @@ export default function MenuComponent() {
                         <MenuItem onClick={handleLocationClose}>服務據點</MenuItem>
                       </Link>
                     </Menu>
+                   {/* 亮點報導 ===================================================== */}
                     <Link
                       to="/Story"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
-                      <Button
-                        className="article-button"
-                        color="primary"
+                    <Button
+                      className="article-button"
+                      color="primary"
+                    >
+                      <ListItemIcon>
+                        <ArticleIcon style={customIconStyle} />
+                      </ListItemIcon>
+                      <Typography
+                        sx={{
+                          fontWeight: "bold",
+                          color: "black",
+                          marginLeft: "-20px",
+                        }}
                       >
-                        <ListItemIcon>
-                          <ArticleIcon style={customIconStyle} />
-                        </ListItemIcon>
-                        <Typography
-                          sx={{
-                            fontWeight: "bold",
-                            color: "black",
-                            marginLeft: "-20px",
-                          }}
-                        >
-                          亮點報導
-                        </Typography>
-                      </Button>
+                        亮點報導
+                      </Typography>
+                    </Button>
                     </Link>
+                    {/* 精彩講座 =====================================================*/}
                     <Button
                       className="case-button"
                       color="primary"
@@ -353,6 +405,7 @@ export default function MenuComponent() {
                         <MenuItem onClick={handleCaseClose}>精彩講座</MenuItem>
                       </Link>
                     </Menu>
+                    {/* 樂活碳點 =====================================================*/}
                     <Button
                       className="hub-button"
                       color="primary"
@@ -388,6 +441,7 @@ export default function MenuComponent() {
                         </MenuItem>
                       </Link>
                     </Menu>
+                    {/* USR計畫 =====================================================*/}
                     <Button
                       className="usr-button"
                       color="primary"
@@ -397,7 +451,7 @@ export default function MenuComponent() {
                         <LocalFloristIcon style={customIconStyle} />
                       </ListItemIcon>
                       <Typography
-
+                        lang="en"
                         sx={{
                           fontWeight: "bold",
                           color: "black",
@@ -430,25 +484,14 @@ export default function MenuComponent() {
                           德明甘丹內科園區永續時尚實踐計畫
                         </MenuItem>
                       </Link>
-                      {/* <MenuItem onClick={handleUsrSubmenuClick}>
-                      場域經營
-                    </MenuItem> */}
+                      <Link
+                        to="/Partner"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        <MenuItem onClick={handleClose}>USR合作夥伴</MenuItem>
+                      </Link>
                     </Menu>
-
-                    {/* <Menu
-                    id="submenu-popper"
-                    open={Boolean(submenuAnchorEl)}
-                    anchorEl={submenuAnchorEl}
-                    onClose={handleUsrSubmenuClose}
-                  >
-                    <MenuItem onClick={handleUsrSubmenuClose}>
-                      內湖金面山
-                    </MenuItem>
-                    <MenuItem onClick={handleUsrSubmenuClose}>
-                      德明甘丹
-                    </MenuItem>
-                  </Menu> */}
-
+                    {/* 重要連結 =====================================================*/}
                     <Button
                       className="link-button"
                       color="primary"
@@ -481,7 +524,7 @@ export default function MenuComponent() {
                         <MenuItem onClick={handleLinkClose}>重要連結</MenuItem>
                       </Link>
                     </Menu>
-                    {/* Chillax */}
+                    {/* Chillax ==================================================== */}
                     {/* <Button
                       className="hub-button"
                       color="primary"
@@ -539,6 +582,7 @@ export default function MenuComponent() {
                       onClose={handleMenuClose}
                     >
                       <MenuItem onClick={handleClick}>關於我們</MenuItem>
+                      <MenuItem onClick={handleXIHUClick}>認識西湖</MenuItem>
                       <MenuItem onClick={handleLocationClick}>服務據點</MenuItem>
                       <MenuItem onClick={handleArticleClick}>亮點報導</MenuItem>
                       <MenuItem onClick={handleCaseClick}>精彩講座</MenuItem>
@@ -570,13 +614,6 @@ export default function MenuComponent() {
                           德明推動USR核心整合理念
                         </MenuItem>
                       </Link>
-
-                      {/* <Link
-                        to="/Promote"
-                        style={{ textDecoration: "none", color: "inherit" }}
-                      >
-                        <MenuItem onClick={handleClose}>推動單位介紹</MenuItem>
-                      </Link> */}
                       <Link
                         to="/UH109"
                         style={{ textDecoration: "none", color: "inherit" }}
@@ -602,6 +639,27 @@ export default function MenuComponent() {
                         <MenuItem onClick={handleClose}>
                           大學生社會責任年度報告書
                         </MenuItem>
+                      </Link>
+                    </Menu>
+                    {/* 認識西湖選單 */}
+                    <Menu
+                      id="simple-menu"
+                      anchorEl={XIHUanchorEl}
+                      keepMounted
+                      open={Boolean(XIHUanchorEl)}
+                      onClose={handleXIHUClose}
+                    >
+                      <Link
+                        to="/BusinessDistrict"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        <MenuItem onClick={handleXIHUClose}>西湖商圈 </MenuItem>
+                      </Link>
+                      <Link
+                        to="/GMMReport"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        <MenuItem onClick={handleXIHUClose}>金面山報導 </MenuItem>
                       </Link>
                     </Menu>
                     {/* 服務據點選單 */}
@@ -690,6 +748,12 @@ export default function MenuComponent() {
                           德明甘丹內科園區永續時尚實踐計畫
                         </MenuItem>
                       </Link>
+                      <Link
+                        to="/Partner"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        <MenuItem onClick={handleClose}>USR合作夥伴</MenuItem>
+                      </Link>
                       {/* <MenuItem onClick={handleUsrSubmenuClick}>
                       場域經營
                     </MenuItem> */}
@@ -705,6 +769,9 @@ export default function MenuComponent() {
                       </MenuItem>
                       <MenuItem onClick={handleUsrSubmenuClose}>
                         德明甘丹
+                      </MenuItem>
+                      <MenuItem onClick={handleUsrSubmenuClose}>
+                        USR合作夥伴
                       </MenuItem>
                     </Menu>
                     {/* 重要連結 */}
@@ -731,7 +798,7 @@ export default function MenuComponent() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/PushCore" element={<PushCore />} />
-            <Route path="/Promote" element={<Promote />} />
+            <Route path="/Partner" element={<Partner />} />
             {/* <Route path="/idea" element={<Idea />} /> */}
             <Route path="/Report" element={<Report />} />
             <Route path="/Story" element={<Story />} />
@@ -746,6 +813,8 @@ export default function MenuComponent() {
             <Route path="/ImportantLink" element={<ImportantLink />} />
             <Route path="/LohasCarbonDot" element={<LohasCarbonDot />} />
             <Route path="/Chillax" element={<Chillax />} />
+            <Route path="/BusinessDistrict" element={<BusinessDistrict />} />
+            <Route path="/GMMReport" element={<GMMReport />} />
           </Routes>
         </div>
       </Router>
