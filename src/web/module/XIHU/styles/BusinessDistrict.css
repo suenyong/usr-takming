@@ -204,7 +204,9 @@
     color: #000; 
     clip-path: polygon(5% 0, 100% 0%, 100% 100%, 0% 100%);
 }
-
+.W-M{
+    margin:0 17% 10% 17%;
+}
 
 
 @media (max-width: 1048px) {
@@ -226,7 +228,7 @@
     }
 
     .fish-img {
-        max-width: 100%;
+        max-width: 100% !important; 
         margin-bottom: 20px;
     }
     .fish-img2 {
@@ -279,7 +281,9 @@
         text-align: end;
         padding: 10px;
     }
-    
+    .W-M{
+        margin:5% 10% 10% 10%;
+    }
     
 }
 

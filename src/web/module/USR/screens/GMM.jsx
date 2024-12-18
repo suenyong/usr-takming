@@ -75,7 +75,7 @@ export default function GMM() {
                 </div>
                 {/* ==================================== */}
 
-                <div class="show-GMM">
+                <div className="show-GMM">
                     <img src={require("..//images/Line.png")} alt="blue_line" />
                 </div>
 

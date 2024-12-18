@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import logo from "./logo2.png";
 import BasicRoutor from './web/module/BasicRoutor';
 
 export default function App() {
@@ -11,10 +12,10 @@ export default function App() {
     <>
       <Helmet>
         <meta name="description" content="Welcome TMUST USR!" />
-        <meta property="og:image" content="./logo2.png" />
+        <meta property="og:image" content={logo} />
       </Helmet>
       <div className="App">
-      <BasicRoutor />
+        <BasicRoutor />
       </div>
     </>
   );

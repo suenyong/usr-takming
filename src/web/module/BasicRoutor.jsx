@@ -31,8 +31,8 @@ import UH111 from "../module/USRHUB/screens/UH111";
 import BusinessDistrict from "../module/XIHU/screns/BusinessDistrict";
 import GMMReport from "../module/XIHU/screns/GMMReport";
 import CaseStudies from "./CaseStudies/screens/CaseStudies";
-import Chillax from "./Chillax/screens/chillax";
 import LohasCarbonDot from "./LohasCarbonDot/screens/LohasCarbonDot";
+import ScrollToTop from "./ScrollToTop";
 import GD from "./USR/screens/GD";
 import GMM from "./USR/screens/GMM";
 import GMM_history from "./USR/screens/GMM_history";
@@ -184,9 +184,8 @@ export default function MenuComponent() {
   return (
     <>
       <Router>
+      <ScrollToTop />
         <div className="App" style={{ margin: "auto" }}>
-
-
           <div className="nav-container">
             <div className="line-top">
               <div className="about-usr">
@@ -796,7 +795,7 @@ export default function MenuComponent() {
             </div>
           </div>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="*" element={<Home />} />
             <Route path="/PushCore" element={<PushCore />} />
             <Route path="/Partner" element={<Partner />} />
             {/* <Route path="/idea" element={<Idea />} /> */}
@@ -812,7 +811,7 @@ export default function MenuComponent() {
             <Route path="/GD" element={<GD />} />
             <Route path="/ImportantLink" element={<ImportantLink />} />
             <Route path="/LohasCarbonDot" element={<LohasCarbonDot />} />
-            <Route path="/Chillax" element={<Chillax />} />
+            {/* <Route path="/Chillax" element={<Chillax />} /> */}
             <Route path="/BusinessDistrict" element={<BusinessDistrict />} />
             <Route path="/GMMReport" element={<GMMReport />} />
           </Routes>

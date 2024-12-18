@@ -40,7 +40,7 @@ export default function LohasCarbonDot() {
             <h2 id="RR">減碳沒有奇蹟，只有累積！</h2>
 
             <div className="LCD_contain">
-                <img src={require("..//images/point.png")} id="Pointer" ></img>
+                <img src={require("../images/point.png")} id="Pointer" ></img>
             </div>
 
             <div className="LCD_contain">
@@ -83,7 +83,6 @@ export default function LohasCarbonDot() {
             </div>
             <div id="vido" >
                 <span>樂活碳點影片介紹：<a href="https://www.youtube.com/watch?v=W_Jw。vYAAdcA&t=1s" target="_blank">https://www.youtube.com/watch?v=W_JwvYAAdcA&t=1s</a></span>
-
             </div>
 
 

@@ -46,7 +46,7 @@ export default function BusinessDistrict() {
                 <div>The cuisine of XIHU</div>
                 <div className="line"></div>
                     <div className="heading">日式料理</div>
-                <div class="double-line"></div>
+                <div className="double-line"></div>
                 <div>2024/4/25</div>
                 <div className="section">
                     <div >
@@ -111,7 +111,7 @@ export default function BusinessDistrict() {
                 <div>The cuisine of XIHU</div>
                 <div className="line"></div>
                     <div className="heading">米邑 / MiiiEat米製</div>
-                <div class="double-line"></div>
+                <div className="double-line"></div>
                 <div>2024/4/25</div>
                 <div className="section">
                     <div >
@@ -177,7 +177,7 @@ export default function BusinessDistrict() {
                 <div>The cuisine of XIHU</div>
                 <div className="line"></div>
                     <div className="heading">達人麵館</div>
-                <div class="double-line"></div>
+                <div className="double-line"></div>
                 <div>2023/12/13</div>
                 <div className="section">
                     <div >
@@ -241,7 +241,7 @@ export default function BusinessDistrict() {
                 <div>The fashion of XIHU</div>
                 <div className="line"></div>
                     <div className="heading">HEY!LADY</div>
-                <div class="double-line"></div>
+                <div className="double-line"></div>
                 <div>2023/9/27</div>
                 <div className="section">
                     <div >
@@ -305,7 +305,7 @@ export default function BusinessDistrict() {
                 <div>The cuisine of XIHU</div>
                 <div className="line"></div>
                     <div className="heading">豪記水餃</div>
-                <div class="double-line"></div>
+                <div className="double-line"></div>
                 <div>2024/4/25</div>
                 <div className="section">
                     <div >
@@ -372,7 +372,7 @@ export default function BusinessDistrict() {
                 <div>The cuisine of XIHU</div>
                 <div className="line"></div>
                     <div className="heading">西湖涼麵魷魚羹</div>
-                <div class="double-line"></div>
+                <div className="double-line"></div>
                 <div>2023/4/25</div>
                 <div className="section">
                     <div >
@@ -437,7 +437,7 @@ export default function BusinessDistrict() {
                 <div>The drinks of XIHU</div>
                 <div className="line"></div>
                     <div className="heading">探索西湖商圈的多元飲品天地</div>
-                <div class="double-line"></div>
+                <div className="double-line"></div>
                 <div>2023/4/25</div>
                 <div className="drink-container">
                     <img src={drink1} className="drink-img"/>
@@ -517,7 +517,7 @@ export default function BusinessDistrict() {
                         <div className="img-min-title">西湖飲料一條街(德明科大李宜捷攝)</div>
                     </div>
                     <div className="text-block">
-                        <div style={{margin:"0 23% 10% 23%"}}>
+                        <div className="W-M">
                         除了上面那些特色飲料店外，還有許多連鎖飲料店例如清心、Mr.Wish、COMEBUY、CoCo都可、迷客夏等等西湖商圈通通有！無論您喜歡清新的水果茶、濃郁的奶茶還是創意的特色飲品，西湖商圈的飲料店都能滿足您的口味。歡迎您來到這裡，探索各種美味，享受愜意的飲品體驗。
                         </div>
                     </div>
@@ -527,7 +527,7 @@ export default function BusinessDistrict() {
                 <div>The coffec of XIHU</div>
                 <div className="line"></div>
                     <div className="heading">東禾咖啡館</div>
-                <div class="double-line"></div>
+                <div className="double-line"></div>
                 <div>2023/4/25</div>
                 <div className="section">
                     <div >

@@ -44,7 +44,7 @@ export default function GMMReport() {
                     <div className="heading">金面山的故事</div>
                     <div></div>
                 </div>
-                <div class="double-line"></div>
+                <div className="double-line"></div>
                 {/* ============================= */}
                 <div className="color-block2">
                 <div className="story-text">
@@ -134,7 +134,7 @@ export default function GMMReport() {
                     <div className="heading">金面山生態</div>
                     <div></div>
                 </div>
-                <div class="double-line"></div>
+                <div className="double-line"></div>
                 {/* ============================= */}
                 <div className="color-block2">
                 <div className="story-text">
@@ -219,7 +219,7 @@ export default function GMMReport() {
                     <div className="heading">開箱金面山</div>
                     <div></div>
                 </div>
-                <div class="double-line"></div>
+                <div className="double-line"></div>
                 <div className="double-text">探索台北內湖金面山：市區中的自然瑰寶</div>
                 <div>作者：何家寧</div>
                 {/* ============================= */}
