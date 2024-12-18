@@ -16,7 +16,7 @@ export default function Achieve() {
         {
             imgSrc: require('../../../../_basic/images/NM_image2.png'),
             // title: '活動名稱',
-            Url: 'http://manner.takming.edu.tw/var/file/8/1008/img/14/125978186.pdf'
+            Url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/125978186.pdf'
         },
         {
             imgSrc: require('../../../../_basic/images/NM_image3.png'),
@@ -26,7 +26,7 @@ export default function Achieve() {
         {
             imgSrc: require('../../../../_basic/images/NM_image4.png'),
             // title: '活動名稱',
-            Url: 'http://manner.takming.edu.tw/var/file/8/1008/img/14/709433889.pdf'
+            Url: 'https://manner.takming.edu.tw/var/file/8/1008/img/14/709433889.pdf'
         },
         {
             imgSrc: require('../../../../_basic/images/NM_image5.png'),
@@ -48,7 +48,7 @@ export default function Achieve() {
                     // 取最後六筆資料
                     const lastSixData = data.slice(-6);
                     setAData(lastSixData);
-                    console.log("成果展現所有資料:", lastSixData);
+                    // console.log("成果展現所有資料:", lastSixData);
                 } else {
                     console.error("取得所有成果展現失敗");
                 }

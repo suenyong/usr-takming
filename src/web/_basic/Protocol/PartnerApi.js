@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { Protocol } from './Protocol';
+axios.defaults.withCredentials = true;
 
 export class PartnerApi {
     static PARTNER = `${Protocol.API_URL}/Partner`;

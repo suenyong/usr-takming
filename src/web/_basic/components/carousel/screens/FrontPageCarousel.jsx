@@ -15,7 +15,7 @@ export default function FrontPageCarousel() {
         if (Array.isArray(data)) {
           const sortedData = data.sort((a, b) => b.id - a.id);
           setCData(sortedData);
-          console.log("輪播圖所有資料:", sortedData);
+          // console.log("輪播圖所有資料:", sortedData);
         } else {
           console.error("取得輪播圖data失敗");
         }

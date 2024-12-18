@@ -1,25 +1,68 @@
 .boxR {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 650px;
-    height: 250px;
+    display: inline-block;
+    width: 850px;
+    height: 75%;
     border-radius: 10px;
     background-color: rgba(124, 169, 160, 0.337);
-    top: 50%;
+    top: 450%;
     left: 50%;
-    margin: 5%;
+    margin:5%;
     margin-top: 0%;
-    color: #195d3287;
-    font-weight: bold;
+    color: #1a3725;
+    padding: 3%;
+    background-attachment: scroll, local;
 }
 
-.centered-container_Report {
+.centered-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    margin-top: 10%;
     /* 調整高度來置中整個頁面 */
+}
+
+.boxR span {
+    display: flex;
+    width: 1000px;
+    justify-content:  flex-start;
+    text-align: center;
+    margin-left: 0 auto;
+}
+
+@media screen and (max-width: 768px){
+    .boxS span {
+    display: grid !important;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    width:100%;
+    font-size: 12px;
+    }
+    .boxS p{
+    font-size: 12px;
+    }
+    .boxS a{
+        font-size: 12px;
+
+    }
+    .boxS{
+        line-height:1.5;
+        height:85%;
+        width: 90%;
+    }
+}
+
+
+/* ALL*/
+a {
+text-decoration: none;
+/* 移除底线 */
+    color: #224439;
+/* 修改链接文字颜色，这里使用红色作为示例 */
+}
+
+a:hover {
+    color: #369160;
 }
 
 .return-But {
@@ -36,10 +79,4 @@
     width: 70px;
     height: 70px;
 
-}
-
-.return-object {
-    color: white;
-    font-size: 30px;
-    transition: .3s ease;
 }

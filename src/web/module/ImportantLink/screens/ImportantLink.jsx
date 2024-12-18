@@ -19,7 +19,7 @@ export default function Report() {
         const data = await ImportantLinkApi.getAllImportLinks();
         if (Array.isArray(data)) {
           setImportLinkData(data);
-          console.log("重要連結所有資料:", data);
+          // console.log("重要連結所有資料:", data);
         } else {
           console.error("取得所有重要連結失敗");
         }

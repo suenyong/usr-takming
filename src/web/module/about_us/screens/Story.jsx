@@ -22,7 +22,7 @@ export default function Story() {
             if (Array.isArray(data)) {
                 const sortedData = data.sort((a, b) => b.id - a.id);
                 setNData(sortedData);
-                console.log("亮點報導所有資料:", sortedData);
+                // console.log("亮點報導所有資料:", sortedData);
             } else {
                 console.error("取得所有亮點報導失敗");
             }

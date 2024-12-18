@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { Protocol } from './Protocol';
+axios.defaults.withCredentials = true;
 
 export class NewsApi {
     static NEWS = `${Protocol.API_URL}/news`;

@@ -3,17 +3,17 @@
   "name": "Takming USR",
   "icons": [
     {
-      "src": "logoUSR.png",
+      "src": "./logoUSR.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logoUSR.png",
+      "src": "./logoUSR.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logoUSR.png",
+      "src": "./logoUSR.png",
       "type": "image/png",
       "sizes": "512x512"
     }

@@ -1,14 +1,10 @@
+import AOS from "aos";
 import React from "react";
-import "../../CaseStudies/styles/CaseStudies.css";
-import { Box, Typography } from "@mui/material";
+import { AiOutlineHome } from "react-icons/ai";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import US_image_1 from "../../CaseStudies/images/US_image_1.png";
-import ASEAN_5 from "../../CaseStudies/images/ASEAN_5.JPG";
-import { SettingCaseStudies } from "../../CaseStudies/screens/SettingCaseStudies";
+import "../../CaseStudies/styles/CaseStudies.css";
 import Contact from "../../home/components/contactus/Contact";
-import { AiOutlineHome } from "react-icons/ai";
-import AOS from "aos";
 
 export default function CaseStudies() {
   React.useEffect(() => {
@@ -239,19 +235,19 @@ export default function CaseStudies() {
           ◆德明科大舉辦109年度大學社會責任實踐基地-忠治「部落．愛轉動」暑期夏令營
         </p>
         <a
-          href="http://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18575"
+          href="https://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18575"
           style={{ fontSize: "15px", width: "100%", wordWrap: "break-word" }}
         >
-          http://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18575
+          https://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18575
         </a>
         <p>
           ◆109年度大學社會責任實踐基地－忠治「部落．愛轉動」基隆海科館戶外教學活動
         </p>
         <a
-          href="http://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18589"
+          href="https://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18589"
           style={{ fontSize: "15px", width: "100%", wordWrap: "break-word" }}
         >
-          http://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18589
+          https://netinfo.takming.edu.tw/tip/sec_onenews.php?N=18589
         </a>
       </div>
 

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { Protocol } from './Protocol';
+axios.defaults.withCredentials = true;
 
 export class CarouselApi {
     static CAROUSEL = `${Protocol.API_URL}/carousel`;
@@ -10,7 +11,7 @@ export class CarouselApi {
 
     // api/carousel/allCarousel
     static async getAllCarousel() {
-        console.log("取得所有輪播圖: " + this.GET_ALL_CAROUSEL);
+        // console.log("取得所有輪播圖: " + this.GET_ALL_CAROUSEL);
         try {
             const response = await axios.get(this.GET_ALL_CAROUSEL, {
                 headers: {

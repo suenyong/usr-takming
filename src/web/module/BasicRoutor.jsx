@@ -488,7 +488,7 @@ export default function MenuComponent() {
                         to="/Partner"
                         style={{ textDecoration: "none", color: "inherit" }}
                       >
-                        <MenuItem onClick={handleClose}>USR合作夥伴</MenuItem>
+                        <MenuItem onClick={handleUsrSubmenuClick}>USR合作夥伴</MenuItem>
                       </Link>
                     </Menu>
                     {/* 重要連結 =====================================================*/}

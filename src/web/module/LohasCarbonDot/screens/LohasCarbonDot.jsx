@@ -45,16 +45,16 @@ export default function LohasCarbonDot() {
 
             <div className="LCD_contain">
                 {/* <img src={require("..//images/intro.png")} id="Intro"></img> */}
-                <img src={require("..//images/signup.png")} id="Signup"></img>
+                <img src={require("../images/L1.jpg")} id="Signup"></img>
             </div>
 
             <div className="LCD_contain2">
-                <img src={require("..//images/shot1.png")} className="Shot"></img>
-                <img src={require("..//images/shot2.png")} className="Shot"></img>
-                <img src={require("..//images/shot3.png")} className="Shot3"></img>
-                <img src={require("..//images/shot4.png")} className="Shot4"></img>
-                <img src={require("..//images/shot5.png")} className="Shot"></img>
-                <img src={require("..//images/shot6.png")} className="Shot"></img>
+                <img src={require("../images/L2.jpg")} className="Shot"></img>
+                <img src={require("../images/L3.jpg")} className="Shot"></img>
+                <img src={require("../images/L4.jpg")} className="Shot"></img>
+                <img src={require("../images/L5.jpg")} className="Shot"></img>
+                <img src={require("../images/L6.jpg")} className="Shot"></img>
+                <img src={require("../images/L7.jpg")} className="Shot"></img>
             </div>
 
             <div className="Point">

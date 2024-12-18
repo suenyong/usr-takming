@@ -34,7 +34,7 @@
   },
   "scripts": {
     "start": "react-scripts start --port 80",
-    "build": "webpack --mode production",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -55,5 +55,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "babel-loader": "^9.2.1",
+    "webpack-cli": "^5.1.4"
   }
 }

@@ -1,5 +1,5 @@
 export class Protocol {
-    static API_URL = 'http://localhost:8081/api';
+    static API_URL = 'https://usr.takming.edu.tw:8443/api';
 
     static get config() {
         return {

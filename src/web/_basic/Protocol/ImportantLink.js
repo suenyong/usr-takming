@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { Protocol } from './Protocol';
+axios.defaults.withCredentials = true;
 
 export class ImportantLinkApi {
     static IMPORT_LINK = `${Protocol.API_URL}/importLink`;

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { Protocol } from './Protocol';
+axios.defaults.withCredentials = true;
 
 export class CountryApi {
     static COUNTRY = `${Protocol.API_URL}/countries`;

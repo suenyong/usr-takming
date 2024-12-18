@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { Protocol } from './Protocol';
+axios.defaults.withCredentials = true;
 
 export class RegionApi {
     static REGION = `${Protocol.API_URL}/regions`;
