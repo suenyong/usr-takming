@@ -41,7 +41,7 @@ export default function GMMReport() {
                 <div className="line"></div>
                 <div className="mountain-title">
                     <img src={Mountain} alt="山" className="mountain-img"/>
-                    <div className="heading">金面山的故事</div>
+                    <div className="heading2">金面山的故事</div>
                     <div></div>
                 </div>
                 <div className="double-line"></div>
@@ -131,7 +131,7 @@ export default function GMMReport() {
                 <div className="line"></div>
                 <div className="mountain-title">
                     <img src={Mountain} alt="山" className="mountain-img"/>
-                    <div className="heading">金面山生態</div>
+                    <div className="heading2">金面山生態</div>
                     <div></div>
                 </div>
                 <div className="double-line"></div>
@@ -216,7 +216,7 @@ export default function GMMReport() {
                 <div className="line"></div>
                 <div className="mountain-title">
                     <img src={Mountain} alt="山" className="mountain-img"/>
-                    <div className="heading">開箱金面山</div>
+                    <div className="heading2">開箱金面山</div>
                     <div></div>
                 </div>
                 <div className="double-line"></div>
